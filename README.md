@@ -1,14 +1,14 @@
-# TwinWorld-P0：站在巨人的肩膀上看计算机视觉
+# TwinWorld-P0: Seeing Computer Vision while Standing on the Shoulders of Giants
 
-**研究目标**：验证在严格匹配的被动轨迹中，具有不同隐藏机制的世界无法区分，而向物体 A 施加相同外力后，物体 B 的响应不同。
+**Research Objective**: To verify that worlds with different underlying hidden mechanisms are indistinguishable under perfectly matched passive trajectories, whereas object B exhibits distinct responses when the same external force is applied to object A.
 
-## 运行环境
+## Execution Environment
 - Windows PowerShell / Python 3.11
-- 仅依赖 `numpy`、`matplotlib`；无需 GPU、MuJoCo、PyTorch 或下载数据。
+- Dependencies: numpy, matplotlib only. No GPU, MuJoCo, PyTorch or dataset download is required.
 
-## 按顺序执行
+## Sequential Execution
 
-在 VS Code 中打开本文件夹后，终端选择 **PowerShell**。
+Open this folder in VS Code and select PowerShell as the terminal.
 
 ```powershell
 py -3.11 -m venv .venv
@@ -21,25 +21,27 @@ py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe scripts\04_plot.py
 ```
 
-若 `py -3.11` 不可用，请确认安装 Python 3.11；`py --list` 查看本机 Python。
+If `py -3.11` is unavailable, confirm Python 3.11 is installed; inspect local Python versions with `py --list`.
 
-输出：
-- `data/{train,val,test}_public.npz`：模型可见观测（包含被动与干预轨迹，**不含隐藏标签**）。
-- `data/{train,val,test}_private_labels.npz`：仅用于评估器的机制标签；**禁止在模型推断中读取**。
-- `data/{train,val,test}_private_params.json`：生成器真值，仅供审计。
-- `outputs/p0_baselines.json`：被动与主动诊断的结果。
-- `outputs/p0_twinworld_comparison.png`：轨迹图。
+**Outputs**:
 
-## 必须检查的 P0 结论
-1. 测试脚本的 3 项 `unittest` 通过。
-2. 每个 split 的 `passive_max_abs_diff=0`；`matched_action_diff=0`。
-3. 干预后两种机制的对象 B 运动存在明显差异（与 P1 传感器噪声容限是两回事）。
-4. 被动 `passive chance=0.500`；主动 oracle 诊断结果由执行确定，不应把接近 1.000 当作论文创新。
-5. 不修改原始测试标签与指标定义；完整保存终端日志。
+- `data/{train,val,test}_public.npz`: observable inputs for models, containing both passive and interventional trajectories without hidden labels.
+- `data/{train,val,test}_private_labels.npz`: mechanism labels reserved exclusively for evaluation; must not be read during model inference.
+- `data/{train,val,test}_private_params.json`: ground-truth generator parameters, reserved for auditing only.
+- `outputs/p0_baselines.json`: results for passive and active diagnosis.
+- `outputs/p0_twinworld_comparison.png`: trajectory visualization.
 
-## 关键实验逻辑
-- `label=1`：两个物体存在隐藏的弹簧-阻尼耦合，耦合力依赖相对位移与速度。
-- `label=0`：两个物体彼此独立；被动时可以产生相同的运动。
-- 两世界被动初始位移、速度、摩擦项完全匹配。弹簧的静止长度等于物体间距，因此被动运动时弹簧不施力。
-- 外力只作用于 A，导致耦合机制经由弹簧影响 B，独立机制不会影响 B。
-- 模型输入中不存在显示弹簧、隐藏标签或生成器真值的线索。
+## Mandatory Checks for P0 Conclusions
+- All three unit tests in the unittest script pass.
+- For every split: `passive_max_abs_diff = 0` and `matched_action_diff = 0`.
+- Object B shows clearly different motion under the two mechanisms after intervention (this is separate from the sensor noise tolerance defined in P1).
+- Passive and active oracle diagnosis outcomes are determined by the implementation; a value close to 1.000 should not be treated as a novel contribution of the paper.
+- `passive chance = 0.500`
+- Do not modify the original test labels or metric definitions; preserve the full terminal log.
+
+## Core Experimental Logic
+- `label = 1`: The two objects have hidden spring-damper coupling; the coupling force depends on relative displacement and velocity.
+- `label = 0`: The two objects are independent, though they may produce identical motion in the passive regime.
+- Initial displacements, velocities and friction terms of the two worlds are perfectly matched. The resting length of the spring equals the object separation, so the spring exerts no force during passive motion.
+- External force is applied only to object A. Under the coupled mechanism, this force propagates through the spring to affect object B; under the independent mechanism, object B remains unaffected.
+- No cues revealing the spring, hidden labels or generator ground truth are present in the model inputs.
