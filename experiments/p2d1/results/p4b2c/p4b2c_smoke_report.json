@@ -1,0 +1,11 @@
+{
+  "protocol": "P4-B2C interface smoke only",
+  "smoke": true,
+  "n_rows_checked": 16,
+  "score_values_checked": 864,
+  "checkpoint_rows_checked": 16,
+  "source_provenance_warnings": [],
+  "E4_accessed": false,
+  "new_fits": 0,
+  "new_simulations": 0
+}

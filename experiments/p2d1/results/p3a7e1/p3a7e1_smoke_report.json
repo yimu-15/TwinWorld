@@ -1,0 +1,310 @@
+{
+  "protocol": "P3-A7E1 preregistered action-family pilot",
+  "smoke": true,
+  "n_cal": 4,
+  "n_test": 2,
+  "calibration_seed": 20370701,
+  "test_seed": 20370702,
+  "commands": {
+    "mid_gain": 1.75,
+    "reverse_gain": -1.75,
+    "high_gain": 2.75
+  },
+  "alpha_allocation": {
+    "mid": 0.05,
+    "reverse": 0.025,
+    "high": 0.025
+  },
+  "cutoffs_m": {
+    "original": {
+      "mid": {
+        "independent": 0.005751242835027395,
+        "rigid": 0.008059064963795671,
+        "elastic": 0.010343614887177681,
+        "deadzone": 0.006224933109804179,
+        "cubic": 0.009919549568356617
+      },
+      "reverse": {
+        "independent": 0.008336634992856215,
+        "rigid": 0.008159271128908067,
+        "elastic": 0.012136421114961571,
+        "deadzone": 0.005788213640323652,
+        "cubic": 0.00873652892298398
+      },
+      "high": {
+        "independent": 0.006966981857574329,
+        "rigid": 0.009657795736555091,
+        "elastic": 0.01708834709985593,
+        "deadzone": 0.013996416114699572,
+        "cubic": 0.012749910229739208
+      }
+    },
+    "above_original_range": {
+      "mid": {
+        "independent": 0.006146670260991969,
+        "rigid": 0.011869596558024541,
+        "elastic": 0.01466098268380687,
+        "deadzone": 0.00861555620502675,
+        "cubic": 0.008393570592330809
+      },
+      "reverse": {
+        "independent": 0.006355311577134239,
+        "rigid": 0.010660351288971902,
+        "elastic": 0.01265429760138128,
+        "deadzone": 0.008127506258598292,
+        "cubic": 0.011056504660341216
+      },
+      "high": {
+        "independent": 0.006496116373884219,
+        "rigid": 0.0066298956066202855,
+        "elastic": 0.014423131481724659,
+        "deadzone": 0.011143422673361058,
+        "cubic": 0.01711662826884338
+      }
+    }
+  },
+  "summary": {
+    "original": {
+      "mid_only": {
+        "known_correct_singleton": 1,
+        "known_wrong_singleton": 3,
+        "known_contains_true": 6,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 1,
+        "ambiguous_total": 7,
+        "actions": {
+          "None": 12
+        },
+        "cost_J": 35.20229372061749,
+        "outcomes": {
+          "ambiguous_excludes_true": 1,
+          "wrong_singleton": 3,
+          "ambiguous_contains_true": 5,
+          "unknown_empty": 1,
+          "correct_singleton": 1,
+          "unknown_ambiguous": 1
+        },
+        "work_reduction_vs_reverse": 0.1665130528245486
+      },
+      "always_reverse": {
+        "known_correct_singleton": 1,
+        "known_wrong_singleton": 1,
+        "known_contains_true": 6,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 1,
+        "ambiguous_total": 7,
+        "actions": {
+          "reverse": 12
+        },
+        "cost_J": 42.23496701407527,
+        "outcomes": {
+          "ambiguous_excludes_true": 1,
+          "known_empty": 2,
+          "ambiguous_contains_true": 5,
+          "unknown_empty": 1,
+          "correct_singleton": 1,
+          "wrong_singleton": 1,
+          "unknown_ambiguous": 1
+        },
+        "work_reduction_vs_reverse": 0.0
+      },
+      "reverse_if_ambiguous": {
+        "known_correct_singleton": 1,
+        "known_wrong_singleton": 3,
+        "known_contains_true": 6,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 1,
+        "ambiguous_total": 7,
+        "actions": {
+          "reverse": 7,
+          "None": 5
+        },
+        "cost_J": 39.22051902958401,
+        "outcomes": {
+          "ambiguous_excludes_true": 1,
+          "wrong_singleton": 3,
+          "ambiguous_contains_true": 5,
+          "unknown_empty": 1,
+          "correct_singleton": 1,
+          "unknown_ambiguous": 1
+        },
+        "work_reduction_vs_reverse": 0.07137327663797308
+      },
+      "high_if_ambiguous": {
+        "known_correct_singleton": 2,
+        "known_wrong_singleton": 3,
+        "known_contains_true": 4,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 2,
+        "ambiguous_total": 4,
+        "actions": {
+          "high": 7,
+          "None": 5
+        },
+        "cost_J": 50.051651368927494,
+        "outcomes": {
+          "ambiguous_excludes_true": 2,
+          "wrong_singleton": 3,
+          "correct_singleton": 2,
+          "ambiguous_contains_true": 2,
+          "unknown_empty": 2,
+          "known_empty": 1
+        },
+        "work_reduction_vs_reverse": -0.1850761325857606
+      },
+      "candidate_aware": {
+        "known_correct_singleton": 2,
+        "known_wrong_singleton": 1,
+        "known_contains_true": 4,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 2,
+        "ambiguous_total": 4,
+        "actions": {
+          "high": 7,
+          "reverse": 4,
+          "None": 1
+        },
+        "cost_J": 52.60767835640037,
+        "outcomes": {
+          "ambiguous_excludes_true": 2,
+          "known_empty": 3,
+          "correct_singleton": 2,
+          "ambiguous_contains_true": 2,
+          "unknown_empty": 2,
+          "wrong_singleton": 1
+        },
+        "work_reduction_vs_reverse": -0.24559534612323186
+      }
+    },
+    "above_original_range": {
+      "mid_only": {
+        "known_correct_singleton": 1,
+        "known_wrong_singleton": 0,
+        "known_contains_true": 9,
+        "unknown_false_singleton": 1,
+        "unknown_empty": 0,
+        "ambiguous_total": 10,
+        "actions": {
+          "None": 12
+        },
+        "cost_J": 34.63980245281827,
+        "outcomes": {
+          "ambiguous_contains_true": 8,
+          "correct_singleton": 1,
+          "unknown_ambiguous": 1,
+          "ambiguous_excludes_true": 1,
+          "unknown_false_singleton": 1
+        },
+        "work_reduction_vs_reverse": 0.16633951965384397
+      },
+      "always_reverse": {
+        "known_correct_singleton": 3,
+        "known_wrong_singleton": 0,
+        "known_contains_true": 8,
+        "unknown_false_singleton": 1,
+        "unknown_empty": 0,
+        "ambiguous_total": 8,
+        "actions": {
+          "reverse": 12
+        },
+        "cost_J": 41.551450823763396,
+        "outcomes": {
+          "ambiguous_excludes_true": 2,
+          "correct_singleton": 3,
+          "ambiguous_contains_true": 5,
+          "unknown_ambiguous": 1,
+          "unknown_false_singleton": 1
+        },
+        "work_reduction_vs_reverse": 0.0
+      },
+      "reverse_if_ambiguous": {
+        "known_correct_singleton": 3,
+        "known_wrong_singleton": 0,
+        "known_contains_true": 8,
+        "unknown_false_singleton": 1,
+        "unknown_empty": 0,
+        "ambiguous_total": 8,
+        "actions": {
+          "reverse": 10,
+          "None": 2
+        },
+        "cost_J": 40.476480904707714,
+        "outcomes": {
+          "ambiguous_excludes_true": 2,
+          "correct_singleton": 3,
+          "ambiguous_contains_true": 5,
+          "unknown_ambiguous": 1,
+          "unknown_false_singleton": 1
+        },
+        "work_reduction_vs_reverse": 0.025870815524951636
+      },
+      "high_if_ambiguous": {
+        "known_correct_singleton": 6,
+        "known_wrong_singleton": 0,
+        "known_contains_true": 9,
+        "unknown_false_singleton": 1,
+        "unknown_empty": 1,
+        "ambiguous_total": 4,
+        "actions": {
+          "high": 10,
+          "None": 2
+        },
+        "cost_J": 57.13025343702398,
+        "outcomes": {
+          "ambiguous_contains_true": 3,
+          "correct_singleton": 6,
+          "unknown_empty": 1,
+          "ambiguous_excludes_true": 1,
+          "unknown_false_singleton": 1
+        },
+        "work_reduction_vs_reverse": -0.3749280062286302
+      },
+      "candidate_aware": {
+        "known_correct_singleton": 6,
+        "known_wrong_singleton": 0,
+        "known_contains_true": 9,
+        "unknown_false_singleton": 1,
+        "unknown_empty": 1,
+        "ambiguous_total": 4,
+        "actions": {
+          "high": 9,
+          "reverse": 3
+        },
+        "cost_J": 57.01774416130124,
+        "outcomes": {
+          "ambiguous_contains_true": 3,
+          "correct_singleton": 6,
+          "unknown_empty": 1,
+          "ambiguous_excludes_true": 1,
+          "unknown_false_singleton": 1
+        },
+        "work_reduction_vs_reverse": -0.37222029630533676
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_threshold_tuned": false,
+  "truth_used_for_online_action": false,
+  "action_selected_before_challenge": true,
+  "smoke_has_valid_coverage": false,
+  "limitations": [
+    "Physics-informed fixed action heuristic",
+    "Not optimized model-disagreement planning",
+    "MuJoCo only, no RGB vision",
+    "Unknown law excluded from calibration",
+    "One specific unknown Saturating law",
+    "Possible nested/equivalent candidate laws",
+    "Counterfactual actions simulated offline",
+    "Only selected action charged per policy",
+    "No safety guarantee for unknown laws",
+    "Conditional coverage needs exchangeability",
+    "Two bands share base scenes"
+  ],
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "27_p3a3b_evidence_vs_structure.py": "75296d8c807ba591347bedd77b57e9a129b8ff025b07768d99b90e6da52699a9",
+    "47_p3a6h_six_mechanism_openworld_audit.py": "c538c8a06d846397fe90f2b5320fe83a24e5636530b5e7995cd129ae7e8584fe",
+    "58_p3a7d_hypothesis_set_validation.py": "3058b7f7a2f668a3aa6db76919c3eaeba1df97d2f14db1ed711f40ef3ec2fa16"
+  }
+}

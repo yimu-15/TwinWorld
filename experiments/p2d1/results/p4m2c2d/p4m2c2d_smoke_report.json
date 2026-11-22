@@ -1,0 +1,394 @@
+{
+  "protocol": "P4-M2C2D candidate-domain factorial audit",
+  "smoke": true,
+  "development_only": true,
+  "n_rows": 36,
+  "candidate_laws": [
+    "elastic",
+    "deadzone",
+    "cubic"
+  ],
+  "configurations": [
+    "WWW",
+    "OWW",
+    "WOW",
+    "WWO",
+    "OOW",
+    "OWO",
+    "WOO",
+    "OOO"
+  ],
+  "summary": {
+    "WWW": {
+      "n": 36,
+      "correct": 12,
+      "accuracy": 0.3333333333333333,
+      "macro_accuracy": 0.32142857142857145,
+      "by_mode": {
+        "elastic": {
+          "n": 8,
+          "correct": 2,
+          "accuracy": 0.25
+        },
+        "deadzone": {
+          "n": 14,
+          "correct": 7,
+          "accuracy": 0.5
+        },
+        "nonlinear": {
+          "n": 14,
+          "correct": 3,
+          "accuracy": 0.21428571428571427
+        }
+      },
+      "confusion_PRIVATE": {
+        "elastic": {
+          "elastic": 2,
+          "deadzone": 2,
+          "cubic": 4
+        },
+        "deadzone": {
+          "elastic": 0,
+          "deadzone": 7,
+          "cubic": 7
+        },
+        "cubic": {
+          "elastic": 8,
+          "deadzone": 3,
+          "cubic": 3
+        }
+      }
+    },
+    "OWW": {
+      "n": 36,
+      "correct": 15,
+      "accuracy": 0.4166666666666667,
+      "macro_accuracy": 0.39285714285714285,
+      "by_mode": {
+        "elastic": {
+          "n": 8,
+          "correct": 2,
+          "accuracy": 0.25
+        },
+        "deadzone": {
+          "n": 14,
+          "correct": 7,
+          "accuracy": 0.5
+        },
+        "nonlinear": {
+          "n": 14,
+          "correct": 6,
+          "accuracy": 0.42857142857142855
+        }
+      },
+      "confusion_PRIVATE": {
+        "elastic": {
+          "elastic": 2,
+          "deadzone": 2,
+          "cubic": 4
+        },
+        "deadzone": {
+          "elastic": 0,
+          "deadzone": 7,
+          "cubic": 7
+        },
+        "cubic": {
+          "elastic": 2,
+          "deadzone": 6,
+          "cubic": 6
+        }
+      }
+    },
+    "WOW": {
+      "n": 36,
+      "correct": 13,
+      "accuracy": 0.3611111111111111,
+      "macro_accuracy": 0.3630952380952381,
+      "by_mode": {
+        "elastic": {
+          "n": 8,
+          "correct": 3,
+          "accuracy": 0.375
+        },
+        "deadzone": {
+          "n": 14,
+          "correct": 7,
+          "accuracy": 0.5
+        },
+        "nonlinear": {
+          "n": 14,
+          "correct": 3,
+          "accuracy": 0.21428571428571427
+        }
+      },
+      "confusion_PRIVATE": {
+        "elastic": {
+          "elastic": 3,
+          "deadzone": 1,
+          "cubic": 4
+        },
+        "deadzone": {
+          "elastic": 0,
+          "deadzone": 7,
+          "cubic": 7
+        },
+        "cubic": {
+          "elastic": 10,
+          "deadzone": 1,
+          "cubic": 3
+        }
+      }
+    },
+    "WWO": {
+      "n": 36,
+      "correct": 17,
+      "accuracy": 0.4722222222222222,
+      "macro_accuracy": 0.44047619047619047,
+      "by_mode": {
+        "elastic": {
+          "n": 8,
+          "correct": 2,
+          "accuracy": 0.25
+        },
+        "deadzone": {
+          "n": 14,
+          "correct": 14,
+          "accuracy": 1.0
+        },
+        "nonlinear": {
+          "n": 14,
+          "correct": 1,
+          "accuracy": 0.07142857142857142
+        }
+      },
+      "confusion_PRIVATE": {
+        "elastic": {
+          "elastic": 2,
+          "deadzone": 2,
+          "cubic": 4
+        },
+        "deadzone": {
+          "elastic": 0,
+          "deadzone": 14,
+          "cubic": 0
+        },
+        "cubic": {
+          "elastic": 8,
+          "deadzone": 5,
+          "cubic": 1
+        }
+      }
+    },
+    "OOW": {
+      "n": 36,
+      "correct": 21,
+      "accuracy": 0.5833333333333334,
+      "macro_accuracy": 0.5357142857142857,
+      "by_mode": {
+        "elastic": {
+          "n": 8,
+          "correct": 2,
+          "accuracy": 0.25
+        },
+        "deadzone": {
+          "n": 14,
+          "correct": 7,
+          "accuracy": 0.5
+        },
+        "nonlinear": {
+          "n": 14,
+          "correct": 12,
+          "accuracy": 0.8571428571428571
+        }
+      },
+      "confusion_PRIVATE": {
+        "elastic": {
+          "elastic": 2,
+          "deadzone": 1,
+          "cubic": 5
+        },
+        "deadzone": {
+          "elastic": 0,
+          "deadzone": 7,
+          "cubic": 7
+        },
+        "cubic": {
+          "elastic": 1,
+          "deadzone": 1,
+          "cubic": 12
+        }
+      }
+    },
+    "OWO": {
+      "n": 36,
+      "correct": 17,
+      "accuracy": 0.4722222222222222,
+      "macro_accuracy": 0.44047619047619047,
+      "by_mode": {
+        "elastic": {
+          "n": 8,
+          "correct": 2,
+          "accuracy": 0.25
+        },
+        "deadzone": {
+          "n": 14,
+          "correct": 14,
+          "accuracy": 1.0
+        },
+        "nonlinear": {
+          "n": 14,
+          "correct": 1,
+          "accuracy": 0.07142857142857142
+        }
+      },
+      "confusion_PRIVATE": {
+        "elastic": {
+          "elastic": 2,
+          "deadzone": 3,
+          "cubic": 3
+        },
+        "deadzone": {
+          "elastic": 0,
+          "deadzone": 14,
+          "cubic": 0
+        },
+        "cubic": {
+          "elastic": 2,
+          "deadzone": 11,
+          "cubic": 1
+        }
+      }
+    },
+    "WOO": {
+      "n": 36,
+      "correct": 18,
+      "accuracy": 0.5,
+      "macro_accuracy": 0.48214285714285715,
+      "by_mode": {
+        "elastic": {
+          "n": 8,
+          "correct": 3,
+          "accuracy": 0.375
+        },
+        "deadzone": {
+          "n": 14,
+          "correct": 14,
+          "accuracy": 1.0
+        },
+        "nonlinear": {
+          "n": 14,
+          "correct": 1,
+          "accuracy": 0.07142857142857142
+        }
+      },
+      "confusion_PRIVATE": {
+        "elastic": {
+          "elastic": 3,
+          "deadzone": 1,
+          "cubic": 4
+        },
+        "deadzone": {
+          "elastic": 0,
+          "deadzone": 14,
+          "cubic": 0
+        },
+        "cubic": {
+          "elastic": 12,
+          "deadzone": 1,
+          "cubic": 1
+        }
+      }
+    },
+    "OOO": {
+      "n": 36,
+      "correct": 28,
+      "accuracy": 0.7777777777777778,
+      "macro_accuracy": 0.7023809523809524,
+      "by_mode": {
+        "elastic": {
+          "n": 8,
+          "correct": 2,
+          "accuracy": 0.25
+        },
+        "deadzone": {
+          "n": 14,
+          "correct": 14,
+          "accuracy": 1.0
+        },
+        "nonlinear": {
+          "n": 14,
+          "correct": 12,
+          "accuracy": 0.8571428571428571
+        }
+      },
+      "confusion_PRIVATE": {
+        "elastic": {
+          "elastic": 2,
+          "deadzone": 1,
+          "cubic": 5
+        },
+        "deadzone": {
+          "elastic": 0,
+          "deadzone": 14,
+          "cubic": 0
+        },
+        "cubic": {
+          "elastic": 1,
+          "deadzone": 1,
+          "cubic": 12
+        }
+      }
+    }
+  },
+  "main_effects": {
+    "elastic": {
+      "average_accuracy_effect": 0.14583333333333337,
+      "four_context_effects": [
+        0.08333333333333337,
+        0.22222222222222227,
+        0.0,
+        0.2777777777777778
+      ]
+    },
+    "deadzone": {
+      "average_accuracy_effect": 0.13194444444444448,
+      "four_context_effects": [
+        0.02777777777777779,
+        0.16666666666666669,
+        0.02777777777777779,
+        0.3055555555555556
+      ]
+    },
+    "cubic": {
+      "average_accuracy_effect": 0.13194444444444442,
+      "four_context_effects": [
+        0.1388888888888889,
+        0.055555555555555525,
+        0.1388888888888889,
+        0.19444444444444442
+      ]
+    }
+  },
+  "bootstrap": null,
+  "E4_accessed": false,
+  "new_simulations": 0,
+  "new_fits": 0,
+  "thresholds_selected": false,
+  "source_sha256": {
+    "p4m2c0_dev_report.json": "ee4347a89a728c5e453e6ca5907aad1e968250ae474cff85ab4a4af41fe646f8",
+    "p4m2c0_dev_audit_PRIVATE.json": "536b6136fc094c602baabf370a43d424856beb1b4e9add6223cda2fd9e604501",
+    "p4m2c2c_dev_report.json": "607d6bc8a4950b49fdda3fd2bf8e33a723cfba9464ef0f6b7fce06894bf4609a",
+    "p4m2c2c_dev_audit_PRIVATE.json": "dd03108f1e34ce51f10efbc5e74926b9b02d98012a3f871febf908400ab445d9",
+    "84_p4m2c2c_solver_corrected_decision_audit.py": "ae5fa3838cc1d06e68dd62fc8759c047fabe04b91146f0255816f2a2e9ee7903"
+  },
+  "limitations": [
+    "All eight policies are retrospective",
+    "No policy was independently selected",
+    "Only twelve independent base scenes",
+    "Mid RMS is used for original model selection",
+    "Factorial effects are not deployment effects",
+    "No independent prior-mismatch confirmation",
+    "No global optimizer certificate",
+    "No E4 access"
+  ]
+}

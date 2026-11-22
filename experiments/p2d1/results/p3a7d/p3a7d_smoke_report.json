@@ -1,0 +1,168 @@
+{
+  "protocol": "P3-A7D calibrated hypothesis sets",
+  "smoke": true,
+  "calibration_seed": 20370410,
+  "test_seed": 20370411,
+  "calibration_scenes": 9,
+  "test_scenes": 2,
+  "alpha": 0.1,
+  "cutoffs_m": {
+    "original": {
+      "independent": 0.006579874969643941,
+      "rigid": 0.010950631723296632,
+      "elastic": 0.01609890111195094,
+      "deadzone": 0.008897445990157097,
+      "cubic": 0.012952051425824972
+    },
+    "above_original_range": {
+      "independent": 0.007264662876010563,
+      "rigid": 0.008435701434862355,
+      "elastic": 0.011492467222881842,
+      "deadzone": 0.010560776441078707,
+      "cubic": 0.016449192933790623
+    }
+  },
+  "summary": {
+    "original": {
+      "independent": {
+        "n": 2,
+        "counts": {
+          "ambiguous": 2,
+          "contains_true": 2
+        },
+        "median_singleton_reverse_RMS_mm": null,
+        "forced_vmid_top1_correct": 1
+      },
+      "rigid": {
+        "n": 2,
+        "counts": {
+          "ambiguous": 2,
+          "contains_true": 2
+        },
+        "median_singleton_reverse_RMS_mm": null,
+        "forced_vmid_top1_correct": 2
+      },
+      "elastic": {
+        "n": 2,
+        "counts": {
+          "ambiguous": 2,
+          "contains_true": 2
+        },
+        "median_singleton_reverse_RMS_mm": null,
+        "forced_vmid_top1_correct": 1
+      },
+      "deadzone": {
+        "n": 2,
+        "counts": {
+          "ambiguous": 2,
+          "contains_true": 2
+        },
+        "median_singleton_reverse_RMS_mm": null,
+        "forced_vmid_top1_correct": 2
+      },
+      "nonlinear": {
+        "n": 2,
+        "counts": {
+          "ambiguous": 2,
+          "contains_true": 2
+        },
+        "median_singleton_reverse_RMS_mm": null,
+        "forced_vmid_top1_correct": 2
+      },
+      "saturating": {
+        "n": 2,
+        "counts": {
+          "ambiguous": 2
+        },
+        "median_singleton_reverse_RMS_mm": null
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "n": 2,
+        "counts": {
+          "ambiguous": 2,
+          "contains_true": 2
+        },
+        "median_singleton_reverse_RMS_mm": null,
+        "forced_vmid_top1_correct": 2
+      },
+      "rigid": {
+        "n": 2,
+        "counts": {
+          "ambiguous": 1,
+          "contains_true": 2,
+          "singleton": 1,
+          "correct_singleton": 1
+        },
+        "median_singleton_reverse_RMS_mm": 6.731709471836137,
+        "forced_vmid_top1_correct": 2
+      },
+      "elastic": {
+        "n": 2,
+        "counts": {
+          "singleton": 1,
+          "wrong_singleton": 1,
+          "ambiguous": 1,
+          "contains_true": 1
+        },
+        "median_singleton_reverse_RMS_mm": 5.846526487302263,
+        "forced_vmid_top1_correct": 0
+      },
+      "deadzone": {
+        "n": 2,
+        "counts": {
+          "singleton": 1,
+          "contains_true": 2,
+          "correct_singleton": 1,
+          "ambiguous": 1
+        },
+        "median_singleton_reverse_RMS_mm": 4.896165408091251,
+        "forced_vmid_top1_correct": 2
+      },
+      "nonlinear": {
+        "n": 2,
+        "counts": {
+          "ambiguous": 2,
+          "contains_true": 2
+        },
+        "median_singleton_reverse_RMS_mm": null,
+        "forced_vmid_top1_correct": 2
+      },
+      "saturating": {
+        "n": 2,
+        "counts": {
+          "ambiguous": 1,
+          "singleton": 1,
+          "unknown_false_singleton": 1
+        },
+        "median_singleton_reverse_RMS_mm": 10.591963084878932
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_tuning": false,
+  "online_uses_truth": false,
+  "online_uses_reverse": false,
+  "parameter_refit_for_all_laws": true,
+  "limitations": [
+    "Fixed actions; not adaptive",
+    "MuJoCo simulation only",
+    "Only one unknown mechanism",
+    "Model-set coverage does not guarantee unknown rejection",
+    "Multiple accepted laws are not a correct unique identification",
+    "Calibration conditional on known mechanism and gap band",
+    "Finite-sample interpretation requires score exchangeability",
+    "Vreverse diagnostic only",
+    "Two bands share physical scenes",
+    "No RGB perception or E4"
+  ],
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "27_p3a3b_evidence_vs_structure.py": "75296d8c807ba591347bedd77b57e9a129b8ff025b07768d99b90e6da52699a9",
+    "47_p3a6h_six_mechanism_openworld_audit.py": "c538c8a06d846397fe90f2b5320fe83a24e5636530b5e7995cd129ae7e8584fe",
+    "55_p3a7a_evidence_gated_escalation.py": "ef38c9c1fe2d11df51533f700aea80d7f60a0784c11d0f627d07f91c52d93cee",
+    "57_p3a7c_parameter_structure_attribution.py": "d35c45cc91f6faf9740630afe3d65bc93540568d332e0f979f299b00aed69912"
+  }
+}

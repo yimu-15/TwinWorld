@@ -1,0 +1,154 @@
+{
+  "protocol": "P2-D1B randomized offline counterfactual probe audit",
+  "engine": "3.17.0",
+  "seed": 20261114,
+  "n_scenes": 24,
+  "modes": [
+    "independent",
+    "rigid",
+    "elastic",
+    "deadzone",
+    "nonlinear"
+  ],
+  "actions": [
+    "steady",
+    "pulse",
+    "reversal",
+    "oscillation",
+    "sweep"
+  ],
+  "n_rollouts": 600,
+  "nominal_command_budget_each": 0.4,
+  "passive_max_gap_m": 0.0,
+  "A_cross_mechanism_max_gap_m": 0.006609675577507468,
+  "actions_summary": {
+    "steady": {
+      "mean_min_pair_B_RMS_m": 0.0015170004709559237,
+      "minimum_min_pair_B_RMS_m": 0.00037799362275575785,
+      "mean_abs_work_proxy_J": 0.3110617260690878,
+      "mean_abs_impulse_Ns": 0.8069065190374716,
+      "mean_A_excursion_m": 0.36121602598461816,
+      "mean_score_over_work": 0.005173218535938149,
+      "privileged_scene_wins": 0
+    },
+    "pulse": {
+      "mean_min_pair_B_RMS_m": 0.009672638645225542,
+      "minimum_min_pair_B_RMS_m": 0.0026358994577036356,
+      "mean_abs_work_proxy_J": 0.46002221780983227,
+      "mean_abs_impulse_Ns": 1.0311559657249256,
+      "mean_A_excursion_m": 0.4833679216730751,
+      "mean_score_over_work": 0.021919749487299692,
+      "privileged_scene_wins": 24
+    },
+    "reversal": {
+      "mean_min_pair_B_RMS_m": 0.00020710340569955545,
+      "minimum_min_pair_B_RMS_m": 0.0,
+      "mean_abs_work_proxy_J": 0.15421061449490575,
+      "mean_abs_impulse_Ns": 0.6118840859155382,
+      "mean_A_excursion_m": 0.21443888852408144,
+      "mean_score_over_work": 0.001497713589317155,
+      "privileged_scene_wins": 0
+    },
+    "oscillation": {
+      "mean_min_pair_B_RMS_m": 3.248309713479464e-05,
+      "minimum_min_pair_B_RMS_m": 0.0,
+      "mean_abs_work_proxy_J": 0.1288508723356077,
+      "mean_abs_impulse_Ns": 0.5987468959329199,
+      "mean_A_excursion_m": 0.21559839945618728,
+      "mean_score_over_work": 0.0002844393223586691,
+      "privileged_scene_wins": 0
+    },
+    "sweep": {
+      "mean_min_pair_B_RMS_m": 0.00028038622096174297,
+      "minimum_min_pair_B_RMS_m": 3.430016249295116e-05,
+      "mean_abs_work_proxy_J": 0.2663405549600827,
+      "mean_abs_impulse_Ns": 0.7131515591566244,
+      "mean_A_excursion_m": 0.2976474143611264,
+      "mean_score_over_work": 0.0011252391913583665,
+      "privileged_scene_wins": 0
+    }
+  },
+  "fixed_best_action": "pulse",
+  "fixed_best_mean_score_m": 0.009672638645225542,
+  "privileged_scene_oracle_mean_score_m": 0.009672638645225542,
+  "privileged_adaptivity_headroom_fraction": 0.0,
+  "pairwise_best_action_counts": {
+    "independent_vs_rigid": {
+      "steady": 0,
+      "pulse": 24,
+      "reversal": 0,
+      "oscillation": 0,
+      "sweep": 0
+    },
+    "independent_vs_elastic": {
+      "steady": 0,
+      "pulse": 24,
+      "reversal": 0,
+      "oscillation": 0,
+      "sweep": 0
+    },
+    "independent_vs_deadzone": {
+      "steady": 0,
+      "pulse": 24,
+      "reversal": 0,
+      "oscillation": 0,
+      "sweep": 0
+    },
+    "independent_vs_nonlinear": {
+      "steady": 0,
+      "pulse": 24,
+      "reversal": 0,
+      "oscillation": 0,
+      "sweep": 0
+    },
+    "rigid_vs_elastic": {
+      "steady": 0,
+      "pulse": 24,
+      "reversal": 0,
+      "oscillation": 0,
+      "sweep": 0
+    },
+    "rigid_vs_deadzone": {
+      "steady": 0,
+      "pulse": 24,
+      "reversal": 0,
+      "oscillation": 0,
+      "sweep": 0
+    },
+    "rigid_vs_nonlinear": {
+      "steady": 0,
+      "pulse": 24,
+      "reversal": 0,
+      "oscillation": 0,
+      "sweep": 0
+    },
+    "elastic_vs_deadzone": {
+      "steady": 0,
+      "pulse": 24,
+      "reversal": 0,
+      "oscillation": 0,
+      "sweep": 0
+    },
+    "elastic_vs_nonlinear": {
+      "steady": 0,
+      "pulse": 24,
+      "reversal": 0,
+      "oscillation": 0,
+      "sweep": 0
+    },
+    "deadzone_vs_nonlinear": {
+      "steady": 0,
+      "pulse": 24,
+      "reversal": 0,
+      "oscillation": 0,
+      "sweep": 0
+    }
+  },
+  "notes": [
+    "Privileged offline counterfactual audit, NOT a learned policy.",
+    "Mechanism labels / all candidate outcomes are never agent inputs.",
+    "Budget equality refers to commanded acceleration absolute integral, NOT real work.",
+    "Score is B-trajectory RMS separation, NOT mutual information or classification accuracy.",
+    "This is a development/feasibility set, NOT the final confirmatory test."
+  ]
+}

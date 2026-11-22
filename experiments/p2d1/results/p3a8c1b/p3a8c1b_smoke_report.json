@@ -1,0 +1,248 @@
+{
+  "protocol": "P3-A8C1B independent direction replication",
+  "smoke": true,
+  "n_cal": 4,
+  "n_test": 2,
+  "cal_seed": 20380321,
+  "test_seed": 20380322,
+  "alpha_mid": 0.05,
+  "alpha_action": 0.025,
+  "primary_comparison": "Reverse-High vs High",
+  "secondary_action": "Biphasic-High",
+  "thresholds_m": {
+    "original": {
+      "mid": {
+        "independent": 0.005852489759799167,
+        "rigid": 0.008765379330758888,
+        "elastic": 0.007462346462237653,
+        "deadzone": 0.007855128298378299,
+        "cubic": 0.010143522317406952
+      },
+      "high": {
+        "independent": 0.006882809384818432,
+        "rigid": 0.007083663844636694,
+        "elastic": 0.006278544108289751,
+        "deadzone": 0.00898228298872022,
+        "cubic": 0.010530720335140948
+      },
+      "reverse_high": {
+        "independent": 0.0062537217756074934,
+        "rigid": 0.011763964492539301,
+        "elastic": 0.010829102266007501,
+        "deadzone": 0.010472357211343672,
+        "cubic": 0.008764997756776341
+      },
+      "biphasic_high": {
+        "independent": 0.0058450705371017675,
+        "rigid": 0.006487791061568539,
+        "elastic": 0.006405643461469267,
+        "deadzone": 0.007209724623939435,
+        "cubic": 0.012539460840710651
+      }
+    },
+    "above_original_range": {
+      "mid": {
+        "independent": 0.0056739101841466804,
+        "rigid": 0.007756974175063678,
+        "elastic": 0.0069977075901449535,
+        "deadzone": 0.006564432406274817,
+        "cubic": 0.01096412220091621
+      },
+      "high": {
+        "independent": 0.0060978153954225804,
+        "rigid": 0.009232787645673557,
+        "elastic": 0.01208926744833781,
+        "deadzone": 0.0062247819666197465,
+        "cubic": 0.013317028880209988
+      },
+      "reverse_high": {
+        "independent": 0.007260938687925367,
+        "rigid": 0.006568635589982958,
+        "elastic": 0.013559567127590101,
+        "deadzone": 0.008993532258948672,
+        "cubic": 0.009356041549056296
+      },
+      "biphasic_high": {
+        "independent": 0.006224311778055734,
+        "rigid": 0.007715414317417673,
+        "elastic": 0.012097242326878355,
+        "deadzone": 0.007807525936671122,
+        "cubic": 0.015856184974086446
+      }
+    }
+  },
+  "results": {
+    "original": {
+      "summary": {
+        "high": {
+          "known_correct": 2,
+          "known_wrong": 0,
+          "known_contains": 5,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "total_work_J": 75.43697066546196,
+          "per_mode_correct_PRIVATE": {
+            "independent": 0,
+            "rigid": 1,
+            "elastic": 0,
+            "deadzone": 1,
+            "nonlinear": 0
+          }
+        },
+        "reverse_high": {
+          "known_correct": 4,
+          "known_wrong": 0,
+          "known_contains": 8,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "total_work_J": 63.746208933527,
+          "per_mode_correct_PRIVATE": {
+            "independent": 0,
+            "rigid": 2,
+            "elastic": 0,
+            "deadzone": 2,
+            "nonlinear": 0
+          }
+        },
+        "biphasic_high": {
+          "known_correct": 3,
+          "known_wrong": 0,
+          "known_contains": 6,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "total_work_J": 54.425528170817344,
+          "per_mode_correct_PRIVATE": {
+            "independent": 0,
+            "rigid": 1,
+            "elastic": 0,
+            "deadzone": 1,
+            "nonlinear": 1
+          }
+        }
+      },
+      "paired": {
+        "reverse_only_correct": 2,
+        "high_only_correct": 0,
+        "reverse_only_unknown_empty": 0,
+        "high_only_unknown_empty": 0
+      },
+      "cluster_bootstrap": {
+        "correct_delta_95pct": [
+          2.0,
+          2.0
+        ],
+        "contains_delta_95pct": [
+          2.0,
+          4.0
+        ],
+        "unknown_empty_delta_95pct": [
+          0.0,
+          0.0
+        ],
+        "work_saving_fraction_95pct": [
+          0.13046138874434332,
+          0.17405019807371525
+        ],
+        "bootstrap_unit": "base_scene_id",
+        "replications": 10000,
+        "interpretation": "Exploratory clustered uncertainty; no real-system generalization guarantee"
+      }
+    },
+    "above_original_range": {
+      "summary": {
+        "high": {
+          "known_correct": 4,
+          "known_wrong": 1,
+          "known_contains": 5,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "total_work_J": 76.37170263950723,
+          "per_mode_correct_PRIVATE": {
+            "independent": 0,
+            "rigid": 1,
+            "elastic": 0,
+            "deadzone": 1,
+            "nonlinear": 2
+          }
+        },
+        "reverse_high": {
+          "known_correct": 2,
+          "known_wrong": 1,
+          "known_contains": 4,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "total_work_J": 63.92926302802189,
+          "per_mode_correct_PRIVATE": {
+            "independent": 0,
+            "rigid": 0,
+            "elastic": 1,
+            "deadzone": 0,
+            "nonlinear": 1
+          }
+        },
+        "biphasic_high": {
+          "known_correct": 3,
+          "known_wrong": 1,
+          "known_contains": 8,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "total_work_J": 53.73567691512772,
+          "per_mode_correct_PRIVATE": {
+            "independent": 0,
+            "rigid": 1,
+            "elastic": 0,
+            "deadzone": 0,
+            "nonlinear": 2
+          }
+        }
+      },
+      "paired": {
+        "reverse_only_correct": 1,
+        "high_only_correct": 3,
+        "reverse_only_unknown_empty": 0,
+        "high_only_unknown_empty": 0
+      },
+      "cluster_bootstrap": {
+        "correct_delta_95pct": [
+          -2.0,
+          -2.0
+        ],
+        "contains_delta_95pct": [
+          -2.0,
+          0.0
+        ],
+        "unknown_empty_delta_95pct": [
+          0.0,
+          0.0
+        ],
+        "work_saving_fraction_95pct": [
+          0.14742189461812427,
+          0.1762135066444409
+        ],
+        "bootstrap_unit": "base_scene_id",
+        "replications": 10000,
+        "interpretation": "Exploratory clustered uncertainty; no real-system generalization guarantee"
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_threshold_tuned": false,
+  "online_uses_truth": false,
+  "adaptive_action_policy": false,
+  "limitations": [
+    "Synthetic MuJoCo-only confirmation",
+    "Same base scenes across gap bands",
+    "Only one held-out unknown family",
+    "Counterfactual actions simulated offline",
+    "One selected action charged per baseline",
+    "Noise streams differ between action arms",
+    "Equal command L1 does not imply equal work",
+    "Actuator clipping requires separate audit",
+    "Calibration validity needs exchangeability",
+    "No joint adaptive-policy coverage claim"
+  ],
+  "source_sha256": {
+    "60_p3a7e1_action_family_pilot.py": "8d06decb3779cf4b8c22cf5e87a23ae4cd739a4161e6ab7f8eb1fb57461e8c14",
+    "68_p3a8c1_temporal_action_feasibility.py": "11d79d16b141ca65a94742b0377ab4cee7e9d5b9904105dbc8350988b3246a66"
+  }
+}

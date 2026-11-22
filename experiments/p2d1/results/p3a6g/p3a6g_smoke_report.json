@@ -1,0 +1,189 @@
+{
+  "protocol": "P3-A6G fresh structural validation",
+  "scene_seed": 20261213,
+  "noise_seed": 2026121301,
+  "smoke_excluded_from_full": true,
+  "base_scene_ids": [
+    0,
+    1
+  ],
+  "prediction": "B conditional on observed A",
+  "E4_accessed": false,
+  "thresholds_tuned": false,
+  "new_action_policy": false,
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700"
+  },
+  "summary": {
+    "original": {
+      "independent": {
+        "n": 2,
+        "early_to_strong_mm": 15.8739,
+        "weak_to_strong_mm": 6.0817,
+        "null_to_strong_mm": 5.7361,
+        "early_to_weak_mm": 11.2646,
+        "strong_to_weak_mm": 5.7759,
+        "strong_test_margin": {
+          "min_mm": -0.7584211790553188,
+          "median_mm": -0.3455699482758945,
+          "max_mm": 0.06728128250352988,
+          "positive_count": 1,
+          "over_1mm_count": 0
+        },
+        "weak_test_margin": {
+          "min_mm": -0.7246090629345354,
+          "median_mm": -0.3045746250834639,
+          "max_mm": 0.11545981276760761,
+          "positive_count": 1,
+          "over_1mm_count": 0
+        },
+        "weak_improves_strong_count": 1,
+        "strong_improves_weak_count": 2,
+        "converged_both": 2,
+        "weak_near_zero_coupling_count": 2
+      },
+      "deadzone": {
+        "n": 2,
+        "early_to_strong_mm": 48.6188,
+        "weak_to_strong_mm": 5.0333,
+        "null_to_strong_mm": 245.0093,
+        "early_to_weak_mm": 28.9137,
+        "strong_to_weak_mm": 5.7296,
+        "strong_test_margin": {
+          "min_mm": 189.65878276530927,
+          "median_mm": 239.9759937749696,
+          "max_mm": 290.2932047846299,
+          "positive_count": 2,
+          "over_1mm_count": 2
+        },
+        "weak_test_margin": {
+          "min_mm": 113.23175699601966,
+          "median_mm": 147.5745085954292,
+          "max_mm": 181.91726019483875,
+          "positive_count": 2,
+          "over_1mm_count": 2
+        },
+        "weak_improves_strong_count": 2,
+        "strong_improves_weak_count": 2,
+        "converged_both": 2
+      }
+    },
+    "high_in_range": {
+      "independent": {
+        "n": 2,
+        "early_to_strong_mm": 15.8739,
+        "weak_to_strong_mm": 6.0817,
+        "null_to_strong_mm": 5.7361,
+        "early_to_weak_mm": 11.2646,
+        "strong_to_weak_mm": 5.7759,
+        "strong_test_margin": {
+          "min_mm": -0.7584211790553188,
+          "median_mm": -0.3455699482758945,
+          "max_mm": 0.06728128250352988,
+          "positive_count": 1,
+          "over_1mm_count": 0
+        },
+        "weak_test_margin": {
+          "min_mm": -0.7246090629345354,
+          "median_mm": -0.3045746250834639,
+          "max_mm": 0.11545981276760761,
+          "positive_count": 1,
+          "over_1mm_count": 0
+        },
+        "weak_improves_strong_count": 1,
+        "strong_improves_weak_count": 2,
+        "converged_both": 2,
+        "weak_near_zero_coupling_count": 2
+      },
+      "deadzone": {
+        "n": 2,
+        "early_to_strong_mm": 46.6846,
+        "weak_to_strong_mm": 5.7387,
+        "null_to_strong_mm": 188.2303,
+        "early_to_weak_mm": 26.9154,
+        "strong_to_weak_mm": 6.5011,
+        "strong_test_margin": {
+          "min_mm": 147.55191451813133,
+          "median_mm": 182.49161828083132,
+          "max_mm": 217.4313220435313,
+          "positive_count": 2,
+          "over_1mm_count": 2
+        },
+        "weak_test_margin": {
+          "min_mm": 74.76141777676092,
+          "median_mm": 94.52357478699501,
+          "max_mm": 114.2857317972291,
+          "positive_count": 2,
+          "over_1mm_count": 2
+        },
+        "weak_improves_strong_count": 1,
+        "strong_improves_weak_count": 1,
+        "converged_both": 2
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "n": 2,
+        "early_to_strong_mm": 15.8739,
+        "weak_to_strong_mm": 6.0817,
+        "null_to_strong_mm": 5.7361,
+        "early_to_weak_mm": 11.2646,
+        "strong_to_weak_mm": 5.7759,
+        "strong_test_margin": {
+          "min_mm": -0.7584211790553188,
+          "median_mm": -0.3455699482758945,
+          "max_mm": 0.06728128250352988,
+          "positive_count": 1,
+          "over_1mm_count": 0
+        },
+        "weak_test_margin": {
+          "min_mm": -0.7246090629345354,
+          "median_mm": -0.3045746250834639,
+          "max_mm": 0.11545981276760761,
+          "positive_count": 1,
+          "over_1mm_count": 0
+        },
+        "weak_improves_strong_count": 1,
+        "strong_improves_weak_count": 2,
+        "converged_both": 2,
+        "weak_near_zero_coupling_count": 2
+      },
+      "deadzone": {
+        "n": 2,
+        "early_to_strong_mm": 142.8212,
+        "weak_to_strong_mm": 7.8908,
+        "null_to_strong_mm": 149.0853,
+        "early_to_weak_mm": 65.4836,
+        "strong_to_weak_mm": 7.3337,
+        "strong_test_margin": {
+          "min_mm": 126.67314392926549,
+          "median_mm": 141.19447989892814,
+          "max_mm": 155.7158158685908,
+          "positive_count": 2,
+          "over_1mm_count": 2
+        },
+        "weak_test_margin": {
+          "min_mm": 58.85620187607189,
+          "median_mm": 60.5398828113711,
+          "max_mm": 62.223563746670315,
+          "positive_count": 2,
+          "over_1mm_count": 2
+        },
+        "weak_improves_strong_count": 2,
+        "strong_improves_weak_count": 2,
+        "converged_both": 2
+      }
+    }
+  },
+  "limitations": [
+    "New seed but same simulation generator",
+    "Only Independent and Deadzone evaluated",
+    "Strong is heldout from Weak-based fitting",
+    "Reverse Weak test is heldout from Strong fitting",
+    "Both A trajectories are observed at test time",
+    "No online action-selection policy",
+    "No E4 results are used",
+    "Prediction margins are descriptive, not calibrated"
+  ]
+}

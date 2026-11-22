@@ -1,0 +1,18 @@
+{
+  "val": {
+    "episodes": 100,
+    "passive_majority_accuracy": 0.5,
+    "active_oracle_diagnostic_accuracy": 1.0,
+    "minimum_coupled_effect": 0.7829912788127127,
+    "maximum_independent_effect": 0.0,
+    "important": "Active diagnostic has privileged matched passive rollout; not a learned agent."
+  },
+  "test": {
+    "episodes": 200,
+    "passive_majority_accuracy": 0.5,
+    "active_oracle_diagnostic_accuracy": 1.0,
+    "minimum_coupled_effect": 0.8080231416802779,
+    "maximum_independent_effect": 0.0,
+    "important": "Active diagnostic has privileged matched passive rollout; not a learned agent."
+  }
+}

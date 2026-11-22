@@ -1,0 +1,30 @@
+{
+  "protocol": "P4-B2B independent out-of-cohort smoke (not effect estimate)",
+  "smoke": true,
+  "source_sha256": {
+    "P105": "603c616a0621ea6bfec0be5814585cea17156890dcd9c7cd2e16e811a0fced2a",
+    "R105": "bd745ed771fdfe00d3a410aa67fc129f2e9c620ddff7b0ed959ed446a3348c41",
+    "A105": "bb4db999462c3df6e489233b9a597a09a4e3e8f40dc91b335de73e941002c25d",
+    "R103": "58fc41efd0b7b669ffeaa04590625ac9fc367757c346ab4fae5740e09e8566b2",
+    "M103": "dfa0229ffddf8ae9e075bfb74774ba6b8cec62a9070352eccea7028de5b31935",
+    "R99": "a9d4656a56db560de9261c9667918a1b326c87b98ebc51979fca35e86df58e26",
+    "R98": "3e4123cecfbf0d97950cd1a4035ecf4160db94da83fa3b2f7bfb965d974a36b2",
+    "S98": "a066a80bc24a71ed9a2718d7096b583156a637db575a4bea15925611e12104e8",
+    "SELF": "4c11b297370fc05e70d470ee98b1b66b315940444fc5e3bca69ef0438b149e72"
+  },
+  "test_conditions": 1,
+  "interface": {
+    "smoke_shapes": {
+      "training_position_samples": 204,
+      "heldout_probe_B": 51,
+      "heldout_probe_A": 101
+    },
+    "finite_score_checks": 6,
+    "fit_availability": {
+      "EQERR_SG": 6,
+      "TRF_OUT": 6
+    }
+  },
+  "new_scientific_results": 0,
+  "E4_accessed": false
+}

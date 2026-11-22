@@ -1,0 +1,233 @@
+{
+  "protocol": "P4-G1C frozen G1B consistency and limitations audit",
+  "status": "PASS_WITH_SCIENTIFIC_LIMITATIONS",
+  "n_cases": 384,
+  "n_generator_case_pairs": 768,
+  "n_base_scenes": 24,
+  "n_stats_cells": 84,
+  "source_files_verified": {
+    "SELF": "99_p4g1b_independent_generator_identification.py",
+    "P16": "16_p2d1b_probe_diversity.py",
+    "P22": "22_p3a1b_structural_revision.py",
+    "P77": "77_p4m2b2a_matched_domain_fit.py",
+    "P92": "92_p4s1b_full_solver_budget_audit.py",
+    "P97": "97_p4b1b_fresh_classical_baseline_confirmation_v2.py",
+    "P98": "98_p4g1a_independent_physics_generator_feasibility.py",
+    "R97": "p4b1b_v2_fresh_report.json",
+    "R98": "p4g1a_feasibility_report.json",
+    "R98_SMOKE": "p4g1a_smoke_report.json"
+  },
+  "n_score_cells_rechecked": 32242,
+  "checkpoint_scene_count": 24,
+  "primary_contrasts": {
+    "IDEAL_ODE": {
+      "n": 96,
+      "half_correct": 79,
+      "full_correct": 83,
+      "net": 4,
+      "effect": 0.041666666666666664
+    },
+    "SHIFTED_ODE": {
+      "n": 96,
+      "half_correct": 80,
+      "full_correct": 85,
+      "net": 5,
+      "effect": 0.052083333333333336
+    },
+    "SHIFT_MINUS_IDEAL_DD": {
+      "n": 96,
+      "net": 1,
+      "effect": 0.010416666666666666
+    }
+  },
+  "primary_paired_status_recomputed": {
+    "IDEAL_ODE": {
+      "both_correct": 68,
+      "corrected_by_full": 15,
+      "harmed_by_full": 11,
+      "both_wrong": 2
+    },
+    "SHIFTED_ODE": {
+      "both_correct": 70,
+      "corrected_by_full": 15,
+      "harmed_by_full": 10,
+      "both_wrong": 1
+    }
+  },
+  "primary_scene_cluster_CI95_recomputed": {
+    "IDEAL_ODE": [
+      -0.052083333333333336,
+      0.13541666666666666
+    ],
+    "SHIFTED_ODE": [
+      -0.052083333333333336,
+      0.15625
+    ],
+    "SHIFT_MINUS_IDEAL_DD": [
+      -0.041666666666666664,
+      0.07291666666666667
+    ]
+  },
+  "matched5_WOO_mode_accuracy_counts_posthoc": {
+    "IDEAL_ODE": {
+      "elastic": {
+        "n": 96,
+        "MID_PLUS_HALF": 62,
+        "MID_PLUS_FULL": 62,
+        "TRAIN_PEM": 62,
+        "PROFILE_SIGMA_BIC": 68
+      },
+      "deadzone": {
+        "n": 144,
+        "MID_PLUS_HALF": 136,
+        "MID_PLUS_FULL": 141,
+        "TRAIN_PEM": 141,
+        "PROFILE_SIGMA_BIC": 141
+      },
+      "nonlinear": {
+        "n": 144,
+        "MID_PLUS_HALF": 118,
+        "MID_PLUS_FULL": 128,
+        "TRAIN_PEM": 121,
+        "PROFILE_SIGMA_BIC": 120
+      }
+    },
+    "SHIFTED_ODE": {
+      "elastic": {
+        "n": 96,
+        "MID_PLUS_HALF": 34,
+        "MID_PLUS_FULL": 42,
+        "TRAIN_PEM": 27,
+        "PROFILE_SIGMA_BIC": 30
+      },
+      "deadzone": {
+        "n": 144,
+        "MID_PLUS_HALF": 140,
+        "MID_PLUS_FULL": 143,
+        "TRAIN_PEM": 143,
+        "PROFILE_SIGMA_BIC": 143
+      },
+      "nonlinear": {
+        "n": 144,
+        "MID_PLUS_HALF": 118,
+        "MID_PLUS_FULL": 128,
+        "TRAIN_PEM": 133,
+        "PROFILE_SIGMA_BIC": 131
+      }
+    }
+  },
+  "full_ode_shift_minus_ideal_by_mode_posthoc": {
+    "elastic": -20,
+    "deadzone": 2,
+    "nonlinear": 0
+  },
+  "matched5_WOO_mid_plus_full_total": {
+    "IDEAL_ODE": {
+      "correct": 331,
+      "available": 384,
+      "total": 384
+    },
+    "SHIFTED_ODE": {
+      "correct": 313,
+      "available": 384,
+      "total": 384
+    }
+  },
+  "nested_violations": {
+    "IDEAL_ODE": {
+      "elastic": 0,
+      "deadzone": 31,
+      "cubic": 0
+    },
+    "SHIFTED_ODE": {
+      "elastic": 0,
+      "deadzone": 25,
+      "cubic": 0
+    }
+  },
+  "function_evaluations": {
+    "IDEAL_ODE": {
+      "wide": {
+        "original": 244182,
+        "extra": 365198
+      },
+      "outer_box": {
+        "original": 133986,
+        "extra": 204613
+      }
+    },
+    "SHIFTED_ODE": {
+      "wide": {
+        "original": 228661,
+        "extra": 345469
+      },
+      "outer_box": {
+        "original": 134465,
+        "extra": 203152
+      }
+    }
+  },
+  "cross_arm_shift_exploratory": {
+    "elastic": {
+      "n": 96,
+      "net_shift_minus_ideal": -20,
+      "pp_shift_minus_ideal": -20.833333333333332,
+      "scene_cluster_bootstrap_CI95_pp_posthoc": [
+        -28.125,
+        -13.541666666666666
+      ]
+    },
+    "deadzone": {
+      "n": 144,
+      "net_shift_minus_ideal": 2,
+      "pp_shift_minus_ideal": 1.3888888888888888,
+      "scene_cluster_bootstrap_CI95_pp_posthoc": [
+        0.0,
+        3.472222222222222
+      ]
+    },
+    "nonlinear": {
+      "n": 144,
+      "net_shift_minus_ideal": 0,
+      "pp_shift_minus_ideal": 0.0,
+      "scene_cluster_bootstrap_CI95_pp_posthoc": [
+        -2.7777777777777777,
+        2.7777777777777777
+      ]
+    },
+    "all": {
+      "n": 384,
+      "net_shift_minus_ideal": -18,
+      "pp_shift_minus_ideal": -4.6875,
+      "scene_cluster_bootstrap_CI95_pp_posthoc": [
+        -6.510416666666667,
+        -3.125
+      ]
+    }
+  },
+  "scientific_interpretation_gates": {
+    "p4g1b_numerical_reconstruction": "PASS",
+    "p4g1b_primary_shifted_effect_confirmed_positive": "NOT ESTABLISHED (95% CI includes zero)",
+    "p4g1b_primary_ideal_effect_confirmed_positive": "NOT ESTABLISHED (95% CI includes zero)",
+    "generalization_claim": "conditional ODE structural transfer with re-fitting; not two independent engines or hardware",
+    "solver_global_optimum": "NOT ESTABLISHED; deadzone nested violations present",
+    "E4_sealed": true
+  },
+  "limitations": [
+    "IDEAL and SHIFTED share the same RK4 generator; not separate engines or hardware",
+    "Inference parameters are re-fitted from four ODE training actions: NOT zero-shot",
+    "MuJoCo has its own integrator and PD/actuator implementation; input-level force/pulse parity is not numerical trajectory parity",
+    "SHIFTED generator adds ground drag and actuator lag, not in deployed candidates; this is model mismatch",
+    "Candidate predicts B conditional on observed noisy A; does not reproduce unobserved A actuator dynamics",
+    "Oracle true-parameter diagnostics are post-decision only, not a competing operational estimator",
+    "FROZEN2 and MATCHED5 count starts; actual function evaluations differ by arm/domain",
+    "Original SLSQP local minima and nested-domain gaps remain possible",
+    "Same-generator fresh seeds and separate ODE physics do not prove hardware generalization",
+    "Positive dose effect need not imply superlinear or information-theoretic gain",
+    "Smoke has no inferential value; all primary claims use 24 scene-cluster units",
+    "All case denominators retain abstentions as errors; no E4 accessed"
+  ],
+  "no_new_fits": true,
+  "no_new_simulations": true,
+  "E4_accessed": false
+}

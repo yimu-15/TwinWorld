@@ -1,0 +1,272 @@
+{
+  "protocol": "P3-A8B2 forecast-to-decision transfer",
+  "smoke": true,
+  "n_base_scenes": 2,
+  "test_seed": 20371222,
+  "noise_seed": 2027222201,
+  "calibration_reused_from": "P3-A8B0 formal report",
+  "same_model_fits": true,
+  "same_candidate_thresholds": true,
+  "same_disagreement_score": true,
+  "online_A_predictor": "Five historical actions; affine gain-response",
+  "summary": {
+    "original": {
+      "policies": {
+        "mid_only": {
+          "known_correct_singleton": 0,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 10,
+          "unknown_empty": 0,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "None": 12
+          },
+          "cost_J": 40.68813435574456,
+          "saving_vs_always_high": 0.4364758906510748
+        },
+        "always_reverse": {
+          "known_correct_singleton": 0,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 10,
+          "unknown_empty": 0,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "reverse": 12
+          },
+          "cost_J": 50.37767806736234,
+          "saving_vs_always_high": 0.302277270425668
+        },
+        "always_high": {
+          "known_correct_singleton": 4,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 10,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "high": 12
+          },
+          "cost_J": 72.20300548055364,
+          "saving_vs_always_high": 0.0
+        },
+        "random_action": {
+          "known_correct_singleton": 0,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 10,
+          "unknown_empty": 0,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "reverse": 12
+          },
+          "cost_J": 50.37767806736234,
+          "saving_vs_always_high": 0.302277270425668
+        },
+        "old_planner": {
+          "known_correct_singleton": 4,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 10,
+          "unknown_empty": 1,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "high": 10,
+            "reverse": 2
+          },
+          "cost_J": 70.31580209594073,
+          "saving_vs_always_high": 0.026137463005209603
+        },
+        "affine_planner": {
+          "known_correct_singleton": 4,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 10,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "high": 11,
+            "reverse": 1
+          },
+          "cost_J": 71.36795354319679,
+          "saving_vs_always_high": 0.011565334874900121
+        },
+        "affine_cost_planner": {
+          "known_correct_singleton": 4,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 10,
+          "unknown_empty": 1,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "high": 9,
+            "reverse": 3
+          },
+          "cost_J": 68.27873512880852,
+          "saving_vs_always_high": 0.05435051249773863
+        }
+      },
+      "eligible_action_cases": 12,
+      "old_affine_action_changes": 1,
+      "actual_A_ranking_agreement_PRIVATE": {
+        "old": {
+          "match_count": 11,
+          "n": 12
+        },
+        "affine": {
+          "match_count": 12,
+          "n": 12
+        }
+      },
+      "A_forecast_diagnostic_PRIVATE": {
+        "reverse": {
+          "n": 12,
+          "median_mm": 6.36105994060681,
+          "p90_mm": 13.443138914766235
+        },
+        "high": {
+          "n": 12,
+          "median_mm": 4.061142946285776,
+          "p90_mm": 6.067197988879336
+        }
+      }
+    },
+    "above_original_range": {
+      "policies": {
+        "mid_only": {
+          "known_correct_singleton": 3,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 10,
+          "unknown_empty": 0,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "None": 12
+          },
+          "cost_J": 39.806552205096374,
+          "saving_vs_always_high": 0.44009398872230227
+        },
+        "always_reverse": {
+          "known_correct_singleton": 4,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 10,
+          "unknown_empty": 0,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "reverse": 12
+          },
+          "cost_J": 49.29607494992906,
+          "saving_vs_always_high": 0.30661744944272074
+        },
+        "always_high": {
+          "known_correct_singleton": 6,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 9,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "high": 12
+          },
+          "cost_J": 71.0950613197711,
+          "saving_vs_always_high": 0.0
+        },
+        "random_action": {
+          "known_correct_singleton": 4,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 9,
+          "unknown_empty": 1,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "reverse": 6,
+            "high": 6
+          },
+          "cost_J": 59.43029743420147,
+          "saving_vs_always_high": 0.16407277339707046
+        },
+        "old_planner": {
+          "known_correct_singleton": 6,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 9,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "reverse": 1,
+            "high": 11
+          },
+          "cost_J": 70.27525097179293,
+          "saving_vs_always_high": 0.011531185609234324
+        },
+        "affine_planner": {
+          "known_correct_singleton": 6,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 9,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "high": 12
+          },
+          "cost_J": 71.0950613197711,
+          "saving_vs_always_high": 0.0
+        },
+        "affine_cost_planner": {
+          "known_correct_singleton": 5,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 9,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "high": 10,
+            "reverse": 2
+          },
+          "cost_J": 67.34154660894146,
+          "saving_vs_always_high": 0.05279571662435319
+        }
+      },
+      "eligible_action_cases": 12,
+      "old_affine_action_changes": 1,
+      "actual_A_ranking_agreement_PRIVATE": {
+        "old": {
+          "match_count": 11,
+          "n": 12
+        },
+        "affine": {
+          "match_count": 12,
+          "n": 12
+        }
+      },
+      "A_forecast_diagnostic_PRIVATE": {
+        "reverse": {
+          "n": 12,
+          "median_mm": 9.07263589912078,
+          "p90_mm": 15.328759638254102
+        },
+        "high": {
+          "n": 12,
+          "median_mm": 6.34750579828099,
+          "p90_mm": 10.121258337895842
+        }
+      }
+    }
+  },
+  "online_uses_future_A": false,
+  "online_uses_future_B": false,
+  "online_uses_truth": false,
+  "actual_A_ranking_is_private": true,
+  "E4_accessed": false,
+  "test_tuning": false,
+  "limitations": [
+    "One fixed pulse action family",
+    "Only Reverse and High choices",
+    "Five historical probes already paid",
+    "Future A prediction is approximate",
+    "B initial state uses Weak probe",
+    "Point estimates for structural laws",
+    "No parametric uncertainty propagation",
+    "Actual-A score ranking is not a structural identification oracle",
+    "Counterfactual actions simulated",
+    "Only selected actions charged",
+    "Mechanical work is a proxy",
+    "One held-out Saturating family",
+    "Gap bands share base physics",
+    "MuJoCo positions only; no RGB",
+    "No real-robot validation"
+  ],
+  "source_sha256": {
+    "60_p3a7e1_action_family_pilot.py": "8d06decb3779cf4b8c22cf5e87a23ae4cd739a4161e6ab7f8eb1fb57461e8c14",
+    "64_p3a8b0_preaction_disagreement_pilot.py": "2a3c7ba0e1f18c605a38b746960b9705fc2a7acd1c8f73506787ea20675b1e1d",
+    "65_p3a8b1_observable_A_response_audit.py": "c882fe225e14d6705503993d62ab1851826a79c5e4e1a57392fda826b72b9698"
+  }
+}

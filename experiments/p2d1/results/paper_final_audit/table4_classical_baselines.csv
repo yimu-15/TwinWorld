@@ -1,0 +1,4 @@
+Method,Correct_Total,Accuracy,Paired_Difference,Effect,CI95_low,CI95_high,Evaluation_Unit
+EQERR_SG,313/384,0.8151,EQERR_minus_SLSQP=-15/384,-0.0391,-0.0704,-0.0052,384 cases / 24 scene clusters
+TRF_OUT,328/384,0.8542,TRF_minus_SLSQP=0/384,0.0000,0.0000,0.0000,384 cases / 24 scene clusters
+SLSQP_MATCHED5_REFERENCE,328/384,0.8542,reference,,, ,384 cases / 24 scene clusters

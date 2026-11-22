@@ -1,0 +1,469 @@
+{
+  "protocol": "P3-A2B E1/E2-only evidence vs nonprivileged E3 action selection",
+  "development_only": true,
+  "seed": 20261121,
+  "scene_counts": {
+    "calibration": 12,
+    "development": 18,
+    "mass_shift": 18
+  },
+  "policy": "Strong E3 iff known_BIC - edit_BIC exceeds known-only calibration q95; otherwise Weak E3.",
+  "calibration_known_only": {
+    "bic_margin_cutoff": 14.923734191154587,
+    "E3_thresholds": {
+      "weak_pulse_1p5": {
+        "known_q95_m": 0.011407993621043482,
+        "edit_q95_m": 0.015609260295368663,
+        "gain_positive_q95_m": 0.0010857642096187277
+      },
+      "strong_pulse_2p25": {
+        "known_q95_m": 0.014362666947548376,
+        "edit_q95_m": 0.020367337149961744,
+        "gain_positive_q95_m": 0.0005405735269901064
+      }
+    }
+  },
+  "early_BIC_unknown_AUROC_vs_ID_known": 0.9963991769547325,
+  "early_BIC_unknown_AUROC_vs_mass_shift_known": 0.9979423868312757,
+  "development": {
+    "early_only": {
+      "actions": {
+        "none": 90
+      },
+      "decisions": {
+        "keep": 50,
+        "edit": 40
+      },
+      "mean_E3_work_proxy_J": 0.0,
+      "mean_E3_impulse_Ns": 0.0,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 7.876367490678263,
+        "e4_sweep_2p25": 6.328224707408812
+      },
+      "known_false_edit": {
+        "mean": 0.09259259259259259,
+        "scene_bootstrap_95_ci": [
+          0.037037037037037035,
+          0.16666666666666666
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "unknown_correct_edit": {
+        "mean": 0.9722222222222222,
+        "scene_bootstrap_95_ci": [
+          0.9166666666666666,
+          1.0
+        ],
+        "scenes": 18,
+        "episodes": 36
+      },
+      "unknown_wrong_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 18,
+        "episodes": 36
+      }
+    },
+    "fixed_weak": {
+      "actions": {
+        "weak_pulse_1p5": 90
+      },
+      "decisions": {
+        "keep": 63,
+        "edit": 26,
+        "inconclusive": 1
+      },
+      "mean_E3_work_proxy_J": 0.9367641627174533,
+      "mean_E3_impulse_Ns": 1.5701297172998188,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 11.55759245148867,
+        "e4_sweep_2p25": 6.992523199645077
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "unknown_correct_edit": {
+        "mean": 0.7222222222222222,
+        "scene_bootstrap_95_ci": [
+          0.5555555555555556,
+          0.8611111111111112
+        ],
+        "scenes": 18,
+        "episodes": 36
+      },
+      "unknown_wrong_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 18,
+        "episodes": 36
+      }
+    },
+    "fixed_strong": {
+      "actions": {
+        "strong_pulse_2p25": 90
+      },
+      "decisions": {
+        "keep": 54,
+        "edit": 34,
+        "inconclusive": 2
+      },
+      "mean_E3_work_proxy_J": 1.9379412356536023,
+      "mean_E3_impulse_Ns": 2.3908506233176343,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 8.58979954818008,
+        "e4_sweep_2p25": 6.719776918943805
+      },
+      "known_false_edit": {
+        "mean": 0.05555555555555555,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.1111111111111111
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "unknown_correct_edit": {
+        "mean": 0.8611111111111112,
+        "scene_bootstrap_95_ci": [
+          0.75,
+          0.9722222222222222
+        ],
+        "scenes": 18,
+        "episodes": 36
+      },
+      "unknown_wrong_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 18,
+        "episodes": 36
+      }
+    },
+    "random50": {
+      "actions": {
+        "weak_pulse_1p5": 40,
+        "strong_pulse_2p25": 50
+      },
+      "decisions": {
+        "keep": 55,
+        "edit": 33,
+        "inconclusive": 2
+      },
+      "mean_E3_work_proxy_J": 1.4932917245297264,
+      "mean_E3_impulse_Ns": 2.026572164005488,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 10.029725215473821,
+        "e4_sweep_2p25": 6.648111872586119
+      },
+      "known_false_edit": {
+        "mean": 0.05555555555555555,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.1111111111111111
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "unknown_correct_edit": {
+        "mean": 0.8333333333333334,
+        "scene_bootstrap_95_ci": [
+          0.6944444444444444,
+          0.9444444444444444
+        ],
+        "scenes": 18,
+        "episodes": 36
+      },
+      "unknown_wrong_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 18,
+        "episodes": 36
+      }
+    },
+    "bic_adaptive": {
+      "actions": {
+        "weak_pulse_1p5": 50,
+        "strong_pulse_2p25": 40
+      },
+      "decisions": {
+        "keep": 53,
+        "edit": 34,
+        "inconclusive": 3
+      },
+      "mean_E3_work_proxy_J": 1.50620461391217,
+      "mean_E3_impulse_Ns": 2.0068829305847533,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 8.506122860819817,
+        "e4_sweep_2p25": 6.726916575671486
+      },
+      "known_false_edit": {
+        "mean": 0.037037037037037035,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.09259259259259259
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "unknown_correct_edit": {
+        "mean": 0.8888888888888888,
+        "scene_bootstrap_95_ci": [
+          0.8055555555555556,
+          0.9722222222222222
+        ],
+        "scenes": 18,
+        "episodes": 36
+      },
+      "unknown_wrong_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 18,
+        "episodes": 36
+      },
+      "paired_E4_mean_delta_mm_vs_early_only": {
+        "mean": 0.5142236192021136,
+        "scene_bootstrap_95_ci": [
+          -0.1326260058077653,
+          1.354715154097737
+        ],
+        "scenes": 18,
+        "episodes": 90
+      },
+      "paired_E4_mean_delta_mm_vs_fixed_weak": {
+        "mean": -1.6585381073212229,
+        "scene_bootstrap_95_ci": [
+          -3.3686071245835176,
+          0.05589627592521381
+        ],
+        "scenes": 18,
+        "episodes": 90
+      },
+      "paired_E4_mean_delta_mm_vs_fixed_strong": {
+        "mean": -0.03826851531629151,
+        "scene_bootstrap_95_ci": [
+          -0.14229329487247355,
+          0.02748774892359902
+        ],
+        "scenes": 18,
+        "episodes": 90
+      },
+      "paired_E4_mean_delta_mm_vs_random50": {
+        "mean": -0.7223988257843186,
+        "scene_bootstrap_95_ci": [
+          -2.0228192255329116,
+          0.35561392948032317
+        ],
+        "scenes": 18,
+        "episodes": 90
+      }
+    }
+  },
+  "mass_shift": {
+    "early_only": {
+      "actions": {
+        "none": 54
+      },
+      "decisions": {
+        "keep": 52,
+        "edit": 2
+      },
+      "mean_E3_work_proxy_J": 0.0,
+      "mean_E3_impulse_Ns": 0.0,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 6.831153540278166,
+        "e4_sweep_2p25": 6.425479197086677
+      },
+      "known_false_edit": {
+        "mean": 0.037037037037037035,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.09259259259259259
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "unknown_correct_edit": null,
+      "unknown_wrong_edit": null
+    },
+    "fixed_weak": {
+      "actions": {
+        "weak_pulse_1p5": 54
+      },
+      "decisions": {
+        "keep": 54
+      },
+      "mean_E3_work_proxy_J": 1.355842456667193,
+      "mean_E3_impulse_Ns": 2.446531180237807,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 6.951178762178383,
+        "e4_sweep_2p25": 6.419643673345258
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "unknown_correct_edit": null,
+      "unknown_wrong_edit": null
+    },
+    "fixed_strong": {
+      "actions": {
+        "strong_pulse_2p25": 54
+      },
+      "decisions": {
+        "keep": 52,
+        "edit": 2
+      },
+      "mean_E3_work_proxy_J": 2.7727382425508247,
+      "mean_E3_impulse_Ns": 3.669609681387214,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 6.831153540278166,
+        "e4_sweep_2p25": 6.425479197086677
+      },
+      "known_false_edit": {
+        "mean": 0.037037037037037035,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.09259259259259259
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "unknown_correct_edit": null,
+      "unknown_wrong_edit": null
+    },
+    "random50": {
+      "actions": {
+        "strong_pulse_2p25": 33,
+        "weak_pulse_1p5": 21
+      },
+      "decisions": {
+        "keep": 54
+      },
+      "mean_E3_work_proxy_J": 2.2707710479297862,
+      "mean_E3_impulse_Ns": 3.232812046997696,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 6.951178762178383,
+        "e4_sweep_2p25": 6.419643673345258
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "unknown_correct_edit": null,
+      "unknown_wrong_edit": null
+    },
+    "bic_adaptive": {
+      "actions": {
+        "weak_pulse_1p5": 52,
+        "strong_pulse_2p25": 2
+      },
+      "decisions": {
+        "keep": 52,
+        "edit": 2
+      },
+      "mean_E3_work_proxy_J": 1.42842078241918,
+      "mean_E3_impulse_Ns": 2.5014031970522974,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 6.831153540278166,
+        "e4_sweep_2p25": 6.425479197086677
+      },
+      "known_false_edit": {
+        "mean": 0.037037037037037035,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.09259259259259259
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "unknown_correct_edit": null,
+      "unknown_wrong_edit": null,
+      "paired_E4_mean_delta_mm_vs_early_only": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "paired_E4_mean_delta_mm_vs_fixed_weak": {
+        "mean": -0.057094849079398435,
+        "scene_bootstrap_95_ci": [
+          -0.1775488322954613,
+          0.006264285057266
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "paired_E4_mean_delta_mm_vs_fixed_strong": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 18,
+        "episodes": 54
+      },
+      "paired_E4_mean_delta_mm_vs_random50": {
+        "mean": -0.057094849079398435,
+        "scene_bootstrap_95_ci": [
+          -0.1775488322954613,
+          0.006264285057266
+        ],
+        "scenes": 18,
+        "episodes": 54
+      }
+    }
+  },
+  "physics": {
+    "max_passive_gap_m": 0.0,
+    "max_A_mode_gap_m": 0.01027076539363142
+  },
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "24_p3a2a_gate_and_excitation.py": "20433fc4bc954edf2bd1272ef65dc0ea9fa2db007397a6b7598a0ec20e11405d"
+  },
+  "notes": [
+    "The action chooser does not access true mechanisms or future observations.",
+    "Alternative E3 outcomes are generated offline only for paired evaluation.",
+    "Early-only is a no-E3 baseline.",
+    "Random50 is not necessarily work-budget matched.",
+    "BIC is a heuristic with temporally correlated residuals.",
+    "E4 B predictions are conditioned on observed E4 A trajectories.",
+    "Candidate structural edits are manually specified and include the tested unknown mechanisms.",
+    "This is a development experiment, not a final confirmatory test."
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "protocol": "P4-M2D2A candidate-ranking mechanism audit",
+  "smoke": true,
+  "n_cases": 16,
+  "overall_interaction": 0.125,
+  "mode_contributions_PRIVATE": {
+    "elastic": {
+      "n": 4,
+      "mid_difference_cases": 1,
+      "joint_difference_cases": 0,
+      "interaction_contribution_cases": -1
+    },
+    "deadzone": {
+      "n": 6,
+      "mid_difference_cases": 0,
+      "joint_difference_cases": 0,
+      "interaction_contribution_cases": 0
+    },
+    "nonlinear": {
+      "n": 6,
+      "mid_difference_cases": -3,
+      "joint_difference_cases": 0,
+      "interaction_contribution_cases": 3
+    }
+  },
+  "elastic_cubic_margin_PRIVATE": {
+    "elastic_M2": {
+      "WOO": {
+        "MID": {
+          "median_mm": 1.5110632519709624,
+          "q25_mm": 0.37868602283727215,
+          "q75_mm": 2.6434404811046526,
+          "cubic_favored": 1,
+          "elastic_favored": 1
+        },
+        "HIGH_ONLY": {
+          "median_mm": -1.847245582009537,
+          "q25_mm": -4.23911142293364,
+          "q75_mm": 0.5446202589145663,
+          "cubic_favored": 1,
+          "elastic_favored": 1
+        },
+        "MID_PLUS_HIGH": {
+          "median_mm": -0.7723408280769721,
+          "q25_mm": -1.7519137502096704,
+          "q75_mm": 0.20723209405572618,
+          "cubic_favored": 1,
+          "elastic_favored": 1
+        }
+      },
+      "OOO": {
+        "MID": {
+          "median_mm": 2.4059714044829015,
+          "q25_mm": 2.157781853946158,
+          "q75_mm": 2.6541609550196448,
+          "cubic_favored": 2,
+          "elastic_favored": 0
+        },
+        "HIGH_ONLY": {
+          "median_mm": 1.87568552422551,
+          "q25_mm": -1.5393174570794113,
+          "q75_mm": 5.290688505530431,
+          "cubic_favored": 1,
+          "elastic_favored": 1
+        },
+        "MID_PLUS_HIGH": {
+          "median_mm": 1.7498535645154862,
+          "q25_mm": -0.1942877884651557,
+          "q75_mm": 3.693994917496128,
+          "cubic_favored": 1,
+          "elastic_favored": 1
+        }
+      }
+    },
+    "nonlinear_M2": {
+      "WOO": {
+        "MID": {
+          "median_mm": -1.957102779121851,
+          "q25_mm": -2.6699574898678504,
+          "q75_mm": -1.4104752162201517,
+          "cubic_favored": 0,
+          "elastic_favored": 4
+        },
+        "HIGH_ONLY": {
+          "median_mm": 24.44400799960704,
+          "q25_mm": 10.220727163993587,
+          "q75_mm": 38.30019245665858,
+          "cubic_favored": 4,
+          "elastic_favored": 0
+        },
+        "MID_PLUS_HIGH": {
+          "median_mm": 13.814159128338334,
+          "q25_mm": 4.463422913154854,
+          "q75_mm": 23.569480090408202,
+          "cubic_favored": 4,
+          "elastic_favored": 0
+        }
+      },
+      "OOO": {
+        "MID": {
+          "median_mm": 3.388388500119586,
+          "q25_mm": -0.007022627074581456,
+          "q75_mm": 7.116015888821929,
+          "cubic_favored": 3,
+          "elastic_favored": 1
+        },
+        "HIGH_ONLY": {
+          "median_mm": 36.78151865230734,
+          "q25_mm": 29.328750961501346,
+          "q75_mm": 43.386832533063696,
+          "cubic_favored": 4,
+          "elastic_favored": 0
+        },
+        "MID_PLUS_HIGH": {
+          "median_mm": 23.625071775703717,
+          "q25_mm": 19.18431600007646,
+          "q75_mm": 27.973527569187933,
+          "cubic_favored": 4,
+          "elastic_favored": 0
+        }
+      }
+    }
+  },
+  "stratified_descriptive": {
+    "original": {
+      "n": 8,
+      "interaction": 0.125,
+      "WOO_minus_OOO_MID": -0.125,
+      "WOO_minus_OOO_MID_PLUS_HIGH": 0.0,
+      "WOO_minus_OOO_HIGH_ONLY": 0.0
+    },
+    "above_original_range": {
+      "n": 8,
+      "interaction": 0.125,
+      "WOO_minus_OOO_MID": -0.125,
+      "WOO_minus_OOO_MID_PLUS_HIGH": 0.0,
+      "WOO_minus_OOO_HIGH_ONLY": 0.0
+    },
+    "M0": {
+      "n": 6,
+      "interaction": 0.0,
+      "WOO_minus_OOO_MID": 0.0,
+      "WOO_minus_OOO_MID_PLUS_HIGH": 0.0,
+      "WOO_minus_OOO_HIGH_ONLY": 0.0
+    },
+    "M2": {
+      "n": 10,
+      "interaction": 0.19999999999999996,
+      "WOO_minus_OOO_MID": -0.19999999999999996,
+      "WOO_minus_OOO_MID_PLUS_HIGH": 0.0,
+      "WOO_minus_OOO_HIGH_ONLY": 0.0
+    },
+    "without_nested_violations": {
+      "n": 14,
+      "interaction": 0.14285714285714285,
+      "WOO_minus_OOO_MID": -0.14285714285714285,
+      "WOO_minus_OOO_MID_PLUS_HIGH": 0.0,
+      "WOO_minus_OOO_HIGH_ONLY": 0.0
+    }
+  },
+  "cluster_bootstrap": null,
+  "source_sha256": {
+    "p4m2d1_fresh_report.json": "cdb0ac7dd258b9a4ed18e2a7b793428d983a4218d944d0eef7fd66f36a56ca71",
+    "p4m2d1_fresh_audit_PRIVATE.json": "3340fdf95f66c0a8f651831e527fa313e22ea1a6d6910c0d6e74fd3264bb95f4",
+    "88_p4m2d1_fresh_action_prior_interaction.py": "27f80208f99f4367fa735756f316bc5f7e47b32e9bbefd16e8768f51a19a13ad"
+  },
+  "E4_accessed": false,
+  "new_fits": 0,
+  "new_simulations": 0,
+  "limitations": [
+    "Mechanism interpretation is post hoc",
+    "Same P88 physical scenes",
+    "Labels only used for offline analysis",
+    "No causal identifiability proof",
+    "More observations in MID_PLUS_HIGH",
+    "Original solver gaps remain",
+    "Same MuJoCo simulator family"
+  ]
+}

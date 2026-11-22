@@ -1,0 +1,21 @@
+{
+  "results": {
+    "mujoco_version": "3.17.0",
+    "protocol": "matched A motion using same PD law",
+    "target_acceleration_mps2": 0.4,
+    "passive_gap_max_m": 0.0,
+    "active_A_trajectory_gap_max_m": 0.00163161486724539,
+    "active_B_final_gap_m": 0.19682820174320348,
+    "placebo_B_final_gap_m": 0.0,
+    "coupled_constraint_gap_max_m": 4.071451252907199e-05,
+    "control_force_gap_max_N": 0.49955095030085966,
+    "note": "PD controller uses privileged A state only for experimental control."
+  },
+  "checks": {
+    "passive_equivalent": true,
+    "A_motion_matched": true,
+    "B_intervention_differs": true,
+    "no_intervention_placebo": true,
+    "coupling_consistent": true
+  }
+}

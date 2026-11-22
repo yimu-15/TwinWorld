@@ -1,0 +1,258 @@
+{
+  "protocol": "P3-A7A prospective gate pilot",
+  "smoke": true,
+  "calibration_seed": 20370221,
+  "evaluation_seed": 20370222,
+  "n_cal_scenes": 2,
+  "n_test_scenes": 2,
+  "calibration_modes": [
+    "independent",
+    "rigid",
+    "elastic",
+    "deadzone",
+    "nonlinear"
+  ],
+  "evaluation_modes": [
+    "independent",
+    "rigid",
+    "elastic",
+    "deadzone",
+    "nonlinear",
+    "saturating"
+  ],
+  "thresholds": {
+    "tau_weak_m": 0.012177382697797874,
+    "tau_absolute_m": 0.036240139017586825,
+    "tau_switch_m": 0.009973768733046045,
+    "bic_gap_min": 10.0,
+    "calibration_n": 10,
+    "correct_anchor_n": 7
+  },
+  "summary": {
+    "original": {
+      "independent": {
+        "n": 2,
+        "strong_escalations": 0,
+        "weak_outcomes": {
+          "correct": 2
+        },
+        "full_outcomes": {
+          "correct": 2
+        },
+        "gated_outcomes": {
+          "correct": 2
+        }
+      },
+      "rigid": {
+        "n": 2,
+        "strong_escalations": 0,
+        "weak_outcomes": {
+          "correct": 2
+        },
+        "full_outcomes": {
+          "correct": 2
+        },
+        "gated_outcomes": {
+          "correct": 2
+        }
+      },
+      "elastic": {
+        "n": 2,
+        "strong_escalations": 1,
+        "weak_outcomes": {
+          "wrong_law": 2
+        },
+        "full_outcomes": {
+          "correct": 1,
+          "wrong_law": 1
+        },
+        "gated_outcomes": {
+          "wrong_law": 2
+        }
+      },
+      "deadzone": {
+        "n": 2,
+        "strong_escalations": 0,
+        "weak_outcomes": {
+          "correct": 2
+        },
+        "full_outcomes": {
+          "correct": 2
+        },
+        "gated_outcomes": {
+          "correct": 2
+        }
+      },
+      "nonlinear": {
+        "n": 2,
+        "strong_escalations": 2,
+        "weak_outcomes": {
+          "wrong_law": 2
+        },
+        "full_outcomes": {
+          "represented_false_reject": 2
+        },
+        "gated_outcomes": {
+          "represented_false_reject": 2
+        }
+      },
+      "saturating": {
+        "n": 2,
+        "strong_escalations": 2,
+        "weak_outcomes": {
+          "unknown_false_accept": 2
+        },
+        "full_outcomes": {
+          "correct_reject": 2
+        },
+        "gated_outcomes": {
+          "correct_reject": 2
+        }
+      },
+      "_overall": {
+        "known_n": 10,
+        "known_correct": {
+          "weak": 6,
+          "full": 7,
+          "gated": 6
+        },
+        "unknown_n": 2,
+        "unknown_rejected": {
+          "weak": 0,
+          "full": 2,
+          "gated": 2
+        },
+        "strong_escalation_count": 5,
+        "total_episodes": 12,
+        "full_work_proxy_J": 22.68892311376884,
+        "gated_work_proxy_J": 13.113579464082878,
+        "relative_work_reduction": 0.42202724217770987
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "n": 2,
+        "strong_escalations": 0,
+        "weak_outcomes": {
+          "correct": 2
+        },
+        "full_outcomes": {
+          "correct": 2
+        },
+        "gated_outcomes": {
+          "correct": 2
+        }
+      },
+      "rigid": {
+        "n": 2,
+        "strong_escalations": 0,
+        "weak_outcomes": {
+          "correct": 2
+        },
+        "full_outcomes": {
+          "correct": 2
+        },
+        "gated_outcomes": {
+          "correct": 2
+        }
+      },
+      "elastic": {
+        "n": 2,
+        "strong_escalations": 1,
+        "weak_outcomes": {
+          "wrong_law": 2
+        },
+        "full_outcomes": {
+          "correct": 1,
+          "wrong_law": 1
+        },
+        "gated_outcomes": {
+          "wrong_law": 2
+        }
+      },
+      "deadzone": {
+        "n": 2,
+        "strong_escalations": 1,
+        "weak_outcomes": {
+          "correct": 1,
+          "represented_false_reject": 1
+        },
+        "full_outcomes": {
+          "represented_false_reject": 1,
+          "correct": 1
+        },
+        "gated_outcomes": {
+          "correct": 2
+        }
+      },
+      "nonlinear": {
+        "n": 2,
+        "strong_escalations": 2,
+        "weak_outcomes": {
+          "wrong_law": 2
+        },
+        "full_outcomes": {
+          "represented_false_reject": 2
+        },
+        "gated_outcomes": {
+          "represented_false_reject": 2
+        }
+      },
+      "saturating": {
+        "n": 2,
+        "strong_escalations": 2,
+        "weak_outcomes": {
+          "unknown_false_accept": 2
+        },
+        "full_outcomes": {
+          "correct_reject": 2
+        },
+        "gated_outcomes": {
+          "correct_reject": 2
+        }
+      },
+      "_overall": {
+        "known_n": 10,
+        "known_correct": {
+          "weak": 5,
+          "full": 6,
+          "gated": 6
+        },
+        "unknown_n": 2,
+        "unknown_rejected": {
+          "weak": 0,
+          "full": 2,
+          "gated": 2
+        },
+        "strong_escalation_count": 6,
+        "total_episodes": 12,
+        "full_work_proxy_J": 22.57280582459863,
+        "gated_work_proxy_J": 14.887866392895663,
+        "relative_work_reduction": 0.34045122664052385
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_threshold_tuning": false,
+  "online_uses_truth": false,
+  "online_uses_strong_before_decision": false,
+  "limitations": [
+    "Synthetic MuJoCo only",
+    "Strong counterfactuals simulated for audit",
+    "No real hardware budget saving demonstrated",
+    "Weak model selection reuses Weak information",
+    "BIC gap is not an identifiability certificate",
+    "Only one unknown law",
+    "Conditioned on observed A",
+    "Separate gap bands share base scenes",
+    "Empirical calibration without risk guarantee",
+    "One predefined gate, not optimized action selection"
+  ],
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "27_p3a3b_evidence_vs_structure.py": "75296d8c807ba591347bedd77b57e9a129b8ff025b07768d99b90e6da52699a9",
+    "47_p3a6h_six_mechanism_openworld_audit.py": "c538c8a06d846397fe90f2b5320fe83a24e5636530b5e7995cd129ae7e8584fe",
+    "48_p3a6i_calibrated_revision.py": "d90363d99b8e584f749d2e3ef16bd56d5e67ccc2972736c9d50126a947e53c71"
+  }
+}

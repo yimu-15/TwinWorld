@@ -1,0 +1,787 @@
+{
+  "protocol": "P4-M1A statistical identifiability",
+  "smoke": true,
+  "n_dev": 2,
+  "n_eval": 2,
+  "development_seed": 20390111,
+  "evaluation_seed": 20390112,
+  "noise_sigma_m": 0.005,
+  "rho_values": [
+    0.0,
+    0.6
+  ],
+  "hard_error_threshold": 0.1,
+  "laws": [
+    "independent",
+    "elastic",
+    "deadzone"
+  ],
+  "historical_actions": [
+    "e1",
+    "e2",
+    "weak",
+    "strong",
+    "mid"
+  ],
+  "candidate_actions": [
+    "mid",
+    "high",
+    "reverse_high"
+  ],
+  "results": {
+    "development": {
+      "original": {
+        "independent_vs_elastic": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        },
+        "independent_vs_deadzone": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        },
+        "elastic_vs_deadzone": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        }
+      },
+      "above_original_range": {
+        "independent_vs_elastic": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        },
+        "independent_vs_deadzone": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 3.230889689898164e-290,
+                "max_oracle_error": 6.461779379796328e-290
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        },
+        "elastic_vs_deadzone": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        }
+      }
+    },
+    "evaluation": {
+      "original": {
+        "independent_vs_elastic": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        },
+        "independent_vs_deadzone": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        },
+        "elastic_vs_deadzone": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        }
+      },
+      "above_original_range": {
+        "independent_vs_elastic": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        },
+        "independent_vs_deadzone": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        },
+        "elastic_vs_deadzone": {
+          "rho_0": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          },
+          "rho_0.6": {
+            "n_scenes": 2,
+            "all_actions_hard_count": 0,
+            "max_best_oracle_error": 0.0,
+            "hardest_scene_id_PRIVATE": 0,
+            "best_action_counts_PRIVATE": {
+              "high": 2
+            },
+            "actions": {
+              "mid": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              },
+              "reverse_high": {
+                "single_hard_count": 0,
+                "after_prior_hard_count": 0,
+                "median_oracle_error": 0.0,
+                "max_oracle_error": 0.0
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_tuning": false,
+  "online_action_policy": false,
+  "limitations": [
+    "Simple fixed-parameter Gaussian pairs",
+    "Matched nuisance parameters only",
+    "Finite random scene search",
+    "Not a global composite minimax result",
+    "AR1 correlation is hypothetical stress",
+    "Prior probes assumed independent",
+    "Mid challenge is an independent repeat",
+    "Oracle parameters used offline only",
+    "Only the declared action menu tested",
+    "No structure-fitting pipeline evaluated",
+    "No abstention policy evaluated",
+    "Original and extended gaps kept separate"
+  ],
+  "source_sha256": {
+    "60_p3a7e1_action_family_pilot.py": "8d06decb3779cf4b8c22cf5e87a23ae4cd739a4161e6ab7f8eb1fb57461e8c14",
+    "68_p3a8c1_temporal_action_feasibility.py": "11d79d16b141ca65a94742b0377ab4cee7e9d5b9904105dbc8350988b3246a66",
+    "72_p4m1a_identifiability_limits.py": "afbf86e036812ce5c10fd55616ca14d246ed06077d4ea3eba95842138379a891"
+  }
+}

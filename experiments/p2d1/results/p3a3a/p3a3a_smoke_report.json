@@ -1,0 +1,681 @@
+{
+  "protocol": "P3-A3A under-excited E1/E2; E3 model refit",
+  "development_only": true,
+  "seed": 20261122,
+  "calibration_known_only": true,
+  "counts": {
+    "calibration": 2,
+    "development": 2,
+    "mass_shift": 2
+  },
+  "E1_E2": [
+    "pulse_0p25",
+    "pulse_0p50"
+  ],
+  "E3_arms": [
+    "pulse_1p5",
+    "pulse_2p25",
+    "sweep_2p25"
+  ],
+  "E4_holdout": [
+    "pulse_2p75",
+    "oscillation_2p25"
+  ],
+  "in_library_new": {
+    "deadzone": "deadzone",
+    "nonlinear": "cubic"
+  },
+  "out_of_library_truth_PRIVATE": "saturating",
+  "thresholds": {
+    "early": {
+      "margin": 16.27194081664444,
+      "known_fit_rms_m": 0.006172746111725835
+    },
+    "pulse_1p5": {
+      "margin": 2.0,
+      "known_fit_rms_m": 0.007317685366215846
+    },
+    "pulse_2p25": {
+      "margin": 2.0,
+      "known_fit_rms_m": 0.007039399298353911
+    },
+    "sweep_2p25": {
+      "margin": 9.729869787668292,
+      "known_fit_rms_m": 0.00792479878905583
+    }
+  },
+  "development": {
+    "early": {
+      "decisions": {
+        "inconclusive": 3,
+        "keep": 6,
+        "edit": 3
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.3333333333333333,
+        "ci95": [
+          0.0,
+          0.6666666666666666
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": {
+        "mean": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "out_of_library_forced_edit": {
+        "mean": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_of_library_inconclusive": {
+        "mean": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "E3_mean_abs_work_J": 0.0,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 58.395545867045286,
+        "oscillation_2p25": 8.750479732017466
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 5.457752054051803,
+          "oscillation_2p25": 6.187737467820992
+        },
+        "rigid": {
+          "pulse_2p75": 29.1099946384656,
+          "oscillation_2p25": 10.546991033301193
+        },
+        "elastic": {
+          "pulse_2p75": 19.062553528764305,
+          "oscillation_2p25": 8.555941559808499
+        },
+        "deadzone": {
+          "pulse_2p75": 51.015965729288865,
+          "oscillation_2p25": 5.718132547427961
+        },
+        "nonlinear": {
+          "pulse_2p75": 55.92622015824639,
+          "oscillation_2p25": 10.21593668511498
+        },
+        "saturating": {
+          "pulse_2p75": 189.8007890934547,
+          "oscillation_2p25": 11.278139098631174
+        }
+      }
+    },
+    "pulse_1p5": {
+      "decisions": {
+        "keep": 4,
+        "inconclusive": 4,
+        "edit": 4
+      },
+      "known_false_edit": {
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.3333333333333333,
+        "ci95": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": {
+        "mean": 0.75,
+        "ci95": [
+          0.5,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "out_of_library_forced_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_of_library_inconclusive": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "E3_mean_abs_work_J": 1.0084818857508493,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 23.821681514105556,
+        "oscillation_2p25": 9.145756675531734
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 5.457752054051803,
+          "oscillation_2p25": 6.187737467820992
+        },
+        "rigid": {
+          "pulse_2p75": 6.031029318946491,
+          "oscillation_2p25": 7.227241525224755
+        },
+        "elastic": {
+          "pulse_2p75": 22.408842599114358,
+          "oscillation_2p25": 8.973512023963089
+        },
+        "deadzone": {
+          "pulse_2p75": 6.574307784365078,
+          "oscillation_2p25": 5.7525087191581985
+        },
+        "nonlinear": {
+          "pulse_2p75": 25.45701910348279,
+          "oscillation_2p25": 10.616970974899349
+        },
+        "saturating": {
+          "pulse_2p75": 77.0011382246728,
+          "oscillation_2p25": 16.116569342124023
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -17.08929370471273,
+        "ci95": [
+          -22.731619200157564,
+          -11.446968209267895
+        ],
+        "n_scenes": 2,
+        "n_episodes": 12
+      }
+    },
+    "pulse_2p25": {
+      "decisions": {
+        "keep": 3,
+        "inconclusive": 4,
+        "edit": 5
+      },
+      "known_false_edit": {
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.3333333333333333,
+        "ci95": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "out_of_library_forced_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_of_library_inconclusive": {
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "E3_mean_abs_work_J": 1.9716177747174157,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 10.488018274660194,
+        "oscillation_2p25": 10.138270999474454
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 5.457752054051803,
+          "oscillation_2p25": 6.187737467820992
+        },
+        "rigid": {
+          "pulse_2p75": 6.031029318946491,
+          "oscillation_2p25": 7.227241525224755
+        },
+        "elastic": {
+          "pulse_2p75": 8.295748912144791,
+          "oscillation_2p25": 8.948603390477178
+        },
+        "deadzone": {
+          "pulse_2p75": 6.064719128014243,
+          "oscillation_2p25": 5.7384198588819135
+        },
+        "nonlinear": {
+          "pulse_2p75": 6.184904044093189,
+          "oscillation_2p25": 10.210650423032098
+        },
+        "saturating": {
+          "pulse_2p75": 30.89395619071065,
+          "oscillation_2p25": 22.516973331409794
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -23.259868162464045,
+        "ci95": [
+          -26.598553997523357,
+          -19.921182327404736
+        ],
+        "n_scenes": 2,
+        "n_episodes": 12
+      }
+    },
+    "sweep_2p25": {
+      "decisions": {
+        "edit": 4,
+        "inconclusive": 2,
+        "keep": 6
+      },
+      "known_false_edit": {
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": {
+        "mean": 0.75,
+        "ci95": [
+          0.5,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "out_of_library_forced_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_of_library_inconclusive": {
+        "mean": 0.5,
+        "ci95": [
+          0.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "E3_mean_abs_work_J": 1.1913797700170845,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 50.554777328132566,
+        "oscillation_2p25": 8.819176058636463
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 33.379730824236624,
+          "oscillation_2p25": 6.18773746782206
+        },
+        "rigid": {
+          "pulse_2p75": 6.031029318946491,
+          "oscillation_2p25": 7.227241525224755
+        },
+        "elastic": {
+          "pulse_2p75": 10.925046096785609,
+          "oscillation_2p25": 8.540716828405161
+        },
+        "deadzone": {
+          "pulse_2p75": 49.083232104617935,
+          "oscillation_2p25": 5.891047064651417
+        },
+        "nonlinear": {
+          "pulse_2p75": 58.11841978823043,
+          "oscillation_2p25": 10.893646153087435
+        },
+        "saturating": {
+          "pulse_2p75": 145.79120583597822,
+          "oscillation_2p25": 14.174667312627957
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -3.8860361061468653,
+        "ci95": [
+          -4.313235973765032,
+          -3.4588362385286993
+        ],
+        "n_scenes": 2,
+        "n_episodes": 12
+      }
+    }
+  },
+  "mass_shift": {
+    "early": {
+      "decisions": {
+        "keep": 2,
+        "inconclusive": 4
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.6666666666666666,
+        "ci95": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_of_library_forced_edit": null,
+      "out_of_library_inconclusive": null,
+      "E3_mean_abs_work_J": 0.0,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 10.68324561579269,
+        "oscillation_2p25": 5.973686309810946
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 7.099112154321529,
+          "oscillation_2p25": 5.181486428287688
+        },
+        "rigid": {
+          "pulse_2p75": 7.447284616784466,
+          "oscillation_2p25": 7.146056096019087
+        },
+        "elastic": {
+          "pulse_2p75": 17.503340076272075,
+          "oscillation_2p25": 5.593516405126062
+        }
+      }
+    },
+    "pulse_1p5": {
+      "decisions": {
+        "keep": 5,
+        "edit": 1
+      },
+      "known_false_edit": {
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_of_library_forced_edit": null,
+      "out_of_library_inconclusive": null,
+      "E3_mean_abs_work_J": 1.4197733927510725,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 7.720924918164693,
+        "oscillation_2p25": 6.133564180966621
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 5.349539807688017,
+          "oscillation_2p25": 5.590982760033915
+        },
+        "rigid": {
+          "pulse_2p75": 7.447284616784466,
+          "oscillation_2p25": 7.146056096019087
+        },
+        "elastic": {
+          "pulse_2p75": 10.3659503300216,
+          "oscillation_2p25": 5.663653686846862
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -1.4012214132361598,
+        "ci95": [
+          -2.029382285952047,
+          -0.7730605405202726
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      }
+    },
+    "pulse_2p25": {
+      "decisions": {
+        "keep": 5,
+        "edit": 1
+      },
+      "known_false_edit": {
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_of_library_forced_edit": null,
+      "out_of_library_inconclusive": null,
+      "E3_mean_abs_work_J": 2.942070795598958,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 6.5588697551956185,
+        "oscillation_2p25": 6.214463269202671
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 5.349539807688017,
+          "oscillation_2p25": 5.590982760033915
+        },
+        "rigid": {
+          "pulse_2p75": 7.447284616784466,
+          "oscillation_2p25": 7.146056096019087
+        },
+        "elastic": {
+          "pulse_2p75": 6.8797848411143745,
+          "oscillation_2p25": 5.906350951555011
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -1.9417994506026726,
+        "ci95": [
+          -2.6898449409989653,
+          -1.1937539602063796
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      }
+    },
+    "sweep_2p25": {
+      "decisions": {
+        "keep": 6
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_of_library_forced_edit": null,
+      "out_of_library_inconclusive": null,
+      "E3_mean_abs_work_J": 1.6798062282470265,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 9.012005970660216,
+        "oscillation_2p25": 6.16537384320674
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 5.349539807688017,
+          "oscillation_2p25": 5.590982760033915
+        },
+        "rigid": {
+          "pulse_2p75": 7.447284616784466,
+          "oscillation_2p25": 7.146056096019087
+        },
+        "elastic": {
+          "pulse_2p75": 14.239193487508166,
+          "oscillation_2p25": 5.759082673567218
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -0.7397760558683395,
+        "ci95": [
+          -1.572620332049815,
+          0.0930682203131362
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      }
+    }
+  },
+  "physics": {
+    "max_passive_gap_m": 0.0,
+    "max_A_mode_gap_m_by_action": {
+      "e1": 0.002559158720702115,
+      "e2": 0.005135120425709433,
+      "oscillation_2p25": 0.007496181641113792,
+      "pulse_1p5": 0.015438457131101535,
+      "pulse_2p25": 0.02316501699689716,
+      "pulse_2p75": 0.028315449112952307,
+      "sweep_2p25": 0.015016601799959561
+    }
+  },
+  "limitations": [
+    "Saturating force is held out from the permitted model library.",
+    "E3 is fixed per arm; this is NOT adaptive action selection.",
+    "Weak E1/E2 was chosen after earlier development audits.",
+    "BIC uses correlated trajectory samples and is a heuristic.",
+    "E4 B predictions condition on observed E4 A.",
+    "Development only, not a final independent test.",
+    "Inconclusive is based on fitting residual and may fail on unseen laws."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "protocol": "P3-A6L stage-1 paired failure audit",
+  "frozen_absolute_cutoff_mm": 15.056534376721602,
+  "threshold_retuned": false,
+  "E4_accessed": false,
+  "summary": {
+    "original": {
+      "unknown_false_accept_count": 17,
+      "unknown_wrong_law_counts": {
+        "elastic": 17
+      },
+      "known_degradation": {
+        "independent": {
+          "reference_correct": 46,
+          "low_correct": 46,
+          "worsened": 0,
+          "improved": 0
+        },
+        "rigid": {
+          "reference_correct": 47,
+          "low_correct": 43,
+          "worsened": 4,
+          "improved": 0
+        },
+        "elastic": {
+          "reference_correct": 36,
+          "low_correct": 39,
+          "worsened": 2,
+          "improved": 5
+        },
+        "deadzone": {
+          "reference_correct": 45,
+          "low_correct": 32,
+          "worsened": 14,
+          "improved": 1
+        },
+        "nonlinear": {
+          "reference_correct": 28,
+          "low_correct": 15,
+          "worsened": 15,
+          "improved": 2
+        }
+      }
+    },
+    "above_original_range": {
+      "unknown_false_accept_count": 17,
+      "unknown_wrong_law_counts": {
+        "elastic": 17
+      },
+      "known_degradation": {
+        "independent": {
+          "reference_correct": 46,
+          "low_correct": 46,
+          "worsened": 0,
+          "improved": 0
+        },
+        "rigid": {
+          "reference_correct": 47,
+          "low_correct": 43,
+          "worsened": 4,
+          "improved": 0
+        },
+        "elastic": {
+          "reference_correct": 36,
+          "low_correct": 39,
+          "worsened": 2,
+          "improved": 5
+        },
+        "deadzone": {
+          "reference_correct": 41,
+          "low_correct": 32,
+          "worsened": 11,
+          "improved": 2
+        },
+        "nonlinear": {
+          "reference_correct": 28,
+          "low_correct": 15,
+          "worsened": 15,
+          "improved": 2
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Historical observational audit only",
+    "No clean-trajectory replay",
+    "No force-level comparison",
+    "Cannot establish exact identifiability",
+    "Same paired base scenes",
+    "No new independent validation"
+  ]
+}

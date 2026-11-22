@@ -1,0 +1,305 @@
+{
+  "protocol": "P3-A1B restricted structural edits, 4 excitations",
+  "development_only": true,
+  "smoke": true,
+  "seed": 20261119,
+  "noise_std_m": 0.005,
+  "amplitudes": [
+    1.0,
+    2.0,
+    1.5,
+    2.5
+  ],
+  "calibration_only_known": true,
+  "calibration_thresholds": {
+    "known_e3_q95_m": 0.01328018347826243,
+    "edit_e3_q95_m": 0.012408514631232092,
+    "positive_gain_q95_m": 0.0026192306166005386
+  },
+  "bic_advantage_threshold": 2.0,
+  "split_scene_counts": {
+    "calibration": 2,
+    "development": 2,
+    "mass_shift": 2
+  },
+  "split_stats": {
+    "calibration_in_sample": {
+      "n_scenes": 2,
+      "n_episodes": 6,
+      "decision_counts": {
+        "keep": 5,
+        "inconclusive": 1
+      },
+      "E4_RMS_m_mean_by_method": {
+        "known_12": 0.006967451311803909,
+        "known_123": 0.006503412140692662,
+        "unrestricted_12": 0.006967451311803909,
+        "gated_revision": 0.006967451311803909
+      },
+      "E4_RMS_m_median_by_method": {
+        "known_12": 0.005908296623999922,
+        "known_123": 0.0060127903104935515,
+        "unrestricted_12": 0.005908296623999922,
+        "gated_revision": 0.005908296623999922
+      },
+      "E4_mean_by_truth_m": {
+        "elastic": {
+          "known_12": 0.009460655802284019,
+          "known_123": 0.008068538288950279,
+          "unrestricted_12": 0.009460655802284019,
+          "gated_revision": 0.009460655802284019
+        },
+        "independent": {
+          "known_12": 0.0060127903104935515,
+          "known_123": 0.0060127903104935515,
+          "unrestricted_12": 0.0060127903104935515,
+          "gated_revision": 0.0060127903104935515
+        },
+        "rigid": {
+          "known_12": 0.005428907822634154,
+          "known_123": 0.005428907822634154,
+          "unrestricted_12": 0.005428907822634154,
+          "gated_revision": 0.005428907822634154
+        }
+      },
+      "optimizer_failure_episodes": 1,
+      "false_edit_known": {
+        "rate": 0.0,
+        "CI95_scene_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "inconclusive_known": {
+        "rate": 0.16666666666666666,
+        "CI95_scene_bootstrap": [
+          0.0,
+          0.3333333333333333
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "correct_edit_unknown": null,
+      "any_edit_unknown": null,
+      "inconclusive_unknown": null,
+      "wrong_edit_unknown": null,
+      "correct_edit_by_unknown_kind": {
+        "deadzone": null,
+        "nonlinear": null
+      }
+    },
+    "development": {
+      "n_scenes": 2,
+      "n_episodes": 10,
+      "decision_counts": {
+        "keep": 10
+      },
+      "E4_RMS_m_mean_by_method": {
+        "known_12": 0.014841792777014978,
+        "known_123": 0.015116444000134996,
+        "unrestricted_12": 0.007956754870783721,
+        "gated_revision": 0.014841792777014978
+      },
+      "E4_RMS_m_median_by_method": {
+        "known_12": 0.008602548960594125,
+        "known_123": 0.010002202619049825,
+        "unrestricted_12": 0.006532024385393522,
+        "gated_revision": 0.008602548960594125
+      },
+      "E4_mean_by_truth_m": {
+        "deadzone": {
+          "known_12": 0.03247168553012269,
+          "known_123": 0.033658729513364155,
+          "unrestricted_12": 0.008296240795727532,
+          "gated_revision": 0.03247168553012269
+        },
+        "elastic": {
+          "known_12": 0.010965943275357529,
+          "known_123": 0.009146325846745003,
+          "unrestricted_12": 0.013044945253956303,
+          "gated_revision": 0.010965943275357529
+        },
+        "independent": {
+          "known_12": 0.005136725864471177,
+          "known_123": 0.005136725864471177,
+          "unrestricted_12": 0.005136725864471177,
+          "gated_revision": 0.005136725864471177
+        },
+        "nonlinear": {
+          "known_12": 0.018860771160753437,
+          "known_123": 0.020866600721724575,
+          "unrestricted_12": 0.006532024385393522,
+          "gated_revision": 0.018860771160753437
+        },
+        "rigid": {
+          "known_12": 0.006773838054370065,
+          "known_123": 0.006773838054370065,
+          "unrestricted_12": 0.006773838054370065,
+          "gated_revision": 0.006773838054370065
+        }
+      },
+      "optimizer_failure_episodes": 0,
+      "false_edit_known": {
+        "rate": 0.0,
+        "CI95_scene_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "inconclusive_known": {
+        "rate": 0.0,
+        "CI95_scene_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "correct_edit_unknown": {
+        "rate": 0.0,
+        "CI95_scene_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      },
+      "any_edit_unknown": {
+        "rate": 0.0,
+        "CI95_scene_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      },
+      "inconclusive_unknown": {
+        "rate": 0.0,
+        "CI95_scene_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      },
+      "wrong_edit_unknown": {
+        "rate": 0.0,
+        "CI95_scene_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      },
+      "correct_edit_by_unknown_kind": {
+        "deadzone": {
+          "rate": 0.0,
+          "CI95_scene_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "scenes": 2,
+          "episodes": 2
+        },
+        "nonlinear": {
+          "rate": 0.0,
+          "CI95_scene_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "scenes": 2,
+          "episodes": 2
+        }
+      }
+    },
+    "mass_shift": {
+      "n_scenes": 2,
+      "n_episodes": 6,
+      "decision_counts": {
+        "keep": 6
+      },
+      "E4_RMS_m_mean_by_method": {
+        "known_12": 0.005996880248465509,
+        "known_123": 0.005942274873512954,
+        "unrestricted_12": 0.005996880248465509,
+        "gated_revision": 0.005996880248465509
+      },
+      "E4_RMS_m_median_by_method": {
+        "known_12": 0.005433012384116828,
+        "known_123": 0.005269196259259165,
+        "unrestricted_12": 0.005433012384116828,
+        "gated_revision": 0.005433012384116828
+      },
+      "E4_mean_by_truth_m": {
+        "elastic": {
+          "known_12": 0.005433012384116828,
+          "known_123": 0.005269196259259165,
+          "unrestricted_12": 0.005433012384116828,
+          "gated_revision": 0.005433012384116828
+        },
+        "independent": {
+          "known_12": 0.006487208730215278,
+          "known_123": 0.006487208730215278,
+          "unrestricted_12": 0.006487208730215278,
+          "gated_revision": 0.006487208730215278
+        },
+        "rigid": {
+          "known_12": 0.00607041963106442,
+          "known_123": 0.00607041963106442,
+          "unrestricted_12": 0.00607041963106442,
+          "gated_revision": 0.00607041963106442
+        }
+      },
+      "optimizer_failure_episodes": 0,
+      "false_edit_known": {
+        "rate": 0.0,
+        "CI95_scene_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "inconclusive_known": {
+        "rate": 0.0,
+        "CI95_scene_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "correct_edit_unknown": null,
+      "any_edit_unknown": null,
+      "inconclusive_unknown": null,
+      "wrong_edit_unknown": null,
+      "correct_edit_by_unknown_kind": {
+        "deadzone": null,
+        "nonlinear": null
+      }
+    }
+  },
+  "audit_physics": {
+    "max_passive_gap_m": 0.0,
+    "max_A_cross_mode_gap_m": 0.02576752559965667
+  },
+  "constraints": [
+    "Candidate edits are hand-specified (deadzone, cubic) and not discovered from scratch.",
+    "E4 was not used in model fitting, editing choice, gate selection or calibration.",
+    "B predictions condition on observed E4 A, not full counterfactual prediction.",
+    "Known_123 is matched-E3-information known-only baseline.",
+    "BIC treats temporally correlated sampled trajectories as independent residuals; descriptive proxy.",
+    "No RGB; no adaptive action selection. Model fitting uses observed B and A only.",
+    "Optimistic simulation and handcrafted model families; development, not confirmatory evidence."
+  ],
+  "mujoco_version": "3.17.0",
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "20_p3a0_parameter_refit.py": "ffca6c7f224548a638cff3ebcf08ec8eacc715129f9381a875ca8d3d1eae4064",
+    "21_p3a1a_reconsider_known.py": "022365bb047e311ceaf4a9f4f3647f4ad3aeae2c40d235fd99c277c59c7f6bee"
+  }
+}

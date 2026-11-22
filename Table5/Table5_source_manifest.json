@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-11-20",
+  "table_id": "Table 5",
+  "title": "Equal hard-cap optimizer comparison (#110)",
+  "authoritative_table_snapshot": {
+    "file_name": "Table5_data.json",
+    "source_csv_name": "table5_equal_budget.csv",
+    "source_csv_sha256": "c7167d9dd90707e1909b920a9c8951f14fdc19d3fa331bc60f430b608981e5fa",
+    "data_rows": 4
+  },
+  "audit_approach": "Field-level paths cross-checked against accessible original report JSONs, subject to display rounding; no source files modified or experimental results regenerated.",
+  "source_documents": [
+    {
+      "id": "p4b3c_fresh_report(1).json",
+      "file_name": "p4b3c_fresh_report(1).json",
+      "type": "formal_report",
+      "purpose": "#110 hard caps 100/200, classification, paired differences, realized calls",
+      "available_in_this_session": true,
+      "sha256": "dc17daa952f87b034ae1c9b4c2ce1f6317455169a705998147912e79923e6f5f",
+      "original_project_path_reported": "results/p4b3c/p4b3c_fresh_report.json"
+    },
+    {
+      "id": "p4b3c_384case_results.csv",
+      "file_name": "p4b3c_384case_results.csv",
+      "type": "case_level",
+      "purpose": "#110 384-case cap-200 correctness and cluster identifiers only",
+      "available_in_this_session": true,
+      "sha256": "86f798392fe107c684e4cc0ea9626a00a9a51d41f9ab3ae12733fa733c6f679d"
+    },
+    {
+      "id": "110_p4b3c_fresh_equal_budget_confirmation.py",
+      "file_name": "110_p4b3c_fresh_equal_budget_confirmation.py",
+      "type": "source_code",
+      "purpose": "Executable source for #110",
+      "available_in_this_session": true,
+      "sha256": "7867f1c50abd6e1fd86947f90c3428ede5357df2d7ce623eedcae19be090f20e"
+    }
+  ],
+  "row_provenance": [
+    {
+      "table_row_index": 1,
+      "experiment": "#110 / P4-B3C",
+      "source_id": "p4b3c_fresh_report(1).json",
+      "source_paths": [
+        "/aggregate_classification/100/TRF_CAP/MID_PLUS_FULL",
+        "/compute_cost/100/TRF_CAP/actual_204vector_calls",
+        "/secondary_and_diagnostic_contrasts/SECONDARY_TRF_MINUS_SLSQP_CAP100_FULL"
+      ],
+      "verification": "matched_report_accuracy_and_call_count"
+    },
+    {
+      "table_row_index": 2,
+      "experiment": "#110 / P4-B3C",
+      "source_id": "p4b3c_fresh_report(1).json",
+      "source_paths": [
+        "/aggregate_classification/100/SLSQP_CAP/MID_PLUS_FULL",
+        "/compute_cost/100/SLSQP_CAP/actual_204vector_calls"
+      ],
+      "verification": "matched_report_accuracy_and_call_count"
+    },
+    {
+      "table_row_index": 3,
+      "experiment": "#110 / P4-B3C",
+      "source_id": "p4b3c_fresh_report(1).json",
+      "source_paths": [
+        "/aggregate_classification/200/TRF_CAP/MID_PLUS_FULL",
+        "/compute_cost/200/TRF_CAP/actual_204vector_calls",
+        "/primary_endpoint/result"
+      ],
+      "verification": "matched_report_accuracy_and_call_count"
+    },
+    {
+      "table_row_index": 4,
+      "experiment": "#110 / P4-B3C",
+      "source_id": "p4b3c_fresh_report(1).json",
+      "source_paths": [
+        "/aggregate_classification/200/SLSQP_CAP/MID_PLUS_FULL",
+        "/compute_cost/200/SLSQP_CAP/actual_204vector_calls"
+      ],
+      "verification": "matched_report_accuracy_and_call_count"
+    }
+  ],
+  "scientific_boundaries": [
+    "Equal hard maximum cap does not imply equal realized calls or equal wall-clock seconds.",
+    "The residual evaluation unit is one 204-position residual vector; no common scale against #106 EQERR grid points.",
+    "Cap 100 values are documented in the report; the available per-case CSV contains cap 200 only.",
+    "24 base-scene clusters are the independent resampling units (n=384 decisions per condition)."
+  ],
+  "issues_requiring_author_attention": []
+}

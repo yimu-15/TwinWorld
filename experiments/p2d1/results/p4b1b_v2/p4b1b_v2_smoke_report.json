@@ -1,0 +1,1218 @@
+{
+  "protocol": "P4-B1B P96-frozen classical selector on fresh P90-style cohort",
+  "smoke": true,
+  "n_scenes": 1,
+  "n_cases": 16,
+  "n_fit_units": 96,
+  "scene_seed": 20391123,
+  "fit_noise_seed": 2029212301,
+  "action_noise_seed": 2029112302,
+  "source_sha256": {
+    "P80": "08fae73537796474fbc182258d726092b0f9e9a7ccbe6db6f7ce5510b48eed03",
+    "P88": "27f80208f99f4367fa735756f316bc5f7e47b32e9bbefd16e8768f51a19a13ad",
+    "P90": "4bd165bbc5c9522cfb94f61ff71682b34f1e76c1ace6da0d3f55f49c6ec8b622",
+    "P92": "a8d45bd03e2b2f66aff030f443bbcd518536c97cfb202b2b3f4e0857063b76c2",
+    "P96": "8e67c415604df3a254a7854774ed94e67be1e0bddbbf1998b2bb086144d5e349",
+    "P97_ORIGINAL": "92b09a77fdaa75724212deff2815c81d9909d9c0a2816ae793216124832c15cf",
+    "R88": "cdb0ac7dd258b9a4ed18e2a7b793428d983a4218d944d0eef7fd66f36a56ca71",
+    "R90": "86b3ae545a78b2853a63266536037636edf2762f89eecbcfdc25e12cce72b0c0",
+    "R92": "97e35e06c09072939cb2e601ebcf64c16acaa91edd5cb0ebba749908f60490d1",
+    "R96": "c2101d5fa4c469d50d21a6ec048fc0ec38881e369c2e721a07204629a3c300e1",
+    "A96": "55e28e27b7a8d77cc13e147838c4775233b1388649a1a7f50d1b51a3fffe28ca",
+    "SELF": "aad19060694eff5d0cf1c63c29b8778026d8c402c6e11f595faccc249b20fd82"
+  },
+  "scene_fingerprints": [
+    "8fd88aef63456c80149ff4bd68cf73de38176792d0fc724699c6c960b3876041",
+    "c501bf1af7f78969e72ce536463cb95096634dfa015346a4b56d862a0ec50853"
+  ],
+  "starts": {
+    "historical": 2,
+    "common_extra": 3,
+    "maxiter": 150,
+    "fractions": [
+      0.1,
+      0.5,
+      0.9
+    ]
+  },
+  "n_training_residuals": 204,
+  "p96_historical_reported_n": 408,
+  "protocol_amendment_v2": {
+    "timing": "Before any fresh-scene fit or classification result; original P97 smoke and formal failed on observation shape",
+    "bug": "RevisionProbe.y_b shape (51,), original P97 demanded (51,2)",
+    "sample_count": "P96 historical n=408 counted two channels, actual 4*51=204 B-position residuals",
+    "historical_p96_immutable": true,
+    "old97_fresh_outcomes_observed": false,
+    "primary_criterion": "PROFILE_SIGMA_BIC with corrected n=204, frozen at v2 code version"
+  },
+  "p96_pilot_corrected_retrospective": null,
+  "training_actions": [
+    "e1",
+    "e2",
+    "weak",
+    "strong"
+  ],
+  "train_only_selectors": [
+    "TRAIN_PEM",
+    "KNOWN_SIGMA_AIC",
+    "KNOWN_SIGMA_BIC",
+    "PROFILE_SIGMA_AIC",
+    "PROFILE_SIGMA_BIC"
+  ],
+  "heldout_methods": [
+    "MID",
+    "MID_PLUS_HALF",
+    "MID_PLUS_FULL"
+  ],
+  "primary_frozen_before_new_outcome": {
+    "WOO_MATCHED5_PROFILE_SIGMA_BIC_minus_TRAIN_PEM": true,
+    "WOO_MATCHED5_Nonlinear_M2_Full_minus_Half": true
+  },
+  "stats": {
+    "FROZEN2": {
+      "WWW": {
+        "train": {
+          "TRAIN_PEM": {
+            "correct": 12,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.75,
+            "accuracy_available": 0.75,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "KNOWN_SIGMA_AIC": {
+            "correct": 13,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.8125,
+            "accuracy_available": 0.8125,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 3
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "KNOWN_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "PROFILE_SIGMA_AIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "PROFILE_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          }
+        },
+        "heldout": {
+          "MID": {
+            "correct": 9,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.5625,
+            "accuracy_available": 0.5625,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 0
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 3
+              }
+            }
+          },
+          "MID_PLUS_HALF": {
+            "correct": 12,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.75,
+            "accuracy_available": 0.75,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 1
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 5
+              }
+            }
+          },
+          "MID_PLUS_FULL": {
+            "correct": 13,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.8125,
+            "accuracy_available": 0.8125,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 5
+              }
+            }
+          }
+        }
+      },
+      "OOO": {
+        "train": {
+          "TRAIN_PEM": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 6
+              }
+            }
+          },
+          "KNOWN_SIGMA_AIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 6
+              }
+            }
+          },
+          "KNOWN_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 6
+              }
+            }
+          },
+          "PROFILE_SIGMA_AIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 6
+              }
+            }
+          },
+          "PROFILE_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 6
+              }
+            }
+          }
+        },
+        "heldout": {
+          "MID": {
+            "correct": 10,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.625,
+            "accuracy_available": 0.625,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 0
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "MID_PLUS_HALF": {
+            "correct": 12,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.75,
+            "accuracy_available": 0.75,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 1
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 5
+              }
+            }
+          },
+          "MID_PLUS_FULL": {
+            "correct": 13,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.8125,
+            "accuracy_available": 0.8125,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 5
+              }
+            }
+          }
+        }
+      },
+      "WOO": {
+        "train": {
+          "TRAIN_PEM": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "KNOWN_SIGMA_AIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "KNOWN_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "PROFILE_SIGMA_AIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "PROFILE_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          }
+        },
+        "heldout": {
+          "MID": {
+            "correct": 10,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.625,
+            "accuracy_available": 0.625,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 1
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 3
+              }
+            }
+          },
+          "MID_PLUS_HALF": {
+            "correct": 12,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.75,
+            "accuracy_available": 0.75,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "MID_PLUS_FULL": {
+            "correct": 12,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.75,
+            "accuracy_available": 0.75,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          }
+        }
+      }
+    },
+    "MATCHED5": {
+      "WWW": {
+        "train": {
+          "TRAIN_PEM": {
+            "correct": 12,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.75,
+            "accuracy_available": 0.75,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "KNOWN_SIGMA_AIC": {
+            "correct": 13,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.8125,
+            "accuracy_available": 0.8125,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 3
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "KNOWN_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "PROFILE_SIGMA_AIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "PROFILE_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          }
+        },
+        "heldout": {
+          "MID": {
+            "correct": 9,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.5625,
+            "accuracy_available": 0.5625,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 0
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 3
+              }
+            }
+          },
+          "MID_PLUS_HALF": {
+            "correct": 12,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.75,
+            "accuracy_available": 0.75,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 1
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 5
+              }
+            }
+          },
+          "MID_PLUS_FULL": {
+            "correct": 13,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.8125,
+            "accuracy_available": 0.8125,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 5
+              }
+            }
+          }
+        }
+      },
+      "OOO": {
+        "train": {
+          "TRAIN_PEM": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 6
+              }
+            }
+          },
+          "KNOWN_SIGMA_AIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 6
+              }
+            }
+          },
+          "KNOWN_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 6
+              }
+            }
+          },
+          "PROFILE_SIGMA_AIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 6
+              }
+            }
+          },
+          "PROFILE_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 6
+              }
+            }
+          }
+        },
+        "heldout": {
+          "MID": {
+            "correct": 10,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.625,
+            "accuracy_available": 0.625,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 0
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "MID_PLUS_HALF": {
+            "correct": 12,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.75,
+            "accuracy_available": 0.75,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 1
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 5
+              }
+            }
+          },
+          "MID_PLUS_FULL": {
+            "correct": 13,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.8125,
+            "accuracy_available": 0.8125,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 5
+              }
+            }
+          }
+        }
+      },
+      "WOO": {
+        "train": {
+          "TRAIN_PEM": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "KNOWN_SIGMA_AIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "KNOWN_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "PROFILE_SIGMA_AIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "PROFILE_SIGMA_BIC": {
+            "correct": 14,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.875,
+            "accuracy_available": 0.875,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 4
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          }
+        },
+        "heldout": {
+          "MID": {
+            "correct": 10,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.625,
+            "accuracy_available": 0.625,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 1
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 3
+              }
+            }
+          },
+          "MID_PLUS_HALF": {
+            "correct": 12,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.75,
+            "accuracy_available": 0.75,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          },
+          "MID_PLUS_FULL": {
+            "correct": 12,
+            "n": 16,
+            "available": 16,
+            "coverage": 1.0,
+            "accuracy_all": 0.75,
+            "accuracy_available": 0.75,
+            "by_mode_PRIVATE": {
+              "elastic": {
+                "n": 4,
+                "correct": 2
+              },
+              "deadzone": {
+                "n": 6,
+                "correct": 6
+              },
+              "nonlinear": {
+                "n": 6,
+                "correct": 4
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "contrasts": {
+    "BIC_vs_PEM": {
+      "sum": 0,
+      "n": 16,
+      "effect": 0.0
+    },
+    "full_vs_half_nonlinear_M2": {
+      "sum": 0,
+      "n": 4,
+      "effect": 0.0
+    }
+  },
+  "bootstrap": null,
+  "nested_solver_violations": {},
+  "solver_nfev": {
+    "wide": {
+      "original": 11165,
+      "extra": 15425
+    },
+    "outer_box": {
+      "original": 6030,
+      "extra": 8657
+    }
+  },
+  "E4_accessed": false,
+  "truth_used_for_fitting_or_selection": false,
+  "heldout_actions_used_for_fitting": false,
+  "baseline_threshold_tuning": false,
+  "no_historical_files_modified": true,
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "limitations": [
+    "Fresh scenes within same MuJoCo generator, NOT cross-generator validation",
+    "P96 was inspected before B1B's selector was frozen; not independent of pilot design",
+    "PEM/AIC/BIC use four train actions, MID+FULL uses two additional actions",
+    "Candidate fit parameters are shared across selectors; AIC/BIC are scoring baselines, not independent fitters",
+    "Original P96 pilot accidentally counted 408 scalar residuals; actually 204 B-position target residuals; P96 unchanged and rescored separately",
+    "Gaussian pseudo information criteria: correlated residuals/uncertain effective N",
+    "Known noise sigma 0.005 and k=2/3 are nominal assumptions",
+    "Same number of optimizer starts does not imply equal actual nfev",
+    "Finite-start SLSQP is not guaranteed globally optimal",
+    "Evaluation labels enter only after all fit/selection computations",
+    "Nonlinear-M2 replication is a secondary endpoint; no adaptive choice by outcomes",
+    "No E4 access, no physical hardware validation, no structural identifiability proof"
+  ]
+}

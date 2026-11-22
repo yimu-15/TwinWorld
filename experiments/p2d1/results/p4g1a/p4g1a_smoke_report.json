@@ -1,0 +1,57 @@
+{
+  "protocol": "P4-G1A stand-alone ODE feasibility, not a predictive benchmark",
+  "smoke": true,
+  "n_scenes": 1,
+  "n_cases": 16,
+  "seed": 20391201,
+  "generator": "self-contained two-mass RK4, no MuJoCo",
+  "arms_fixed_before_outcomes": {
+    "IDEAL_ODE": {
+      "viscous_rate_s_inv": 0.0,
+      "dry_acc_ms2": 0.0,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.0
+    },
+    "SHIFTED_ODE": {
+      "viscous_rate_s_inv": 0.08,
+      "dry_acc_ms2": 0.02,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.025
+    }
+  },
+  "action_amplitudes": {
+    "e1": 0.25,
+    "e2": 0.5,
+    "weak": 0.75,
+    "strong": 2.25,
+    "mid": 1.75,
+    "HALF": 1.375,
+    "FULL": 2.75
+  },
+  "step_s": 0.002,
+  "steps": 500,
+  "sample_every": 10,
+  "source_sha256": "699ea08f85e0b5db4da69106f9124bdcecedb5f2969fb3ca10d672dd24ba3d96",
+  "scene_fingerprints_PRIVATE": [
+    "6036d9f33e6c1b29ead6bc6713f95706bf328b84561f3f0736a6f08c094dcd10",
+    "f5e9a77dd9ca1af0db0bfa498a225998491db83c4c5c9a7c3336638f7a88d8ac"
+  ],
+  "max_passive_within_case_difference_m": 0.0,
+  "max_passive_cross_law_difference_m": 0.0,
+  "ideal_vs_shifted_B_rms_mm_median": 21.839702692664442,
+  "ideal_vs_shifted_B_rms_mm_min": 15.076559654679034,
+  "shifted_half_vs_full_B_rms_mm_median": 195.93862615887193,
+  "new_fits": 0,
+  "classifier_decisions": 0,
+  "E4_accessed": false,
+  "truth_used_for_fit_or_selection": false,
+  "cross_simulator_claim": false,
+  "limitations": [
+    "One independent ODE generator with two arms, not two independent physics engines",
+    "Synthetic distribution only; no real hardware data",
+    "Distinct dynamical assumptions + integration implementation; shift settings are fixed, not optimized",
+    "No mechanism classification, heldout accuracy or statistical hypothesis testing in G1A",
+    "A/B controller is an explicit idealized model, not necessarily MuJoCo-XML identical",
+    "Formal G1B must freeze generator assumptions, fit budget, noise, endpoints and coverage beforehand"
+  ]
+}

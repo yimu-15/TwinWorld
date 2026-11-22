@@ -1,0 +1,41 @@
+{
+  "protocol": "P4-T1B: immutable P88/P90 competitor and scale-sensitive margin audit",
+  "smoke": true,
+  "n_p88": 16,
+  "n_p90_nonlinear_m2": 4,
+  "full_immutable_decisions_checked": {
+    "cells": 9216,
+    "available": 9211,
+    "unavailable": 5
+  },
+  "source_sha256": {
+    "R94": "cfea81f1da0b07e87968b5a1fe2851cadf18d59f5f629966b54e93552d122643",
+    "A94": "9f98a875f6b31561fb45e40caa4ae213527c53f46fb18114d3827dcfb321e538",
+    "R88": "cdb0ac7dd258b9a4ed18e2a7b793428d983a4218d944d0eef7fd66f36a56ca71",
+    "A88": "3340fdf95f66c0a8f651831e527fa313e22ea1a6d6910c0d6e74fd3264bb95f4",
+    "R89": "c7b5217cdd4b6d6db3b75f812308391c93c249b3f7eb1801f002483bf3277f71",
+    "R90": "86b3ae545a78b2853a63266536037636edf2762f89eecbcfdc25e12cce72b0c0",
+    "A90": "9e23958d1d9315379b963e5ac246af1f0f3c772057ee140b7e391836911a3048",
+    "R93": "360a7eed52278309abcf206845089e156ec8d921e3fb4f22dba1708cd529aeba"
+  },
+  "self_sha256": "c1d676c52711114da27b4051ef509b8baa8fc5be8597802331a89befb01251f0",
+  "E4_accessed": false,
+  "new_fits": 0,
+  "new_simulations": 0,
+  "new_actions": 0,
+  "threshold_tuning": false,
+  "truth_used_for_fit_or_selection": false,
+  "different_cohorts_not_pooled": true,
+  "posthoc_exploratory_not_predeclared": true,
+  "limitations": [
+    "Truth-conditioned margins are retrospective diagnostics, not operational agent scores",
+    "Mean-margins and correctness are distinct statistics; neither implies the other's sign",
+    "Relative margin is scale-free only for a common multiplicative scaling of all candidate losses",
+    "The Full and Half trajectories need not be related by simple physical scaling",
+    "A positive relative-margin shift is not a proof of action information gain or structural identifiability",
+    "No noise covariance / Bayesian error probability is estimated",
+    "P88/P90 independent scenes are separate cohorts and cannot be pooled for causal inference",
+    "No optimizer-independent or hardware generalization claim"
+  ],
+  "smoke_checks": "Source lineage, all decision cells, one P88/P90 scene, no inference"
+}

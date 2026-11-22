@@ -1,0 +1,8 @@
+table_id,table_title,rows,columns,source_file,json_fields
+T1,Passive vs active distinguishability (P0/P1/P2),3,"condition, metric, value, CI95",outputs/p0_baselines.json + outputs/p1b/p1b_report.json + outputs/p1c/p1c_report.json + outputs/p2c0/p2c0_baselines.json,"passive_majority_accuracy; active_oracle_diagnostic_accuracy; passive_max_abs_diff; active_B_final_abs_diff; B_only accuracy + bootstrap CI"
+T2,Physical domain ablation (outer_box vs wide),3,"domain, accuracy, delta, CI95",results/p4m2b2b/p4m2b2b_fresh_report.json,"outer_minus_wide; accuracy pooled/above; scene_cluster_CI95"
+T3,Amplitude dose-response,2,"amplitude, recall/sep/score_gap, CI95",results/p4m2d2b/p4m2d2b_v2_fresh_report.json,"primary recall_full_minus_half; pairwise_sep; score_gap; CI95"
+T4,Classical identification comparison,3,"method, correct/n, CI95",results/p4b2b/p4b2b_fresh_report.json,"EQERR_SG vs SLSQP vs TRF; net; effect; scene_cluster_CI95"
+T5,Equal-budget optimizer comparison,4,"budget, method, correct/n, CI95",results/p4b3c/p4b3c_fresh_report.json,"primary_endpoint; secondary contrasts; aggregate_classification; compute_cost"
+T6,Open-world rejection,3,"mechanism, correct/reject, CI95",results/p3a6h/p3a6h_fresh_report.json + results/p3a6i/p3a6i_fresh_report.json + results/p3a6k/p3a6k_fresh_report.json,"by-law correct; saturating correct_reject; false_accept"
+T7,Frozen vs refit (privileged),2,"source, correct/n, CI95",results/p4g2c/p4g2c_fresh_report.json,"primary FIXED-REFIT; elastic subgroup; CI95; paired_source_privileged"

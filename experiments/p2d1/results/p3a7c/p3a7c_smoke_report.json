@@ -1,0 +1,164 @@
+{
+  "protocol": "P3-A7C parameter-structure attribution",
+  "smoke": true,
+  "scene_seed": 20370325,
+  "n_base_scenes": 2,
+  "n_cases": 16,
+  "summary": {
+    "original": {
+      "elastic": {
+        "n": 2,
+        "anchor_distribution": {
+          "independent": 0,
+          "rigid": 0,
+          "elastic": 2,
+          "deadzone": 0,
+          "cubic": 0
+        },
+        "correct_anchor": 2,
+        "vmid_median_gain_mm": 5.76984862449979,
+        "vmid_improved_count": 2,
+        "vmid_worsened_count": 0,
+        "vreverse_median_gain_mm": 9.884180257533806,
+        "vreverse_improved_count": 2,
+        "vreverse_worsened_count": 0
+      },
+      "deadzone": {
+        "n": 2,
+        "anchor_distribution": {
+          "independent": 0,
+          "rigid": 0,
+          "elastic": 0,
+          "deadzone": 1,
+          "cubic": 1
+        },
+        "correct_anchor": 1,
+        "vmid_median_gain_mm": 22.985913544101788,
+        "vmid_improved_count": 2,
+        "vmid_worsened_count": 0,
+        "vreverse_median_gain_mm": 20.16567703002599,
+        "vreverse_improved_count": 2,
+        "vreverse_worsened_count": 0
+      },
+      "nonlinear": {
+        "n": 2,
+        "anchor_distribution": {
+          "independent": 0,
+          "rigid": 0,
+          "elastic": 0,
+          "deadzone": 0,
+          "cubic": 2
+        },
+        "correct_anchor": 2,
+        "vmid_median_gain_mm": 31.516796512624147,
+        "vmid_improved_count": 2,
+        "vmid_worsened_count": 0,
+        "vreverse_median_gain_mm": 28.580995436558446,
+        "vreverse_improved_count": 2,
+        "vreverse_worsened_count": 0
+      },
+      "saturating": {
+        "n": 2,
+        "anchor_distribution": {
+          "independent": 0,
+          "rigid": 0,
+          "elastic": 1,
+          "deadzone": 0,
+          "cubic": 1
+        },
+        "vmid_median_gain_mm": 106.76910228514538,
+        "vmid_improved_count": 2,
+        "vmid_worsened_count": 0,
+        "vreverse_median_gain_mm": 98.5950644828801,
+        "vreverse_improved_count": 2,
+        "vreverse_worsened_count": 0
+      }
+    },
+    "above_original_range": {
+      "elastic": {
+        "n": 2,
+        "anchor_distribution": {
+          "independent": 0,
+          "rigid": 0,
+          "elastic": 2,
+          "deadzone": 0,
+          "cubic": 0
+        },
+        "correct_anchor": 2,
+        "vmid_median_gain_mm": 9.057679782807416,
+        "vmid_improved_count": 2,
+        "vmid_worsened_count": 0,
+        "vreverse_median_gain_mm": 6.4483210922322804,
+        "vreverse_improved_count": 1,
+        "vreverse_worsened_count": 1
+      },
+      "deadzone": {
+        "n": 2,
+        "anchor_distribution": {
+          "independent": 0,
+          "rigid": 0,
+          "elastic": 0,
+          "deadzone": 1,
+          "cubic": 1
+        },
+        "correct_anchor": 1,
+        "vmid_median_gain_mm": 22.283582882817292,
+        "vmid_improved_count": 2,
+        "vmid_worsened_count": 0,
+        "vreverse_median_gain_mm": 17.234757031462056,
+        "vreverse_improved_count": 2,
+        "vreverse_worsened_count": 0
+      },
+      "nonlinear": {
+        "n": 2,
+        "anchor_distribution": {
+          "independent": 0,
+          "rigid": 0,
+          "elastic": 2,
+          "deadzone": 0,
+          "cubic": 0
+        },
+        "correct_anchor": 0,
+        "vmid_median_gain_mm": 28.46532882504888,
+        "vmid_improved_count": 2,
+        "vmid_worsened_count": 0,
+        "vreverse_median_gain_mm": 15.202537883860222,
+        "vreverse_improved_count": 2,
+        "vreverse_worsened_count": 0
+      },
+      "saturating": {
+        "n": 2,
+        "anchor_distribution": {
+          "independent": 0,
+          "rigid": 0,
+          "elastic": 1,
+          "deadzone": 1,
+          "cubic": 0
+        },
+        "vmid_median_gain_mm": 86.06068636069469,
+        "vmid_improved_count": 2,
+        "vmid_worsened_count": 0,
+        "vreverse_median_gain_mm": 87.8471047123707,
+        "vreverse_improved_count": 2,
+        "vreverse_worsened_count": 0
+      }
+    }
+  },
+  "frozen_candidate_structure": true,
+  "parameter_refit_after_strong": true,
+  "validation_probes_used_for_fit": false,
+  "E4_accessed": false,
+  "online_uses_truth": false,
+  "thresholds_tuned": false,
+  "limitations": [
+    "MuJoCo simulation only",
+    "Post-Strong parameter refit",
+    "Validation probes share scene physics",
+    "Validation varies pulse amplitude/sign",
+    "No active policy is tested",
+    "Oracle comparison is PRIVATE only",
+    "No identifiability guarantee",
+    "Both gap bands share base scenes",
+    "Results become development evidence"
+  ]
+}

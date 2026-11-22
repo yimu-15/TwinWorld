@@ -1,0 +1,212 @@
+{
+  "protocol": "P3-A6D heldout candidate elimination",
+  "calibration": "original-band Independent-only, scene-disjoint 4-fold Q95",
+  "calibration_quantile": 0.95,
+  "calibration_thresholds_m": {
+    "0": {
+      "pulse_1p5": 0.008284354771647729,
+      "pulse_2p25": 0.008632983720357281
+    },
+    "1": {
+      "pulse_1p5": 0.007304329760261275,
+      "pulse_2p25": 0.008400199795999604
+    },
+    "2": {
+      "pulse_1p5": 0.007336273039782327,
+      "pulse_2p25": 0.008632983720357281
+    },
+    "3": {
+      "pulse_1p5": 0.008284354771647729,
+      "pulse_2p25": 0.008457824640060544
+    }
+  },
+  "frozen_candidates_from": "D:\\OnShouldersGiants\\TwinWorld_P0\\experiments\\p2d1\\results\\p3a6b\\p3a6b_development_audit_PRIVATE.json",
+  "warnings": [
+    "Existing previously inspected development scenes.",
+    "Weak and Strong are alternative E3 experiments.",
+    "E3 actual A is observed for conditional B prediction.",
+    "Null calibration does not guarantee true Deadzone coverage.",
+    "No statistical power or coverage guarantee.",
+    "No online action policy has been tested.",
+    "No E4 information is used."
+  ],
+  "summary": {
+    "original": {
+      "independent": {
+        "pulse_1p5": {
+          "median_pre_n": 23.0,
+          "median_post_n": 0.0,
+          "full_elimination": 23,
+          "null_accepted": 22,
+          "states": {
+            "independent_only": 21,
+            "unresolved": 2,
+            "ambiguous": 1
+          }
+        },
+        "pulse_2p25": {
+          "median_pre_n": 23.0,
+          "median_post_n": 0.0,
+          "full_elimination": 24,
+          "null_accepted": 22,
+          "states": {
+            "unresolved": 2,
+            "independent_only": 22
+          }
+        },
+        "paired_comparison": {
+          "strong_fewer_survivors": 1,
+          "equal_survivors": 23,
+          "strong_more_survivors": 0
+        }
+      },
+      "deadzone": {
+        "pulse_1p5": {
+          "median_pre_n": 13.5,
+          "median_post_n": 1.0,
+          "full_elimination": 11,
+          "null_accepted": 0,
+          "states": {
+            "deadzone_only": 13,
+            "unresolved": 11
+          },
+          "true_nearest_grid_kept": 4
+        },
+        "pulse_2p25": {
+          "median_pre_n": 13.5,
+          "median_post_n": 0.0,
+          "full_elimination": 20,
+          "null_accepted": 0,
+          "states": {
+            "unresolved": 20,
+            "deadzone_only": 4
+          },
+          "true_nearest_grid_kept": 1
+        },
+        "paired_comparison": {
+          "strong_fewer_survivors": 9,
+          "equal_survivors": 15,
+          "strong_more_survivors": 0
+        }
+      }
+    },
+    "high_in_range": {
+      "independent": {
+        "pulse_1p5": {
+          "median_pre_n": 23.0,
+          "median_post_n": 0.0,
+          "full_elimination": 23,
+          "null_accepted": 22,
+          "states": {
+            "independent_only": 21,
+            "unresolved": 2,
+            "ambiguous": 1
+          }
+        },
+        "pulse_2p25": {
+          "median_pre_n": 23.0,
+          "median_post_n": 0.0,
+          "full_elimination": 24,
+          "null_accepted": 22,
+          "states": {
+            "unresolved": 2,
+            "independent_only": 22
+          }
+        },
+        "paired_comparison": {
+          "strong_fewer_survivors": 1,
+          "equal_survivors": 23,
+          "strong_more_survivors": 0
+        }
+      },
+      "deadzone": {
+        "pulse_1p5": {
+          "median_pre_n": 23.0,
+          "median_post_n": 0.0,
+          "full_elimination": 15,
+          "null_accepted": 0,
+          "states": {
+            "unresolved": 15,
+            "deadzone_only": 9
+          },
+          "true_nearest_grid_kept": 1
+        },
+        "pulse_2p25": {
+          "median_pre_n": 23.0,
+          "median_post_n": 0.0,
+          "full_elimination": 21,
+          "null_accepted": 0,
+          "states": {
+            "unresolved": 21,
+            "deadzone_only": 3
+          },
+          "true_nearest_grid_kept": 0
+        },
+        "paired_comparison": {
+          "strong_fewer_survivors": 7,
+          "equal_survivors": 17,
+          "strong_more_survivors": 0
+        }
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "pulse_1p5": {
+          "median_pre_n": 23.0,
+          "median_post_n": 0.0,
+          "full_elimination": 23,
+          "null_accepted": 22,
+          "states": {
+            "independent_only": 21,
+            "unresolved": 2,
+            "ambiguous": 1
+          }
+        },
+        "pulse_2p25": {
+          "median_pre_n": 23.0,
+          "median_post_n": 0.0,
+          "full_elimination": 24,
+          "null_accepted": 22,
+          "states": {
+            "unresolved": 2,
+            "independent_only": 22
+          }
+        },
+        "paired_comparison": {
+          "strong_fewer_survivors": 1,
+          "equal_survivors": 23,
+          "strong_more_survivors": 0
+        }
+      },
+      "deadzone": {
+        "pulse_1p5": {
+          "median_pre_n": 23.0,
+          "median_post_n": 0.0,
+          "full_elimination": 19,
+          "null_accepted": 0,
+          "states": {
+            "unresolved": 19,
+            "deadzone_only": 5
+          },
+          "true_nearest_grid_kept": 0
+        },
+        "pulse_2p25": {
+          "median_pre_n": 23.0,
+          "median_post_n": 0.0,
+          "full_elimination": 23,
+          "null_accepted": 0,
+          "states": {
+            "unresolved": 23,
+            "deadzone_only": 1
+          },
+          "true_nearest_grid_kept": 0
+        },
+        "paired_comparison": {
+          "strong_fewer_survivors": 5,
+          "equal_survivors": 19,
+          "strong_more_survivors": 0
+        }
+      }
+    }
+  }
+}

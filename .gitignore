@@ -1,0 +1,29 @@
+.venv/
+Giant/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- 私有数据：测试集真值标签/参数（与 E4 封存同类，禁止公开）---
+data/*_private_labels.npz
+data/*_private_params.json
+outputs/p2b/*_private.npz
+
+# --- checkpoint 诊断（含 true_law_PRIVATE / params_PRIVATE 等私有字段）---
+**/checkpoints/
+
+# --- 含真律标签(true_law/true_class)的逐案例/特征 CSV ---
+**/*384case_results.csv
+**/*per_scene_predictions.csv
+**/*_feature_matrix.csv
+**/*_PCA_2d_coordinates.csv
+
+# --- 私有审计 JSON（含 _PRIVATE 字段）---
+**/*_audit_PRIVATE*.json
+**/*_PRIVATE*
+
+# --- 打包文件（含私有 CSV 副本，重复数据）---
+*.zip
+
+# --- 轨迹 CSV 中间导出（体积大，可从 npz 再生成）---
+**/F1_trajectories/*.csv

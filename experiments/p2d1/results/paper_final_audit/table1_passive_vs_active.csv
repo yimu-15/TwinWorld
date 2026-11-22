@@ -1,0 +1,11 @@
+Experiment,Condition,Metric,Value,Unit,CI95_low,CI95_high,Evidence_Status
+P0,Passive trajectory,Maximum absolute difference,0.0,m,,,Formal sanity-check
+P0,Active oracle (val),Identification accuracy,1.0,fraction,,,Privileged (non-deployable)
+P0,Active oracle (test),Identification accuracy,1.0,fraction,,,Privileged (non-deployable)
+P1-B,Active intervention on A,B final displacement difference,0.250478,m,,,Formal physical audit
+P1-C,Matched A motion,A trajectory maximum gap,0.001632,m,,,Formal physical audit
+P1-C,Divergent B response,B final gap,0.196828,m,,,Formal physical audit
+P2-C0,Passive-only,Accuracy (n=90),0.3333,fraction,0.3333,0.3333,Formal
+P2-C0,A-only,Accuracy (n=90),0.4556,fraction,0.3556,0.5556,Formal
+P2-C0,B-only,Accuracy (n=90),0.8778,fraction,0.8222,0.9333,Formal
+P2-C0,A+B,Accuracy (n=90),0.8556,fraction,0.8000,0.9111,Formal

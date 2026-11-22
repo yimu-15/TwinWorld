@@ -1,0 +1,293 @@
+{
+  "protocol": "P4-M2B0 physical domain fit pilot",
+  "smoke": false,
+  "n_scenes": 12,
+  "scene_seed": 20290317,
+  "noise_seed": 2029031701,
+  "summary": {
+    "original": {
+      "independent": {
+        "elastic": {
+          "n": 12,
+          "legacy_median_mm": 5.45785720492763,
+          "physical_median_mm": 83.63957050394296,
+          "median_paired_delta_mm": 78.72392918791692,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 12,
+          "legacy_median_mm": 5.559744915579246,
+          "physical_median_mm": 40.02647740179174,
+          "median_paired_delta_mm": 34.57529097737224,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 12,
+          "legacy_median_mm": 5.4573041220012595,
+          "physical_median_mm": 121.75030491634884,
+          "median_paired_delta_mm": 116.53972289450891,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "rigid": {
+        "elastic": {
+          "n": 12,
+          "legacy_median_mm": 14.338452958485437,
+          "physical_median_mm": 59.341677885680355,
+          "median_paired_delta_mm": 45.24005164151897,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 12,
+          "legacy_median_mm": 15.066638708034883,
+          "physical_median_mm": 73.7610735351177,
+          "median_paired_delta_mm": 58.47432022575033,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 12,
+          "legacy_median_mm": 14.225320229201074,
+          "physical_median_mm": 51.68624725065219,
+          "median_paired_delta_mm": 37.48180732055504,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "elastic": {
+        "elastic": {
+          "n": 12,
+          "legacy_median_mm": 6.64152314590039,
+          "physical_median_mm": 6.641529750400634,
+          "median_paired_delta_mm": 3.322937738303722e-07,
+          "legacy_physically_feasible_n": 12,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 12,
+          "legacy_median_mm": 6.209075169702043,
+          "physical_median_mm": 6.308673032193052,
+          "median_paired_delta_mm": 0.1910750269907382,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 12,
+          "legacy_median_mm": 6.475782884382035,
+          "physical_median_mm": 7.282718251667886,
+          "median_paired_delta_mm": 1.5311739068011803,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "deadzone": {
+        "elastic": {
+          "n": 12,
+          "legacy_median_mm": 9.12321872308478,
+          "physical_median_mm": 9.85574510428955,
+          "median_paired_delta_mm": 1.3136285754958625,
+          "legacy_physically_feasible_n": 3,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 12,
+          "legacy_median_mm": 7.757412783040076,
+          "physical_median_mm": 7.4519208769998775,
+          "median_paired_delta_mm": -0.01444974810597266,
+          "legacy_physically_feasible_n": 11,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 12,
+          "legacy_median_mm": 13.71544513655579,
+          "physical_median_mm": 16.39666115068025,
+          "median_paired_delta_mm": 1.0014067344182829,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "nonlinear": {
+        "elastic": {
+          "n": 12,
+          "legacy_median_mm": 11.294487133160693,
+          "physical_median_mm": 12.182142123615574,
+          "median_paired_delta_mm": 0.0002377084740201596,
+          "legacy_physically_feasible_n": 6,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 12,
+          "legacy_median_mm": 12.613773104008663,
+          "physical_median_mm": 12.106840452801066,
+          "median_paired_delta_mm": -0.42877610781489883,
+          "legacy_physically_feasible_n": 2,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 12,
+          "legacy_median_mm": 6.942879899079918,
+          "physical_median_mm": 6.902852183435509,
+          "median_paired_delta_mm": -3.121518195037254e-07,
+          "legacy_physically_feasible_n": 10,
+          "physical_fit_failures": 0
+        }
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "elastic": {
+          "n": 12,
+          "legacy_median_mm": 6.013947546980317,
+          "physical_median_mm": 83.462814287269,
+          "median_paired_delta_mm": 77.91002352643216,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 12,
+          "legacy_median_mm": 5.995184257415055,
+          "physical_median_mm": 25.203914655694597,
+          "median_paired_delta_mm": 20.042109906611103,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 12,
+          "legacy_median_mm": 5.948505849848587,
+          "physical_median_mm": 121.7410944513171,
+          "median_paired_delta_mm": 116.39340882910608,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "rigid": {
+        "elastic": {
+          "n": 12,
+          "legacy_median_mm": 14.649390252485425,
+          "physical_median_mm": 59.96317294684507,
+          "median_paired_delta_mm": 45.66600886780294,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 12,
+          "legacy_median_mm": 15.431417730925013,
+          "physical_median_mm": 158.03106591353026,
+          "median_paired_delta_mm": 142.86794395500738,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 12,
+          "legacy_median_mm": 14.537997043580116,
+          "physical_median_mm": 52.09764399498684,
+          "median_paired_delta_mm": 37.483695282751505,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "elastic": {
+        "elastic": {
+          "n": 12,
+          "legacy_median_mm": 7.13418744391971,
+          "physical_median_mm": 7.134187087863523,
+          "median_paired_delta_mm": 2.677733754730127e-07,
+          "legacy_physically_feasible_n": 12,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 12,
+          "legacy_median_mm": 7.013825076903174,
+          "physical_median_mm": 27.048077515423333,
+          "median_paired_delta_mm": 19.83580866280404,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 12,
+          "legacy_median_mm": 7.194281780866632,
+          "physical_median_mm": 7.326018445075565,
+          "median_paired_delta_mm": 1.5169089688805895,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "deadzone": {
+        "elastic": {
+          "n": 12,
+          "legacy_median_mm": 10.454377552181903,
+          "physical_median_mm": 20.5737183552746,
+          "median_paired_delta_mm": 10.280148296298574,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 12,
+          "legacy_median_mm": 5.468122285404751,
+          "physical_median_mm": 5.55845915657534,
+          "median_paired_delta_mm": 0.007975493949818002,
+          "legacy_physically_feasible_n": 10,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 12,
+          "legacy_median_mm": 9.537341001403789,
+          "physical_median_mm": 52.35684162160922,
+          "median_paired_delta_mm": 43.36249375936207,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "nonlinear": {
+        "elastic": {
+          "n": 12,
+          "legacy_median_mm": 10.042228758264953,
+          "physical_median_mm": 10.963195388013135,
+          "median_paired_delta_mm": -1.322631292488552e-06,
+          "legacy_physically_feasible_n": 6,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 12,
+          "legacy_median_mm": 10.790825595486643,
+          "physical_median_mm": 73.05112023899107,
+          "median_paired_delta_mm": 56.90577491779459,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 12,
+          "legacy_median_mm": 6.264652763536708,
+          "physical_median_mm": 6.264655393793436,
+          "median_paired_delta_mm": 7.40124113107754e-08,
+          "legacy_physically_feasible_n": 12,
+          "physical_fit_failures": 0
+        }
+      }
+    }
+  },
+  "test_tuning": false,
+  "E4_accessed": false,
+  "uses_test_truth_online": false,
+  "source_sha256": {
+    "74_p4m2a_generator_inference_fidelity.py": "0bce3db21b7622ac2451fa0cb3f2fbaac177790461339b9b3ad1d70ab7bc801b",
+    "75_p4m2b0_physical_domain_fit_pilot.py": "f9ef52a5e5ac48c724e23c6dc84a54c76f589ba10cb8587560f51278c045b164"
+  },
+  "limitations": [
+    "Reuses P4-M2A development scenes",
+    "Not an independent test",
+    "Legacy and physical solvers differ",
+    "Physical fit has redundant mass dimension",
+    "Finite local optimization, no global proof",
+    "Only held-out RMS compared",
+    "No structural acceptance threshold",
+    "No calibrated coverage claim",
+    "No new active experiment selection",
+    "Physical domain depends on generator prior",
+    "No robustness to incorrect domain prior tested"
+  ]
+}

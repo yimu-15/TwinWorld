@@ -1,0 +1,63 @@
+{
+  "protocol": "P4-G1A stand-alone ODE feasibility, not a predictive benchmark",
+  "smoke": false,
+  "n_scenes": 4,
+  "n_cases": 64,
+  "seed": 20291201,
+  "generator": "self-contained two-mass RK4, no MuJoCo",
+  "arms_fixed_before_outcomes": {
+    "IDEAL_ODE": {
+      "viscous_rate_s_inv": 0.0,
+      "dry_acc_ms2": 0.0,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.0
+    },
+    "SHIFTED_ODE": {
+      "viscous_rate_s_inv": 0.08,
+      "dry_acc_ms2": 0.02,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.025
+    }
+  },
+  "action_amplitudes": {
+    "e1": 0.25,
+    "e2": 0.5,
+    "weak": 0.75,
+    "strong": 2.25,
+    "mid": 1.75,
+    "HALF": 1.375,
+    "FULL": 2.75
+  },
+  "step_s": 0.002,
+  "steps": 500,
+  "sample_every": 10,
+  "source_sha256": "699ea08f85e0b5db4da69106f9124bdcecedb5f2969fb3ca10d672dd24ba3d96",
+  "scene_fingerprints_PRIVATE": [
+    "a2738143f688afc87177ef3cb82cc9a5c9dbcc8a88bed186cce9a89a02b327ac",
+    "6b5f220f794cb2a781a04aa12f43cc70e690a600cd9bb93e4d86bfaea7574ef6",
+    "a73f2d696451ddf0b76424cf225b0091bb4403e29d261be9169d0555f56eb2f5",
+    "8e4c731c8bed973fc40107299fc2f76ee6b089291da456df128c25f08a498a2e",
+    "69f71e7b8290dc70d308e6229784f53868c42f56bb945db3079c2cb411d4a2bd",
+    "266751b86c64c52dd927d17ff1414b5af3af7cb3404bf72eb7773ed5ed975111",
+    "4f2e71043f14d5aee012a70f8793bcf2736e3460bb7a5bea97596bf9dfd53901",
+    "f3a6065ea2dfcc1f0a327f8a606f4ecb00259c8a7f3194fe823c564552b0dc1f"
+  ],
+  "max_passive_within_case_difference_m": 0.0,
+  "max_passive_cross_law_difference_m": 0.0,
+  "ideal_vs_shifted_B_rms_mm_median": 23.666581358534128,
+  "ideal_vs_shifted_B_rms_mm_min": 16.104455243717567,
+  "shifted_half_vs_full_B_rms_mm_median": 198.79663698120387,
+  "new_fits": 0,
+  "classifier_decisions": 0,
+  "E4_accessed": false,
+  "truth_used_for_fit_or_selection": false,
+  "cross_simulator_claim": false,
+  "limitations": [
+    "One independent ODE generator with two arms, not two independent physics engines",
+    "Synthetic distribution only; no real hardware data",
+    "Distinct dynamical assumptions + integration implementation; shift settings are fixed, not optimized",
+    "No mechanism classification, heldout accuracy or statistical hypothesis testing in G1A",
+    "A/B controller is an explicit idealized model, not necessarily MuJoCo-XML identical",
+    "Formal G1B must freeze generator assumptions, fit budget, noise, endpoints and coverage beforehand"
+  ]
+}

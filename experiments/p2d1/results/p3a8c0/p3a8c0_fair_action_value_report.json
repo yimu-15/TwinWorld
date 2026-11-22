@@ -1,0 +1,78 @@
+{
+  "protocol": "P3-A8C0 read-only fair baseline audit",
+  "source_sha256": {
+    "p3a8b2_fresh_report.json": "3159e0b03a307d03adb55b5ae83de2ed49aee34f0f421b86a4f2edd3d57eabcb",
+    "p3a8b2_fresh_audit_PRIVATE.json": "3dba06dec88c3573c82a823bff4f39f7d9c3b502bf6689ff94d527e77dc7dd64"
+  },
+  "summary": {
+    "original": {
+      "n": 216,
+      "eligible": 197,
+      "initial_empty": 19,
+      "fair_high_if_nonempty_cost_J": 1272.7779369664156,
+      "always_high_cost_J": 1321.7729785534557,
+      "old_planner_cost_J": 1238.5596211633347,
+      "affine_planner_cost_J": 1263.0834966504497,
+      "affine_saving_vs_fair_high_J": 9.694440315965949,
+      "affine_saving_vs_fair_high_fraction": 0.007616757043315839,
+      "old_to_affine_changes": 23,
+      "old_to_affine_direction": {
+        "high -> reverse": 5,
+        "reverse -> high": 18
+      },
+      "actual_A_high_best": 188,
+      "old_actual_A_ranking_match": 172,
+      "affine_actual_A_ranking_match": 193,
+      "known_high_only_correct": 54,
+      "known_reverse_only_correct": 1,
+      "unknown_high_only_empty": 29,
+      "unknown_reverse_only_empty": 0,
+      "known_same_correct_unique": 180,
+      "known_same_true_membership": 180,
+      "known_affine_correct": 85,
+      "known_high_correct": 85,
+      "unknown_affine_empty": 30,
+      "unknown_high_empty": 35
+    },
+    "above_original_range": {
+      "n": 216,
+      "eligible": 211,
+      "initial_empty": 5,
+      "fair_high_if_nonempty_cost_J": 1287.7597542337737,
+      "always_high_cost_J": 1302.6996719013584,
+      "old_planner_cost_J": 1243.4263170573158,
+      "affine_planner_cost_J": 1279.56667039865,
+      "affine_saving_vs_fair_high_J": 8.193083835123616,
+      "affine_saving_vs_fair_high_fraction": 0.006362276665493836,
+      "old_to_affine_changes": 32,
+      "old_to_affine_direction": {
+        "reverse -> high": 26,
+        "high -> reverse": 6
+      },
+      "actual_A_high_best": 199,
+      "old_actual_A_ranking_match": 179,
+      "affine_actual_A_ranking_match": 203,
+      "known_high_only_correct": 52,
+      "known_reverse_only_correct": 2,
+      "unknown_high_only_empty": 34,
+      "unknown_reverse_only_empty": 0,
+      "known_same_correct_unique": 180,
+      "known_same_true_membership": 180,
+      "known_affine_correct": 87,
+      "known_high_correct": 87,
+      "unknown_affine_empty": 31,
+      "unknown_high_empty": 36
+    }
+  },
+  "new_simulations": 0,
+  "new_thresholds": 0,
+  "E4_accessed_by_this_script": false,
+  "limitations": [
+    "Retrospective analysis of A8B2",
+    "Not independent test replication",
+    "Only current set-intersection semantics",
+    "Private labels only for offline audit",
+    "Two bands share base scenes",
+    "Mechanical work is a cost proxy"
+  ]
+}

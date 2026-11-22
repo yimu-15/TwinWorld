@@ -1,0 +1,326 @@
+{
+  "protocol": "P3-A7E1 preregistered action-family pilot",
+  "smoke": false,
+  "n_cal": 79,
+  "n_test": 36,
+  "calibration_seed": 20270701,
+  "test_seed": 20270702,
+  "commands": {
+    "mid_gain": 1.75,
+    "reverse_gain": -1.75,
+    "high_gain": 2.75
+  },
+  "alpha_allocation": {
+    "mid": 0.05,
+    "reverse": 0.025,
+    "high": 0.025
+  },
+  "cutoffs_m": {
+    "original": {
+      "mid": {
+        "independent": 0.007212921097606599,
+        "rigid": 0.00935023121230564,
+        "elastic": 0.013276698666687304,
+        "deadzone": 0.010329045100429198,
+        "cubic": 0.013146728934615496
+      },
+      "reverse": {
+        "independent": 0.007474131971614959,
+        "rigid": 0.012338954213066406,
+        "elastic": 0.017434013354901086,
+        "deadzone": 0.012707968973812048,
+        "cubic": 0.014904393406147314
+      },
+      "high": {
+        "independent": 0.0077617076852079595,
+        "rigid": 0.013688899338630073,
+        "elastic": 0.021494465618068156,
+        "deadzone": 0.01633447099841522,
+        "cubic": 0.017665037796154585
+      }
+    },
+    "above_original_range": {
+      "mid": {
+        "independent": 0.007329758872336905,
+        "rigid": 0.010508881010240782,
+        "elastic": 0.01311949656763016,
+        "deadzone": 0.009544232907745665,
+        "cubic": 0.013640001169856022
+      },
+      "reverse": {
+        "independent": 0.008336634992859204,
+        "rigid": 0.013729717672435901,
+        "elastic": 0.015463821637617496,
+        "deadzone": 0.00973161803053415,
+        "cubic": 0.012621277480398735
+      },
+      "high": {
+        "independent": 0.0077736824243537835,
+        "rigid": 0.011774941368063912,
+        "elastic": 0.015973046983696986,
+        "deadzone": 0.011846359597384684,
+        "cubic": 0.02226639992777207
+      }
+    }
+  },
+  "summary": {
+    "original": {
+      "mid_only": {
+        "known_correct_singleton": 34,
+        "known_wrong_singleton": 1,
+        "known_contains_true": 166,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 3,
+        "ambiguous_total": 175,
+        "actions": {
+          "None": 216
+        },
+        "cost_J": 720.1988685518602,
+        "outcomes": {
+          "ambiguous_contains_true": 132,
+          "correct_singleton": 34,
+          "unknown_ambiguous": 33,
+          "ambiguous_excludes_true": 10,
+          "unknown_empty": 3,
+          "known_empty": 3,
+          "wrong_singleton": 1
+        },
+        "work_reduction_vs_reverse": 0.16015761104108978
+      },
+      "always_reverse": {
+        "known_correct_singleton": 38,
+        "known_wrong_singleton": 3,
+        "known_contains_true": 158,
+        "unknown_false_singleton": 1,
+        "unknown_empty": 3,
+        "ambiguous_total": 168,
+        "actions": {
+          "reverse": 216
+        },
+        "cost_J": 857.5405076238612,
+        "outcomes": {
+          "ambiguous_contains_true": 120,
+          "correct_singleton": 38,
+          "unknown_ambiguous": 32,
+          "ambiguous_excludes_true": 16,
+          "unknown_empty": 3,
+          "known_empty": 3,
+          "wrong_singleton": 3,
+          "unknown_false_singleton": 1
+        },
+        "work_reduction_vs_reverse": 0.0
+      },
+      "reverse_if_ambiguous": {
+        "known_correct_singleton": 38,
+        "known_wrong_singleton": 3,
+        "known_contains_true": 158,
+        "unknown_false_singleton": 1,
+        "unknown_empty": 3,
+        "ambiguous_total": 168,
+        "actions": {
+          "reverse": 175,
+          "None": 41
+        },
+        "cost_J": 828.9474167604303,
+        "outcomes": {
+          "ambiguous_contains_true": 120,
+          "correct_singleton": 38,
+          "unknown_ambiguous": 32,
+          "ambiguous_excludes_true": 16,
+          "unknown_empty": 3,
+          "known_empty": 3,
+          "wrong_singleton": 3,
+          "unknown_false_singleton": 1
+        },
+        "work_reduction_vs_reverse": 0.03334313727366517
+      },
+      "high_if_ambiguous": {
+        "known_correct_singleton": 82,
+        "known_wrong_singleton": 5,
+        "known_contains_true": 161,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 35,
+        "ambiguous_total": 87,
+        "actions": {
+          "high": 175,
+          "None": 41
+        },
+        "cost_J": 1143.4379263113028,
+        "outcomes": {
+          "ambiguous_contains_true": 79,
+          "correct_singleton": 82,
+          "unknown_empty": 35,
+          "ambiguous_excludes_true": 7,
+          "wrong_singleton": 5,
+          "known_empty": 7,
+          "unknown_ambiguous": 1
+        },
+        "work_reduction_vs_reverse": -0.3333923192498836
+      },
+      "candidate_aware": {
+        "known_correct_singleton": 76,
+        "known_wrong_singleton": 5,
+        "known_contains_true": 161,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 35,
+        "ambiguous_total": 93,
+        "actions": {
+          "high": 165,
+          "reverse": 45,
+          "None": 6
+        },
+        "cost_J": 1148.266715654012,
+        "outcomes": {
+          "ambiguous_contains_true": 85,
+          "correct_singleton": 76,
+          "unknown_empty": 35,
+          "ambiguous_excludes_true": 7,
+          "wrong_singleton": 5,
+          "known_empty": 7,
+          "unknown_ambiguous": 1
+        },
+        "work_reduction_vs_reverse": -0.33902329446304186
+      }
+    },
+    "above_original_range": {
+      "mid_only": {
+        "known_correct_singleton": 27,
+        "known_wrong_singleton": 3,
+        "known_contains_true": 174,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 2,
+        "ambiguous_total": 184,
+        "actions": {
+          "None": 216
+        },
+        "cost_J": 709.0002520359951,
+        "outcomes": {
+          "ambiguous_contains_true": 147,
+          "ambiguous_excludes_true": 3,
+          "unknown_ambiguous": 34,
+          "wrong_singleton": 3,
+          "correct_singleton": 27,
+          "unknown_empty": 2
+        },
+        "work_reduction_vs_reverse": 0.1601927113659652
+      },
+      "always_reverse": {
+        "known_correct_singleton": 45,
+        "known_wrong_singleton": 4,
+        "known_contains_true": 169,
+        "unknown_false_singleton": 3,
+        "unknown_empty": 3,
+        "ambiguous_total": 157,
+        "actions": {
+          "reverse": 216
+        },
+        "cost_J": 844.2416035578826,
+        "outcomes": {
+          "ambiguous_contains_true": 124,
+          "known_empty": 4,
+          "unknown_ambiguous": 30,
+          "correct_singleton": 45,
+          "unknown_false_singleton": 3,
+          "wrong_singleton": 4,
+          "ambiguous_excludes_true": 3,
+          "unknown_empty": 3
+        },
+        "work_reduction_vs_reverse": 0.0
+      },
+      "reverse_if_ambiguous": {
+        "known_correct_singleton": 45,
+        "known_wrong_singleton": 4,
+        "known_contains_true": 169,
+        "unknown_false_singleton": 3,
+        "unknown_empty": 3,
+        "ambiguous_total": 157,
+        "actions": {
+          "reverse": 184,
+          "None": 32
+        },
+        "cost_J": 820.1734332293311,
+        "outcomes": {
+          "ambiguous_contains_true": 124,
+          "known_empty": 4,
+          "unknown_ambiguous": 30,
+          "correct_singleton": 45,
+          "unknown_false_singleton": 3,
+          "wrong_singleton": 4,
+          "ambiguous_excludes_true": 3,
+          "unknown_empty": 3
+        },
+        "work_reduction_vs_reverse": 0.028508628604798917
+      },
+      "high_if_ambiguous": {
+        "known_correct_singleton": 86,
+        "known_wrong_singleton": 6,
+        "known_contains_true": 165,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 36,
+        "ambiguous_total": 83,
+        "actions": {
+          "high": 184,
+          "None": 32
+        },
+        "cost_J": 1148.684348292163,
+        "outcomes": {
+          "ambiguous_contains_true": 79,
+          "wrong_singleton": 6,
+          "correct_singleton": 86,
+          "unknown_empty": 36,
+          "ambiguous_excludes_true": 4,
+          "known_empty": 5
+        },
+        "work_reduction_vs_reverse": -0.3606109239952982
+      },
+      "candidate_aware": {
+        "known_correct_singleton": 91,
+        "known_wrong_singleton": 6,
+        "known_contains_true": 166,
+        "unknown_false_singleton": 0,
+        "unknown_empty": 36,
+        "ambiguous_total": 79,
+        "actions": {
+          "high": 167,
+          "reverse": 47,
+          "None": 2
+        },
+        "cost_J": 1141.0470671090122,
+        "outcomes": {
+          "ambiguous_contains_true": 75,
+          "wrong_singleton": 6,
+          "correct_singleton": 91,
+          "unknown_empty": 36,
+          "ambiguous_excludes_true": 4,
+          "known_empty": 4
+        },
+        "work_reduction_vs_reverse": -0.35156460224218283
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_threshold_tuned": false,
+  "truth_used_for_online_action": false,
+  "action_selected_before_challenge": true,
+  "smoke_has_valid_coverage": false,
+  "limitations": [
+    "Physics-informed fixed action heuristic",
+    "Not optimized model-disagreement planning",
+    "MuJoCo only, no RGB vision",
+    "Unknown law excluded from calibration",
+    "One specific unknown Saturating law",
+    "Possible nested/equivalent candidate laws",
+    "Counterfactual actions simulated offline",
+    "Only selected action charged per policy",
+    "No safety guarantee for unknown laws",
+    "Conditional coverage needs exchangeability",
+    "Two bands share base scenes"
+  ],
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "27_p3a3b_evidence_vs_structure.py": "75296d8c807ba591347bedd77b57e9a129b8ff025b07768d99b90e6da52699a9",
+    "47_p3a6h_six_mechanism_openworld_audit.py": "c538c8a06d846397fe90f2b5320fe83a24e5636530b5e7995cd129ae7e8584fe",
+    "58_p3a7d_hypothesis_set_validation.py": "3058b7f7a2f668a3aa6db76919c3eaeba1df97d2f14db1ed711f40ef3ec2fa16"
+  }
+}

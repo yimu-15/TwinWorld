@@ -1,0 +1,400 @@
+{
+  "protocol": "P3-A7B prospective separation gate",
+  "smoke": false,
+  "calibration_seed": 20270310,
+  "test_seed": 20270311,
+  "n_cal_scenes": 30,
+  "n_test_scenes": 36,
+  "thresholds": {
+    "tau_weak_m": 0.016174974696574147,
+    "tau_absolute_m": 0.05322507294893085,
+    "tau_switch_m": 0.004686505283456072,
+    "bic_gap_min": 10.0,
+    "weak_separation_min_m": 0.005,
+    "calibration_n": 150,
+    "correct_anchor_n": 97
+  },
+  "summary": {
+    "original": {
+      "independent": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "correct": 32,
+            "represented_false_reject": 1,
+            "wrong_law": 3
+          },
+          "full": {
+            "correct": 34,
+            "wrong_law": 2
+          },
+          "a7a": {
+            "correct": 34,
+            "wrong_law": 2
+          },
+          "a7b": {
+            "correct": 34,
+            "wrong_law": 2
+          }
+        },
+        "a7a_strong": 14,
+        "a7b_strong": 36
+      },
+      "rigid": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "correct": 27,
+            "wrong_law": 9
+          },
+          "full": {
+            "correct": 36
+          },
+          "a7a": {
+            "correct": 36
+          },
+          "a7b": {
+            "correct": 36
+          }
+        },
+        "a7a_strong": 10,
+        "a7b_strong": 34
+      },
+      "elastic": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "wrong_law": 24,
+            "correct": 11,
+            "represented_false_reject": 1
+          },
+          "full": {
+            "correct": 25,
+            "wrong_law": 11
+          },
+          "a7a": {
+            "wrong_law": 17,
+            "correct": 19
+          },
+          "a7b": {
+            "correct": 25,
+            "wrong_law": 11
+          }
+        },
+        "a7a_strong": 21,
+        "a7b_strong": 36
+      },
+      "deadzone": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "correct": 32,
+            "represented_false_reject": 3,
+            "wrong_law": 1
+          },
+          "full": {
+            "wrong_law": 3,
+            "correct": 32,
+            "represented_false_reject": 1
+          },
+          "a7a": {
+            "correct": 34,
+            "wrong_law": 2
+          },
+          "a7b": {
+            "correct": 33,
+            "wrong_law": 2,
+            "represented_false_reject": 1
+          }
+        },
+        "a7a_strong": 8,
+        "a7b_strong": 29
+      },
+      "nonlinear": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "wrong_law": 20,
+            "correct": 14,
+            "represented_false_reject": 2
+          },
+          "full": {
+            "correct": 15,
+            "wrong_law": 16,
+            "represented_false_reject": 5
+          },
+          "a7a": {
+            "correct": 15,
+            "wrong_law": 18,
+            "represented_false_reject": 3
+          },
+          "a7b": {
+            "correct": 15,
+            "wrong_law": 16,
+            "represented_false_reject": 5
+          }
+        },
+        "a7a_strong": 21,
+        "a7b_strong": 36
+      },
+      "saturating": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "correct_reject": 4,
+            "unknown_false_accept": 32
+          },
+          "full": {
+            "correct_reject": 36
+          },
+          "a7a": {
+            "correct_reject": 31,
+            "unknown_false_accept": 5
+          },
+          "a7b": {
+            "correct_reject": 36
+          }
+        },
+        "a7a_strong": 31,
+        "a7b_strong": 36
+      },
+      "_overall": {
+        "known_n": 180,
+        "unknown_n": 36,
+        "known_correct": {
+          "weak": 116,
+          "full": 142,
+          "a7a": 138,
+          "a7b": 143
+        },
+        "unknown_correct_reject": {
+          "weak": 4,
+          "full": 36,
+          "a7a": 31,
+          "a7b": 36
+        },
+        "strong_count": {
+          "weak": 0,
+          "full": 216,
+          "a7a": 105,
+          "a7b": 207
+        },
+        "total_cost_J": {
+          "weak": 107.18554484705875,
+          "full": 491.6885422679496,
+          "a7a": 291.47944274052134,
+          "a7b": 472.36908244369005
+        },
+        "work_reduction_vs_full": {
+          "weak": 0.782005201193712,
+          "full": 0.0,
+          "a7a": 0.4071868313301527,
+          "a7b": 0.039292068379602856
+        }
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "correct": 32,
+            "represented_false_reject": 1,
+            "wrong_law": 3
+          },
+          "full": {
+            "correct": 34,
+            "wrong_law": 2
+          },
+          "a7a": {
+            "correct": 34,
+            "wrong_law": 2
+          },
+          "a7b": {
+            "correct": 34,
+            "wrong_law": 2
+          }
+        },
+        "a7a_strong": 14,
+        "a7b_strong": 36
+      },
+      "rigid": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "correct": 27,
+            "wrong_law": 9
+          },
+          "full": {
+            "correct": 36
+          },
+          "a7a": {
+            "correct": 36
+          },
+          "a7b": {
+            "correct": 36
+          }
+        },
+        "a7a_strong": 10,
+        "a7b_strong": 34
+      },
+      "elastic": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "wrong_law": 24,
+            "correct": 11,
+            "represented_false_reject": 1
+          },
+          "full": {
+            "correct": 25,
+            "wrong_law": 11
+          },
+          "a7a": {
+            "wrong_law": 17,
+            "correct": 19
+          },
+          "a7b": {
+            "correct": 25,
+            "wrong_law": 11
+          }
+        },
+        "a7a_strong": 21,
+        "a7b_strong": 36
+      },
+      "deadzone": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "correct": 27,
+            "wrong_law": 9
+          },
+          "full": {
+            "correct": 21,
+            "represented_false_reject": 7,
+            "wrong_law": 8
+          },
+          "a7a": {
+            "correct": 26,
+            "represented_false_reject": 5,
+            "wrong_law": 5
+          },
+          "a7b": {
+            "correct": 21,
+            "represented_false_reject": 7,
+            "wrong_law": 8
+          }
+        },
+        "a7a_strong": 19,
+        "a7b_strong": 34
+      },
+      "nonlinear": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "wrong_law": 20,
+            "correct": 14,
+            "represented_false_reject": 2
+          },
+          "full": {
+            "correct": 15,
+            "wrong_law": 16,
+            "represented_false_reject": 5
+          },
+          "a7a": {
+            "correct": 15,
+            "wrong_law": 18,
+            "represented_false_reject": 3
+          },
+          "a7b": {
+            "correct": 15,
+            "wrong_law": 16,
+            "represented_false_reject": 5
+          }
+        },
+        "a7a_strong": 21,
+        "a7b_strong": 36
+      },
+      "saturating": {
+        "n": 36,
+        "outcomes": {
+          "weak": {
+            "correct_reject": 4,
+            "unknown_false_accept": 32
+          },
+          "full": {
+            "correct_reject": 36
+          },
+          "a7a": {
+            "correct_reject": 31,
+            "unknown_false_accept": 5
+          },
+          "a7b": {
+            "correct_reject": 36
+          }
+        },
+        "a7a_strong": 31,
+        "a7b_strong": 36
+      },
+      "_overall": {
+        "known_n": 180,
+        "unknown_n": 36,
+        "known_correct": {
+          "weak": 111,
+          "full": 131,
+          "a7a": 130,
+          "a7b": 131
+        },
+        "unknown_correct_reject": {
+          "weak": 4,
+          "full": 36,
+          "a7a": 31,
+          "a7b": 36
+        },
+        "strong_count": {
+          "weak": 0,
+          "full": 216,
+          "a7a": 116,
+          "a7b": 212
+        },
+        "total_cost_J": {
+          "weak": 101.7493425849649,
+          "full": 482.5156203813708,
+          "a7a": 306.76412753315367,
+          "a7b": 474.34516664823144
+        },
+        "work_reduction_vs_full": {
+          "weak": 0.7891273602613234,
+          "full": 0.0,
+          "a7a": 0.3642400067987574,
+          "a7b": 0.016933034679129357
+        }
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_threshold_tuning": false,
+  "online_uses_truth": false,
+  "online_uses_strong_before_gate": false,
+  "limitations": [
+    "MuJoCo synthetic environments only",
+    "One specific unknown Saturating law",
+    "No safety or open-set coverage guarantee",
+    "Weak margin selects among E1/E2 fits",
+    "BIC anchor itself was selected using Weak",
+    "The guard may increase Strong usage",
+    "Strong counterfactuals used for audit only",
+    "Fixed Strong action, not action optimization",
+    "No RGB visual perception yet",
+    "Predictions condition on observed A",
+    "Gap bands share base scenes"
+  ],
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "27_p3a3b_evidence_vs_structure.py": "75296d8c807ba591347bedd77b57e9a129b8ff025b07768d99b90e6da52699a9",
+    "47_p3a6h_six_mechanism_openworld_audit.py": "c538c8a06d846397fe90f2b5320fe83a24e5636530b5e7995cd129ae7e8584fe",
+    "48_p3a6i_calibrated_revision.py": "d90363d99b8e584f749d2e3ef16bd56d5e67ccc2972736c9d50126a947e53c71",
+    "55_p3a7a_evidence_gated_escalation.py": "ef38c9c1fe2d11df51533f700aea80d7f60a0784c11d0f627d07f91c52d93cee"
+  }
+}

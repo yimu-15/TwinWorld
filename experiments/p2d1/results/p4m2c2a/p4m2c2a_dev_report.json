@@ -1,0 +1,34 @@
+{
+  "protocol": "P4-M2C2A targeted SLSQP attempt replay",
+  "smoke": false,
+  "development_only": true,
+  "n_cases": 21,
+  "historical_violation_count": 21,
+  "law": "deadzone",
+  "solver": "SLSQP",
+  "maxiter": 150,
+  "ftol": 1e-09,
+  "starts_per_fit": 2,
+  "replay_closes_violations": 21,
+  "optimizer_search_gap_cases": 21,
+  "uses_truth_in_fitting": false,
+  "uses_mid_validation": false,
+  "E4_accessed": false,
+  "source_sha256": {
+    "80_p4m2c0_prior_mismatch_stress.py": "08fae73537796474fbc182258d726092b0f9e9a7ccbe6db6f7ce5510b48eed03",
+    "81_p4m2c1_prior_conflict_audit.py": "77cac2ede1ca4eb7ddd5ec16419fede7d1e83fc39b1f74f74d728a3dfcccdde8",
+    "77_p4m2b2a_matched_domain_fit.py": "641be70d416fa8a6b27464446aef564304a339e488835a4fdf208cc6a0478d83",
+    "p4m2c0_dev_report.json": "ee4347a89a728c5e453e6ca5907aad1e968250ae474cff85ab4a4af41fe646f8",
+    "p4m2c0_dev_audit_PRIVATE.json": "536b6136fc094c602baabf370a43d424856beb1b4e9add6223cda2fd9e604501",
+    "p4m2c1_dev_report.json": "7a57f8a5cf463d88031fb6690da9a00ac4ddf650d402d3dac54a83e09760ddcc",
+    "p4m2c1_dev_audit_PRIVATE.json": "8ee5efede98163ae2fd67e473a8437fae9cb178fa72e713c6e46b3d884238369"
+  },
+  "limitations": [
+    "Only 21 historical violation cases",
+    "Development data only",
+    "Two original SLSQP starts",
+    "No global optimality certificate",
+    "No independent evaluation",
+    "No adaptive policy"
+  ]
+}

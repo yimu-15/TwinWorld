@@ -1,0 +1,167 @@
+{
+  "protocol": "P3-A8A resolution-aware confirmation",
+  "smoke": false,
+  "n_cal_scenes": 79,
+  "n_test_scenes": 36,
+  "calibration_seed": 20270901,
+  "test_seed": 20270902,
+  "optimizer_bounds_PRIVATE": {
+    "elastic": {
+      "lower": [
+        0.01,
+        0.001
+      ],
+      "upper": [
+        70.0,
+        15.0
+      ]
+    },
+    "deadzone": {
+      "lower": [
+        0.01,
+        0.001,
+        0.001
+      ],
+      "upper": [
+        70.0,
+        15.0,
+        0.2
+      ]
+    },
+    "cubic": {
+      "lower": [
+        0.01,
+        0.001,
+        0.01
+      ],
+      "upper": [
+        70.0,
+        15.0,
+        2500.0
+      ]
+    }
+  },
+  "measurement_sigma_m": 0.005,
+  "alpha_mid": 0.05,
+  "alpha_high": 0.05,
+  "separation_cutoff": 3.2897072539029444,
+  "cutoffs_m": {
+    "original": {
+      "mid": {
+        "independent": 0.00721292109760758,
+        "rigid": 0.009339740537494293,
+        "elastic": 0.011952151445694602,
+        "deadzone": 0.01201600162250451,
+        "cubic": 0.012887848222902478
+      },
+      "high": {
+        "independent": 0.006716231878367654,
+        "rigid": 0.011632754252652021,
+        "elastic": 0.016384298866664024,
+        "deadzone": 0.014794303255619796,
+        "cubic": 0.017064458939632567
+      }
+    },
+    "above_original_range": {
+      "mid": {
+        "independent": 0.007196535229612811,
+        "rigid": 0.010125020599724826,
+        "elastic": 0.012793320582823838,
+        "deadzone": 0.008696544466860495,
+        "cubic": 0.011912591208610962
+      },
+      "high": {
+        "independent": 0.007300776204209927,
+        "rigid": 0.010645705998814009,
+        "elastic": 0.014928809727990438,
+        "deadzone": 0.012052717547611258,
+        "cubic": 0.015281295029878477
+      }
+    }
+  },
+  "summary": {
+    "original": {
+      "baseline": {
+        "known_correct_unique": 87,
+        "known_wrong_unique": 2,
+        "unknown_false_unique": 0,
+        "known_contains_true": 156,
+        "unknown_empty": 36,
+        "decisions": {
+          "ambiguous": 78,
+          "rigid": 31,
+          "unresolved_none": 49,
+          "deadzone": 28,
+          "cubic": 29,
+          "elastic": 1
+        }
+      },
+      "resolution": {
+        "known_correct_unique": 87,
+        "known_wrong_unique": 2,
+        "unknown_false_unique": 0,
+        "known_contains_true": 156,
+        "unknown_empty": 36,
+        "decisions": {
+          "ambiguous": 78,
+          "rigid": 31,
+          "unresolved_none": 49,
+          "deadzone": 28,
+          "cubic": 29,
+          "elastic": 1
+        }
+      },
+      "total_work_J": 1361.852392482287
+    },
+    "above_original_range": {
+      "baseline": {
+        "known_correct_unique": 91,
+        "known_wrong_unique": 1,
+        "unknown_false_unique": 0,
+        "known_contains_true": 157,
+        "unknown_empty": 36,
+        "decisions": {
+          "ambiguous": 71,
+          "rigid": 33,
+          "deadzone": 33,
+          "cubic": 25,
+          "unresolved_none": 53,
+          "elastic": 1
+        }
+      },
+      "resolution": {
+        "known_correct_unique": 91,
+        "known_wrong_unique": 1,
+        "unknown_false_unique": 0,
+        "known_contains_true": 157,
+        "unknown_empty": 36,
+        "decisions": {
+          "ambiguous": 71,
+          "rigid": 33,
+          "deadzone": 33,
+          "cubic": 25,
+          "unresolved_none": 53,
+          "elastic": 1
+        }
+      },
+      "total_work_J": 1340.9025196216744
+    }
+  },
+  "E4_accessed": false,
+  "test_threshold_tuned": false,
+  "online_uses_truth": false,
+  "claim_of_certified_error_control": false,
+  "limitations": [
+    "Fixed Mid and High interventions",
+    "No action planning yet",
+    "Separation assumes simple Gaussian models",
+    "Fitted model uncertainty is not integrated",
+    "Observed A used after action completion",
+    "No frequentist false-confirmation guarantee",
+    "MuJoCo synthetic data only",
+    "No RGB perception",
+    "Only one unknown mechanism",
+    "Gap bands share physical scenes",
+    "Test data cannot retune this rule"
+  ]
+}

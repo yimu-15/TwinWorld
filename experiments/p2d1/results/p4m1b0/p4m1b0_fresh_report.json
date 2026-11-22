@@ -1,0 +1,173 @@
+{
+  "protocol": "P4-M1B0 legal composite parameter witness",
+  "smoke": false,
+  "n_base_scenes": 8,
+  "scene_seed": 20290201,
+  "noise_sigma_m": 0.005,
+  "comparison_directions": [
+    [
+      "elastic",
+      "deadzone"
+    ],
+    [
+      "deadzone",
+      "elastic"
+    ]
+  ],
+  "history": [
+    "e1",
+    "e2",
+    "weak",
+    "strong",
+    "mid"
+  ],
+  "challenges": [
+    "mid",
+    "high",
+    "reverse_high"
+  ],
+  "summary": {
+    "original": {
+      "elastic_to_deadzone": {
+        "n_scenes": 8,
+        "same_pair_hard_all_count": 0,
+        "actions": {
+          "mid": {
+            "fixed_min_d": 18.220985224235626,
+            "profiled_min_d": 18.212437936276487,
+            "fixed_median_d": 24.9505249202501,
+            "profiled_median_d": 24.938759616453442,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          },
+          "high": {
+            "fixed_min_d": 20.846823538397924,
+            "profiled_min_d": 19.679982235000406,
+            "fixed_median_d": 28.387671246553815,
+            "profiled_median_d": 26.851621810837546,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          },
+          "reverse_high": {
+            "fixed_min_d": 20.88254340633863,
+            "profiled_min_d": 19.698576424370042,
+            "fixed_median_d": 28.342168424818965,
+            "profiled_median_d": 26.844770330257592,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          }
+        }
+      },
+      "deadzone_to_elastic": {
+        "n_scenes": 8,
+        "same_pair_hard_all_count": 0,
+        "actions": {
+          "mid": {
+            "fixed_min_d": 42.512408983976485,
+            "profiled_min_d": 42.50818268579898,
+            "fixed_median_d": 69.11843765915998,
+            "profiled_median_d": 69.11438644482507,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          },
+          "high": {
+            "fixed_min_d": 49.54356713646695,
+            "profiled_min_d": 46.40474275246715,
+            "fixed_median_d": 73.29896422032658,
+            "profiled_median_d": 70.74011822836957,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          },
+          "reverse_high": {
+            "fixed_min_d": 49.570349349123795,
+            "profiled_min_d": 46.42184921516251,
+            "fixed_median_d": 73.33655222430997,
+            "profiled_median_d": 70.76519901124017,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          }
+        }
+      }
+    },
+    "above_original_range": {
+      "elastic_to_deadzone": {
+        "n_scenes": 8,
+        "same_pair_hard_all_count": 0,
+        "actions": {
+          "mid": {
+            "fixed_min_d": 102.48994970229634,
+            "profiled_min_d": 102.48994970229634,
+            "fixed_median_d": 211.10970266760273,
+            "profiled_median_d": 211.10970266760265,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          },
+          "high": {
+            "fixed_min_d": 99.27749564749263,
+            "profiled_min_d": 99.27749564749263,
+            "fixed_median_d": 203.13387445509227,
+            "profiled_median_d": 203.13387445509215,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          },
+          "reverse_high": {
+            "fixed_min_d": 99.27287595522536,
+            "profiled_min_d": 99.27287595522536,
+            "fixed_median_d": 203.06588963465202,
+            "profiled_median_d": 203.0658896346519,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          }
+        }
+      },
+      "deadzone_to_elastic": {
+        "n_scenes": 8,
+        "same_pair_hard_all_count": 0,
+        "actions": {
+          "mid": {
+            "fixed_min_d": 87.12493458564664,
+            "profiled_min_d": 87.11540470498306,
+            "fixed_median_d": 102.06730827498133,
+            "profiled_median_d": 102.06730827498133,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          },
+          "high": {
+            "fixed_min_d": 82.11445585634874,
+            "profiled_min_d": 82.11445585634874,
+            "fixed_median_d": 106.8502209138476,
+            "profiled_median_d": 101.88534398979513,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          },
+          "reverse_high": {
+            "fixed_min_d": 82.09011593026096,
+            "profiled_min_d": 82.09011593026096,
+            "fixed_median_d": 106.80887571720268,
+            "profiled_median_d": 101.84789733769122,
+            "fixed_hard_count": 0,
+            "profiled_hard_count": 0
+          }
+        }
+      }
+    }
+  },
+  "E4_accessed": false,
+  "online_uses_truth": false,
+  "limitations": [
+    "One-sided parameter optimization only",
+    "Masses and initial velocity held equal",
+    "Physical scene truth used offline",
+    "Optimization may find local minima",
+    "No global minimum certified",
+    "Separate profiles do not define one world pair hard under all actions",
+    "No learned action choice",
+    "No statistical abstention policy",
+    "No test-set threshold fitting",
+    "Synthetic original Gaussian noise only"
+  ],
+  "source_sha256": {
+    "68_p3a8c1_temporal_action_feasibility.py": "11d79d16b141ca65a94742b0377ab4cee7e9d5b9904105dbc8350988b3246a66",
+    "73_p4m1b0_composite_parameter_witness.py": "31789ebf29905f58a34dbc36e916118763ad7dd51bb27ee9e91a3b05f4eca96a"
+  }
+}

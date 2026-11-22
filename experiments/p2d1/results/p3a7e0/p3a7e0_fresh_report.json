@@ -1,0 +1,473 @@
+{
+  "protocol": "P3-A7E0 adaptive reverse continuation",
+  "smoke": false,
+  "calibration_seed": 20270512,
+  "test_seed": 20270513,
+  "n_cal_scenes": 39,
+  "n_test_scenes": 36,
+  "alpha_mid": 0.05,
+  "alpha_reverse": 0.05,
+  "cutoffs_m": {
+    "original": {
+      "mid": {
+        "independent": 0.008852228982760339,
+        "rigid": 0.013647317858187588,
+        "elastic": 0.011820081537996551,
+        "deadzone": 0.010993992898484902,
+        "cubic": 0.013258611083781862
+      },
+      "reverse": {
+        "independent": 0.00801485680218159,
+        "rigid": 0.011453899276055161,
+        "elastic": 0.01199911918367595,
+        "deadzone": 0.011500036274243152,
+        "cubic": 0.011043443779470766
+      }
+    },
+    "above_original_range": {
+      "mid": {
+        "independent": 0.007817630895868396,
+        "rigid": 0.009814693398025662,
+        "elastic": 0.011515250400495504,
+        "deadzone": 0.011069041126151861,
+        "cubic": 0.013737866658140103
+      },
+      "reverse": {
+        "independent": 0.007526863328348143,
+        "rigid": 0.011489036455457242,
+        "elastic": 0.01656851368684468,
+        "deadzone": 0.008068126799069215,
+        "cubic": 0.013462544300563654
+      }
+    }
+  },
+  "summary": {
+    "original": {
+      "independent": {
+        "mid_only": {
+          "outcomes": {
+            "ambiguous_contains_true": 36
+          },
+          "mean_set_size": 4.0
+        },
+        "always_reverse": {
+          "outcomes": {
+            "ambiguous_contains_true": 36
+          },
+          "mean_set_size": 4.0
+        },
+        "adaptive": {
+          "outcomes": {
+            "ambiguous_contains_true": 36
+          },
+          "mean_set_size": 4.0
+        }
+      },
+      "rigid": {
+        "mid_only": {
+          "outcomes": {
+            "ambiguous_contains_true": 14,
+            "correct_singleton": 21,
+            "known_empty": 1
+          },
+          "mean_set_size": 1.7222222222222223
+        },
+        "always_reverse": {
+          "outcomes": {
+            "correct_singleton": 33,
+            "ambiguous_contains_true": 2,
+            "known_empty": 1
+          },
+          "mean_set_size": 1.0277777777777777
+        },
+        "adaptive": {
+          "outcomes": {
+            "correct_singleton": 33,
+            "ambiguous_contains_true": 2,
+            "known_empty": 1
+          },
+          "mean_set_size": 1.0277777777777777
+        }
+      },
+      "elastic": {
+        "mid_only": {
+          "outcomes": {
+            "ambiguous_contains_true": 31,
+            "known_empty": 2,
+            "wrong_singleton": 3
+          },
+          "mean_set_size": 2.6666666666666665
+        },
+        "always_reverse": {
+          "outcomes": {
+            "ambiguous_contains_true": 29,
+            "known_empty": 4,
+            "ambiguous_excludes_true": 1,
+            "wrong_singleton": 2
+          },
+          "mean_set_size": 2.4444444444444446
+        },
+        "adaptive": {
+          "outcomes": {
+            "ambiguous_contains_true": 29,
+            "known_empty": 3,
+            "wrong_singleton": 3,
+            "ambiguous_excludes_true": 1
+          },
+          "mean_set_size": 2.4722222222222223
+        }
+      },
+      "deadzone": {
+        "mid_only": {
+          "outcomes": {
+            "ambiguous_contains_true": 35,
+            "wrong_singleton": 1
+          },
+          "mean_set_size": 2.4166666666666665
+        },
+        "always_reverse": {
+          "outcomes": {
+            "correct_singleton": 5,
+            "ambiguous_contains_true": 30,
+            "wrong_singleton": 1
+          },
+          "mean_set_size": 2.0
+        },
+        "adaptive": {
+          "outcomes": {
+            "correct_singleton": 5,
+            "ambiguous_contains_true": 30,
+            "wrong_singleton": 1
+          },
+          "mean_set_size": 2.0
+        }
+      },
+      "nonlinear": {
+        "mid_only": {
+          "outcomes": {
+            "ambiguous_contains_true": 16,
+            "correct_singleton": 18,
+            "ambiguous_excludes_true": 1,
+            "known_empty": 1
+          },
+          "mean_set_size": 1.8333333333333333
+        },
+        "always_reverse": {
+          "outcomes": {
+            "ambiguous_contains_true": 13,
+            "correct_singleton": 18,
+            "known_empty": 4,
+            "ambiguous_excludes_true": 1
+          },
+          "mean_set_size": 1.5833333333333333
+        },
+        "adaptive": {
+          "outcomes": {
+            "ambiguous_contains_true": 13,
+            "correct_singleton": 20,
+            "known_empty": 2,
+            "ambiguous_excludes_true": 1
+          },
+          "mean_set_size": 1.6388888888888888
+        }
+      },
+      "saturating": {
+        "mid_only": {
+          "outcomes": {
+            "unknown_ambiguous": 32,
+            "unknown_false_singleton": 3,
+            "unknown_empty": 1
+          },
+          "mean_set_size": 2.6944444444444446
+        },
+        "always_reverse": {
+          "outcomes": {
+            "unknown_ambiguous": 30,
+            "unknown_empty": 5,
+            "unknown_false_singleton": 1
+          },
+          "mean_set_size": 2.388888888888889
+        },
+        "adaptive": {
+          "outcomes": {
+            "unknown_ambiguous": 30,
+            "unknown_empty": 3,
+            "unknown_false_singleton": 3
+          },
+          "mean_set_size": 2.4444444444444446
+        }
+      },
+      "_overall": {
+        "n": 216,
+        "known_n": 180,
+        "unknown_n": 36,
+        "policies": {
+          "mid_only": {
+            "known_correct_unique": 39,
+            "known_wrong_unique": 4,
+            "known_contains_true": 171,
+            "known_ambiguous": 133,
+            "unknown_false_singleton": 3,
+            "unknown_empty": 1,
+            "unknown_ambiguous": 32,
+            "reverse_executions": 0,
+            "cost_J": 723.9149067089786,
+            "cost_reduction_vs_always": 0.16746571255079992
+          },
+          "always_reverse": {
+            "known_correct_unique": 56,
+            "known_wrong_unique": 3,
+            "known_contains_true": 166,
+            "known_ambiguous": 112,
+            "unknown_false_singleton": 1,
+            "unknown_empty": 5,
+            "unknown_ambiguous": 30,
+            "reverse_executions": 216,
+            "cost_J": 869.5316428672023,
+            "cost_reduction_vs_always": 0.0
+          },
+          "adaptive": {
+            "known_correct_unique": 58,
+            "known_wrong_unique": 4,
+            "known_contains_true": 168,
+            "known_ambiguous": 112,
+            "unknown_false_singleton": 3,
+            "unknown_empty": 3,
+            "unknown_ambiguous": 30,
+            "reverse_executions": 165,
+            "cost_J": 829.426245509098,
+            "cost_reduction_vs_always": 0.04612298780279051
+          }
+        }
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "mid_only": {
+          "outcomes": {
+            "ambiguous_contains_true": 35,
+            "ambiguous_excludes_true": 1
+          },
+          "mean_set_size": 3.9722222222222223
+        },
+        "always_reverse": {
+          "outcomes": {
+            "ambiguous_contains_true": 35,
+            "ambiguous_excludes_true": 1
+          },
+          "mean_set_size": 3.9444444444444446
+        },
+        "adaptive": {
+          "outcomes": {
+            "ambiguous_contains_true": 35,
+            "ambiguous_excludes_true": 1
+          },
+          "mean_set_size": 3.9444444444444446
+        }
+      },
+      "rigid": {
+        "mid_only": {
+          "outcomes": {
+            "correct_singleton": 21,
+            "ambiguous_contains_true": 10,
+            "known_empty": 2,
+            "ambiguous_excludes_true": 3
+          },
+          "mean_set_size": 1.5277777777777777
+        },
+        "always_reverse": {
+          "outcomes": {
+            "correct_singleton": 21,
+            "ambiguous_contains_true": 7,
+            "known_empty": 5,
+            "ambiguous_excludes_true": 1,
+            "wrong_singleton": 2
+          },
+          "mean_set_size": 1.1666666666666667
+        },
+        "adaptive": {
+          "outcomes": {
+            "correct_singleton": 24,
+            "ambiguous_contains_true": 7,
+            "known_empty": 2,
+            "ambiguous_excludes_true": 1,
+            "wrong_singleton": 2
+          },
+          "mean_set_size": 1.25
+        }
+      },
+      "elastic": {
+        "mid_only": {
+          "outcomes": {
+            "ambiguous_contains_true": 32,
+            "wrong_singleton": 2,
+            "known_empty": 2
+          },
+          "mean_set_size": 2.7222222222222223
+        },
+        "always_reverse": {
+          "outcomes": {
+            "ambiguous_contains_true": 30,
+            "correct_singleton": 2,
+            "wrong_singleton": 2,
+            "known_empty": 2
+          },
+          "mean_set_size": 2.361111111111111
+        },
+        "adaptive": {
+          "outcomes": {
+            "ambiguous_contains_true": 30,
+            "correct_singleton": 2,
+            "wrong_singleton": 2,
+            "known_empty": 2
+          },
+          "mean_set_size": 2.361111111111111
+        }
+      },
+      "deadzone": {
+        "mid_only": {
+          "outcomes": {
+            "ambiguous_contains_true": 31,
+            "known_empty": 1,
+            "correct_singleton": 3,
+            "wrong_singleton": 1
+          },
+          "mean_set_size": 2.0555555555555554
+        },
+        "always_reverse": {
+          "outcomes": {
+            "correct_singleton": 3,
+            "ambiguous_contains_true": 25,
+            "wrong_singleton": 5,
+            "known_empty": 2,
+            "ambiguous_excludes_true": 1
+          },
+          "mean_set_size": 1.8333333333333333
+        },
+        "adaptive": {
+          "outcomes": {
+            "correct_singleton": 4,
+            "ambiguous_contains_true": 25,
+            "wrong_singleton": 5,
+            "known_empty": 1,
+            "ambiguous_excludes_true": 1
+          },
+          "mean_set_size": 1.8611111111111112
+        }
+      },
+      "nonlinear": {
+        "mid_only": {
+          "outcomes": {
+            "ambiguous_contains_true": 23,
+            "correct_singleton": 11,
+            "known_empty": 1,
+            "ambiguous_excludes_true": 1
+          },
+          "mean_set_size": 2.1666666666666665
+        },
+        "always_reverse": {
+          "outcomes": {
+            "ambiguous_contains_true": 21,
+            "correct_singleton": 12,
+            "known_empty": 2,
+            "wrong_singleton": 1
+          },
+          "mean_set_size": 1.6944444444444444
+        },
+        "adaptive": {
+          "outcomes": {
+            "ambiguous_contains_true": 21,
+            "correct_singleton": 12,
+            "known_empty": 2,
+            "wrong_singleton": 1
+          },
+          "mean_set_size": 1.6944444444444444
+        }
+      },
+      "saturating": {
+        "mid_only": {
+          "outcomes": {
+            "unknown_ambiguous": 33,
+            "unknown_empty": 2,
+            "unknown_false_singleton": 1
+          },
+          "mean_set_size": 2.6944444444444446
+        },
+        "always_reverse": {
+          "outcomes": {
+            "unknown_ambiguous": 33,
+            "unknown_empty": 3
+          },
+          "mean_set_size": 2.361111111111111
+        },
+        "adaptive": {
+          "outcomes": {
+            "unknown_ambiguous": 33,
+            "unknown_empty": 2,
+            "unknown_false_singleton": 1
+          },
+          "mean_set_size": 2.388888888888889
+        }
+      },
+      "_overall": {
+        "n": 216,
+        "known_n": 180,
+        "unknown_n": 36,
+        "policies": {
+          "mid_only": {
+            "known_correct_unique": 35,
+            "known_wrong_unique": 3,
+            "known_contains_true": 166,
+            "known_ambiguous": 136,
+            "unknown_false_singleton": 1,
+            "unknown_empty": 2,
+            "unknown_ambiguous": 33,
+            "reverse_executions": 0,
+            "cost_J": 710.1318623046707,
+            "cost_reduction_vs_always": 0.167494147429536
+          },
+          "always_reverse": {
+            "known_correct_unique": 38,
+            "known_wrong_unique": 10,
+            "known_contains_true": 156,
+            "known_ambiguous": 121,
+            "unknown_false_singleton": 0,
+            "unknown_empty": 3,
+            "unknown_ambiguous": 33,
+            "reverse_executions": 216,
+            "cost_J": 853.0052492868986,
+            "cost_reduction_vs_always": 0.0
+          },
+          "adaptive": {
+            "known_correct_unique": 42,
+            "known_wrong_unique": 10,
+            "known_contains_true": 160,
+            "known_ambiguous": 121,
+            "unknown_false_singleton": 1,
+            "unknown_empty": 2,
+            "unknown_ambiguous": 33,
+            "reverse_executions": 169,
+            "cost_J": 819.2087187301156,
+            "cost_reduction_vs_always": 0.039620542294477576
+          }
+        }
+      }
+    }
+  },
+  "E4_accessed": false,
+  "online_uses_truth": false,
+  "reverse_used_for_initial_gate": false,
+  "thresholds_tuned_on_test": false,
+  "limitations": [
+    "Synthetic MuJoCo experiment",
+    "Same fitted laws used for both challenges",
+    "Vreverse is fixed, not optimized",
+    "All reverse counterfactuals are simulated",
+    "Only executed actions charged to each policy",
+    "Only one held-out Saturating law",
+    "No open-world coverage guarantee",
+    "Conditional set coverage requires exchangeability",
+    "Gap bands share scene parameters",
+    "No visual input or E4"
+  ]
+}

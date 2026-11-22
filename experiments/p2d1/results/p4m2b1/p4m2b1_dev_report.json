@@ -1,0 +1,117 @@
+{
+  "protocol": "P4-M2B1 band-blind prior audit",
+  "smoke": false,
+  "n_scenes": 12,
+  "scene_seed": 20290317,
+  "noise_seed": 2029031701,
+  "deadzone_gap_prior": [
+    0.015,
+    0.18
+  ],
+  "reference": "P4-M2B0 paired development",
+  "summary": {
+    "original": {
+      "independent": {
+        "n": 12,
+        "legacy_median_mm": 5.559744915579246,
+        "aware_median_mm": 40.02647740179174,
+        "blind_median_mm": 26.343398587678557,
+        "median_paired_delta_mm": -13.457653156641246
+      },
+      "rigid": {
+        "n": 12,
+        "legacy_median_mm": 15.066638708034883,
+        "aware_median_mm": 73.7610735351177,
+        "blind_median_mm": 73.7610735351177,
+        "median_paired_delta_mm": 0.0
+      },
+      "elastic": {
+        "n": 12,
+        "legacy_median_mm": 6.209075169702043,
+        "aware_median_mm": 6.308673032193052,
+        "blind_median_mm": 6.3086732818954445,
+        "median_paired_delta_mm": 1.0385628934628244e-07,
+        "true_winner_aware": 3,
+        "true_winner_blind": 3
+      },
+      "deadzone": {
+        "n": 12,
+        "legacy_median_mm": 7.757412783040076,
+        "aware_median_mm": 7.4519208769998775,
+        "blind_median_mm": 7.2646469130349764,
+        "median_paired_delta_mm": -0.0009878984933950896,
+        "true_winner_aware": 10,
+        "true_winner_blind": 11
+      },
+      "nonlinear": {
+        "n": 12,
+        "legacy_median_mm": 12.613773104008663,
+        "aware_median_mm": 12.106840452801066,
+        "blind_median_mm": 12.106841282313743,
+        "median_paired_delta_mm": 1.657991388626101e-08,
+        "true_winner_aware": 9,
+        "true_winner_blind": 9
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "n": 12,
+        "legacy_median_mm": 5.995184257415055,
+        "aware_median_mm": 25.203914655694597,
+        "blind_median_mm": 25.203914655692852,
+        "median_paired_delta_mm": -1.4015455462867976e-12
+      },
+      "rigid": {
+        "n": 12,
+        "legacy_median_mm": 15.431417730925013,
+        "aware_median_mm": 158.03106591353026,
+        "blind_median_mm": 74.01870864614293,
+        "median_paired_delta_mm": -84.25112553539572
+      },
+      "elastic": {
+        "n": 12,
+        "legacy_median_mm": 7.013825076903174,
+        "aware_median_mm": 27.048077515423333,
+        "blind_median_mm": 7.157791880092596,
+        "median_paired_delta_mm": -20.479466409909044,
+        "true_winner_aware": 10,
+        "true_winner_blind": 4
+      },
+      "deadzone": {
+        "n": 12,
+        "legacy_median_mm": 5.468122285404751,
+        "aware_median_mm": 5.55845915657534,
+        "blind_median_mm": 5.446883179181777,
+        "median_paired_delta_mm": 0.0012425480649116416,
+        "true_winner_aware": 12,
+        "true_winner_blind": 12
+      },
+      "nonlinear": {
+        "n": 12,
+        "legacy_median_mm": 10.790825595486643,
+        "aware_median_mm": 73.05112023899107,
+        "blind_median_mm": 10.559487391420927,
+        "median_paired_delta_mm": -59.16564768843386,
+        "true_winner_aware": 9,
+        "true_winner_blind": 9
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_threshold_tuning": false,
+  "independent_evaluation": false,
+  "source_sha256": {
+    "74_p4m2a_generator_inference_fidelity.py": "0bce3db21b7622ac2451fa0cb3f2fbaac177790461339b9b3ad1d70ab7bc801b",
+    "75_p4m2b0_physical_domain_fit_pilot.py": "f9ef52a5e5ac48c724e23c6dc84a54c76f589ba10cb8587560f51278c045b164",
+    "76_p4m2b1_band_blind_prior_audit.py": "ac3593a6d4a36bf87c14a8ecf66a90fd945d03cc7fbffc552c76d976af87ced7"
+  },
+  "limitations": [
+    "Previously used development scenes",
+    "Only the gap prior changed",
+    "No structural threshold calibration",
+    "Three flexible candidates in ranking audit",
+    "Generator-domain assumptions still used",
+    "No prior-misspecification stress test",
+    "No independent test conclusions"
+  ]
+}

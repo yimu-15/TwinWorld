@@ -1,0 +1,88 @@
+{
+  "protocol": "TwinWorld-v2 P2-B randomized state-trajectory dataset",
+  "note": "Not RGB video, not visual concept revision, not trained performance.",
+  "modes": [
+    "independent",
+    "rigid",
+    "elastic"
+  ],
+  "public_fields": [
+    "passive_xy",
+    "active_xy",
+    "commanded_accel"
+  ],
+  "private_fields": [
+    "mechanism",
+    "pair_id",
+    "mass_a",
+    "mass_b",
+    "spring",
+    "damper",
+    "velocity",
+    "offset",
+    "accel",
+    "profile"
+  ],
+  "sampling_hz": 50,
+  "position_noise_std_m": 0.005,
+  "observation_shape_per_episode": [
+    51,
+    2
+  ],
+  "dt_simulation_seconds": 0.002,
+  "target_motion_controller": {
+    "kp": 250.0,
+    "kd": 40.0
+  },
+  "splits": {
+    "train": {
+      "seed": 1101,
+      "pairs": 60,
+      "mass": [
+        0.8,
+        1.4
+      ],
+      "spring": [
+        7.0,
+        16.0
+      ],
+      "damper": [
+        0.6,
+        2.0
+      ]
+    },
+    "val": {
+      "seed": 2202,
+      "pairs": 20,
+      "mass": [
+        0.8,
+        1.4
+      ],
+      "spring": [
+        7.0,
+        16.0
+      ],
+      "damper": [
+        0.6,
+        2.0
+      ]
+    },
+    "test": {
+      "seed": 3303,
+      "pairs": 30,
+      "mass": [
+        1.45,
+        2.0
+      ],
+      "spring": [
+        3.0,
+        9.0
+      ],
+      "damper": [
+        0.3,
+        1.6
+      ]
+    }
+  },
+  "data_policy": "Never pass test_private.npz, exact actual forces, or constraint states to a model."
+}

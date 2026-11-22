@@ -1,0 +1,563 @@
+{
+  "protocol": "P3-A6K excitation-shift audit",
+  "smoke": true,
+  "scene_seed": 20370115,
+  "noise_seed": 2027111501,
+  "n_base_scenes": 2,
+  "frozen_thresholds": {
+    "tau_absolute_m": 0.015056534376721602,
+    "tau_switch_m": 0.0005699832080957364,
+    "calibration_episodes": 180,
+    "correct_anchor_episodes": 141
+  },
+  "regimes": {
+    "reference": [
+      1.5,
+      2.25
+    ],
+    "moderate": [
+      1.25,
+      1.75
+    ],
+    "low": [
+      0.75,
+      1.1
+    ]
+  },
+  "E4_accessed": false,
+  "policy_retrained": false,
+  "thresholds_retuned": false,
+  "limitations": [
+    "Same MuJoCo generator",
+    "One unknown Saturating law",
+    "Weak and Strong are fixed actions",
+    "Calibration thresholds belong to reference excitation",
+    "Other regimes are distribution shifts",
+    "No statistical coverage guarantee under shift",
+    "B prediction conditions on observed A",
+    "Work values are action-specific proxies",
+    "No online action selection is tested"
+  ],
+  "summary": {
+    "reference": {
+      "original": {
+        "independent": {
+          "n": 2,
+          "baseline_outcomes": {
+            "wrong_law": 1,
+            "correct": 1
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.650956809539083,
+          "median_weak_work_J": 0.45200128178344023,
+          "median_strong_work_J": 0.9313040753346608
+        },
+        "rigid": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.705170853343117,
+          "median_weak_work_J": 0.9270111787930578,
+          "median_strong_work_J": 1.9193790137860778
+        },
+        "elastic": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "candidate_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "median_Rmin_mm": 6.69752612482659,
+          "median_weak_work_J": 1.123765418590699,
+          "median_strong_work_J": 2.356820915804302
+        },
+        "deadzone": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 9.143484534529634,
+          "median_weak_work_J": 1.0250282500816572,
+          "median_strong_work_J": 2.271562738490188
+        },
+        "nonlinear": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 6.072431114347349,
+          "median_weak_work_J": 1.2162262202937195,
+          "median_strong_work_J": 2.651260218681
+        },
+        "saturating": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct_reject": 2
+          },
+          "candidate_outcomes": {
+            "correct_reject": 2
+          },
+          "median_Rmin_mm": 48.42250449951102,
+          "median_weak_work_J": 0.7809524468766313,
+          "median_strong_work_J": 1.3494271584016098
+        },
+        "_overall": {
+          "known_n": 10,
+          "baseline_correct": 8,
+          "candidate_correct": 9,
+          "accuracy_gain_pp": 10.0
+        }
+      },
+      "above_original_range": {
+        "independent": {
+          "n": 2,
+          "baseline_outcomes": {
+            "wrong_law": 1,
+            "correct": 1
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.650956809539083,
+          "median_weak_work_J": 0.45200128178344023,
+          "median_strong_work_J": 0.9313040753346608
+        },
+        "rigid": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.705170853343117,
+          "median_weak_work_J": 0.9270111787930578,
+          "median_strong_work_J": 1.9193790137860778
+        },
+        "elastic": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "candidate_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "median_Rmin_mm": 6.69752612482659,
+          "median_weak_work_J": 1.123765418590699,
+          "median_strong_work_J": 2.356820915804302
+        },
+        "deadzone": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "candidate_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "median_Rmin_mm": 10.430286468619382,
+          "median_weak_work_J": 0.8950260389232796,
+          "median_strong_work_J": 2.1141850380530176
+        },
+        "nonlinear": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 6.072431114347349,
+          "median_weak_work_J": 1.2162262202937195,
+          "median_strong_work_J": 2.651260218681
+        },
+        "saturating": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct_reject": 2
+          },
+          "candidate_outcomes": {
+            "correct_reject": 2
+          },
+          "median_Rmin_mm": 48.42250449951102,
+          "median_weak_work_J": 0.7809524468766313,
+          "median_strong_work_J": 1.3494271584016098
+        },
+        "_overall": {
+          "known_n": 10,
+          "baseline_correct": 7,
+          "candidate_correct": 8,
+          "accuracy_gain_pp": 10.0
+        }
+      }
+    },
+    "moderate": {
+      "original": {
+        "independent": {
+          "n": 2,
+          "baseline_outcomes": {
+            "wrong_law": 1,
+            "correct": 1
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.655457484610891,
+          "median_weak_work_J": 0.3297613094497751,
+          "median_strong_work_J": 0.5930050668754745
+        },
+        "rigid": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.7070557955583805,
+          "median_weak_work_J": 0.6745593432936053,
+          "median_strong_work_J": 1.2186346801818628
+        },
+        "elastic": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 7.253000725054447,
+          "median_weak_work_J": 0.8121820618630047,
+          "median_strong_work_J": 1.4850663464901306
+        },
+        "deadzone": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 7.983075919511484,
+          "median_weak_work_J": 0.7119994755348975,
+          "median_strong_work_J": 1.3895952002971719
+        },
+        "nonlinear": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 6.028112307719885,
+          "median_weak_work_J": 0.8682931443106003,
+          "median_strong_work_J": 1.6262255010382836
+        },
+        "saturating": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct_reject": 2
+          },
+          "candidate_outcomes": {
+            "correct_reject": 2
+          },
+          "median_Rmin_mm": 35.34085397066393,
+          "median_weak_work_J": 0.6198500427834954,
+          "median_strong_work_J": 0.9561045939096172
+        },
+        "_overall": {
+          "known_n": 10,
+          "baseline_correct": 9,
+          "candidate_correct": 10,
+          "accuracy_gain_pp": 10.0
+        }
+      },
+      "above_original_range": {
+        "independent": {
+          "n": 2,
+          "baseline_outcomes": {
+            "wrong_law": 1,
+            "correct": 1
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.655457484610891,
+          "median_weak_work_J": 0.3297613094497751,
+          "median_strong_work_J": 0.5930050668754745
+        },
+        "rigid": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.7070557955583805,
+          "median_weak_work_J": 0.6745593432936053,
+          "median_strong_work_J": 1.2186346801818628
+        },
+        "elastic": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 7.253000725054447,
+          "median_weak_work_J": 0.8121820618630047,
+          "median_strong_work_J": 1.4850663464901306
+        },
+        "deadzone": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "candidate_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "median_Rmin_mm": 7.735381048704374,
+          "median_weak_work_J": 0.6092146169335955,
+          "median_strong_work_J": 1.2453579895712585
+        },
+        "nonlinear": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 6.028112307719885,
+          "median_weak_work_J": 0.8682931443106003,
+          "median_strong_work_J": 1.6262255010382836
+        },
+        "saturating": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct_reject": 2
+          },
+          "candidate_outcomes": {
+            "correct_reject": 2
+          },
+          "median_Rmin_mm": 35.34085397066393,
+          "median_weak_work_J": 0.6198500427834954,
+          "median_strong_work_J": 0.9561045939096172
+        },
+        "_overall": {
+          "known_n": 10,
+          "baseline_correct": 8,
+          "candidate_correct": 9,
+          "accuracy_gain_pp": 10.0
+        }
+      }
+    },
+    "low": {
+      "original": {
+        "independent": {
+          "n": 2,
+          "baseline_outcomes": {
+            "wrong_law": 1,
+            "correct": 1
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.66255390086755,
+          "median_weak_work_J": 0.14157280305745792,
+          "median_strong_work_J": 0.2654239561735716
+        },
+        "rigid": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.709666157586625,
+          "median_weak_work_J": 0.2871862391351324,
+          "median_strong_work_J": 0.5418923281795582
+        },
+        "elastic": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "candidate_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "median_Rmin_mm": 6.166058508035669,
+          "median_weak_work_J": 0.3381680619230342,
+          "median_strong_work_J": 0.6490964819888556
+        },
+        "deadzone": {
+          "n": 2,
+          "baseline_outcomes": {
+            "wrong_law": 2
+          },
+          "candidate_outcomes": {
+            "wrong_law": 2
+          },
+          "median_Rmin_mm": 8.446549490080512,
+          "median_weak_work_J": 0.2530779638467662,
+          "median_strong_work_J": 0.5493799590642872
+        },
+        "nonlinear": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "candidate_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "median_Rmin_mm": 5.467044305388276,
+          "median_weak_work_J": 0.3522486651266319,
+          "median_strong_work_J": 0.6889624238803373
+        },
+        "saturating": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct_reject": 1,
+            "unknown_false_accept": 1
+          },
+          "candidate_outcomes": {
+            "correct_reject": 1,
+            "unknown_false_accept": 1
+          },
+          "median_Rmin_mm": 22.50338214011379,
+          "median_weak_work_J": 0.32676773822430755,
+          "median_strong_work_J": 0.5297500445387731
+        },
+        "_overall": {
+          "known_n": 10,
+          "baseline_correct": 5,
+          "candidate_correct": 6,
+          "accuracy_gain_pp": 10.0
+        }
+      },
+      "above_original_range": {
+        "independent": {
+          "n": 2,
+          "baseline_outcomes": {
+            "wrong_law": 1,
+            "correct": 1
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.66255390086755,
+          "median_weak_work_J": 0.14157280305745792,
+          "median_strong_work_J": 0.2654239561735716
+        },
+        "rigid": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 2
+          },
+          "median_Rmin_mm": 5.709666157586625,
+          "median_weak_work_J": 0.2871862391351324,
+          "median_strong_work_J": 0.5418923281795582
+        },
+        "elastic": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "candidate_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "median_Rmin_mm": 6.166058508035669,
+          "median_weak_work_J": 0.3381680619230342,
+          "median_strong_work_J": 0.6490964819888556
+        },
+        "deadzone": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 2
+          },
+          "candidate_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "median_Rmin_mm": 12.911025407160444,
+          "median_weak_work_J": 0.18588360641010782,
+          "median_strong_work_J": 0.4617449991431563
+        },
+        "nonlinear": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "candidate_outcomes": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "median_Rmin_mm": 5.467044305388276,
+          "median_weak_work_J": 0.3522486651266319,
+          "median_strong_work_J": 0.6889624238803373
+        },
+        "saturating": {
+          "n": 2,
+          "baseline_outcomes": {
+            "correct_reject": 1,
+            "unknown_false_accept": 1
+          },
+          "candidate_outcomes": {
+            "correct_reject": 1,
+            "unknown_false_accept": 1
+          },
+          "median_Rmin_mm": 22.50338214011379,
+          "median_weak_work_J": 0.32676773822430755,
+          "median_strong_work_J": 0.5297500445387731
+        },
+        "_overall": {
+          "known_n": 10,
+          "baseline_correct": 7,
+          "candidate_correct": 7,
+          "accuracy_gain_pp": 0.0
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "27_p3a3b_evidence_vs_structure.py": "75296d8c807ba591347bedd77b57e9a129b8ff025b07768d99b90e6da52699a9",
+    "47_p3a6h_six_mechanism_openworld_audit.py": "c538c8a06d846397fe90f2b5320fe83a24e5636530b5e7995cd129ae7e8584fe",
+    "48_p3a6i_calibrated_revision.py": "d90363d99b8e584f749d2e3ef16bd56d5e67ccc2972736c9d50126a947e53c71"
+  }
+}

@@ -1,0 +1,13 @@
+condition,accuracy,correct,total,ci95_low,ci95_high,privilege,source_report,exp_id
+P0 passive majority (val),0.500,50,100,NA,NA,no,outputs/p0_baselines.json,03
+P0 passive majority (test),0.500,100,200,NA,NA,no,outputs/p0_baselines.json,03
+P0 active oracle diagnostic (val),1.000,100,100,NA,NA,privileged_counterfactual,outputs/p0_baselines.json,03
+P0 active oracle diagnostic (test),1.000,200,200,NA,NA,privileged_counterfactual,outputs/p0_baselines.json,03
+P2-C0 passive_only (test),0.333,30,90,0.333,0.333,no,outputs/p2c0/p2c0_baselines.json,12
+P2-C0 A_only (test),0.456,41,90,0.356,0.556,no,outputs/p2c0/p2c0_baselines.json,12
+P2-C0 B_only (test),0.878,79,90,0.822,0.933,no,outputs/p2c0/p2c0_baselines.json,12
+P2-C0 A_plus_B (test),0.856,77,90,0.800,0.911,no,outputs/p2c0/p2c0_baselines.json,12
+P2-C0 B_final_residual (test),0.778,70,90,0.711,0.844,no,outputs/p2c0/p2c0_baselines.json,12
+P1-C3 A_only (test),0.442,NA,NA,NA,NA,no,outputs/p1c3/p1c3_report.json,09
+P1-C3 B_only (test),1.000,NA,NA,NA,NA,no,outputs/p1c3/p1c3_report.json,09
+P1-C2 B_only accuracy (all noise),1.000,NA,NA,NA,NA,no,outputs/p1c2/p1c2_report.json,08

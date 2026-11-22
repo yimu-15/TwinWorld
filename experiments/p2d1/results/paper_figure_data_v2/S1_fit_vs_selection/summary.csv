@@ -1,0 +1,7 @@
+exp_id,comparison,metric,value,ci95_low,ci95_high,unit,source_report
+102,frozen minus refit (ALL MID_PLUS_FULL),effect,0.085900,0.057300,0.114600,accuracy delta,102_p4g2b_report.json
+102,frozen minus refit (elastic subgroup),effect,0.458300,0.354200,0.562500,accuracy delta,102_p4g2b_report.json
+102,refit true-model RMS,mean,9.790000,NA,NA,mm,102_p4g2b_report.json
+102,fixed true-model RMS,mean,11.020000,NA,NA,mm,102_p4g2b_report.json
+102,refit elastic RMS,mean,10.030000,NA,NA,mm,102_p4g2b_report.json
+102,fixed elastic RMS,mean,11.480000,NA,NA,mm,102_p4g2b_report.json

@@ -1,0 +1,9 @@
+{
+  "protocol": "P4-G2D smoke read-only audit",
+  "checked_cases": 16,
+  "score_cells_available": 192,
+  "no_fits": true,
+  "no_simulations": true,
+  "E4_accessed": false,
+  "scientific_effect_estimate": false
+}

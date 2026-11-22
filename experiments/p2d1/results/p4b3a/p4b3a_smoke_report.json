@@ -1,0 +1,86 @@
+{
+  "protocol": "P4-B3A historical WOO-only maximum model-evaluations feasibility",
+  "smoke": true,
+  "n_base_scenes": 1,
+  "n_cases": 1,
+  "source_sha256": {
+    "P105": "603c616a0621ea6bfec0be5814585cea17156890dcd9c7cd2e16e811a0fced2a",
+    "R106": "75323e551e247225cd3dcd11ec5abc8ed80070302c2531e7879e1e46084aa523",
+    "M106": "3e0a8914f7c0dedaff0bf18be4cf1c15a1a45bd47e1f795359d301a98ab654e5",
+    "R107": "9e1cadaa72412a8c95b7952415e2a65cb78308274eaf9bdba584881eef5ca16d",
+    "SELF": "386f4c1c88aa5574f8919397db4817cf832bc8d272001d743096cc07382f4a8c",
+    "P103": "70185b44150fcfe87c3fcb73e50c88df35856cd4c541c01a9009683165af271f",
+    "protocol_budget_caps": [
+      100,
+      200
+    ],
+    "smoke_budget": 50,
+    "same_five_starts": true,
+    "domain_by_law_WOO": {
+      "elastic": "wide",
+      "deadzone": "outer_box",
+      "cubic": "outer_box"
+    }
+  },
+  "budgets": [
+    50
+  ],
+  "per_start_caps": [
+    10
+  ],
+  "training_actions": [
+    "e1",
+    "e2",
+    "weak",
+    "strong"
+  ],
+  "training_residual_count": 204,
+  "domain_by_law_WOO": {
+    "elastic": "wide",
+    "deadzone": "outer_box",
+    "cubic": "outer_box"
+  },
+  "methods": [
+    "TRF_CAP",
+    "SLSQP_CAP"
+  ],
+  "aggregate": {
+    "50": {
+      "TRF_CAP": {
+        "fit_units": 1,
+        "max_calls_total": 50,
+        "actual_204vector_calls": 50,
+        "unused_calls": 0,
+        "start_stop_status_counts": {
+          "budget_cap": 5
+        },
+        "unavailable_fits": 0,
+        "wall_seconds_descriptive_only": 0.1141356999999914
+      },
+      "SLSQP_CAP": {
+        "fit_units": 1,
+        "max_calls_total": 50,
+        "actual_204vector_calls": 50,
+        "unused_calls": 0,
+        "start_stop_status_counts": {
+          "budget_cap": 5
+        },
+        "unavailable_fits": 0,
+        "wall_seconds_descriptive_only": 0.10625100000001453
+      }
+    }
+  },
+  "scoring_not_used_to_select_budget": true,
+  "truth_not_used_for_fitting": true,
+  "heldout_not_used_for_fitting": true,
+  "no_confirmatory_inference": true,
+  "new_scenes": false,
+  "E4_accessed": false,
+  "limits": [
+    "Equal maximum calls, NOT equal actual calls or wall time",
+    "Retain best feasible evaluated parameter even without successful optimizer termination",
+    "The 3 old cases are a preflight diagnostic only, not a representative accuracy sample",
+    "Holdout action scores are for end-of-pilot diagnostic only; never used in fitting",
+    "One RK4 physics implementation, not hardware verification"
+  ]
+}

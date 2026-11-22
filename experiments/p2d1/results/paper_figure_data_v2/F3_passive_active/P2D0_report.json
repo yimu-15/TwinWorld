@@ -1,0 +1,37 @@
+{
+  "protocol": "P2-D0 probe feasibility audit",
+  "mujoco_version": "3.17.0",
+  "seed": 20261113,
+  "scene_count": 12,
+  "mechanisms": [
+    "independent",
+    "rigid",
+    "elastic"
+  ],
+  "actions": [
+    "steady",
+    "pulse",
+    "reversal"
+  ],
+  "max_passive_gap_m": 0.0,
+  "max_A_cross_mode_gap_m": 0.005365343897188568,
+  "command_abs_accel_integral": {
+    "steady": 0.40000000000000324,
+    "pulse": 0.4000000000000003,
+    "reversal": 0.39999999999999847
+  },
+  "mean_worst_pair_B_RMS_m": {
+    "steady": 0.036686102313227616,
+    "pulse": 0.0652966595785933,
+    "reversal": 0.020390027881899298
+  },
+  "min_worst_pair_B_RMS_m": {
+    "steady": 0.029750258816475424,
+    "pulse": 0.04815613081898463,
+    "reversal": 0.018046305903509374
+  },
+  "privileged_best_action_counts": {
+    "pulse": 12
+  },
+  "note": "Privileged counterfactual probe audit. NOT an active learned policy. No visual inputs or concept revision."
+}

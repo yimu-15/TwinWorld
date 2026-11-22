@@ -1,0 +1,354 @@
+{
+  "protocol": "P3-A7B prospective separation gate",
+  "smoke": true,
+  "calibration_seed": 20370310,
+  "test_seed": 20370311,
+  "n_cal_scenes": 2,
+  "n_test_scenes": 2,
+  "thresholds": {
+    "tau_weak_m": 0.015542392425465994,
+    "tau_absolute_m": 0.020929303139724405,
+    "tau_switch_m": 0.0020598917337938468,
+    "bic_gap_min": 10.0,
+    "weak_separation_min_m": 0.005,
+    "calibration_n": 10,
+    "correct_anchor_n": 5
+  },
+  "summary": {
+    "original": {
+      "independent": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct": 2
+          },
+          "full": {
+            "correct": 2
+          },
+          "a7a": {
+            "correct": 2
+          },
+          "a7b": {
+            "correct": 2
+          }
+        },
+        "a7a_strong": 0,
+        "a7b_strong": 2
+      },
+      "rigid": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct": 2
+          },
+          "full": {
+            "correct": 2
+          },
+          "a7a": {
+            "correct": 2
+          },
+          "a7b": {
+            "correct": 2
+          }
+        },
+        "a7a_strong": 0,
+        "a7b_strong": 2
+      },
+      "elastic": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct": 2
+          },
+          "full": {
+            "wrong_law": 2
+          },
+          "a7a": {
+            "wrong_law": 2
+          },
+          "a7b": {
+            "wrong_law": 2
+          }
+        },
+        "a7a_strong": 2,
+        "a7b_strong": 2
+      },
+      "deadzone": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct": 2
+          },
+          "full": {
+            "correct": 2
+          },
+          "a7a": {
+            "correct": 2
+          },
+          "a7b": {
+            "correct": 2
+          }
+        },
+        "a7a_strong": 0,
+        "a7b_strong": 2
+      },
+      "nonlinear": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct": 1,
+            "represented_false_reject": 1
+          },
+          "full": {
+            "represented_false_reject": 2
+          },
+          "a7a": {
+            "correct": 1,
+            "represented_false_reject": 1
+          },
+          "a7b": {
+            "represented_false_reject": 2
+          }
+        },
+        "a7a_strong": 1,
+        "a7b_strong": 2
+      },
+      "saturating": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct_reject": 1,
+            "unknown_false_accept": 1
+          },
+          "full": {
+            "correct_reject": 2
+          },
+          "a7a": {
+            "correct_reject": 2
+          },
+          "a7b": {
+            "correct_reject": 2
+          }
+        },
+        "a7a_strong": 2,
+        "a7b_strong": 2
+      },
+      "_overall": {
+        "known_n": 10,
+        "unknown_n": 2,
+        "known_correct": {
+          "weak": 9,
+          "full": 6,
+          "a7a": 7,
+          "a7b": 6
+        },
+        "unknown_correct_reject": {
+          "weak": 1,
+          "full": 2,
+          "a7a": 2,
+          "a7b": 2
+        },
+        "strong_count": {
+          "weak": 0,
+          "full": 12,
+          "a7a": 5,
+          "a7b": 12
+        },
+        "total_cost_J": {
+          "weak": 7.338244350687512,
+          "full": 30.675494264538845,
+          "a7a": 17.64590213022151,
+          "a7b": 30.675494264538845
+        },
+        "work_reduction_vs_full": {
+          "weak": 0.760778284861392,
+          "full": 0.0,
+          "a7a": 0.4247557357007174,
+          "a7b": 0.0
+        }
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct": 2
+          },
+          "full": {
+            "correct": 2
+          },
+          "a7a": {
+            "correct": 2
+          },
+          "a7b": {
+            "correct": 2
+          }
+        },
+        "a7a_strong": 0,
+        "a7b_strong": 2
+      },
+      "rigid": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct": 2
+          },
+          "full": {
+            "correct": 2
+          },
+          "a7a": {
+            "correct": 2
+          },
+          "a7b": {
+            "correct": 2
+          }
+        },
+        "a7a_strong": 0,
+        "a7b_strong": 2
+      },
+      "elastic": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct": 2
+          },
+          "full": {
+            "wrong_law": 2
+          },
+          "a7a": {
+            "wrong_law": 2
+          },
+          "a7b": {
+            "wrong_law": 2
+          }
+        },
+        "a7a_strong": 2,
+        "a7b_strong": 2
+      },
+      "deadzone": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "full": {
+            "correct": 1,
+            "represented_false_reject": 1
+          },
+          "a7a": {
+            "correct": 1,
+            "wrong_law": 1
+          },
+          "a7b": {
+            "correct": 1,
+            "represented_false_reject": 1
+          }
+        },
+        "a7a_strong": 0,
+        "a7b_strong": 2
+      },
+      "nonlinear": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct": 1,
+            "represented_false_reject": 1
+          },
+          "full": {
+            "represented_false_reject": 2
+          },
+          "a7a": {
+            "correct": 1,
+            "represented_false_reject": 1
+          },
+          "a7b": {
+            "represented_false_reject": 2
+          }
+        },
+        "a7a_strong": 1,
+        "a7b_strong": 2
+      },
+      "saturating": {
+        "n": 2,
+        "outcomes": {
+          "weak": {
+            "correct_reject": 1,
+            "unknown_false_accept": 1
+          },
+          "full": {
+            "correct_reject": 2
+          },
+          "a7a": {
+            "correct_reject": 2
+          },
+          "a7b": {
+            "correct_reject": 2
+          }
+        },
+        "a7a_strong": 2,
+        "a7b_strong": 2
+      },
+      "_overall": {
+        "known_n": 10,
+        "unknown_n": 2,
+        "known_correct": {
+          "weak": 8,
+          "full": 5,
+          "a7a": 6,
+          "a7b": 5
+        },
+        "unknown_correct_reject": {
+          "weak": 1,
+          "full": 2,
+          "a7a": 2,
+          "a7b": 2
+        },
+        "strong_count": {
+          "weak": 0,
+          "full": 12,
+          "a7a": 5,
+          "a7b": 12
+        },
+        "total_cost_J": {
+          "weak": 6.796406556600475,
+          "full": 29.980198771646567,
+          "a7a": 17.104064336134474,
+          "a7b": 29.980198771646567
+        },
+        "work_reduction_vs_full": {
+          "weak": 0.7733034857984964,
+          "full": 0.0,
+          "a7a": 0.42948796082331353,
+          "a7b": 0.0
+        }
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_threshold_tuning": false,
+  "online_uses_truth": false,
+  "online_uses_strong_before_gate": false,
+  "limitations": [
+    "MuJoCo synthetic environments only",
+    "One specific unknown Saturating law",
+    "No safety or open-set coverage guarantee",
+    "Weak margin selects among E1/E2 fits",
+    "BIC anchor itself was selected using Weak",
+    "The guard may increase Strong usage",
+    "Strong counterfactuals used for audit only",
+    "Fixed Strong action, not action optimization",
+    "No RGB visual perception yet",
+    "Predictions condition on observed A",
+    "Gap bands share base scenes"
+  ],
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "27_p3a3b_evidence_vs_structure.py": "75296d8c807ba591347bedd77b57e9a129b8ff025b07768d99b90e6da52699a9",
+    "47_p3a6h_six_mechanism_openworld_audit.py": "c538c8a06d846397fe90f2b5320fe83a24e5636530b5e7995cd129ae7e8584fe",
+    "48_p3a6i_calibrated_revision.py": "d90363d99b8e584f749d2e3ef16bd56d5e67ccc2972736c9d50126a947e53c71",
+    "55_p3a7a_evidence_gated_escalation.py": "ef38c9c1fe2d11df51533f700aea80d7f60a0784c11d0f627d07f91c52d93cee"
+  }
+}

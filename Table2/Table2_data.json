@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "table_id": "Table 2",
+  "title": "Physical prior and parameter-domain ablation",
+  "source_csv": "table2_physical_prior.csv",
+  "source_csv_sha256": "a44b65ff298f23e3f378b29fef5a3e449c1704d67c650b98b93f4a8387c9c969",
+  "headers": [
+    "Experiment",
+    "Configuration_A",
+    "Configuration_B",
+    "Independent_scenes",
+    "Accuracy_A",
+    "Accuracy_B",
+    "Paired_effect",
+    "CI95_low",
+    "CI95_high",
+    "Evidence"
+  ],
+  "value_policy": "Verbatim display strings from CSV (no numeric edits, precision normalization, or label correction).",
+  "rows": [
+    {
+      "csv_row_index": 1,
+      "Experiment": "79",
+      "Configuration_A": "OUTER_BOX",
+      "Configuration_B": "WIDE",
+      "Independent_scenes": "72 clusters",
+      "Accuracy_A": "0.673611",
+      "Accuracy_B": "0.590278",
+      "Paired_effect": "0.083333",
+      "CI95_low": "0.050926",
+      "CI95_high": "0.115741",
+      "Evidence": "Formal SUPPORTED_PRACTICAL_GAIN"
+    },
+    {
+      "csv_row_index": 2,
+      "Experiment": "79",
+      "Configuration_A": "OUTER_BOX",
+      "Configuration_B": "WIDE",
+      "Independent_scenes": "72 clusters",
+      "Accuracy_A": "0.685185",
+      "Accuracy_B": "0.574074",
+      "Paired_effect": "0.111111",
+      "CI95_low": "0.069444",
+      "CI95_high": "0.157407",
+      "Evidence": "Formal SUPPORTED_PRACTICAL_GAIN (above_original_range)"
+    },
+    {
+      "csv_row_index": 3,
+      "Experiment": "79",
+      "Configuration_A": "SHARED_MASS",
+      "Configuration_B": "OUTER_BOX",
+      "Independent_scenes": "72 clusters",
+      "Accuracy_A": "0.668981",
+      "Accuracy_B": "0.673611",
+      "Paired_effect": "-0.004630",
+      "CI95_low": "-0.016204",
+      "CI95_high": "0.006944",
+      "Evidence": "Formal NOT_CONFIRMED"
+    },
+    {
+      "csv_row_index": 4,
+      "Experiment": "79",
+      "Configuration_A": "SHARED_MASS",
+      "Configuration_B": "WIDE",
+      "Independent_scenes": "72 clusters",
+      "Accuracy_A": "0.668981",
+      "Accuracy_B": "0.590278",
+      "Paired_effect": "0.078704",
+      "CI95_low": "0.048611",
+      "CI95_high": "0.111111",
+      "Evidence": "Formal SUPPORTED_PRACTICAL_GAIN"
+    },
+    {
+      "csv_row_index": 5,
+      "Experiment": "86",
+      "Configuration_A": "OOO",
+      "Configuration_B": "WWW",
+      "Independent_scenes": "24 clusters",
+      "Accuracy_A": "0.760417",
+      "Accuracy_B": "0.580729",
+      "Paired_effect": "0.179688",
+      "CI95_low": "0.127604",
+      "CI95_high": "0.231771",
+      "Evidence": "Formal fresh-scene replication"
+    }
+  ]
+}

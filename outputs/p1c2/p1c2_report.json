@@ -1,0 +1,188 @@
+{
+  "protocol": "P1-C2 controlled noise audit",
+  "seed": 20261113,
+  "noise_repeats_per_class": 200,
+  "important": "Known-prototype diagnostic only; not learned classification performance. Noise repetitions are not independent physical environments.",
+  "records": [
+    {
+      "acceleration": 0.0,
+      "noise_std_m": 0.0,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 1.3877787807814457e-15,
+      "B_gap_final_m": 0.0,
+      "A_only_accuracy": 0.5,
+      "B_only_accuracy": 0.5
+    },
+    {
+      "acceleration": 0.0,
+      "noise_std_m": 0.001,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 1.3877787807814457e-15,
+      "B_gap_final_m": 0.0,
+      "A_only_accuracy": 0.5,
+      "B_only_accuracy": 0.5
+    },
+    {
+      "acceleration": 0.0,
+      "noise_std_m": 0.005,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 1.3877787807814457e-15,
+      "B_gap_final_m": 0.0,
+      "A_only_accuracy": 0.5,
+      "B_only_accuracy": 0.5
+    },
+    {
+      "acceleration": 0.0,
+      "noise_std_m": 0.01,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 1.3877787807814457e-15,
+      "B_gap_final_m": 0.0,
+      "A_only_accuracy": 0.5,
+      "B_only_accuracy": 0.5
+    },
+    {
+      "acceleration": 0.1,
+      "noise_std_m": 0.0,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.0004079045256670244,
+      "B_gap_final_m": 0.049207037539460874,
+      "A_only_accuracy": 1.0,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.1,
+      "noise_std_m": 0.001,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.0004079045256670244,
+      "B_gap_final_m": 0.049207037539460874,
+      "A_only_accuracy": 0.5925,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.1,
+      "noise_std_m": 0.005,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.0004079045256670244,
+      "B_gap_final_m": 0.049207037539460874,
+      "A_only_accuracy": 0.525,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.1,
+      "noise_std_m": 0.01,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.0004079045256670244,
+      "B_gap_final_m": 0.049207037539460874,
+      "A_only_accuracy": 0.525,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.2,
+      "noise_std_m": 0.0,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.0008158087262031821,
+      "B_gap_final_m": 0.09841408025045095,
+      "A_only_accuracy": 1.0,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.2,
+      "noise_std_m": 0.001,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.0008158087262031821,
+      "B_gap_final_m": 0.09841408025045095,
+      "A_only_accuracy": 0.6775,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.2,
+      "noise_std_m": 0.005,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.0008158087262031821,
+      "B_gap_final_m": 0.09841408025045095,
+      "A_only_accuracy": 0.535,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.2,
+      "noise_std_m": 0.01,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.0008158087262031821,
+      "B_gap_final_m": 0.09841408025045095,
+      "A_only_accuracy": 0.4925,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.4,
+      "noise_std_m": 0.0,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.00163161486724539,
+      "B_gap_final_m": 0.19682820174320348,
+      "A_only_accuracy": 1.0,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.4,
+      "noise_std_m": 0.001,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.00163161486724539,
+      "B_gap_final_m": 0.19682820174320348,
+      "A_only_accuracy": 0.7875,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.4,
+      "noise_std_m": 0.005,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.00163161486724539,
+      "B_gap_final_m": 0.19682820174320348,
+      "A_only_accuracy": 0.59,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.4,
+      "noise_std_m": 0.01,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.00163161486724539,
+      "B_gap_final_m": 0.19682820174320348,
+      "A_only_accuracy": 0.5375,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.6,
+      "noise_std_m": 0.0,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.002447415921412177,
+      "B_gap_final_m": 0.2952424050341256,
+      "A_only_accuracy": 1.0,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.6,
+      "noise_std_m": 0.001,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.002447415921412177,
+      "B_gap_final_m": 0.2952424050341256,
+      "A_only_accuracy": 0.87,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.6,
+      "noise_std_m": 0.005,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.002447415921412177,
+      "B_gap_final_m": 0.2952424050341256,
+      "A_only_accuracy": 0.57,
+      "B_only_accuracy": 1.0
+    },
+    {
+      "acceleration": 0.6,
+      "noise_std_m": 0.01,
+      "passive_gap_max_m": 0.0,
+      "A_gap_max_m": 0.002447415921412177,
+      "B_gap_final_m": 0.2952424050341256,
+      "A_only_accuracy": 0.5675,
+      "B_only_accuracy": 1.0
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "protocol": "P3-A8A resolution-aware confirmation",
+  "smoke": true,
+  "n_cal_scenes": 4,
+  "n_test_scenes": 2,
+  "calibration_seed": 20370901,
+  "test_seed": 20370902,
+  "optimizer_bounds_PRIVATE": {
+    "elastic": {
+      "lower": [
+        0.01,
+        0.001
+      ],
+      "upper": [
+        70.0,
+        15.0
+      ]
+    },
+    "deadzone": {
+      "lower": [
+        0.01,
+        0.001,
+        0.001
+      ],
+      "upper": [
+        70.0,
+        15.0,
+        0.2
+      ]
+    },
+    "cubic": {
+      "lower": [
+        0.01,
+        0.001,
+        0.01
+      ],
+      "upper": [
+        70.0,
+        15.0,
+        2500.0
+      ]
+    }
+  },
+  "measurement_sigma_m": 0.005,
+  "alpha_mid": 0.05,
+  "alpha_high": 0.05,
+  "separation_cutoff": 3.2897072539029444,
+  "cutoffs_m": {
+    "original": {
+      "mid": {
+        "independent": 0.007337597835193545,
+        "rigid": 0.006460025852786969,
+        "elastic": 0.009584028832413395,
+        "deadzone": 0.006617102813960354,
+        "cubic": 0.009208904307142399
+      },
+      "high": {
+        "independent": 0.006961628809994439,
+        "rigid": 0.009173591715283525,
+        "elastic": 0.022413999806501335,
+        "deadzone": 0.012995334139745084,
+        "cubic": 0.007515594938179286
+      }
+    },
+    "above_original_range": {
+      "mid": {
+        "independent": 0.00635382406287063,
+        "rigid": 0.010347717983658281,
+        "elastic": 0.009278943025921818,
+        "deadzone": 0.008103014271984206,
+        "cubic": 0.007257791246265724
+      },
+      "high": {
+        "independent": 0.006157321368285719,
+        "rigid": 0.007345625629713068,
+        "elastic": 0.006830716068879128,
+        "deadzone": 0.007556301186203226,
+        "cubic": 0.016734345930624693
+      }
+    }
+  },
+  "summary": {
+    "original": {
+      "baseline": {
+        "known_correct_unique": 4,
+        "known_wrong_unique": 0,
+        "unknown_false_unique": 0,
+        "known_contains_true": 6,
+        "unknown_empty": 2,
+        "decisions": {
+          "ambiguous": 3,
+          "unresolved_none": 5,
+          "elastic": 1,
+          "deadzone": 2,
+          "cubic": 1
+        }
+      },
+      "resolution": {
+        "known_correct_unique": 3,
+        "known_wrong_unique": 0,
+        "unknown_false_unique": 0,
+        "known_contains_true": 6,
+        "unknown_empty": 2,
+        "decisions": {
+          "ambiguous": 3,
+          "unresolved_none": 5,
+          "resolution_ambiguous": 1,
+          "deadzone": 2,
+          "cubic": 1
+        }
+      },
+      "total_work_J": 62.45375895245006
+    },
+    "above_original_range": {
+      "baseline": {
+        "known_correct_unique": 5,
+        "known_wrong_unique": 1,
+        "unknown_false_unique": 0,
+        "known_contains_true": 6,
+        "unknown_empty": 2,
+        "decisions": {
+          "ambiguous": 2,
+          "rigid": 2,
+          "unresolved_none": 4,
+          "deadzone": 2,
+          "cubic": 2
+        }
+      },
+      "resolution": {
+        "known_correct_unique": 5,
+        "known_wrong_unique": 0,
+        "unknown_false_unique": 0,
+        "known_contains_true": 6,
+        "unknown_empty": 2,
+        "decisions": {
+          "ambiguous": 2,
+          "rigid": 2,
+          "unresolved_none": 4,
+          "deadzone": 2,
+          "cubic": 1,
+          "resolution_ambiguous": 1
+        }
+      },
+      "total_work_J": 61.902843082866106
+    }
+  },
+  "E4_accessed": false,
+  "test_threshold_tuned": false,
+  "online_uses_truth": false,
+  "claim_of_certified_error_control": false,
+  "limitations": [
+    "Fixed Mid and High interventions",
+    "No action planning yet",
+    "Separation assumes simple Gaussian models",
+    "Fitted model uncertainty is not integrated",
+    "Observed A used after action completion",
+    "No frequentist false-confirmation guarantee",
+    "MuJoCo synthetic data only",
+    "No RGB perception",
+    "Only one unknown mechanism",
+    "Gap bands share physical scenes",
+    "Test data cannot retune this rule"
+  ]
+}

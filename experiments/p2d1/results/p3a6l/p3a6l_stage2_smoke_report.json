@@ -1,0 +1,130 @@
+{
+  "protocol": "P3-A6L Stage-2",
+  "smoke": true,
+  "replayed_scene_ids": [
+    0,
+    3
+  ],
+  "low_failed_scene_ids": [
+    0,
+    3,
+    7,
+    8,
+    16,
+    19,
+    22,
+    24,
+    25,
+    27,
+    31,
+    36,
+    37,
+    38,
+    41,
+    42,
+    45
+  ],
+  "thresholds_changed": false,
+  "E4_accessed": false,
+  "summary": {
+    "low_false_accept": {
+      "reference": {
+        "n": 2,
+        "true_vs_same_param_elastic_mm": {
+          "median": 88.99054641582447,
+          "min": 67.82071026598128,
+          "max": 110.16038256566766
+        },
+        "fitted_elastic_clean_RMS_mm": {
+          "median": 40.025193983093104,
+          "min": 36.468973363632905,
+          "max": 43.581414602553295
+        },
+        "fitted_elastic_noisy_RMS_mm": {
+          "median": 39.47052476586094,
+          "min": 38.36364114746137,
+          "max": 40.5774083842605
+        },
+        "strong_B_noise_RMS_mm": {
+          "median": 5.079897856042253,
+          "min": 4.788396066976186,
+          "max": 5.37139964510832
+        },
+        "max_relative_excursion_mm": {
+          "median": 481.30867483877194,
+          "min": 462.0627747117861,
+          "max": 500.55457496575775
+        }
+      },
+      "moderate": {
+        "n": 2,
+        "true_vs_same_param_elastic_mm": {
+          "median": 53.61922501502634,
+          "min": 38.72349731042236,
+          "max": 68.51495271963032
+        },
+        "fitted_elastic_clean_RMS_mm": {
+          "median": 27.772089442305102,
+          "min": 25.612066604848355,
+          "max": 29.932112279761853
+        },
+        "fitted_elastic_noisy_RMS_mm": {
+          "median": 27.061451640314353,
+          "min": 26.83073056133879,
+          "max": 27.292172719289916
+        },
+        "strong_B_noise_RMS_mm": {
+          "median": 5.079897856042253,
+          "min": 4.788396066976186,
+          "max": 5.37139964510832
+        },
+        "max_relative_excursion_mm": {
+          "median": 334.0013883135184,
+          "min": 315.12799654332326,
+          "max": 352.8747800837135
+        }
+      },
+      "low": {
+        "n": 2,
+        "true_vs_same_param_elastic_mm": {
+          "median": 13.529503051796606,
+          "min": 6.8265737502079356,
+          "max": 20.232432353385278
+        },
+        "fitted_elastic_clean_RMS_mm": {
+          "median": 12.328964147147026,
+          "min": 10.971255737856703,
+          "max": 13.686672556437351
+        },
+        "fitted_elastic_noisy_RMS_mm": {
+          "median": 12.1098088956027,
+          "min": 11.63847316672686,
+          "max": 12.581144624478544
+        },
+        "strong_B_noise_RMS_mm": {
+          "median": 5.079897856042253,
+          "min": 4.788396066976186,
+          "max": 5.37139964510832
+        },
+        "max_relative_excursion_mm": {
+          "median": 158.94418751356827,
+          "min": 144.24664659083342,
+          "max": 173.6417284363031
+        }
+      }
+    },
+    "low_correct_reject": {
+      "reference": {},
+      "moderate": {},
+      "low": {}
+    }
+  },
+  "limitations": [
+    "Known failure cases",
+    "Not new heldout validation",
+    "Conditional on observed A",
+    "Same-parameter counterfactual is not a best-fit law comparison",
+    "No force-level replay",
+    "Cannot prove global structural equivalence"
+  ]
+}

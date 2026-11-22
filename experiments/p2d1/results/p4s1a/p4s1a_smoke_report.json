@@ -1,0 +1,101 @@
+{
+  "protocol": "P4-S1A frozen target solver replay, NOT classification benchmark",
+  "smoke": true,
+  "target_manifest_size": 37,
+  "processed_targets": 2,
+  "selection": "All 36 P90 nested violations plus the sole failed candidate",
+  "selection_uses_truth_labels": false,
+  "law": "deadzone",
+  "domains": [
+    "wide",
+    "outer_box"
+  ],
+  "domain_bounds": {
+    "wide": {
+      "lower": [
+        0.01,
+        0.001,
+        0.001
+      ],
+      "upper": [
+        70.0,
+        15.0,
+        0.2
+      ]
+    },
+    "outer_box": {
+      "lower": [
+        3.125,
+        0.3125,
+        0.015
+      ],
+      "upper": [
+        20.0,
+        2.75,
+        0.18
+      ]
+    }
+  },
+  "frozen_starts_per_domain": 2,
+  "added_starts_per_domain": 3,
+  "added_start_fractions": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "maxiter_per_start": 150,
+  "ftol": 1e-09,
+  "optimizer": "SLSQP",
+  "solver_objective": "mean(((train prediction - train observation)/0.005)^2)",
+  "summary": {
+    "n_target_cases": 2,
+    "original_violations_in_subset": 1,
+    "original_unavailable_in_subset": 1,
+    "remaining_augmented_nested_violations": 1,
+    "original_gap_positive_median": 0.003687972910241477,
+    "augmented_gap_positive_median": 0.0037064362675927054,
+    "total_function_evaluations": {
+      "wide": 3872,
+      "outer_box": 919
+    },
+    "cases_with_converged_augmented_wide": 2,
+    "cases_with_converged_augmented_outer": 2,
+    "feasible_outer_to_wide_witnesses": 2
+  },
+  "processed_keys_PRIVATE": [
+    [
+      0,
+      "original",
+      "deadzone",
+      "matched",
+      "M0"
+    ],
+    [
+      4,
+      "original",
+      "nonlinear",
+      "matched",
+      "M0"
+    ]
+  ],
+  "source_sha256": {
+    "p4m2d2b_v2_fresh_report.json": "86b3ae545a78b2853a63266536037636edf2762f89eecbcfdc25e12cce72b0c0",
+    "p4m2d2b_v2_fresh_audit_PRIVATE.json": "9e23958d1d9315379b963e5ac246af1f0f3c772057ee140b7e391836911a3048",
+    "80_p4m2c0_prior_mismatch_stress.py": "08fae73537796474fbc182258d726092b0f9e9a7ccbe6db6f7ce5510b48eed03",
+    "90_p4m2d2b_amplitude_dose_response_v2.py": "4bd165bbc5c9522cfb94f61ff71682b34f1e76c1ace6da0d3f55f49c6ec8b622",
+    "91_p4s1a_nested_solver_replay.py": "bfa6b10316d27197efb37c6da614f62afd4b1abdcd0766bc2d7d4683263aa484"
+  },
+  "E4_accessed": false,
+  "new_actions_used_for_fitting": false,
+  "truth_used_for_solver_selection": false,
+  "model_selection_changed": false,
+  "limitations": [
+    "Targeted post-hoc solver diagnosis only; not an unbiased performance test",
+    "All three additional starts are common and feasible in both domains",
+    "SLSQP local solver does not certify global optimality",
+    "Observed function evaluations differ even with matched start/iteration budgets",
+    "Only Deadzone candidate was reoptimized in this stage",
+    "Must run full 384-case all-law matched-budget P4-S1B before performance claims",
+    "Original P90 v2 accuracy remains frozen"
+  ]
+}

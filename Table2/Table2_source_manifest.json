@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-11-20",
+  "table_id": "Table 2",
+  "title": "Physical prior and parameter-domain ablation",
+  "authoritative_table_snapshot": {
+    "file_name": "Table2_data.json",
+    "source_csv_name": "table2_physical_prior.csv",
+    "source_csv_sha256": "a44b65ff298f23e3f378b29fef5a3e449c1704d67c650b98b93f4a8387c9c969",
+    "data_rows": 5
+  },
+  "audit_approach": "Field-level paths cross-checked against accessible original report JSONs, subject to display rounding; no source files modified or experimental results regenerated.",
+  "source_documents": [
+    {
+      "id": "p4m2b2b_fresh_report(1).json",
+      "file_name": "p4m2b2b_fresh_report(1).json",
+      "type": "formal_report",
+      "purpose": "Experiment #79 strict-convergence domain and SHARED_MASS comparisons",
+      "available_in_this_session": true,
+      "sha256": "23d78787ecd9d3c04c9da8bfc0f2ef7f3254f4ec8781600b3a4bb695a6b65fcc",
+      "original_project_path_reported": "results/p4m2b2b/p4m2b2b_fresh_report.json"
+    },
+    {
+      "id": "p4m2c2e_fresh_report(1).json",
+      "file_name": "p4m2c2e_fresh_report(1).json",
+      "type": "formal_report",
+      "purpose": "Experiment #86 independent fresh-scene factorial replication",
+      "available_in_this_session": true,
+      "sha256": "ae77d6c05d89694711c89552e07df04d87fce7dc34d23ff7fd0d9a5030ec32f1",
+      "original_project_path_reported": "results/p4m2c2e/p4m2c2e_fresh_report.json"
+    },
+    {
+      "id": "p4m2c0_dev_report(2).json",
+      "file_name": "p4m2c0_dev_report(2).json",
+      "type": "context_report",
+      "purpose": "Development-only extreme prior mismatch counterexample; not a formal Table 2 result",
+      "available_in_this_session": true,
+      "sha256": "ee4347a89a728c5e453e6ca5907aad1e968250ae474cff85ab4a4af41fe646f8"
+    },
+    {
+      "id": "79_p4m2b2b_independent_scene_confirmation(3).py",
+      "file_name": "79_p4m2b2b_independent_scene_confirmation(3).py",
+      "type": "source_code",
+      "purpose": "Executable source for experiment #79",
+      "available_in_this_session": true,
+      "sha256": "3fda2b9c5fb85f3a3171307676359c5cae46c9c5b9a3d49bce8a738867ab75d5"
+    },
+    {
+      "id": "86_p4m2c2e_fresh_scene_factorial.py",
+      "file_name": "86_p4m2c2e_fresh_scene_factorial.py",
+      "type": "source_code",
+      "purpose": "Executable source for experiment #86",
+      "available_in_this_session": true,
+      "sha256": "4b66be439bcd680c4f23ef8557af9985fdbf7b63631ddb65b5af3a705d4e2567"
+    }
+  ],
+  "row_provenance": [
+    {
+      "table_row_index": 1,
+      "experiment": "#79",
+      "source_id": "p4m2b2b_fresh_report(1).json",
+      "source_paths": [
+        "/paired_comparisons/pooled/outer_box_minus_wide/strict"
+      ],
+      "verification": "matched_report_strict_convergence",
+      "notes": "Within-report subgroup: pooled."
+    },
+    {
+      "table_row_index": 2,
+      "experiment": "#79",
+      "source_id": "p4m2b2b_fresh_report(1).json",
+      "source_paths": [
+        "/paired_comparisons/above_original_range/outer_box_minus_wide/strict"
+      ],
+      "verification": "matched_report_strict_convergence",
+      "notes": "Within-report subgroup: above_original_range."
+    },
+    {
+      "table_row_index": 3,
+      "experiment": "#79",
+      "source_id": "p4m2b2b_fresh_report(1).json",
+      "source_paths": [
+        "/paired_comparisons/pooled/shared_mass_minus_outer_box/strict"
+      ],
+      "verification": "matched_report_strict_convergence",
+      "notes": "Within-report subgroup: pooled."
+    },
+    {
+      "table_row_index": 4,
+      "experiment": "#79",
+      "source_id": "p4m2b2b_fresh_report(1).json",
+      "source_paths": [
+        "/paired_comparisons/pooled/shared_mass_minus_wide/strict"
+      ],
+      "verification": "matched_report_strict_convergence",
+      "notes": "Within-report subgroup: pooled."
+    },
+    {
+      "table_row_index": 5,
+      "experiment": "#86",
+      "source_id": "p4m2c2e_fresh_report(1).json",
+      "source_paths": [
+        "/summary/OOO",
+        "/summary/WWW",
+        "/comparisons/primary_OOO_minus_WWW_overall",
+        "/bootstrap/paired_95CI/primary_OOO_minus_WWW_overall"
+      ],
+      "verification": "matched_report_fresh_scene"
+    }
+  ],
+  "scientific_boundaries": [
+    "#79 pooled means pooled within #79 bands/modes; it does NOT pool #79 with #86.",
+    "#79 uses 72 scene clusters; #86 uses 24 independent fresh scene clusters.",
+    "The external prior can fail under extreme mismatch; do not claim unconditional superiority."
+  ],
+  "issues_requiring_author_attention": []
+}

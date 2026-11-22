@@ -1,0 +1,188 @@
+{
+  "protocol": "P4-B3B READ-ONLY #108 CLOSURE",
+  "status": "PASS_READ_ONLY_CLOSURE_NO_CONFIRMATORY_INFERENCE",
+  "n_historical_rows": 3,
+  "n_base_scenes": 1,
+  "fit_units_per_solver_per_budget": 9,
+  "optimizer_start_records": 180,
+  "candidate_law_fit_dimensions": {
+    "elastic": 2,
+    "deadzone": 3,
+    "cubic": 3
+  },
+  "source_hashes_verified": {
+    "P105": "603c616a0621ea6bfec0be5814585cea17156890dcd9c7cd2e16e811a0fced2a",
+    "P103": "70185b44150fcfe87c3fcb73e50c88df35856cd4c541c01a9009683165af271f",
+    "P108": "386f4c1c88aa5574f8919397db4817cf832bc8d272001d743096cc07382f4a8c",
+    "R106": "75323e551e247225cd3dcd11ec5abc8ed80070302c2531e7879e1e46084aa523",
+    "M106": "3e0a8914f7c0dedaff0bf18be4cf1c15a1a45bd47e1f795359d301a98ab654e5",
+    "R107": "9e1cadaa72412a8c95b7952415e2a65cb78308274eaf9bdba584881eef5ca16d"
+  },
+  "checkpoints_verified": [
+    {
+      "filename": "original_deadzone_M0.json",
+      "row_sha256": "56a8b1a6da8bcfad4f53555a1e1d2e06141ade5cf2a44f2c3d113d49240db764",
+      "status": "PASS"
+    },
+    {
+      "filename": "original_elastic_M0.json",
+      "row_sha256": "24fb41da93b9f26c8012970007bb2270e0155e48a44a02dbb0e535ff04786a01",
+      "status": "PASS"
+    },
+    {
+      "filename": "original_nonlinear_M0.json",
+      "row_sha256": "d3f2655ba7d51a59632916279ec6184a03a158c7580c8db9f3a655b7ecd38b80",
+      "status": "PASS"
+    }
+  ],
+  "smoke_closure": {
+    "status": "PASS",
+    "n_cases": 1,
+    "aggregate": {
+      "50": {
+        "TRF_CAP": {
+          "fit_units": 1,
+          "max_calls_total": 50,
+          "actual_204vector_calls": 50,
+          "unused_calls": 0,
+          "start_stop_status_counts": {
+            "budget_cap": 5
+          },
+          "unavailable_fits": 0,
+          "wall_seconds_descriptive_only": 0.1141356999999914
+        },
+        "SLSQP_CAP": {
+          "fit_units": 1,
+          "max_calls_total": 50,
+          "actual_204vector_calls": 50,
+          "unused_calls": 0,
+          "start_stop_status_counts": {
+            "budget_cap": 5
+          },
+          "unavailable_fits": 0,
+          "wall_seconds_descriptive_only": 0.10625100000001453
+        }
+      }
+    }
+  },
+  "aggregate_reconstructed": {
+    "100": {
+      "TRF_CAP": {
+        "fit_units": 9,
+        "max_calls_total": 900,
+        "actual_204vector_calls": 896,
+        "unused_calls": 4,
+        "start_stop_status_counts": {
+          "optimizer_success": 2,
+          "budget_cap": 43
+        },
+        "unavailable_fits": 0,
+        "wall_seconds_descriptive_only": 2.131246500000003
+      },
+      "SLSQP_CAP": {
+        "fit_units": 9,
+        "max_calls_total": 900,
+        "actual_204vector_calls": 899,
+        "unused_calls": 1,
+        "start_stop_status_counts": {
+          "budget_cap": 44,
+          "optimizer_success": 1
+        },
+        "unavailable_fits": 0,
+        "wall_seconds_descriptive_only": 2.1095384999999283
+      }
+    },
+    "200": {
+      "TRF_CAP": {
+        "fit_units": 9,
+        "max_calls_total": 1800,
+        "actual_204vector_calls": 1535,
+        "unused_calls": 265,
+        "start_stop_status_counts": {
+          "optimizer_success": 34,
+          "budget_cap": 11
+        },
+        "unavailable_fits": 0,
+        "wall_seconds_descriptive_only": 3.686752399999989
+      },
+      "SLSQP_CAP": {
+        "fit_units": 9,
+        "max_calls_total": 1800,
+        "actual_204vector_calls": 1591,
+        "unused_calls": 209,
+        "start_stop_status_counts": {
+          "optimizer_success": 18,
+          "budget_cap": 27
+        },
+        "unavailable_fits": 0,
+        "wall_seconds_descriptive_only": 3.7522279999999455
+      }
+    }
+  },
+  "retrospective_diagnostic_ONLY": {
+    "100": {
+      "TRF_CAP": {
+        "MID_PLUS_HALF": {
+          "correct": 2,
+          "n": 3,
+          "accuracy_descriptive_only": 0.6666666666666666
+        },
+        "MID_PLUS_FULL": {
+          "correct": 2,
+          "n": 3,
+          "accuracy_descriptive_only": 0.6666666666666666
+        }
+      },
+      "SLSQP_CAP": {
+        "MID_PLUS_HALF": {
+          "correct": 3,
+          "n": 3,
+          "accuracy_descriptive_only": 1.0
+        },
+        "MID_PLUS_FULL": {
+          "correct": 2,
+          "n": 3,
+          "accuracy_descriptive_only": 0.6666666666666666
+        }
+      }
+    },
+    "200": {
+      "TRF_CAP": {
+        "MID_PLUS_HALF": {
+          "correct": 2,
+          "n": 3,
+          "accuracy_descriptive_only": 0.6666666666666666
+        },
+        "MID_PLUS_FULL": {
+          "correct": 2,
+          "n": 3,
+          "accuracy_descriptive_only": 0.6666666666666666
+        }
+      },
+      "SLSQP_CAP": {
+        "MID_PLUS_HALF": {
+          "correct": 2,
+          "n": 3,
+          "accuracy_descriptive_only": 0.6666666666666666
+        },
+        "MID_PLUS_FULL": {
+          "correct": 2,
+          "n": 3,
+          "accuracy_descriptive_only": 0.6666666666666666
+        }
+      }
+    }
+  },
+  "E4_accessed": false,
+  "fitting_performed": false,
+  "simulation_performed": false,
+  "limitations": [
+    "One historical base scene only",
+    "Three mechanism conditions are not an independent sample",
+    "Equal maximum evaluation cap does not imply equal realized evaluations",
+    "Optimizer success does not imply correct physical identification",
+    "Historical correctness is descriptive only",
+    "No confirmatory statistical inference"
+  ],
+  "next_stage": "P4-B3C independent-scene equal-budget confirmation; freeze 100/200 caps and 2+3 starts before outcomes"
+}

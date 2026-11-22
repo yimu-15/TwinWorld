@@ -1,0 +1,352 @@
+{
+  "protocol": "P4-G2C pre-outcome frozen paired parameter-source fresh confirmation",
+  "smoke": false,
+  "n_base_scenes": 24,
+  "n_cases": 384,
+  "n_generator_case_pairs": 768,
+  "n_fit_units": 4608,
+  "sources": {
+    "P98": "699ea08f85e0b5db4da69106f9124bdcecedb5f2969fb3ca10d672dd24ba3d96",
+    "P99": "1345b3d7c43f487d68ed164176376884bf89e619d492e3558c0f8a5f80335ab0",
+    "P102": "9e48a6b0e644543154ce021a2633d78d3f471fb8b8d96da2f7b6b7d645214267",
+    "R99": "a9d4656a56db560de9261c9667918a1b326c87b98ebc51979fca35e86df58e26",
+    "R101": "37fd6989f2a7f0bba506bc0ad0c4d2b542c9495c9d9fc61284927c1dce178bca",
+    "R102": "b8085e577bbf4a11a3044440ab0370154a7d60e989d3a605d78e11d58a9aad55",
+    "M102": "f5110ebf6ab7ee831c31226c5b0ae3a2136b07af8822e16d5e2519d35929777e",
+    "SELF": "70185b44150fcfe87c3fcb73e50c88df35856cd4c541c01a9009683165af271f"
+  },
+  "scene_seed": 20300117,
+  "noise_seed": 2030011701,
+  "scene_fingerprints_PRIVATE": [
+    "6b96deabda3c449c8cb1308f6642da0f7a96b28d88044fee709827cb9c3ddce7",
+    "838c26f41da335dd35007349012aa625bd42a7849efc7688f09d911845e02af5",
+    "9d695ec6320c1b0e4125e3cd2c7c9b3f1df791650a3540790c6a220afa191090",
+    "429e81b5232f63a4eb9c1c56d7d81f202de3191209dc430379545934c24d3d94",
+    "c2bafe25bfa75053cb9db7001d18809c296570517853bd1f21e96543fdb4759e",
+    "65dd9b1f872e340566ba71aaeaa8b11160f75c761ff2a9c358fbc2064a686aa6",
+    "d77fefef7974e019606628bbcb0927f37e1c62da7f6233bd0fd32df0a2b4bf0f",
+    "8794870f5d07eafd127c3288e16084b7e89ec76eb87dbdd70aa9d9e68482a96e",
+    "2640b49832ccb4b65d67f068e4bddb37d23b962cabe24aabc084fc5107c2783f",
+    "39476be4280574e005eeadb0b3f47b453daf9f9259be66b94c079aecc2f1936b",
+    "ab63dffd8ae5a665e758f1f5bd61618bc3f5c1a0db02e65d50fe8bd00af3e734",
+    "2377c62e7a2c43f5b8653243b029b5e6bd81d35738ec63968997f61a00c83946",
+    "939b6b28921bd40e031448c6b62ecaa5dcb84cdef06cd0ca58ff8c260b86da41",
+    "d5c1228403a1ff3462bc75e3bf0e66b0994a75d59c7406cb05241edb84ff2ebf",
+    "9f04344428f9f4e5476a0e03c790bd2eb6bee2a1bc64a4ac75d2127eb0018b90",
+    "37a2f8f995dc3f37cee546650df8c6b6abb432d731f5621b60fddafbfd735352",
+    "c9562cc8988e66577bdfba854427bea6026bd6d0fd51695a60a377e202ce473d",
+    "4c9dbd64a02ff80744436c579a0304d013be0c9d3368f32149160d9ba997b53f",
+    "49e015c69a84a40420db4ffecedb2ab373fb0f28ab1795e23ede18d3c74d8dc2",
+    "37ac5c4087e546a45351febab391496a873824af0d65e6a101fa9caf30c4c2dd",
+    "796882fb245775ca6426a98531f45fd98c0a5943fa6dc2674769ef759cf55355",
+    "c92c51c20ec3e82f10aa665e5417a6f4c939643d92b888311b4b40a55eae5a24",
+    "68524a5db68fb5c5a48f00fbea1492673ccc88d274a494972eb954be3e93bdba",
+    "7e88f12314c6012a6da984cb04682b62625f5008194e826bd95b4b87dca307fd",
+    "b8d23d4c421975c116585d0749f33a00f571b8a35e627046db38494b7b8b5c2e",
+    "53e85a95c91005e7c621453b4df1d35a93863fb12ec747a76c5e98602128b242",
+    "e9fc81dde409e89fc2ec892514e40268d816231a1327de3ddfeeb7cae8568d4a",
+    "d84ca414b8ca8e753effe89083b072487ec9ed4d137c314639f52d4ca63bff62",
+    "6862631beb24efd65f77f7447c678414ae5ca5cabbc703400756081c2a81bf28",
+    "ca2debafd1687d243e6cd99f4446393811822fcb8710b595dbf79b11346ce636",
+    "01760a828b04cc4e450be626d2e22280c4e8afcf7dbfbb2580372a817675571b",
+    "13eca8634369ff851ab4ea70ebe08875e7a552462e70953b243c641222ecad20",
+    "03cb86a53fe12d074b56984abc163235d658284e85694cf403357cacb43a28a4",
+    "1aa855526daa7a0586bc871660c121b47f14f44d587539ef477c0c6210ef6e82",
+    "78e3177a7c2f96709cb9bd64c38bad3cfec6e5705ab65d2f6779ebaa525eda75",
+    "6774d08979d7747847df97d371262c877e597021ac5efe7f14f40cbb225b1b30",
+    "523e0ae52f00574e5ea1978d8d6c19292cb79ecdd21a8d101a9e57c756b22715",
+    "1d9ef4c66f0386859a6d4eeca3ff42e998f250fe126826d631c78d266e85403c",
+    "b8648c370a6a0ee50b5c459d7bd47030caff59f4691c7cd28ed5198d0ed9c023",
+    "e9c3ce5723498ee50538b8906fed67d1cd102faefd524b0963e2da9e48818d43",
+    "422acf04d94abb1af8d882eb37fc53f903789f60a8ccf3a58e4fbc5385b79330",
+    "f53d078a04361b41073ba85dbb4d8dd9f0570d853ad55354ca15e65b258a8121",
+    "b6722d49f329a3f2c62f21f54cdd2908003f7ed206d00ef1c7095007959ae190",
+    "63d0b0f3a382b4ff624e6ac7a60ddd2db55d3f11a01e3e9cbe622dc81e7e176c",
+    "7cfdb8636a4e78c69165012ff2752a0755a03157fb75d66a7ad183315e2faf06",
+    "b449296f81c8bacebcfd227ac1a1509989774e087423d51152e8be6d6215592a",
+    "f0bb14498cf2613eceb6c2118361bc744776f8cd89d4f455faef0ad5bcc041bc",
+    "1d565cc6deb71396ca3684b789e7f6df4435a0ee3f609e2e1fd0688f085e2114"
+  ],
+  "generator_arms": {
+    "IDEAL_ODE": {
+      "viscous_rate_s_inv": 0.0,
+      "dry_acc_ms2": 0.0,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.0
+    },
+    "SHIFTED_ODE": {
+      "viscous_rate_s_inv": 0.08,
+      "dry_acc_ms2": 0.02,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.025
+    }
+  },
+  "inference": "P22 A-conditioned B, P77/P92 five-start SLSQP",
+  "fit_budget": {
+    "original_starts": 2,
+    "extra_common_starts": 3,
+    "maxiter": 150,
+    "n_training_B_residuals": 204
+  },
+  "protocol_fixed_before_fresh_outcome": true,
+  "primary_is_privileged_paired_source_ablation": true,
+  "primary_and_secondary_paired_contrasts": {
+    "PRIMARY_SHIFTED_FIXED_MINUS_REFIT_ALL_FULL": {
+      "n": 384,
+      "a_correct": 347,
+      "b_correct": 327,
+      "both_correct": 309,
+      "a_only": 38,
+      "b_only": 18,
+      "both_wrong": 19,
+      "net": 20,
+      "effect": 0.052083333333333336,
+      "scene_cluster_CI95": [
+        0.013020833333333334,
+        0.08854166666666667
+      ]
+    },
+    "SECONDARY_ELASTIC_FIXED_MINUS_REFIT_FULL": {
+      "n": 96,
+      "a_correct": 79,
+      "b_correct": 47,
+      "both_correct": 42,
+      "a_only": 37,
+      "b_only": 5,
+      "both_wrong": 12,
+      "net": 32,
+      "effect": 0.3333333333333333,
+      "scene_cluster_CI95": [
+        0.21875,
+        0.4479166666666667
+      ]
+    },
+    "SECONDARY_NM2_FIXED_FULL_MINUS_HALF": {
+      "n": 96,
+      "a_correct": 84,
+      "b_correct": 89,
+      "both_correct": 77,
+      "a_only": 7,
+      "b_only": 12,
+      "both_wrong": 0,
+      "net": -5,
+      "effect": -0.052083333333333336,
+      "scene_cluster_CI95": [
+        -0.14583333333333334,
+        0.041666666666666664
+      ]
+    },
+    "SECONDARY_NM2_REFIT_FULL_MINUS_HALF": {
+      "n": 96,
+      "a_correct": 92,
+      "b_correct": 76,
+      "both_correct": 72,
+      "a_only": 20,
+      "b_only": 4,
+      "both_wrong": 0,
+      "net": 16,
+      "effect": 0.16666666666666666,
+      "scene_cluster_CI95": [
+        0.0625,
+        0.2604166666666667
+      ]
+    },
+    "SECONDARY_NM2_FIXED_MINUS_REFIT_DOSE_DD": {
+      "n": 96,
+      "net": -21,
+      "effect": -0.21875,
+      "scene_cluster_CI95": [
+        -0.3125,
+        -0.125
+      ]
+    }
+  },
+  "aggregate_classification": {
+    "PAIRED_IDEAL_FIXED": {
+      "MID_PLUS_HALF": {
+        "correct": 288,
+        "available": 384,
+        "n": 384,
+        "by_law": {
+          "elastic": {
+            "n": 96,
+            "correct": 15
+          },
+          "deadzone": {
+            "n": 144,
+            "correct": 137
+          },
+          "cubic": {
+            "n": 144,
+            "correct": 136
+          }
+        }
+      },
+      "MID_PLUS_FULL": {
+        "correct": 347,
+        "available": 384,
+        "n": 384,
+        "by_law": {
+          "elastic": {
+            "n": 96,
+            "correct": 79
+          },
+          "deadzone": {
+            "n": 144,
+            "correct": 141
+          },
+          "cubic": {
+            "n": 144,
+            "correct": 127
+          }
+        }
+      }
+    },
+    "SHIFTED_REFIT": {
+      "MID_PLUS_HALF": {
+        "correct": 298,
+        "available": 384,
+        "n": 384,
+        "by_law": {
+          "elastic": {
+            "n": 96,
+            "correct": 40
+          },
+          "deadzone": {
+            "n": 144,
+            "correct": 144
+          },
+          "cubic": {
+            "n": 144,
+            "correct": 114
+          }
+        }
+      },
+      "MID_PLUS_FULL": {
+        "correct": 327,
+        "available": 384,
+        "n": 384,
+        "by_law": {
+          "elastic": {
+            "n": 96,
+            "correct": 47
+          },
+          "deadzone": {
+            "n": 144,
+            "correct": 143
+          },
+          "cubic": {
+            "n": 144,
+            "correct": 137
+          }
+        }
+      }
+    }
+  },
+  "full_denominator_coverage": {
+    "PAIRED_IDEAL_FIXED": {
+      "MID_PLUS_HALF": 1.0,
+      "MID_PLUS_FULL": 1.0
+    },
+    "SHIFTED_REFIT": {
+      "MID_PLUS_HALF": 1.0,
+      "MID_PLUS_FULL": 1.0
+    }
+  },
+  "passes_90pct_interpretability_guard": true,
+  "nested_violations": {
+    "IDEAL_ODE": {
+      "deadzone": 23
+    },
+    "SHIFTED_ODE": {
+      "deadzone": 20
+    }
+  },
+  "function_evaluations": {
+    "IDEAL_ODE": {
+      "wide": {
+        "original": 245084,
+        "extra": 365865
+      },
+      "outer_box": {
+        "original": 132906,
+        "extra": 205686
+      }
+    },
+    "SHIFTED_ODE": {
+      "wide": {
+        "original": 223390,
+        "extra": 342280
+      },
+      "outer_box": {
+        "original": 135750,
+        "extra": 205361
+      }
+    }
+  },
+  "postdecision_true_law_diagnostics": {
+    "PAIRED_IDEAL_FIXED": {
+      "elastic": {
+        "available": 96,
+        "median_true_law_rms_mm": 10.913688871063783,
+        "median_relative_margin": 0.2040072434916541
+      },
+      "deadzone": {
+        "available": 144,
+        "median_true_law_rms_mm": 11.145534547988113,
+        "median_relative_margin": 0.6263029301789163
+      },
+      "cubic": {
+        "available": 144,
+        "median_true_law_rms_mm": 8.550157893276188,
+        "median_relative_margin": 0.6506790326001676
+      }
+    },
+    "SHIFTED_REFIT": {
+      "elastic": {
+        "available": 96,
+        "median_true_law_rms_mm": 9.226177200783253,
+        "median_relative_margin": -0.013263935739131523
+      },
+      "deadzone": {
+        "available": 144,
+        "median_true_law_rms_mm": 9.500724912984607,
+        "median_relative_margin": 0.8284973757571834
+      },
+      "cubic": {
+        "available": 144,
+        "median_true_law_rms_mm": 8.527449301647762,
+        "median_relative_margin": 0.699551448212238
+      }
+    }
+  },
+  "bootstrap": {
+    "unit": "base_scene",
+    "n_clusters": 24,
+    "resamples": 2000,
+    "seed": 2030011702,
+    "CI_method": "paired scene-cluster percentile; two-sided"
+  },
+  "E4_accessed": false,
+  "truth_used_for_fit_or_selection": false,
+  "heldout_used_for_fit": false,
+  "adaptive_tuning": false,
+  "limitations": [
+    "Fixed-IDEAL uses privileged same-scene IDEAL observations for source fitting: NOT a deployable transfer baseline",
+    "Two branches of one standalone RK4 implementation; no hardware or independent second engine",
+    "Both source and target fits use all four source-specific training actions; evaluation on same SHIFTED heldouts",
+    "This confirms a controlled parameter-source contrast, not a causal effect of parameter freezing",
+    "Original candidate family omits SHIFTED ground drag/actuator lag",
+    "MATCHED5 matches optimizer starts/maxiter, not actual function evaluations",
+    "SLSQP local minima/nested-domain violations possible",
+    "24 scene-cluster Bootstrap; case-level confidence bounds are inappropriate",
+    "Postdecision true-law margins are retrospective only",
+    "All abstentions retained as errors; no E4 data used"
+  ],
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "protocol": "P4-M2B0 physical domain fit pilot",
+  "smoke": true,
+  "n_scenes": 1,
+  "scene_seed": 20390317,
+  "noise_seed": 2029131701,
+  "summary": {
+    "original": {
+      "independent": {
+        "elastic": {
+          "n": 1,
+          "legacy_median_mm": 4.998727131998131,
+          "physical_median_mm": 86.42547226816227,
+          "median_paired_delta_mm": 81.42674513616413,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 1,
+          "legacy_median_mm": 4.953147435364934,
+          "physical_median_mm": 41.543460394990035,
+          "median_paired_delta_mm": 36.5903129596251,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 1,
+          "legacy_median_mm": 5.0020358307103,
+          "physical_median_mm": 124.28547728235282,
+          "median_paired_delta_mm": 119.28344145164252,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "rigid": {
+        "elastic": {
+          "n": 1,
+          "legacy_median_mm": 16.69067324852216,
+          "physical_median_mm": 61.99780244243496,
+          "median_paired_delta_mm": 45.3071291939128,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 1,
+          "legacy_median_mm": 17.524812304064184,
+          "physical_median_mm": 76.4923289093256,
+          "median_paired_delta_mm": 58.96751660526141,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 1,
+          "legacy_median_mm": 16.581902488694787,
+          "physical_median_mm": 54.131314315104795,
+          "median_paired_delta_mm": 37.54941182641001,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "elastic": {
+        "elastic": {
+          "n": 1,
+          "legacy_median_mm": 8.240910725149316,
+          "physical_median_mm": 8.24090952075117,
+          "median_paired_delta_mm": -1.2043981456599795e-06,
+          "legacy_physically_feasible_n": 1,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 1,
+          "legacy_median_mm": 8.562658417760561,
+          "physical_median_mm": 8.793653082447822,
+          "median_paired_delta_mm": 0.2309946646872607,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 1,
+          "legacy_median_mm": 6.665147330466013,
+          "physical_median_mm": 6.457695014906851,
+          "median_paired_delta_mm": -0.20745231555916188,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "deadzone": {
+        "elastic": {
+          "n": 1,
+          "legacy_median_mm": 9.98529686179056,
+          "physical_median_mm": 13.574802788636395,
+          "median_paired_delta_mm": 3.5895059268458347,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 1,
+          "legacy_median_mm": 4.710478461901591,
+          "physical_median_mm": 4.7104784729568685,
+          "median_paired_delta_mm": 1.1055277582272538e-08,
+          "legacy_physically_feasible_n": 1,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 1,
+          "legacy_median_mm": 14.516856437670892,
+          "physical_median_mm": 14.304511331235503,
+          "median_paired_delta_mm": -0.2123451064353894,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "nonlinear": {
+        "elastic": {
+          "n": 1,
+          "legacy_median_mm": 11.351049157503788,
+          "physical_median_mm": 11.607949455040936,
+          "median_paired_delta_mm": 0.2569002975371486,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 1,
+          "legacy_median_mm": 12.29970762131256,
+          "physical_median_mm": 12.326942521374209,
+          "median_paired_delta_mm": 0.027234900061648304,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 1,
+          "legacy_median_mm": 6.974255647478538,
+          "physical_median_mm": 6.974261393934998,
+          "median_paired_delta_mm": 5.746456460009597e-06,
+          "legacy_physically_feasible_n": 1,
+          "physical_fit_failures": 0
+        }
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "elastic": {
+          "n": 1,
+          "legacy_median_mm": 4.994654725925413,
+          "physical_median_mm": 86.44872645843941,
+          "median_paired_delta_mm": 81.454071732514,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 1,
+          "legacy_median_mm": 5.009681200446417,
+          "physical_median_mm": 26.75147196122057,
+          "median_paired_delta_mm": 21.74179076077415,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 1,
+          "legacy_median_mm": 4.994388034743108,
+          "physical_median_mm": 124.79182129420556,
+          "median_paired_delta_mm": 119.79743325946245,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "rigid": {
+        "elastic": {
+          "n": 1,
+          "legacy_median_mm": 13.539843520402567,
+          "physical_median_mm": 58.76247098568909,
+          "median_paired_delta_mm": 45.22262746528652,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 1,
+          "legacy_median_mm": 14.39176635011722,
+          "physical_median_mm": 157.5754348763863,
+          "median_paired_delta_mm": 143.1836685262691,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 1,
+          "legacy_median_mm": 13.434513862295992,
+          "physical_median_mm": 50.95769357033762,
+          "median_paired_delta_mm": 37.523179708041624,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "elastic": {
+        "elastic": {
+          "n": 1,
+          "legacy_median_mm": 4.147367008728695,
+          "physical_median_mm": 4.1473669542633465,
+          "median_paired_delta_mm": -5.446534867559194e-08,
+          "legacy_physically_feasible_n": 1,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 1,
+          "legacy_median_mm": 4.084388701431732,
+          "physical_median_mm": 34.502036545813226,
+          "median_paired_delta_mm": 30.417647844381495,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 1,
+          "legacy_median_mm": 4.147544446638988,
+          "physical_median_mm": 6.372671117314368,
+          "median_paired_delta_mm": 2.2251266706753805,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "deadzone": {
+        "elastic": {
+          "n": 1,
+          "legacy_median_mm": 16.356630987439473,
+          "physical_median_mm": 32.495491593450545,
+          "median_paired_delta_mm": 16.13886060601107,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 1,
+          "legacy_median_mm": 6.157926839016794,
+          "physical_median_mm": 6.157944039075239,
+          "median_paired_delta_mm": 1.7200058445077104e-05,
+          "legacy_physically_feasible_n": 1,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 1,
+          "legacy_median_mm": 7.971480105026259,
+          "physical_median_mm": 64.91132326489388,
+          "median_paired_delta_mm": 56.93984315986762,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        }
+      },
+      "nonlinear": {
+        "elastic": {
+          "n": 1,
+          "legacy_median_mm": 6.965658794387954,
+          "physical_median_mm": 7.080981343884595,
+          "median_paired_delta_mm": 0.115322549496641,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "deadzone": {
+          "n": 1,
+          "legacy_median_mm": 7.516362760071898,
+          "physical_median_mm": 61.896660335687,
+          "median_paired_delta_mm": 54.3802975756151,
+          "legacy_physically_feasible_n": 0,
+          "physical_fit_failures": 0
+        },
+        "cubic": {
+          "n": 1,
+          "legacy_median_mm": 4.620021858871509,
+          "physical_median_mm": 4.620019918669276,
+          "median_paired_delta_mm": -1.9402022335412994e-06,
+          "legacy_physically_feasible_n": 1,
+          "physical_fit_failures": 0
+        }
+      }
+    }
+  },
+  "test_tuning": false,
+  "E4_accessed": false,
+  "uses_test_truth_online": false,
+  "source_sha256": {
+    "74_p4m2a_generator_inference_fidelity.py": "0bce3db21b7622ac2451fa0cb3f2fbaac177790461339b9b3ad1d70ab7bc801b",
+    "75_p4m2b0_physical_domain_fit_pilot.py": "f9ef52a5e5ac48c724e23c6dc84a54c76f589ba10cb8587560f51278c045b164"
+  },
+  "limitations": [
+    "Reuses P4-M2A development scenes",
+    "Not an independent test",
+    "Legacy and physical solvers differ",
+    "Physical fit has redundant mass dimension",
+    "Finite local optimization, no global proof",
+    "Only held-out RMS compared",
+    "No structural acceptance threshold",
+    "No calibrated coverage claim",
+    "No new active experiment selection",
+    "Physical domain depends on generator prior",
+    "No robustness to incorrect domain prior tested"
+  ]
+}

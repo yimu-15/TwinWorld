@@ -1,0 +1,222 @@
+{
+  "protocol": "P3-A8C2B bidirectional selection",
+  "smoke": false,
+  "n_test_scenes": 72,
+  "test_seed": 20280521,
+  "noise_seed": 2028052101,
+  "threshold_source": "P3-A8C1B formal",
+  "alpha_mid": 0.05,
+  "alpha_high": 0.025,
+  "alpha_reverse_high": 0.025,
+  "selection_score": "25th-percentile pairwise normalized prediction RMS, same as P3-A8B0",
+  "summary": {
+    "original": {
+      "policies": {
+        "mid_only": {
+          "correct": 54,
+          "wrong": 5,
+          "contains_true": 345,
+          "unknown_empty": 1,
+          "unknown_false_singleton": 1,
+          "work_J": 1481.315168377565,
+          "actions": {
+            "None": 432
+          }
+        },
+        "fixed_high": {
+          "correct": 161,
+          "wrong": 5,
+          "contains_true": 339,
+          "unknown_empty": 71,
+          "unknown_false_singleton": 1,
+          "work_J": 2573.249158218974,
+          "actions": {
+            "high": 425,
+            "None": 7
+          }
+        },
+        "fixed_reverse": {
+          "correct": 180,
+          "wrong": 3,
+          "contains_true": 337,
+          "unknown_empty": 72,
+          "unknown_false_singleton": 0,
+          "work_J": 2238.557863686923,
+          "actions": {
+            "reverse_high": 425,
+            "None": 7
+          }
+        },
+        "fixed_biphasic": {
+          "correct": 110,
+          "wrong": 6,
+          "contains_true": 339,
+          "unknown_empty": 72,
+          "unknown_false_singleton": 0,
+          "work_J": 1751.3548445065094,
+          "actions": {
+            "biphasic_high": 425,
+            "None": 7
+          }
+        },
+        "old_disagreement": {
+          "correct": 171,
+          "wrong": 3,
+          "contains_true": 340,
+          "unknown_empty": 71,
+          "unknown_false_singleton": 1,
+          "work_J": 2393.941675024645,
+          "actions": {
+            "reverse_high": 224,
+            "high": 201,
+            "None": 7
+          }
+        },
+        "affine_disagreement": {
+          "correct": 174,
+          "wrong": 3,
+          "contains_true": 339,
+          "unknown_empty": 72,
+          "unknown_false_singleton": 0,
+          "work_J": 2405.9394842846086,
+          "actions": {
+            "high": 207,
+            "reverse_high": 218,
+            "None": 7
+          }
+        }
+      },
+      "eligible": 425,
+      "old_affine_action_changes": 212,
+      "A_forecast_PRIVATE": {
+        "high": {
+          "n": 425,
+          "median_mm": 5.763593781781407,
+          "p90_mm": 11.651142049914839
+        },
+        "reverse_high": {
+          "n": 425,
+          "median_mm": 9.163996530738062,
+          "p90_mm": 18.976507313195484
+        }
+      }
+    },
+    "above_original_range": {
+      "policies": {
+        "mid_only": {
+          "correct": 81,
+          "wrong": 2,
+          "contains_true": 348,
+          "unknown_empty": 8,
+          "unknown_false_singleton": 1,
+          "work_J": 1451.163958103386,
+          "actions": {
+            "None": 432
+          }
+        },
+        "fixed_high": {
+          "correct": 192,
+          "wrong": 0,
+          "contains_true": 344,
+          "unknown_empty": 71,
+          "unknown_false_singleton": 0,
+          "work_J": 2524.40128681561,
+          "actions": {
+            "high": 418,
+            "None": 14
+          }
+        },
+        "fixed_reverse": {
+          "correct": 201,
+          "wrong": 2,
+          "contains_true": 342,
+          "unknown_empty": 71,
+          "unknown_false_singleton": 1,
+          "work_J": 2194.5563544432484,
+          "actions": {
+            "reverse_high": 418,
+            "None": 14
+          }
+        },
+        "fixed_biphasic": {
+          "correct": 151,
+          "wrong": 3,
+          "contains_true": 344,
+          "unknown_empty": 72,
+          "unknown_false_singleton": 0,
+          "work_J": 1720.4308484931446,
+          "actions": {
+            "biphasic_high": 418,
+            "None": 14
+          }
+        },
+        "old_disagreement": {
+          "correct": 196,
+          "wrong": 1,
+          "contains_true": 344,
+          "unknown_empty": 71,
+          "unknown_false_singleton": 1,
+          "work_J": 2371.9655379237106,
+          "actions": {
+            "high": 227,
+            "reverse_high": 191,
+            "None": 14
+          }
+        },
+        "affine_disagreement": {
+          "correct": 198,
+          "wrong": 1,
+          "contains_true": 344,
+          "unknown_empty": 71,
+          "unknown_false_singleton": 1,
+          "work_J": 2372.3922885116444,
+          "actions": {
+            "reverse_high": 206,
+            "high": 212,
+            "None": 14
+          }
+        }
+      },
+      "eligible": 418,
+      "old_affine_action_changes": 217,
+      "A_forecast_PRIVATE": {
+        "high": {
+          "n": 418,
+          "median_mm": 5.709485402007596,
+          "p90_mm": 11.795215800566682
+        },
+        "reverse_high": {
+          "n": 418,
+          "median_mm": 9.689557164927564,
+          "p90_mm": 19.548220840129126
+        }
+      }
+    }
+  },
+  "online_uses_future_A": false,
+  "online_uses_future_B": false,
+  "online_uses_truth": false,
+  "E4_accessed": false,
+  "test_tuning": false,
+  "limitations": [
+    "Only two selectable actions",
+    "Biphasic included as fixed reference only",
+    "Affine negative extrapolation remains noisy",
+    "Point-estimate candidate models",
+    "No calibrated planner uncertainty",
+    "No wrong-singleton probability guarantee",
+    "One held-out unknown mechanism",
+    "Offline counterfactual execution",
+    "Selected actions alone charged",
+    "Mechanical work is a proxy",
+    "Gap bands share base scenes",
+    "Synthetic MuJoCo positions only",
+    "No real hardware or RGB"
+  ],
+  "source_sha256": {
+    "64_p3a8b0_preaction_disagreement_pilot.py": "2a3c7ba0e1f18c605a38b746960b9705fc2a7acd1c8f73506787ea20675b1e1d",
+    "65_p3a8b1_observable_A_response_audit.py": "c882fe225e14d6705503993d62ab1851826a79c5e4e1a57392fda826b72b9698",
+    "68_p3a8c1_temporal_action_feasibility.py": "11d79d16b141ca65a94742b0377ab4cee7e9d5b9904105dbc8350988b3246a66",
+    "71_p3a8c2b_bidirectional_action_selection.py": "e88aa8a4979eef2a873ae17775008ba13d911dad44d52361720b7453653fec7a"
+  }
+}

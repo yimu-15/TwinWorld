@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-11-20",
+  "table_id": "Table 1",
+  "title": "Passive versus active mechanism distinguishability across physical implementations",
+  "authoritative_table_snapshot": {
+    "file_name": "Table1_data.json",
+    "source_csv_name": "TwinWorld_Table1/Table1_data.csv",
+    "source_csv_sha256": "f43985ea7e81646f363ab4cbf366489929473b955e8f24e211aeeb4fcdb1b042",
+    "data_rows": 12
+  },
+  "audit_approach": "Field-level paths cross-checked against accessible original report JSONs, subject to display rounding; no source files modified or experimental results regenerated.",
+  "source_documents": [
+    {
+      "id": "P0_baselines.json",
+      "file_name": "P0_baselines.json",
+      "type": "formal_report",
+      "purpose": "P0 active oracle and passive-majority test accuracies, privileged-information disclosure",
+      "available_in_this_session": true,
+      "sha256": "8e3a6967fec6559eb4abcf16e0d3d698b15dc5b64c02f2b718346713750c855c",
+      "original_project_path_reported": "outputs/p0_baselines.json"
+    },
+    {
+      "id": "TwinWorld_Figure1_V2_Audited_Package.zip",
+      "file_name": "TwinWorld_Figure1_V2_Audited_Package.zip",
+      "type": "evidence_archive",
+      "purpose": "Archived public matched-passive P0 trajectory used in earlier audit",
+      "available_in_this_session": true,
+      "sha256": "a5e4b66f3ce9d6b0db2aa44d2e9f938cea58b8de1689c52ce74fdf122824dfdc"
+    },
+    {
+      "id": "TwinWorld_Table1/Table1_QC_and_missing_data.md",
+      "file_name": "TwinWorld_Table1/Table1_QC_and_missing_data.md",
+      "type": "audit_note",
+      "purpose": "Previously reported Table 1 verification and limitations",
+      "available_in_this_session": true,
+      "sha256": "fbf88b078654e1ef1678f6a3edc8fb0dbc40d11e044c10cab35f189d840d6277"
+    },
+    {
+      "id": "p1b_report.json",
+      "file_name": "p1b_report.json",
+      "type": "formal_report",
+      "purpose": "P1-B passive equivalence, 1 N intervention and B displacement gap",
+      "available_in_this_session": true,
+      "sha256": "385a83db36b9ca683b0dcdca6ad26f8f466b30ad6a6260438409091273b7c1b6",
+      "original_project_path_reported": "outputs/p1b/p1b_report.json"
+    },
+    {
+      "id": "p1c_report.json",
+      "file_name": "p1c_report.json",
+      "type": "formal_report",
+      "purpose": "P1-C matched A motion, divergent B response, actual force discrepancy",
+      "available_in_this_session": true,
+      "sha256": "063d58cb2069ea8747305bffdf2e13bd25028c54156c3a75ef2522172851ddff",
+      "original_project_path_reported": "outputs/p1c/p1c_report.json"
+    },
+    {
+      "id": "p1c_raw_trajectory.csv",
+      "file_name": "p1c_raw_trajectory.csv",
+      "type": "case_trajectory",
+      "purpose": "P1-C recorded trajectory evidence",
+      "available_in_this_session": true,
+      "sha256": "9e5c2d085dab19f712155fc9fc4ae5fd2892023d75030d7f22cf0806575dbcc4"
+    },
+    {
+      "id": "p1c_raw_trajectory.npz",
+      "file_name": "p1c_raw_trajectory.npz",
+      "type": "case_trajectory",
+      "purpose": "P1-C recorded trajectory evidence",
+      "available_in_this_session": true,
+      "sha256": "6f4bfbe514bc193ea4a93413d7d924043d14ed1220cbfa2f4d3869c1f71bc33b"
+    },
+    {
+      "id": "P2C0_baselines(1).json",
+      "file_name": "P2C0_baselines(1).json",
+      "type": "formal_report",
+      "purpose": "P2-C0 four supervised observation modalities and scene-cluster intervals",
+      "available_in_this_session": true,
+      "sha256": "af3406bec48452bc31359a0f4311890567f8d39feff9e6b39aba1265a1eeca30",
+      "original_project_path_reported": "outputs/p2c0/p2c0_baselines.json"
+    },
+    {
+      "id": "p2c0_per_scene_predictions.csv",
+      "file_name": "p2c0_per_scene_predictions.csv",
+      "type": "case_level",
+      "purpose": "P2-C0 per-scene predictions and independent scene cluster identities",
+      "available_in_this_session": true,
+      "sha256": "411950fdd8eec89c186b84dd68d3b2241622ff2e5baa027fb70ffd1b9320b125"
+    }
+  ],
+  "row_provenance": [
+    {
+      "table_row_index": 2,
+      "experiment": "P0 (Euler)",
+      "source_id": "TwinWorld_Figure1_V2_Audited_Package.zip",
+      "source_paths": [
+        "TwinWorld_Figure1_V2/evidence/P0_test_public__passive.csv (archive member)"
+      ],
+      "verification": "previously_audited_source_archive_available",
+      "notes": "The exact passive maximum was audited previously; current JSON report alone does not contain a literal trajectory-gap field."
+    },
+    {
+      "table_row_index": 3,
+      "experiment": "P0 (Euler)",
+      "source_id": "P0_baselines.json",
+      "source_paths": [
+        "/test/passive_majority_accuracy"
+      ],
+      "verification": "matched_report_with_rounding"
+    },
+    {
+      "table_row_index": 4,
+      "experiment": "P0 (Euler)",
+      "source_id": "P0_baselines.json",
+      "source_paths": [
+        "/test/active_oracle_diagnostic_accuracy",
+        "/test/important"
+      ],
+      "verification": "matched_report_with_rounding",
+      "notes": "Privileged same-scene matched passive counterfactual, not deployable."
+    },
+    {
+      "table_row_index": 6,
+      "experiment": "P1-B (MuJoCo)",
+      "source_id": "p1b_report.json",
+      "source_paths": [
+        "/passive_max_abs_diff"
+      ],
+      "verification": "matched_report_with_rounding"
+    },
+    {
+      "table_row_index": 7,
+      "experiment": "P1-B (MuJoCo)",
+      "source_id": "p1b_report.json",
+      "source_paths": [
+        "/active_B_final_abs_diff"
+      ],
+      "verification": "matched_report_with_rounding"
+    },
+    {
+      "table_row_index": 8,
+      "experiment": "P1-C (MuJoCo)",
+      "source_id": "p1c_report.json",
+      "source_paths": [
+        "/results/active_A_trajectory_gap_max_m"
+      ],
+      "verification": "matched_report_with_rounding"
+    },
+    {
+      "table_row_index": 9,
+      "experiment": "P1-C (MuJoCo)",
+      "source_id": "p1c_report.json",
+      "source_paths": [
+        "/results/active_B_final_gap_m"
+      ],
+      "verification": "matched_report_with_rounding"
+    },
+    {
+      "table_row_index": 10,
+      "experiment": "P1-C (MuJoCo)",
+      "source_id": "p1c_report.json",
+      "source_paths": [
+        "/results/control_force_gap_max_N"
+      ],
+      "verification": "matched_report_with_rounding"
+    },
+    {
+      "table_row_index": 12,
+      "experiment": "P2-C0 (CPU)",
+      "source_id": "P2C0_baselines(1).json",
+      "source_paths": [
+        "/test/passive_only/accuracy",
+        "/test/passive_only/pair_cluster_bootstrap_ci95"
+      ],
+      "verification": "matched_report_with_rounding"
+    },
+    {
+      "table_row_index": 13,
+      "experiment": "P2-C0 (CPU)",
+      "source_id": "P2C0_baselines(1).json",
+      "source_paths": [
+        "/test/A_only/accuracy",
+        "/test/A_only/pair_cluster_bootstrap_ci95"
+      ],
+      "verification": "matched_report_with_rounding"
+    },
+    {
+      "table_row_index": 14,
+      "experiment": "P2-C0 (CPU)",
+      "source_id": "P2C0_baselines(1).json",
+      "source_paths": [
+        "/test/B_only/accuracy",
+        "/test/B_only/pair_cluster_bootstrap_ci95"
+      ],
+      "verification": "matched_report_with_rounding"
+    },
+    {
+      "table_row_index": 15,
+      "experiment": "P2-C0 (CPU)",
+      "source_id": "P2C0_baselines(1).json",
+      "source_paths": [
+        "/test/A_plus_B/accuracy",
+        "/test/A_plus_B/pair_cluster_bootstrap_ci95"
+      ],
+      "verification": "matched_report_with_rounding"
+    }
+  ],
+  "scientific_boundaries": [
+    "P0 CPU Euler, P1 MuJoCo and P2 CPU classification are separate protocols; never pool.",
+    "P0 active oracle uses privileged matched passive rollout; non-deployable.",
+    "P1-C uses shared PD control law but realized forces can differ.",
+    "P2-C0 confidence intervals are clustered over 30 test scenes; n=90 episodes per condition."
+  ],
+  "issues_requiring_author_attention": []
+}

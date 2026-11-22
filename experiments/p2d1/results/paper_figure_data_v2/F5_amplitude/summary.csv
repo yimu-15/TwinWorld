@@ -1,0 +1,9 @@
+exp_id,comparison,metric,value_a,value_b,delta,ci95_low,ci95_high,unit,source_report
+88,action_x_prior interaction,PRIMARY overall,NA,NA,0.083300,0.044300,0.122400,accuracy delta,88_p4m2d1_report.json
+88,HIGH_minus_MID (OOO),SECONDARY overall,NA,NA,0.119800,0.080700,0.156300,accuracy delta,88_p4m2d1_report.json
+88,HIGH_minus_MID (elastic M2 WOO),diagnostic,NA,NA,0.479200,0.333300,0.625000,accuracy delta,88_p4m2d1_report.json
+88,nested violations deadzone,NA,NA,NA,27,NA,NA,count,88_p4m2d1_report.json
+90,amplitude 0.5x vs 1.0x (nonlinear-M2),recall full-minus-half,NA,NA,0.197900,0.093800,0.312500,recall delta,90_p4m2d2b_v2_report.json
+90,amplitude 0.5x vs 1.0x,pairwise separation,NA,NA,10.156000,8.336000,12.146000,mm,90_p4m2d2b_v2_report.json
+90,amplitude 0.5x vs 1.0x,score gap,NA,NA,6.089000,4.108000,9.062000,mm,90_p4m2d2b_v2_report.json
+90,nested violations deadzone,NA,NA,NA,36,NA,NA,count,90_p4m2d2b_v2_report.json

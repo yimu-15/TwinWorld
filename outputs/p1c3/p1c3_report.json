@@ -1,0 +1,25 @@
+{
+  "protocol": "P1-C3 nonprivileged diagnostic",
+  "noise_std_m": 0.005,
+  "validation_pairs": 80,
+  "test_pairs": 120,
+  "validation": {
+    "max_A_gap_m": 0.002899599617771781,
+    "min_B_gap_m": 0.07701293971338452
+  },
+  "test": {
+    "max_A_gap_m": 0.0038907097963632176,
+    "min_B_gap_m": 0.07362315412447717
+  },
+  "A_only_accuracy": 0.44166666666666665,
+  "B_only_accuracy": 1.0,
+  "A_rule": {
+    "threshold": -0.004154587220274333,
+    "coupled_is_larger": true
+  },
+  "B_rule": {
+    "threshold": 0.24421896499721618,
+    "coupled_is_larger": true
+  },
+  "note": "Fixed physics-informed residual diagnostic. Not a learned world model. Test labels used only for evaluation."
+}

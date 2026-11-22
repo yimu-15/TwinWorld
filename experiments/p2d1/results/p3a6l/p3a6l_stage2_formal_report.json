@@ -1,0 +1,257 @@
+{
+  "protocol": "P3-A6L Stage-2",
+  "smoke": false,
+  "replayed_scene_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "low_failed_scene_ids": [
+    0,
+    3,
+    7,
+    8,
+    16,
+    19,
+    22,
+    24,
+    25,
+    27,
+    31,
+    36,
+    37,
+    38,
+    41,
+    42,
+    45
+  ],
+  "thresholds_changed": false,
+  "E4_accessed": false,
+  "summary": {
+    "low_false_accept": {
+      "reference": {
+        "n": 17,
+        "true_vs_same_param_elastic_mm": {
+          "median": 88.8179147847571,
+          "min": 60.99698255311094,
+          "max": 143.12972580371124
+        },
+        "fitted_elastic_clean_RMS_mm": {
+          "median": 40.05376434836769,
+          "min": 25.002514770842012,
+          "max": 50.06740146980018
+        },
+        "fitted_elastic_noisy_RMS_mm": {
+          "median": 40.5774083842605,
+          "min": 29.843743679698534,
+          "max": 50.44386543204645
+        },
+        "strong_B_noise_RMS_mm": {
+          "median": 4.94595585997361,
+          "min": 4.063084146300799,
+          "max": 6.286092943266831
+        },
+        "max_relative_excursion_mm": {
+          "median": 485.74050646047226,
+          "min": 437.33166494321284,
+          "max": 521.0130814028221
+        }
+      },
+      "moderate": {
+        "n": 17,
+        "true_vs_same_param_elastic_mm": {
+          "median": 51.97445238113641,
+          "min": 35.22431871810369,
+          "max": 90.11931604177984
+        },
+        "fitted_elastic_clean_RMS_mm": {
+          "median": 27.2123679058052,
+          "min": 14.815400780343197,
+          "max": 35.4366848162131
+        },
+        "fitted_elastic_noisy_RMS_mm": {
+          "median": 27.563469835096896,
+          "min": 20.499781341518254,
+          "max": 35.86189684206498
+        },
+        "strong_B_noise_RMS_mm": {
+          "median": 4.94595585997361,
+          "min": 4.063084146300799,
+          "max": 6.286092943266831
+        },
+        "max_relative_excursion_mm": {
+          "median": 335.9554910368222,
+          "min": 287.96866865771307,
+          "max": 372.78276583076587
+        }
+      },
+      "low": {
+        "n": 17,
+        "true_vs_same_param_elastic_mm": {
+          "median": 9.882404436345933,
+          "min": 3.4710763884831897,
+          "max": 27.146534162550168
+        },
+        "fitted_elastic_clean_RMS_mm": {
+          "median": 7.603080128592358,
+          "min": 1.039201117263509,
+          "max": 15.36984341562708
+        },
+        "fitted_elastic_noisy_RMS_mm": {
+          "median": 10.969946958570713,
+          "min": 5.374068693904617,
+          "max": 14.75730607804703
+        },
+        "strong_B_noise_RMS_mm": {
+          "median": 4.94595585997361,
+          "min": 4.063084146300799,
+          "max": 6.286092943266831
+        },
+        "max_relative_excursion_mm": {
+          "median": 154.5746364092261,
+          "min": 119.91628282847189,
+          "max": 191.5667935755987
+        }
+      }
+    },
+    "low_correct_reject": {
+      "reference": {
+        "n": 31,
+        "true_vs_same_param_elastic_mm": {
+          "median": 138.76124422393613,
+          "min": 48.99468516241659,
+          "max": 177.5494614995673
+        },
+        "fitted_elastic_clean_RMS_mm": {
+          "median": 58.80264034416523,
+          "min": 33.92442944209477,
+          "max": 76.30642671782536
+        },
+        "fitted_elastic_noisy_RMS_mm": {
+          "median": 58.04829815808507,
+          "min": 36.98426477587603,
+          "max": 81.9209583696161
+        },
+        "strong_B_noise_RMS_mm": {
+          "median": 4.69515977680886,
+          "min": 3.9191701318221726,
+          "max": 6.007400613583074
+        },
+        "max_relative_excursion_mm": {
+          "median": 455.2986020174621,
+          "min": 388.2038592282406,
+          "max": 530.1504594035986
+        }
+      },
+      "moderate": {
+        "n": 31,
+        "true_vs_same_param_elastic_mm": {
+          "median": 87.0155354356296,
+          "min": 27.163942295893733,
+          "max": 113.82793574510882
+        },
+        "fitted_elastic_clean_RMS_mm": {
+          "median": 44.43390694494644,
+          "min": 25.250808299836798,
+          "max": 58.49214600604127
+        },
+        "fitted_elastic_noisy_RMS_mm": {
+          "median": 43.126904665555536,
+          "min": 28.89779989667399,
+          "max": 65.0587287676348
+        },
+        "strong_B_noise_RMS_mm": {
+          "median": 4.69515977680886,
+          "min": 3.9191701318221726,
+          "max": 6.007400613583074
+        },
+        "max_relative_excursion_mm": {
+          "median": 306.0769867015296,
+          "min": 240.1281746215842,
+          "max": 382.6164217337409
+        }
+      },
+      "low": {
+        "n": 31,
+        "true_vs_same_param_elastic_mm": {
+          "median": 29.122628391090576,
+          "min": 4.160581100186711,
+          "max": 41.6181221229111
+        },
+        "fitted_elastic_clean_RMS_mm": {
+          "median": 24.88289459209552,
+          "min": 12.561348706926836,
+          "max": 38.50755542171172
+        },
+        "fitted_elastic_noisy_RMS_mm": {
+          "median": 26.180854358425314,
+          "min": 15.374064450367879,
+          "max": 44.12665386972424
+        },
+        "strong_B_noise_RMS_mm": {
+          "median": 4.69515977680886,
+          "min": 3.9191701318221726,
+          "max": 6.007400613583074
+        },
+        "max_relative_excursion_mm": {
+          "median": 127.14016941367461,
+          "min": 96.543433462851,
+          "max": 202.82555311463625
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Known failure cases",
+    "Not new heldout validation",
+    "Conditional on observed A",
+    "Same-parameter counterfactual is not a best-fit law comparison",
+    "No force-level replay",
+    "Cannot prove global structural equivalence"
+  ]
+}

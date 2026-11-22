@@ -1,0 +1,316 @@
+{
+  "protocol": "P2-D2C physics-identifiability excitation audit (DEVELOPMENT ONLY)",
+  "mujoco_version": "3.17.0",
+  "random_seed": 20261116,
+  "n_independent_scenes": 30,
+  "amplitude_scales": [
+    0.25,
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "n_rollouts": 750,
+  "max_passive_gap_m": 0.0,
+  "max_A_cross_mechanism_gap_m": 0.017677411335867088,
+  "sensor_noise_std_assumed_m": 0.005,
+  "noise_reference": {
+    "definition": "95th percentile RMS difference between two independent noisy 51-frame recordings of the same B trajectory",
+    "rms_difference_95th_percentile_m": 0.00823698609408587,
+    "not_a_rejection_threshold": true
+  },
+  "summaries": {
+    "0.25": {
+      "n_scenes": 30,
+      "nominal_budget_m_per_s": 0.1,
+      "mean_abs_work_proxy_J": 0.05272366157420286,
+      "mean_abs_impulse_Ns": 0.2372952005332383,
+      "mean_A_cross_mechanism_max_gap_m": 0.0012291267878552466,
+      "B_rms_deadzone_vs_independent_m": {
+        "mean_m": 0.0021273879414110924,
+        "mean_scene_bootstrap_ci95_m": [
+          0.0009276464282556497,
+          0.003560048049820646
+        ],
+        "median_m": 3.803468738561869e-05,
+        "min_m": 0.0,
+        "fraction_above_independent_noise_reference": 0.06666666666666667
+      },
+      "B_rms_deadzone_vs_elastic_m": {
+        "mean_m": 0.023844097581853334,
+        "mean_scene_bootstrap_ci95_m": [
+          0.021801351604578825,
+          0.02581030166200251
+        ],
+        "median_m": 0.0248079139001563,
+        "min_m": 0.012777952052323677,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_nonlinear_vs_elastic_m": {
+        "mean_m": 0.00018677700599733048,
+        "mean_scene_bootstrap_ci95_m": [
+          0.00014469185546034307,
+          0.00023668429963447337
+        ],
+        "median_m": 0.00016011064974905294,
+        "min_m": 3.3446250250870907e-05,
+        "fraction_above_independent_noise_reference": 0.0
+      },
+      "B_rms_deadzone_nearest_known_m": {
+        "mean_m": 0.002085867869715674,
+        "mean_scene_bootstrap_ci95_m": [
+          0.0009119437503926003,
+          0.003460231272278391
+        ],
+        "median_m": 3.803468738561869e-05,
+        "min_m": 0.0,
+        "fraction_above_independent_noise_reference": 0.06666666666666667
+      },
+      "B_rms_nonlinear_nearest_known_m": {
+        "mean_m": 0.00018677700599733048,
+        "mean_scene_bootstrap_ci95_m": [
+          0.0001437921275085533,
+          0.00023733409858999862
+        ],
+        "median_m": 0.00016011064974905294,
+        "min_m": 3.3446250250870907e-05,
+        "fraction_above_independent_noise_reference": 0.0
+      }
+    },
+    "0.5": {
+      "n_scenes": 30,
+      "nominal_budget_m_per_s": 0.2,
+      "mean_abs_work_proxy_J": 0.14639349389249126,
+      "mean_abs_impulse_Ns": 0.4998408831089344,
+      "mean_A_cross_mechanism_max_gap_m": 0.0024907373033456765,
+      "B_rms_deadzone_vs_independent_m": {
+        "mean_m": 0.014119117642362698,
+        "mean_scene_bootstrap_ci95_m": [
+          0.01041676624646983,
+          0.018189655727213025
+        ],
+        "median_m": 0.009679448213395211,
+        "min_m": 0.0008662956773009805,
+        "fraction_above_independent_noise_reference": 0.5666666666666667
+      },
+      "B_rms_deadzone_vs_elastic_m": {
+        "mean_m": 0.038159755089836184,
+        "mean_scene_bootstrap_ci95_m": [
+          0.03390835106963723,
+          0.042163231932165035
+        ],
+        "median_m": 0.039863139638100384,
+        "min_m": 0.014384539129269168,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_nonlinear_vs_elastic_m": {
+        "mean_m": 0.0014172300315070119,
+        "mean_scene_bootstrap_ci95_m": [
+          0.001119843265203408,
+          0.0017803908773964196
+        ],
+        "median_m": 0.0012335230231010873,
+        "min_m": 0.00026493319602971174,
+        "fraction_above_independent_noise_reference": 0.0
+      },
+      "B_rms_deadzone_nearest_known_m": {
+        "mean_m": 0.012109270776483053,
+        "mean_scene_bootstrap_ci95_m": [
+          0.009207107446281181,
+          0.015150645731983594
+        ],
+        "median_m": 0.009679448213395211,
+        "min_m": 0.0008662956773009805,
+        "fraction_above_independent_noise_reference": 0.5666666666666667
+      },
+      "B_rms_nonlinear_nearest_known_m": {
+        "mean_m": 0.0014172300315070119,
+        "mean_scene_bootstrap_ci95_m": [
+          0.001101246615831745,
+          0.0017636944205218208
+        ],
+        "median_m": 0.0012335230231010873,
+        "min_m": 0.00026493319602971174,
+        "fraction_above_independent_noise_reference": 0.0
+      }
+    },
+    "1.0": {
+      "n_scenes": 30,
+      "nominal_budget_m_per_s": 0.4,
+      "mean_abs_work_proxy_J": 0.45119812182764996,
+      "mean_abs_impulse_Ns": 1.0365974463831267,
+      "mean_A_cross_mechanism_max_gap_m": 0.0051341249754801414,
+      "B_rms_deadzone_vs_independent_m": {
+        "mean_m": 0.05568870830651253,
+        "mean_scene_bootstrap_ci95_m": [
+          0.04870825252536221,
+          0.06329285546564585
+        ],
+        "median_m": 0.04720216034798461,
+        "min_m": 0.015587358045219428,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_deadzone_vs_elastic_m": {
+        "mean_m": 0.048701700146416026,
+        "mean_scene_bootstrap_ci95_m": [
+          0.04284299101874642,
+          0.054720674888052934
+        ],
+        "median_m": 0.049274321765083215,
+        "min_m": 0.015449763572521183,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_nonlinear_vs_elastic_m": {
+        "mean_m": 0.009617700501548003,
+        "mean_scene_bootstrap_ci95_m": [
+          0.007713468983170667,
+          0.01164303371071823
+        ],
+        "median_m": 0.008638683782568164,
+        "min_m": 0.0020495513064265184,
+        "fraction_above_independent_noise_reference": 0.5333333333333333
+      },
+      "B_rms_deadzone_nearest_known_m": {
+        "mean_m": 0.03844052335681293,
+        "mean_scene_bootstrap_ci95_m": [
+          0.033768657359220175,
+          0.04303282337840502
+        ],
+        "median_m": 0.041754367491144154,
+        "min_m": 0.015449763572521183,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_nonlinear_nearest_known_m": {
+        "mean_m": 0.009617700501548003,
+        "mean_scene_bootstrap_ci95_m": [
+          0.007728766925510913,
+          0.011630046124215162
+        ],
+        "median_m": 0.008638683782568164,
+        "min_m": 0.0020495513064265184,
+        "fraction_above_independent_noise_reference": 0.5333333333333333
+      }
+    },
+    "1.5": {
+      "n_scenes": 30,
+      "nominal_budget_m_per_s": 0.6,
+      "mean_abs_work_proxy_J": 0.9120266355739074,
+      "mean_abs_impulse_Ns": 1.5789215274534791,
+      "mean_A_cross_mechanism_max_gap_m": 0.008198290679037665,
+      "B_rms_deadzone_vs_independent_m": {
+        "mean_m": 0.10292397309103056,
+        "mean_scene_bootstrap_ci95_m": [
+          0.09193146275119154,
+          0.11304686689763921
+        ],
+        "median_m": 0.09806169515196314,
+        "min_m": 0.037517073716245096,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_deadzone_vs_elastic_m": {
+        "mean_m": 0.05311479280997881,
+        "mean_scene_bootstrap_ci95_m": [
+          0.04643933507388304,
+          0.060054267902164116
+        ],
+        "median_m": 0.05350892697531432,
+        "min_m": 0.015957021714383065,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_nonlinear_vs_elastic_m": {
+        "mean_m": 0.026530203882095864,
+        "mean_scene_bootstrap_ci95_m": [
+          0.022117863905709714,
+          0.031537467947018206
+        ],
+        "median_m": 0.02420752804213504,
+        "min_m": 0.006567177194885089,
+        "fraction_above_independent_noise_reference": 0.9333333333333333
+      },
+      "B_rms_deadzone_nearest_known_m": {
+        "mean_m": 0.05256956928461875,
+        "mean_scene_bootstrap_ci95_m": [
+          0.045779934104576786,
+          0.059577363210267485
+        ],
+        "median_m": 0.05350892697531432,
+        "min_m": 0.015957021714383065,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_nonlinear_nearest_known_m": {
+        "mean_m": 0.026530203882095864,
+        "mean_scene_bootstrap_ci95_m": [
+          0.022070618160958018,
+          0.03125534058388053
+        ],
+        "median_m": 0.02420752804213504,
+        "min_m": 0.006567177194885089,
+        "fraction_above_independent_noise_reference": 0.9333333333333333
+      }
+    },
+    "2.0": {
+      "n_scenes": 30,
+      "nominal_budget_m_per_s": 0.8,
+      "mean_abs_work_proxy_J": 1.530195909710813,
+      "mean_abs_impulse_Ns": 2.125825914400088,
+      "mean_A_cross_mechanism_max_gap_m": 0.011863537804203258,
+      "B_rms_deadzone_vs_independent_m": {
+        "mean_m": 0.15180753810385747,
+        "mean_scene_bootstrap_ci95_m": [
+          0.13775294349659703,
+          0.1655587985417643
+        ],
+        "median_m": 0.15024397120463978,
+        "min_m": 0.06181634060758556,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_deadzone_vs_elastic_m": {
+        "mean_m": 0.05570497350504578,
+        "mean_scene_bootstrap_ci95_m": [
+          0.048170629348174766,
+          0.0628933272379299
+        ],
+        "median_m": 0.05521186650578935,
+        "min_m": 0.016214554789184654,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_nonlinear_vs_elastic_m": {
+        "mean_m": 0.05105115107234275,
+        "mean_scene_bootstrap_ci95_m": [
+          0.043340782312822436,
+          0.05862310810620126
+        ],
+        "median_m": 0.047136115690045846,
+        "min_m": 0.014557441197426173,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_deadzone_nearest_known_m": {
+        "mean_m": 0.05570497350504578,
+        "mean_scene_bootstrap_ci95_m": [
+          0.048019045578386474,
+          0.06285108859070856
+        ],
+        "median_m": 0.05521186650578935,
+        "min_m": 0.016214554789184654,
+        "fraction_above_independent_noise_reference": 1.0
+      },
+      "B_rms_nonlinear_nearest_known_m": {
+        "mean_m": 0.050384813951612276,
+        "mean_scene_bootstrap_ci95_m": [
+          0.04273176138279164,
+          0.05810705282284794
+        ],
+        "median_m": 0.047136115690045846,
+        "min_m": 0.014557441197426173,
+        "fraction_above_independent_noise_reference": 1.0
+      }
+    }
+  },
+  "notes": [
+    "All candidate outcomes and exact scene parameters are PRIVILEGED audit data.",
+    "Models are compared at matching parameters, WITHOUT best-fit parameter refitting; the nearest-known gap is not a structural identifiability proof.",
+    "The reference assumes independent 5-mm Gaussian positional noise; it ignores temporal correlation and model uncertainty.",
+    "Stronger excitation changes actual work/impulse and may enlarge A-only leakage.",
+    "No learned agent, no RGB video, no model revision, and no final confirmatory testing."
+  ]
+}

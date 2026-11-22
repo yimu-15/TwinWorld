@@ -1,0 +1,548 @@
+{
+  "protocol": "P4-S1C post-hoc solver sensitivity closure, read-only",
+  "n_scenes": 24,
+  "n_cases": 384,
+  "n_fits": 2304,
+  "source_sha256": {
+    "P80": "08fae73537796474fbc182258d726092b0f9e9a7ccbe6db6f7ce5510b48eed03",
+    "P90": "4bd165bbc5c9522cfb94f61ff71682b34f1e76c1ace6da0d3f55f49c6ec8b622",
+    "P91": "bfa6b10316d27197efb37c6da614f62afd4b1abdcd0766bc2d7d4683263aa484",
+    "P92": "a8d45bd03e2b2f66aff030f443bbcd518536c97cfb202b2b3f4e0857063b76c2",
+    "R90": "86b3ae545a78b2853a63266536037636edf2762f89eecbcfdc25e12cce72b0c0",
+    "A90": "9e23958d1d9315379b963e5ac246af1f0f3c772057ee140b7e391836911a3048",
+    "R91": "dad8b11f87e4c979189d7b8baf5cfb38f3df218601c4ce70b87f72f755914e65",
+    "A91": "b02d7a8f4781705464c10bbf1513d644ed5b62c2f7986121c91e8f52cf20f2b2"
+  },
+  "comparison_arms": {
+    "FROZEN": "Unmodified P90 classification",
+    "MATCHED5": "Best converged from original2+extra3 per law/domain",
+    "WITNESS": "Diagnostic only: Wide may use Outer converged feasible point"
+  },
+  "matched_starts_not_equal_nfev": true,
+  "metrics": {
+    "FROZEN": {
+      "WWW": {
+        "MID": {
+          "correct": 230,
+          "n": 384,
+          "available": 383,
+          "accuracy_all": 0.5989583333333334,
+          "coverage": 0.9973958333333334,
+          "accuracy_available": 0.6005221932114883
+        },
+        "HALF_ONLY": {
+          "correct": 256,
+          "n": 384,
+          "available": 383,
+          "accuracy_all": 0.6666666666666666,
+          "coverage": 0.9973958333333334,
+          "accuracy_available": 0.6684073107049608
+        },
+        "FULL_ONLY": {
+          "correct": 299,
+          "n": 384,
+          "available": 383,
+          "accuracy_all": 0.7786458333333334,
+          "coverage": 0.9973958333333334,
+          "accuracy_available": 0.7806788511749347
+        },
+        "MID_PLUS_HALF": {
+          "correct": 262,
+          "n": 384,
+          "available": 383,
+          "accuracy_all": 0.6822916666666666,
+          "coverage": 0.9973958333333334,
+          "accuracy_available": 0.6840731070496083
+        },
+        "MID_PLUS_FULL": {
+          "correct": 308,
+          "n": 384,
+          "available": 383,
+          "accuracy_all": 0.8020833333333334,
+          "coverage": 0.9973958333333334,
+          "accuracy_available": 0.804177545691906
+        }
+      },
+      "OOO": {
+        "MID": {
+          "correct": 285,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7421875,
+          "coverage": 1.0,
+          "accuracy_available": 0.7421875
+        },
+        "HALF_ONLY": {
+          "correct": 291,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7578125,
+          "coverage": 1.0,
+          "accuracy_available": 0.7578125
+        },
+        "FULL_ONLY": {
+          "correct": 335,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8723958333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.8723958333333334
+        },
+        "MID_PLUS_HALF": {
+          "correct": 302,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7864583333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.7864583333333334
+        },
+        "MID_PLUS_FULL": {
+          "correct": 334,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8697916666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.8697916666666666
+        }
+      },
+      "WOO": {
+        "MID": {
+          "correct": 275,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7161458333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.7161458333333334
+        },
+        "HALF_ONLY": {
+          "correct": 295,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7682291666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.7682291666666666
+        },
+        "FULL_ONLY": {
+          "correct": 341,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8880208333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.8880208333333334
+        },
+        "MID_PLUS_HALF": {
+          "correct": 304,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7916666666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.7916666666666666
+        },
+        "MID_PLUS_FULL": {
+          "correct": 351,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.9140625,
+          "coverage": 1.0,
+          "accuracy_available": 0.9140625
+        }
+      }
+    },
+    "MATCHED5": {
+      "WWW": {
+        "MID": {
+          "correct": 229,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.5963541666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.5963541666666666
+        },
+        "HALF_ONLY": {
+          "correct": 257,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.6692708333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.6692708333333334
+        },
+        "FULL_ONLY": {
+          "correct": 300,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.78125,
+          "coverage": 1.0,
+          "accuracy_available": 0.78125
+        },
+        "MID_PLUS_HALF": {
+          "correct": 262,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.6822916666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.6822916666666666
+        },
+        "MID_PLUS_FULL": {
+          "correct": 309,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8046875,
+          "coverage": 1.0,
+          "accuracy_available": 0.8046875
+        }
+      },
+      "OOO": {
+        "MID": {
+          "correct": 285,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7421875,
+          "coverage": 1.0,
+          "accuracy_available": 0.7421875
+        },
+        "HALF_ONLY": {
+          "correct": 291,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7578125,
+          "coverage": 1.0,
+          "accuracy_available": 0.7578125
+        },
+        "FULL_ONLY": {
+          "correct": 335,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8723958333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.8723958333333334
+        },
+        "MID_PLUS_HALF": {
+          "correct": 302,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7864583333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.7864583333333334
+        },
+        "MID_PLUS_FULL": {
+          "correct": 335,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8723958333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.8723958333333334
+        }
+      },
+      "WOO": {
+        "MID": {
+          "correct": 275,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7161458333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.7161458333333334
+        },
+        "HALF_ONLY": {
+          "correct": 295,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7682291666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.7682291666666666
+        },
+        "FULL_ONLY": {
+          "correct": 341,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8880208333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.8880208333333334
+        },
+        "MID_PLUS_HALF": {
+          "correct": 304,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7916666666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.7916666666666666
+        },
+        "MID_PLUS_FULL": {
+          "correct": 352,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.9166666666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.9166666666666666
+        }
+      }
+    },
+    "WITNESS": {
+      "WWW": {
+        "MID": {
+          "correct": 229,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.5963541666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.5963541666666666
+        },
+        "HALF_ONLY": {
+          "correct": 256,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.6666666666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.6666666666666666
+        },
+        "FULL_ONLY": {
+          "correct": 300,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.78125,
+          "coverage": 1.0,
+          "accuracy_available": 0.78125
+        },
+        "MID_PLUS_HALF": {
+          "correct": 262,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.6822916666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.6822916666666666
+        },
+        "MID_PLUS_FULL": {
+          "correct": 310,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8072916666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.8072916666666666
+        }
+      },
+      "OOO": {
+        "MID": {
+          "correct": 285,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7421875,
+          "coverage": 1.0,
+          "accuracy_available": 0.7421875
+        },
+        "HALF_ONLY": {
+          "correct": 291,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7578125,
+          "coverage": 1.0,
+          "accuracy_available": 0.7578125
+        },
+        "FULL_ONLY": {
+          "correct": 335,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8723958333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.8723958333333334
+        },
+        "MID_PLUS_HALF": {
+          "correct": 302,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7864583333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.7864583333333334
+        },
+        "MID_PLUS_FULL": {
+          "correct": 335,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8723958333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.8723958333333334
+        }
+      },
+      "WOO": {
+        "MID": {
+          "correct": 275,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7161458333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.7161458333333334
+        },
+        "HALF_ONLY": {
+          "correct": 295,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7682291666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.7682291666666666
+        },
+        "FULL_ONLY": {
+          "correct": 341,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.8880208333333334,
+          "coverage": 1.0,
+          "accuracy_available": 0.8880208333333334
+        },
+        "MID_PLUS_HALF": {
+          "correct": 304,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.7916666666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.7916666666666666
+        },
+        "MID_PLUS_FULL": {
+          "correct": 352,
+          "n": 384,
+          "available": 384,
+          "accuracy_all": 0.9166666666666666,
+          "coverage": 1.0,
+          "accuracy_available": 0.9166666666666666
+        }
+      }
+    }
+  },
+  "primary_paired": {
+    "FROZEN": {
+      "n": 96,
+      "coverage": 1.0,
+      "half_correct": 68,
+      "full_correct": 87,
+      "full_minus_half": 0.19791666666666666,
+      "fixed_correct": 59,
+      "corrected_by_full": 28,
+      "harmed_by_full": 9,
+      "both_wrong": 0
+    },
+    "MATCHED5": {
+      "n": 96,
+      "coverage": 1.0,
+      "half_correct": 68,
+      "full_correct": 87,
+      "full_minus_half": 0.19791666666666666,
+      "fixed_correct": 59,
+      "corrected_by_full": 28,
+      "harmed_by_full": 9,
+      "both_wrong": 0
+    },
+    "WITNESS": {
+      "n": 96,
+      "coverage": 1.0,
+      "half_correct": 68,
+      "full_correct": 87,
+      "full_minus_half": 0.19791666666666666,
+      "fixed_correct": 59,
+      "corrected_by_full": 28,
+      "harmed_by_full": 9,
+      "both_wrong": 0
+    }
+  },
+  "primary_scene_cluster_CI95": {
+    "FROZEN": [
+      0.08333333333333333,
+      0.3125
+    ],
+    "MATCHED5": [
+      0.08333333333333333,
+      0.3125
+    ],
+    "WITNESS": [
+      0.08333333333333333,
+      0.3125
+    ]
+  },
+  "nested_gap_audit": {
+    "original": 36,
+    "matched5": 33,
+    "resolved": 11,
+    "newly_appearing": 8,
+    "persistent": 25,
+    "matched5_by_law": {
+      "deadzone": 33
+    },
+    "affected_scenes": 20,
+    "feasible_outer_witnesses": 1152,
+    "witness_transfers_diagnostic_only": {
+      "elastic": 42,
+      "deadzone": 41,
+      "cubic": 33
+    }
+  },
+  "decision_change_counts": {
+    "MATCHED5": {
+      "WWW": {
+        "MID": 4,
+        "HALF_ONLY": 5,
+        "FULL_ONLY": 2,
+        "MID_PLUS_HALF": 5,
+        "MID_PLUS_FULL": 1
+      },
+      "OOO": {
+        "MID": 1,
+        "HALF_ONLY": 0,
+        "FULL_ONLY": 0,
+        "MID_PLUS_HALF": 0,
+        "MID_PLUS_FULL": 1
+      },
+      "WOO": {
+        "MID": 1,
+        "HALF_ONLY": 0,
+        "FULL_ONLY": 0,
+        "MID_PLUS_HALF": 0,
+        "MID_PLUS_FULL": 1
+      }
+    },
+    "WITNESS": {
+      "WWW": {
+        "MID": 6,
+        "HALF_ONLY": 8,
+        "FULL_ONLY": 2,
+        "MID_PLUS_HALF": 5,
+        "MID_PLUS_FULL": 2
+      },
+      "OOO": {
+        "MID": 1,
+        "HALF_ONLY": 0,
+        "FULL_ONLY": 0,
+        "MID_PLUS_HALF": 0,
+        "MID_PLUS_FULL": 1
+      },
+      "WOO": {
+        "MID": 1,
+        "HALF_ONLY": 0,
+        "FULL_ONLY": 0,
+        "MID_PLUS_HALF": 0,
+        "MID_PLUS_FULL": 1
+      }
+    }
+  },
+  "function_evaluations": {
+    "wide": {
+      "total": 611022,
+      "extra": 370296
+    },
+    "outer_box": {
+      "total": 333855,
+      "extra": 203029
+    }
+  },
+  "wide_to_outer_nfev_ratio": 1.8302017342858428,
+  "numerical_caveat": "33 Deadzone nested violations survive matched five-start fitting; SLSQP cannot certify global minimum",
+  "empirical_conclusion": "Primary Nonlinear-M2 Full-minus-Half effect unchanged at +19/96; WOO Mid+Full correct +1/384 under MATCHED5",
+  "scope": "Sensitivity of P90 within the same MuJoCo simulator, not external validity or optimizer-independent proof",
+  "E4_accessed": false,
+  "new_fits": 0,
+  "new_simulations": 0,
+  "labels_used_for_fitting": false,
+  "limitations": [
+    "Extra three starts were chosen after P91 results (post-hoc)",
+    "Equal start counts do not imply equal actual function-evaluation cost",
+    "Witness arm is diagnostic, not budget-matched",
+    "Remaining nested gaps are numerical, not a new physical-law property",
+    "No evidence of global optimizer convergence",
+    "Does not verify P88 interaction robustness to all alternative solvers"
+  ]
+}

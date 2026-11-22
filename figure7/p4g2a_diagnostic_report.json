@@ -1,0 +1,607 @@
+{
+  "protocol": "P4-G2A frozen ideal-fit one-factor generator diagnostic",
+  "smoke": false,
+  "n_cases": 384,
+  "n_base_scenes": 24,
+  "physics_factors_FIXED": {
+    "IDEAL_ODE": {
+      "viscous_rate_s_inv": 0.0,
+      "dry_acc_ms2": 0.0,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.0
+    },
+    "VISCOUS_ONLY": {
+      "viscous_rate_s_inv": 0.08,
+      "dry_acc_ms2": 0.0,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.0
+    },
+    "DRY_ONLY": {
+      "viscous_rate_s_inv": 0.0,
+      "dry_acc_ms2": 0.02,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.0
+    },
+    "LAG_ONLY": {
+      "viscous_rate_s_inv": 0.0,
+      "dry_acc_ms2": 0.0,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.025
+    },
+    "SHIFTED_ODE": {
+      "viscous_rate_s_inv": 0.08,
+      "dry_acc_ms2": 0.02,
+      "velocity_smoothing_ms": 0.05,
+      "actuator_tau_s": 0.025
+    }
+  },
+  "sources": {
+    "P98": "699ea08f85e0b5db4da69106f9124bdcecedb5f2969fb3ca10d672dd24ba3d96",
+    "P99": "1345b3d7c43f487d68ed164176376884bf89e619d492e3558c0f8a5f80335ab0",
+    "P20": "ffca6c7f224548a638cff3ebcf08ec8eacc715129f9381a875ca8d3d1eae4064",
+    "P22": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "P100": "4812a1e7e039f5ac173230c2e10b09c8eaf4587f3b46003726215d67b3f95645",
+    "R99": "a9d4656a56db560de9261c9667918a1b326c87b98ebc51979fca35e86df58e26",
+    "A99": "d9c8e92caa0e6e746f08bec589e6150f45211c99edce12e0a139e0bbc5dc9351",
+    "M99": "5c362812a75fa33c47baa7866b8c9106d03d90b6167c93efcacb57ddedcf188e",
+    "R100": "444977b3de0f13ea24e1bfe9373c1f43fcf4a86e048996fce51790601530df92",
+    "A100": "64d035bc4305dd1ffb7e72eb27b80f4c8357252b92c0d59b3473b11247d39fd1",
+    "SELF": "64fe62983f8f43ccbbc7ff67e70aab8db2240e2d8fc6b764d732ddab7f8844d0"
+  },
+  "refit_performed": false,
+  "true_parameters_used_for_selection": false,
+  "is_posthoc_exploratory": true,
+  "E4_accessed": false,
+  "summary": {
+    "classification_frozen_IDEAL_parameters": {
+      "IDEAL_ODE": {
+        "MID_PLUS_HALF": {
+          "correct": 316,
+          "total": 384,
+          "accuracy": 0.8229166666666666,
+          "by_law": {
+            "elastic": {
+              "n": 96,
+              "correct": 62
+            },
+            "deadzone": {
+              "n": 144,
+              "correct": 136
+            },
+            "cubic": {
+              "n": 144,
+              "correct": 118
+            }
+          }
+        },
+        "MID_PLUS_FULL": {
+          "correct": 331,
+          "total": 384,
+          "accuracy": 0.8619791666666666,
+          "by_law": {
+            "elastic": {
+              "n": 96,
+              "correct": 62
+            },
+            "deadzone": {
+              "n": 144,
+              "correct": 141
+            },
+            "cubic": {
+              "n": 144,
+              "correct": 128
+            }
+          }
+        }
+      },
+      "VISCOUS_ONLY": {
+        "MID_PLUS_HALF": {
+          "correct": 299,
+          "total": 384,
+          "accuracy": 0.7786458333333334,
+          "by_law": {
+            "elastic": {
+              "n": 96,
+              "correct": 33
+            },
+            "deadzone": {
+              "n": 144,
+              "correct": 138
+            },
+            "cubic": {
+              "n": 144,
+              "correct": 128
+            }
+          }
+        },
+        "MID_PLUS_FULL": {
+          "correct": 344,
+          "total": 384,
+          "accuracy": 0.8958333333333334,
+          "by_law": {
+            "elastic": {
+              "n": 96,
+              "correct": 80
+            },
+            "deadzone": {
+              "n": 144,
+              "correct": 142
+            },
+            "cubic": {
+              "n": 144,
+              "correct": 122
+            }
+          }
+        }
+      },
+      "DRY_ONLY": {
+        "MID_PLUS_HALF": {
+          "correct": 300,
+          "total": 384,
+          "accuracy": 0.78125,
+          "by_law": {
+            "elastic": {
+              "n": 96,
+              "correct": 38
+            },
+            "deadzone": {
+              "n": 144,
+              "correct": 139
+            },
+            "cubic": {
+              "n": 144,
+              "correct": 123
+            }
+          }
+        },
+        "MID_PLUS_FULL": {
+          "correct": 343,
+          "total": 384,
+          "accuracy": 0.8932291666666666,
+          "by_law": {
+            "elastic": {
+              "n": 96,
+              "correct": 73
+            },
+            "deadzone": {
+              "n": 144,
+              "correct": 141
+            },
+            "cubic": {
+              "n": 144,
+              "correct": 129
+            }
+          }
+        }
+      },
+      "LAG_ONLY": {
+        "MID_PLUS_HALF": {
+          "correct": 314,
+          "total": 384,
+          "accuracy": 0.8177083333333334,
+          "by_law": {
+            "elastic": {
+              "n": 96,
+              "correct": 61
+            },
+            "deadzone": {
+              "n": 144,
+              "correct": 136
+            },
+            "cubic": {
+              "n": 144,
+              "correct": 117
+            }
+          }
+        },
+        "MID_PLUS_FULL": {
+          "correct": 332,
+          "total": 384,
+          "accuracy": 0.8645833333333334,
+          "by_law": {
+            "elastic": {
+              "n": 96,
+              "correct": 63
+            },
+            "deadzone": {
+              "n": 144,
+              "correct": 141
+            },
+            "cubic": {
+              "n": 144,
+              "correct": 128
+            }
+          }
+        }
+      },
+      "SHIFTED_ODE": {
+        "MID_PLUS_HALF": {
+          "correct": 294,
+          "total": 384,
+          "accuracy": 0.765625,
+          "by_law": {
+            "elastic": {
+              "n": 96,
+              "correct": 25
+            },
+            "deadzone": {
+              "n": 144,
+              "correct": 136
+            },
+            "cubic": {
+              "n": 144,
+              "correct": 133
+            }
+          }
+        },
+        "MID_PLUS_FULL": {
+          "correct": 346,
+          "total": 384,
+          "accuracy": 0.9010416666666666,
+          "by_law": {
+            "elastic": {
+              "n": 96,
+              "correct": 86
+            },
+            "deadzone": {
+              "n": 144,
+              "correct": 139
+            },
+            "cubic": {
+              "n": 144,
+              "correct": 121
+            }
+          }
+        }
+      }
+    },
+    "historical_P99_SHIFTED_refitted_classification": {
+      "MID_PLUS_HALF": {
+        "correct": 292,
+        "total": 384
+      },
+      "MID_PLUS_FULL": {
+        "correct": 313,
+        "total": 384
+      }
+    },
+    "motion_and_true_law_diagnostics": {
+      "IDEAL_ODE": {
+        "mid": {
+          "A_vs_ideal_mm": {
+            "median": 0.0,
+            "mean": 0.0
+          },
+          "B_vs_ideal_mm": {
+            "median": 0.0,
+            "mean": 0.0
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 6.69895748698023,
+            "mean": 7.54316302720999
+          }
+        },
+        "HALF": {
+          "A_vs_ideal_mm": {
+            "median": 0.0,
+            "mean": 0.0
+          },
+          "B_vs_ideal_mm": {
+            "median": 0.0,
+            "mean": 0.0
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 6.3228442362427995,
+            "mean": 7.25303556118272
+          }
+        },
+        "FULL": {
+          "A_vs_ideal_mm": {
+            "median": 0.0,
+            "mean": 0.0
+          },
+          "B_vs_ideal_mm": {
+            "median": 0.0,
+            "mean": 0.0
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 7.566862763941105,
+            "mean": 8.625573958724702
+          }
+        }
+      },
+      "VISCOUS_ONLY": {
+        "mid": {
+          "A_vs_ideal_mm": {
+            "median": 6.4763910441561805,
+            "mean": 6.222428402751855
+          },
+          "B_vs_ideal_mm": {
+            "median": 9.546252815179141,
+            "mean": 9.527396824767608
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 7.241571857075728,
+            "mean": 8.233938092063113
+          }
+        },
+        "HALF": {
+          "A_vs_ideal_mm": {
+            "median": 6.431126651698724,
+            "mean": 6.172285178642594
+          },
+          "B_vs_ideal_mm": {
+            "median": 9.474163189128166,
+            "mean": 9.447286877082123
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 7.2195528346888835,
+            "mean": 8.033686126195336
+          }
+        },
+        "FULL": {
+          "A_vs_ideal_mm": {
+            "median": 6.615193385896813,
+            "mean": 6.362536186852512
+          },
+          "B_vs_ideal_mm": {
+            "median": 10.150425650192787,
+            "mean": 10.181643758956094
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 8.256376370183496,
+            "mean": 9.334551118849246
+          }
+        }
+      },
+      "DRY_ONLY": {
+        "mid": {
+          "A_vs_ideal_mm": {
+            "median": 10.308799236976256,
+            "mean": 9.932165747484847
+          },
+          "B_vs_ideal_mm": {
+            "median": 13.006935666297013,
+            "mean": 13.869202797856225
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 8.087353531051937,
+            "mean": 8.765712483561167
+          }
+        },
+        "HALF": {
+          "A_vs_ideal_mm": {
+            "median": 10.314835672037576,
+            "mean": 9.937084388993886
+          },
+          "B_vs_ideal_mm": {
+            "median": 13.389234196557066,
+            "mean": 14.26434589738111
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 7.954905849817609,
+            "mean": 8.716617584127947
+          }
+        },
+        "FULL": {
+          "A_vs_ideal_mm": {
+            "median": 10.296899660284463,
+            "mean": 9.919134303661062
+          },
+          "B_vs_ideal_mm": {
+            "median": 12.629947716700354,
+            "mean": 13.294753177341505
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 8.591456098225223,
+            "mean": 9.41594394506777
+          }
+        }
+      },
+      "LAG_ONLY": {
+        "mid": {
+          "A_vs_ideal_mm": {
+            "median": 0.6579663178277376,
+            "mean": 0.6571395486636434
+          },
+          "B_vs_ideal_mm": {
+            "median": 0.4688031482646901,
+            "mean": 0.5105398599489508
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 6.728981440081001,
+            "mean": 7.548511723882478
+          }
+        },
+        "HALF": {
+          "A_vs_ideal_mm": {
+            "median": 0.5135215567305652,
+            "mean": 0.5133298406905711
+          },
+          "B_vs_ideal_mm": {
+            "median": 0.351141764478033,
+            "mean": 0.36859735673914407
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 6.358901146870112,
+            "mean": 7.262298477727967
+          }
+        },
+        "FULL": {
+          "A_vs_ideal_mm": {
+            "median": 1.0820072925348074,
+            "mean": 1.0912236652888196
+          },
+          "B_vs_ideal_mm": {
+            "median": 0.8377758550135002,
+            "mean": 0.9909342493130402
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 7.679884059437388,
+            "mean": 8.667882299099915
+          }
+        }
+      },
+      "SHIFTED_ODE": {
+        "mid": {
+          "A_vs_ideal_mm": {
+            "median": 16.707157363024532,
+            "mean": 15.98876766280839
+          },
+          "B_vs_ideal_mm": {
+            "median": 22.423782443784802,
+            "mean": 22.92421222280962
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 9.707825624873491,
+            "mean": 10.423405905586508
+          }
+        },
+        "HALF": {
+          "A_vs_ideal_mm": {
+            "median": 16.628671002459594,
+            "mean": 15.923631187534781
+          },
+          "B_vs_ideal_mm": {
+            "median": 22.669232809812854,
+            "mean": 23.212189971437265
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 9.590693046242016,
+            "mean": 10.416771079291504
+          }
+        },
+        "FULL": {
+          "A_vs_ideal_mm": {
+            "median": 16.86828613490301,
+            "mean": 16.165797704312624
+          },
+          "B_vs_ideal_mm": {
+            "median": 22.332582650856175,
+            "mean": 22.916803580550965
+          },
+          "frozen_true_law_noisy_RMS_mm": {
+            "median": 10.020139342374565,
+            "mean": 11.12791834639696
+          }
+        }
+      }
+    },
+    "IDEAL_to_factor_classification_transitions": {
+      "VISCOUS_ONLY": {
+        "elastic": {
+          "n": 96,
+          "both_correct": 61,
+          "lost": 1,
+          "gained": 19,
+          "both_wrong": 15,
+          "net_change": 18
+        },
+        "deadzone": {
+          "n": 144,
+          "both_correct": 140,
+          "lost": 1,
+          "gained": 2,
+          "both_wrong": 1,
+          "net_change": 1
+        },
+        "cubic": {
+          "n": 144,
+          "both_correct": 122,
+          "lost": 6,
+          "gained": 0,
+          "both_wrong": 16,
+          "net_change": -6
+        }
+      },
+      "DRY_ONLY": {
+        "elastic": {
+          "n": 96,
+          "both_correct": 62,
+          "lost": 0,
+          "gained": 11,
+          "both_wrong": 23,
+          "net_change": 11
+        },
+        "deadzone": {
+          "n": 144,
+          "both_correct": 140,
+          "lost": 1,
+          "gained": 1,
+          "both_wrong": 2,
+          "net_change": 0
+        },
+        "cubic": {
+          "n": 144,
+          "both_correct": 128,
+          "lost": 0,
+          "gained": 1,
+          "both_wrong": 15,
+          "net_change": 1
+        }
+      },
+      "LAG_ONLY": {
+        "elastic": {
+          "n": 96,
+          "both_correct": 62,
+          "lost": 0,
+          "gained": 1,
+          "both_wrong": 33,
+          "net_change": 1
+        },
+        "deadzone": {
+          "n": 144,
+          "both_correct": 141,
+          "lost": 0,
+          "gained": 0,
+          "both_wrong": 3,
+          "net_change": 0
+        },
+        "cubic": {
+          "n": 144,
+          "both_correct": 128,
+          "lost": 0,
+          "gained": 0,
+          "both_wrong": 16,
+          "net_change": 0
+        }
+      },
+      "SHIFTED_ODE": {
+        "elastic": {
+          "n": 96,
+          "both_correct": 61,
+          "lost": 1,
+          "gained": 25,
+          "both_wrong": 9,
+          "net_change": 24
+        },
+        "deadzone": {
+          "n": 144,
+          "both_correct": 137,
+          "lost": 4,
+          "gained": 2,
+          "both_wrong": 1,
+          "net_change": -2
+        },
+        "cubic": {
+          "n": 144,
+          "both_correct": 121,
+          "lost": 7,
+          "gained": 0,
+          "both_wrong": 16,
+          "net_change": -7
+        }
+      }
+    }
+  },
+  "cautions": [
+    "Outcome-informed motivation after P99/100: post-hoc exploratory, not preregistered confirmation",
+    "Candidate parameters fixed from P99 IDEAL_ODE MATCHED5/WOO for every factor; not SHIFTED re-fitting",
+    "All physical factors computed with same ODE engine; not separate physics engines",
+    "Single-factor effects on classification are not additive under nonlinear dynamics",
+    "Fixed noise stream is recreated identically for every arm and HALF/FULL pair",
+    "Truth labels used only for post-decision grouping; no fitting performed",
+    "No real hardware, no global optimality claim; E4 remains sealed",
+    "For causally confirmed classifier effect, require independent new scenes and frozen rule before observing outcomes"
+  ]
+}

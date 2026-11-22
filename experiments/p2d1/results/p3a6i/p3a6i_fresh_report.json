@@ -1,0 +1,223 @@
+{
+  "protocol": "P3-A6I calibrated revision",
+  "smoke": false,
+  "calibration_seed": 20261227,
+  "test_seed": 20261228,
+  "thresholds": {
+    "tau_absolute_m": 0.015056534376721602,
+    "tau_switch_m": 0.0005699832080957364,
+    "calibration_episodes": 180,
+    "correct_anchor_episodes": 141
+  },
+  "E4_accessed": false,
+  "adaptive_action_selection": false,
+  "calibration_uses_private_true_laws": true,
+  "limitations": [
+    "Synthetic MuJoCo scenes",
+    "Only one unknown physical law",
+    "Known-law labels used offline for calibration",
+    "No formal finite-sample coverage guarantee",
+    "B conditioned on observed A",
+    "Weak and Strong are fixed actions",
+    "No E4 evaluation",
+    "No physical cost-saving policy tested",
+    "Smoke thresholds are diagnostic only"
+  ],
+  "summary": {
+    "original": {
+      "independent": {
+        "n": 48,
+        "baseline": {
+          "correct": 27,
+          "wrong_law": 21
+        },
+        "candidate": {
+          "correct": 45,
+          "wrong_law": 3
+        },
+        "decision_reasons": {
+          "agreement": 20,
+          "retain_anchor": 18,
+          "sufficient_new_evidence": 10
+        }
+      },
+      "rigid": {
+        "n": 48,
+        "baseline": {
+          "correct": 48
+        },
+        "candidate": {
+          "correct": 48
+        },
+        "decision_reasons": {
+          "agreement": 42,
+          "sufficient_new_evidence": 6
+        }
+      },
+      "elastic": {
+        "n": 48,
+        "baseline": {
+          "correct": 25,
+          "represented_false_reject": 6,
+          "wrong_law": 17
+        },
+        "candidate": {
+          "correct": 28,
+          "represented_false_reject": 6,
+          "wrong_law": 14
+        },
+        "decision_reasons": {
+          "sufficient_new_evidence": 22,
+          "agreement": 13,
+          "all_models_inadequate": 6,
+          "retain_anchor": 7
+        }
+      },
+      "deadzone": {
+        "n": 48,
+        "baseline": {
+          "correct": 46,
+          "wrong_law": 2
+        },
+        "candidate": {
+          "correct": 46,
+          "wrong_law": 2
+        },
+        "decision_reasons": {
+          "agreement": 45,
+          "sufficient_new_evidence": 3
+        }
+      },
+      "nonlinear": {
+        "n": 48,
+        "baseline": {
+          "represented_false_reject": 9,
+          "correct": 30,
+          "wrong_law": 9
+        },
+        "candidate": {
+          "represented_false_reject": 9,
+          "correct": 29,
+          "wrong_law": 10
+        },
+        "decision_reasons": {
+          "all_models_inadequate": 9,
+          "agreement": 20,
+          "sufficient_new_evidence": 18,
+          "retain_anchor": 1
+        }
+      },
+      "saturating": {
+        "n": 48,
+        "baseline": {
+          "correct_reject": 48
+        },
+        "candidate": {
+          "correct_reject": 48
+        },
+        "decision_reasons": {
+          "all_models_inadequate": 48
+        }
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "n": 48,
+        "baseline": {
+          "correct": 27,
+          "wrong_law": 21
+        },
+        "candidate": {
+          "correct": 45,
+          "wrong_law": 3
+        },
+        "decision_reasons": {
+          "agreement": 20,
+          "retain_anchor": 18,
+          "sufficient_new_evidence": 10
+        }
+      },
+      "rigid": {
+        "n": 48,
+        "baseline": {
+          "correct": 48
+        },
+        "candidate": {
+          "correct": 48
+        },
+        "decision_reasons": {
+          "agreement": 42,
+          "sufficient_new_evidence": 6
+        }
+      },
+      "elastic": {
+        "n": 48,
+        "baseline": {
+          "correct": 25,
+          "represented_false_reject": 6,
+          "wrong_law": 17
+        },
+        "candidate": {
+          "correct": 28,
+          "represented_false_reject": 6,
+          "wrong_law": 14
+        },
+        "decision_reasons": {
+          "sufficient_new_evidence": 22,
+          "agreement": 13,
+          "all_models_inadequate": 6,
+          "retain_anchor": 7
+        }
+      },
+      "deadzone": {
+        "n": 48,
+        "baseline": {
+          "correct": 44,
+          "represented_false_reject": 3,
+          "wrong_law": 1
+        },
+        "candidate": {
+          "correct": 44,
+          "represented_false_reject": 3,
+          "wrong_law": 1
+        },
+        "decision_reasons": {
+          "agreement": 44,
+          "all_models_inadequate": 3,
+          "sufficient_new_evidence": 1
+        }
+      },
+      "nonlinear": {
+        "n": 48,
+        "baseline": {
+          "represented_false_reject": 9,
+          "correct": 30,
+          "wrong_law": 9
+        },
+        "candidate": {
+          "represented_false_reject": 9,
+          "correct": 29,
+          "wrong_law": 10
+        },
+        "decision_reasons": {
+          "all_models_inadequate": 9,
+          "agreement": 20,
+          "sufficient_new_evidence": 18,
+          "retain_anchor": 1
+        }
+      },
+      "saturating": {
+        "n": 48,
+        "baseline": {
+          "correct_reject": 48
+        },
+        "candidate": {
+          "correct_reject": 48
+        },
+        "decision_reasons": {
+          "all_models_inadequate": 48
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "protocol": "P2-D2A open-set pilot",
+  "development_only": true,
+  "seed": 20261113,
+  "action": "pulse",
+  "noise_std_m": 0.005,
+  "known_classes": [
+    0,
+    1,
+    2
+  ],
+  "unknown_classes": [
+    3,
+    4
+  ],
+  "scene_splits": {
+    "train": [
+      14,
+      23,
+      17,
+      11,
+      5,
+      21,
+      10,
+      0,
+      18,
+      1,
+      22,
+      12
+    ],
+    "val": [
+      4,
+      9,
+      15,
+      8,
+      6,
+      19
+    ],
+    "test": [
+      16,
+      20,
+      3,
+      7,
+      2,
+      13
+    ]
+  },
+  "results": {
+    "A_only": {
+      "known_accuracy": 0.6666666666666666,
+      "known_acceptance_rate": 0.9444444444444444,
+      "unknown_rejection_rate": 0.08333333333333333,
+      "unknown_detection_AUROC": 0.4351851851851852,
+      "threshold": 0.5424902245488149,
+      "n_known": 18,
+      "n_unknown": 12
+    },
+    "B_only": {
+      "known_accuracy": 1.0,
+      "known_acceptance_rate": 0.9444444444444444,
+      "unknown_rejection_rate": 0.25,
+      "unknown_detection_AUROC": 0.6064814814814815,
+      "threshold": 0.08265586833454322,
+      "n_known": 18,
+      "n_unknown": 12
+    },
+    "A_plus_B": {
+      "known_accuracy": 1.0,
+      "known_acceptance_rate": 1.0,
+      "unknown_rejection_rate": 0.4166666666666667,
+      "unknown_detection_AUROC": 0.7222222222222222,
+      "threshold": 0.08781902616025475,
+      "n_known": 18,
+      "n_unknown": 12
+    }
+  },
+  "note": "Unknown labels used only for evaluation. No concept revision is implemented. This is not a confirmatory experiment."
+}

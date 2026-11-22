@@ -1,0 +1,14 @@
+{
+  "contrast": "B_only_minus_Passive_only",
+  "unit": "test scene group (30 clusters)",
+  "n_clusters": 30,
+  "b_only_accuracy": 0.8777777777777778,
+  "passive_only_accuracy": 0.3333333333333333,
+  "point_estimate": 0.5444444444444444,
+  "paired_bootstrap_ci95": [
+    0.4888888888888889,
+    0.6000000000000001
+  ],
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 20261113
+}

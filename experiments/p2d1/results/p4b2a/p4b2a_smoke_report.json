@@ -1,0 +1,186 @@
+{
+  "protocol": "P4-B2A historical P103 estimator feasibility; retrospective ONLY",
+  "smoke": true,
+  "n_scenes": 1,
+  "n_cases": 1,
+  "pilot_case_selection": "original-band M0 each law",
+  "methods": [
+    "EQERR_SG",
+    "TRF_OUT",
+    "SLSQP_MATCHED5_REFERENCE"
+  ],
+  "same_204_train_B_positions": true,
+  "train_actions": [
+    "e1",
+    "e2",
+    "weak",
+    "strong"
+  ],
+  "heldout_actions": [
+    "mid",
+    "HALF",
+    "FULL"
+  ],
+  "ODE_generator": "SHIFTED_ODE",
+  "candidate_domain_configs": [
+    "WWW",
+    "OOO",
+    "WOO"
+  ],
+  "TRF": {
+    "starts": "original 2 + fixed common 3",
+    "max_nfev_scipy_per_start": 150,
+    "note": "total residual calls including numerical Jacobian separately audited"
+  },
+  "EQERR": {
+    "SG_window": 11,
+    "SG_poly": 3,
+    "SG_trim_each_end": 5,
+    "eqerr_derived_samples_per_case": 164,
+    "deadzone_grid": 21,
+    "note": "Independent equation-error estimator; not equal CPU budget"
+  },
+  "classification": {
+    "EQERR_SG": {
+      "WWW": {
+        "MID_PLUS_HALF": {
+          "n": 1,
+          "correct": 1,
+          "available": 1,
+          "accuracy_all": 1.0
+        },
+        "MID_PLUS_FULL": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        }
+      },
+      "OOO": {
+        "MID_PLUS_HALF": {
+          "n": 1,
+          "correct": 1,
+          "available": 1,
+          "accuracy_all": 1.0
+        },
+        "MID_PLUS_FULL": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        }
+      },
+      "WOO": {
+        "MID_PLUS_HALF": {
+          "n": 1,
+          "correct": 1,
+          "available": 1,
+          "accuracy_all": 1.0
+        },
+        "MID_PLUS_FULL": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        }
+      }
+    },
+    "TRF_OUT": {
+      "WWW": {
+        "MID_PLUS_HALF": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        },
+        "MID_PLUS_FULL": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        }
+      },
+      "OOO": {
+        "MID_PLUS_HALF": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        },
+        "MID_PLUS_FULL": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        }
+      },
+      "WOO": {
+        "MID_PLUS_HALF": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        },
+        "MID_PLUS_FULL": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        }
+      }
+    },
+    "SLSQP_MATCHED5_REFERENCE": {
+      "WOO": {
+        "MID_PLUS_HALF": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        },
+        "MID_PLUS_FULL": {
+          "n": 1,
+          "correct": 0,
+          "available": 1,
+          "accuracy_all": 0.0
+        }
+      }
+    }
+  },
+  "fit_compute_cost": {
+    "EQERR_SG": {
+      "total_residual_calls_ALL": 0,
+      "cumulative_fit_wall_seconds": 0.018590900028357282,
+      "n_fit_law_domain_units": 6,
+      "note": "Not equalized in compute; report actual cost before formal B2B"
+    },
+    "TRF_OUT": {
+      "total_residual_calls_ALL": 1043,
+      "cumulative_fit_wall_seconds": 2.7671427999739535,
+      "n_fit_law_domain_units": 6,
+      "note": "Not equalized in compute; report actual cost before formal B2B"
+    }
+  },
+  "input_sha256": {
+    "P98": "699ea08f85e0b5db4da69106f9124bdcecedb5f2969fb3ca10d672dd24ba3d96",
+    "P99": "1345b3d7c43f487d68ed164176376884bf89e619d492e3558c0f8a5f80335ab0",
+    "P103": "70185b44150fcfe87c3fcb73e50c88df35856cd4c541c01a9009683165af271f",
+    "P104": "97479c6cd46993d44652a056b396d5b5132afd13c073ee05247316fc055ffe28",
+    "R103": "58fc41efd0b7b669ffeaa04590625ac9fc367757c346ab4fae5740e09e8566b2",
+    "A103": "3e89a1d59d69b6e49870147cad352cad8a31591a0848264fb73edb06bb9ef2fc",
+    "M103": "dfa0229ffddf8ae9e075bfb74774ba6b8cec62a9070352eccea7028de5b31935",
+    "R104": "a883e52aab9d75ccd218dcf1c08ed59ceaf8da95c6a1c0af087f1fcf8539cab5"
+  },
+  "SELF_sha256": "603c616a0621ea6bfec0be5814585cea17156890dcd9c7cd2e16e811a0fced2a",
+  "P103_reference_read_only": true,
+  "truth_used_during_fit": false,
+  "heldout_used_for_fit": false,
+  "new_fresh_scenes": false,
+  "scientific_effect_estimate": false,
+  "E4_accessed": false,
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "scipy": "1.17.1",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

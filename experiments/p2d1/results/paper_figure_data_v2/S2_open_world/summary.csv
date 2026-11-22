@@ -1,0 +1,10 @@
+exp_id,mechanism,metric,value,total,note,source_report
+47,saturating,correct_reject,36,36,heldout saturating fully rejected,47_p3a6h_report.json
+47,independent,correct,22,36,14 wrong-law,47_p3a6h_report.json
+47,elastic,correct,18,36,misclassified,47_p3a6h_report.json
+47,deadzone,correct,34,36,NA,47_p3a6h_report.json
+48,saturating,correct_reject,48,48,calibrated revision,48_p3a6i_report.json
+48,tau_absolute (switch threshold),value,0.01506,NA,meters,48_p3a6i_report.json
+50,saturating (low regime),false_accept,17,48,all mis-judged as elastic,50_p3a6k_report.json
+50,saturating (low regime),correct_reject,31,48,NA,50_p3a6k_report.json
+50,known (low regime),baseline->candidate +pp,10.83,NA,known accuracy improvement pp,50_p3a6k_report.json

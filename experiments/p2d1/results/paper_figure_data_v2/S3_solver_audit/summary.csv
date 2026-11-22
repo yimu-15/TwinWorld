@@ -1,0 +1,9 @@
+exp_id,comparison,metric,value,note,source_report
+91,deadzone nested violations (original),count,36,36 original + 1 failure target,91_p4s1a_report.json
+91,deadzone nested violations (after +3 starts),count,25,remaining,91_p4s1a_report.json
+91,nfev wide vs outer,count,41728 / 36384,wide / outer,91_p4s1a_report.json
+92,primary full-minus-half (3 arms),effect,0.1979,CI[0.0833,0.3125]; start-invariant,92_p4s1b_report.json
+92,deadzone nested violations,count,36->33,matched5 starts,92_p4s1b_report.json
+92,nfev wide vs outer,count,611022 / 333855,wide / outer,92_p4s1b_report.json
+93,primary full-minus-half,effect,0.1979,closure; start-invariant,93_p4s1c_report.json
+93,deadzone nested violations,count,33,persistent (numerical not physical),93_p4s1c_report.json

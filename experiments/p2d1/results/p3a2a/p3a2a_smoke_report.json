@@ -1,0 +1,570 @@
+{
+  "protocol": "P3-A2A new-scene gate-priority x fixed-E3-strength ablation",
+  "development_only": true,
+  "seed": 20261120,
+  "counts": {
+    "cal_known": 2,
+    "dev_all": 2,
+    "shift_known": 2
+  },
+  "E1_E2": "pulse_1p0,pulse_2p0",
+  "E3_arms": [
+    "weak_pulse_1p5",
+    "strong_pulse_2p25"
+  ],
+  "E4_evaluation_only": [
+    "pulse_2p75",
+    "sweep_2p25"
+  ],
+  "thresholds_known_only": {
+    "weak_pulse_1p5": {
+      "known_q95_m": 0.00967779103868784,
+      "edit_q95_m": 0.010887170092654259,
+      "gain_positive_q95_m": 0.001002774192157183
+    },
+    "strong_pulse_2p25": {
+      "known_q95_m": 0.006963307260895262,
+      "edit_q95_m": 0.017803254216862675,
+      "gain_positive_q95_m": 0.0005758469186420985
+    }
+  },
+  "development": {
+    "weak_pulse_1p5": {
+      "absolute_first": {
+        "decision_counts": {
+          "keep": 6,
+          "inconclusive": 2,
+          "edit": 2
+        },
+        "known_false_edit": {
+          "mean": 0.0,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "known_inconclusive": {
+          "mean": 0.16666666666666666,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.3333333333333333
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "unknown_correct_edit": {
+          "mean": 0.5,
+          "scene_bootstrap_ci95": [
+            0.0,
+            1.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 4
+        },
+        "unknown_wrong_edit": {
+          "mean": 0.0,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 4
+        },
+        "correct_edit_by_unknown_kind": {
+          "deadzone": {
+            "mean": 0.5,
+            "scene_bootstrap_ci95": [
+              0.0,
+              1.0
+            ],
+            "independent_scenes": 2,
+            "episodes": 2
+          },
+          "nonlinear": {
+            "mean": 0.5,
+            "scene_bootstrap_ci95": [
+              0.0,
+              1.0
+            ],
+            "independent_scenes": 2,
+            "episodes": 2
+          }
+        },
+        "e4_mean_rms_m_by_probe": {
+          "e4_pulse_2p75": 0.013326614286769334,
+          "e4_sweep_2p25": 0.007886361165919
+        },
+        "e4_mean_rms_m_by_truth": {
+          "deadzone": 0.020079886712156474,
+          "elastic": 0.005526392787414093,
+          "independent": 0.004992924837982754,
+          "nonlinear": 0.015745850105960066,
+          "rigid": 0.00668738418820745
+        }
+      },
+      "relative_first": {
+        "decision_counts": {
+          "keep": 5,
+          "inconclusive": 2,
+          "edit": 3
+        },
+        "known_false_edit": {
+          "mean": 0.0,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "known_inconclusive": {
+          "mean": 0.16666666666666666,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.3333333333333333
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "unknown_correct_edit": {
+          "mean": 0.75,
+          "scene_bootstrap_ci95": [
+            0.5,
+            1.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 4
+        },
+        "unknown_wrong_edit": {
+          "mean": 0.0,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 4
+        },
+        "correct_edit_by_unknown_kind": {
+          "deadzone": {
+            "mean": 1.0,
+            "scene_bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "independent_scenes": 2,
+            "episodes": 2
+          },
+          "nonlinear": {
+            "mean": 0.5,
+            "scene_bootstrap_ci95": [
+              0.0,
+              1.0
+            ],
+            "independent_scenes": 2,
+            "episodes": 2
+          }
+        },
+        "e4_mean_rms_m_by_probe": {
+          "e4_pulse_2p75": 0.00975463346279121,
+          "e4_sweep_2p25": 0.006274942122772698
+        },
+        "e4_mean_rms_m_by_truth": {
+          "deadzone": 0.007121387044345404,
+          "elastic": 0.005526392787414093,
+          "independent": 0.004992924837982754,
+          "nonlinear": 0.015745850105960066,
+          "rigid": 0.00668738418820745
+        }
+      },
+      "paired_relative_minus_absolute_e4_m": {
+        "mean": -0.002591699933562214,
+        "scene_bootstrap_ci95": [
+          -0.005183399867124428,
+          0.0
+        ],
+        "independent_scenes": 2,
+        "episodes": 10
+      },
+      "mean_E3_abs_work_J": 0.7498824710970435,
+      "mean_E3_impulse_Ns": 1.4744757195758251,
+      "nominal_E3_budget_m_per_s": 0.6
+    },
+    "strong_pulse_2p25": {
+      "absolute_first": {
+        "decision_counts": {
+          "keep": 4,
+          "inconclusive": 1,
+          "edit": 5
+        },
+        "known_false_edit": {
+          "mean": 0.16666666666666666,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.3333333333333333
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "known_inconclusive": {
+          "mean": 0.16666666666666666,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.3333333333333333
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "unknown_correct_edit": {
+          "mean": 1.0,
+          "scene_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 4
+        },
+        "unknown_wrong_edit": {
+          "mean": 0.0,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 4
+        },
+        "correct_edit_by_unknown_kind": {
+          "deadzone": {
+            "mean": 1.0,
+            "scene_bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "independent_scenes": 2,
+            "episodes": 2
+          },
+          "nonlinear": {
+            "mean": 1.0,
+            "scene_bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "independent_scenes": 2,
+            "episodes": 2
+          }
+        },
+        "e4_mean_rms_m_by_probe": {
+          "e4_pulse_2p75": 0.00633944945353776,
+          "e4_sweep_2p25": 0.006355983782249763
+        },
+        "e4_mean_rms_m_by_truth": {
+          "deadzone": 0.007121387044345404,
+          "elastic": 0.005327997965217203,
+          "independent": 0.004992924837982754,
+          "nonlinear": 0.007608889053716001,
+          "rigid": 0.00668738418820745
+        }
+      },
+      "relative_first": {
+        "decision_counts": {
+          "keep": 4,
+          "inconclusive": 1,
+          "edit": 5
+        },
+        "known_false_edit": {
+          "mean": 0.16666666666666666,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.3333333333333333
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "known_inconclusive": {
+          "mean": 0.16666666666666666,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.3333333333333333
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "unknown_correct_edit": {
+          "mean": 1.0,
+          "scene_bootstrap_ci95": [
+            1.0,
+            1.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 4
+        },
+        "unknown_wrong_edit": {
+          "mean": 0.0,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 4
+        },
+        "correct_edit_by_unknown_kind": {
+          "deadzone": {
+            "mean": 1.0,
+            "scene_bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "independent_scenes": 2,
+            "episodes": 2
+          },
+          "nonlinear": {
+            "mean": 1.0,
+            "scene_bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "independent_scenes": 2,
+            "episodes": 2
+          }
+        },
+        "e4_mean_rms_m_by_probe": {
+          "e4_pulse_2p75": 0.00633944945353776,
+          "e4_sweep_2p25": 0.006355983782249763
+        },
+        "e4_mean_rms_m_by_truth": {
+          "deadzone": 0.007121387044345404,
+          "elastic": 0.005327997965217203,
+          "independent": 0.004992924837982754,
+          "nonlinear": 0.007608889053716001,
+          "rigid": 0.00668738418820745
+        }
+      },
+      "paired_relative_minus_absolute_e4_m": {
+        "mean": 0.0,
+        "scene_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_scenes": 2,
+        "episodes": 10
+      },
+      "mean_E3_abs_work_J": 1.6257545763955092,
+      "mean_E3_impulse_Ns": 2.2463801324832637,
+      "nominal_E3_budget_m_per_s": 0.9
+    },
+    "shared_baselines_E4_mean_m": {
+      "known_12": 0.01499335461346503,
+      "unrestricted_12": 0.006347716617893762
+    }
+  },
+  "mass_shift": {
+    "weak_pulse_1p5": {
+      "absolute_first": {
+        "decision_counts": {
+          "keep": 5,
+          "inconclusive": 1
+        },
+        "known_false_edit": {
+          "mean": 0.0,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "known_inconclusive": {
+          "mean": 0.16666666666666666,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.3333333333333333
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "unknown_correct_edit": null,
+        "unknown_wrong_edit": null,
+        "correct_edit_by_unknown_kind": {
+          "deadzone": null,
+          "nonlinear": null
+        },
+        "e4_mean_rms_m_by_probe": {
+          "e4_pulse_2p75": 0.0064160524214488986,
+          "e4_sweep_2p25": 0.007045414477742616
+        },
+        "e4_mean_rms_m_by_truth": {
+          "elastic": 0.005823822812668545,
+          "independent": 0.005890822077990287,
+          "rigid": 0.00847755545812844
+        }
+      },
+      "relative_first": {
+        "decision_counts": {
+          "keep": 5,
+          "inconclusive": 1
+        },
+        "known_false_edit": {
+          "mean": 0.0,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "known_inconclusive": {
+          "mean": 0.16666666666666666,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.3333333333333333
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "unknown_correct_edit": null,
+        "unknown_wrong_edit": null,
+        "correct_edit_by_unknown_kind": {
+          "deadzone": null,
+          "nonlinear": null
+        },
+        "e4_mean_rms_m_by_probe": {
+          "e4_pulse_2p75": 0.0064160524214488986,
+          "e4_sweep_2p25": 0.007045414477742616
+        },
+        "e4_mean_rms_m_by_truth": {
+          "elastic": 0.005823822812668545,
+          "independent": 0.005890822077990287,
+          "rigid": 0.00847755545812844
+        }
+      },
+      "paired_relative_minus_absolute_e4_m": {
+        "mean": 0.0,
+        "scene_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_scenes": 2,
+        "episodes": 6
+      },
+      "mean_E3_abs_work_J": 1.541924677881509,
+      "mean_E3_impulse_Ns": 2.557782092649028,
+      "nominal_E3_budget_m_per_s": 0.6
+    },
+    "strong_pulse_2p25": {
+      "absolute_first": {
+        "decision_counts": {
+          "keep": 4,
+          "inconclusive": 2
+        },
+        "known_false_edit": {
+          "mean": 0.0,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "known_inconclusive": {
+          "mean": 0.3333333333333333,
+          "scene_bootstrap_ci95": [
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "unknown_correct_edit": null,
+        "unknown_wrong_edit": null,
+        "correct_edit_by_unknown_kind": {
+          "deadzone": null,
+          "nonlinear": null
+        },
+        "e4_mean_rms_m_by_probe": {
+          "e4_pulse_2p75": 0.0064160524214488986,
+          "e4_sweep_2p25": 0.007045414477742616
+        },
+        "e4_mean_rms_m_by_truth": {
+          "elastic": 0.005823822812668545,
+          "independent": 0.005890822077990287,
+          "rigid": 0.00847755545812844
+        }
+      },
+      "relative_first": {
+        "decision_counts": {
+          "keep": 4,
+          "inconclusive": 2
+        },
+        "known_false_edit": {
+          "mean": 0.0,
+          "scene_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "known_inconclusive": {
+          "mean": 0.3333333333333333,
+          "scene_bootstrap_ci95": [
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "independent_scenes": 2,
+          "episodes": 6
+        },
+        "unknown_correct_edit": null,
+        "unknown_wrong_edit": null,
+        "correct_edit_by_unknown_kind": {
+          "deadzone": null,
+          "nonlinear": null
+        },
+        "e4_mean_rms_m_by_probe": {
+          "e4_pulse_2p75": 0.0064160524214488986,
+          "e4_sweep_2p25": 0.007045414477742616
+        },
+        "e4_mean_rms_m_by_truth": {
+          "elastic": 0.005823822812668545,
+          "independent": 0.005890822077990287,
+          "rigid": 0.00847755545812844
+        }
+      },
+      "paired_relative_minus_absolute_e4_m": {
+        "mean": 0.0,
+        "scene_bootstrap_ci95": [
+          0.0,
+          0.0
+        ],
+        "independent_scenes": 2,
+        "episodes": 6
+      },
+      "mean_E3_abs_work_J": 3.083748060476955,
+      "mean_E3_impulse_Ns": 3.836468990372237,
+      "nominal_E3_budget_m_per_s": 0.9
+    },
+    "shared_baselines_E4_mean_m": {
+      "known_12": 0.006730733449595758,
+      "unrestricted_12": 0.007457633847665192
+    }
+  },
+  "physics_audit": {
+    "max_passive_gap_m": 0.0,
+    "max_A_mode_gap_m": 0.009897636223668071
+  },
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "20_p3a0_parameter_refit.py": "ffca6c7f224548a638cff3ebcf08ec8eacc715129f9381a875ca8d3d1eae4064",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700"
+  },
+  "notes": [
+    "All E3 actions are fixed; not an adaptive policy.",
+    "Calibration contains known mechanisms only.",
+    "E4 is evaluation-only.",
+    "E3 strengths have different real costs.",
+    "Paired counterfactual E3 observations are not combined by an agent.",
+    "B prediction conditions on observed E4 A.",
+    "BIC is a heuristic with correlated trajectory residuals.",
+    "Development only, not final confirmatory evidence."
+  ]
+}

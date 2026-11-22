@@ -1,0 +1,55 @@
+{
+  "protocol": "P4-G1B smoke-only compatibility check, not full solver budget",
+  "smoke": true,
+  "n_scenes": 1,
+  "n_cases": 1,
+  "arms": [
+    "IDEAL_ODE",
+    "SHIFTED_ODE"
+  ],
+  "source_sha256": {
+    "P16": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "P22": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "P77": "641be70d416fa8a6b27464446aef564304a339e488835a4fdf208cc6a0478d83",
+    "P92": "a8d45bd03e2b2f66aff030f443bbcd518536c97cfb202b2b3f4e0857063b76c2",
+    "P97": "aad19060694eff5d0cf1c63c29b8778026d8c402c6e11f595faccc249b20fd82",
+    "P98": "699ea08f85e0b5db4da69106f9124bdcecedb5f2969fb3ca10d672dd24ba3d96",
+    "R97": "0b2dfc6f84579c3ed5e3bbc15c4850c3c04d69c7120d7d30fb3f1c8d8c7af1b0",
+    "R98": "3e4123cecfbf0d97950cd1a4035ecf4160db94da83fa3b2f7bfb965d974a36b2",
+    "R98_SMOKE": "a066a80bc24a71ed9a2718d7096b583156a637db575a4bea15925611e12104e8",
+    "SELF": "1345b3d7c43f487d68ed164176376884bf89e619d492e3558c0f8a5f80335ab0"
+  },
+  "source_ODE_digests_PRIVATE": {
+    "IDEAL_ODE": {
+      "e1": "a7f8821c9c7b3b89753d657c65ba97bb9899c5e792204411bc0a4ae407fe56c4",
+      "e2": "d133fed66bb46ab3614c2a5dbf0f8444d4ca5ba59818ab9534ce8442e7969bb1",
+      "weak": "8033053ba4e6fd13015682da2fc3edf1348e21e5880c8b0fcf646fd437bfc863",
+      "strong": "76fad2598eab3c01df405eda8fbda0d7fb099c182b3ed99c0a072370441d6200",
+      "mid": "1581ecb1f4e910ae457fdf02ef53563e3723c3c821b0068a06e4964393f57f40",
+      "HALF": "ad6619d18b767dcbec527a0e24cf4316ce22f7acd8a72b475382b806c587b2ae",
+      "FULL": "792dcaaee5e42a3dbfe88cdb06a270bf95b7a1b59e3bfe7410637c5065c4ac3b"
+    },
+    "SHIFTED_ODE": {
+      "e1": "7e04e8a2ebb658ba9884bf66daef7d1f5a19e6b7b5069f382919989350c0ab08",
+      "e2": "53f708f11b47adda23e2bd224cc962c69ee13adfdfab44874cd497580fd3f728",
+      "weak": "de344df68f5c36820c2d97cda0b699d42038cc9fad241aa0e5c55a5530ea502b",
+      "strong": "3e95a4ccb54878db34546ac49b551f650c60c98bb170deefbaae0fc1071669a5",
+      "mid": "2d0f90eb536a58131afbcae2238be8d1619da09626dc31a32d518087961e6577",
+      "HALF": "a63c857e36b7f7f99218df0515d4b074049a17f930ee9d67605886a33ad2b724",
+      "FULL": "959ea85758f6a1b4d043aeb67bd82c8288adff377a4f1c907c7cc81e82b17da9"
+    }
+  },
+  "observations_are_B_51_A_half_101": true,
+  "small_fit_test": {
+    "candidate": "elastic",
+    "domain": "wide",
+    "original_2_converged": true,
+    "one_extra_converged": true,
+    "best_available": true,
+    "nfev_original": 55,
+    "nfev_one_extra": 30
+  },
+  "E4_accessed": false,
+  "scientific_effect_estimate": false,
+  "formal_case_results_observed": false
+}

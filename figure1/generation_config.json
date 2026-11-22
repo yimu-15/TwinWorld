@@ -1,0 +1,19 @@
+{
+  "time_step": 0.02,
+  "steps": 120,
+  "pulse_steps": 18,
+  "splits": {
+    "train": 150,
+    "val": 50,
+    "test": 100
+  },
+  "pair_definition": "two different mechanisms, exactly matched passive initial conditions",
+  "public_inputs": [
+    "passive",
+    "active",
+    "action",
+    "pair_id"
+  ],
+  "private_labels": "for blind final evaluator only",
+  "warning": "P0 only: matched passive counterfactual available; not a full embodied benchmark"
+}

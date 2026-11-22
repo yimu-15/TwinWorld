@@ -1,0 +1,4 @@
+Experiment,Mechanism,Amplitude_Contrast,Primary_Metric,Effect,CI95_low,CI95_high,Sample_Unit
+P4-M2D2B_v2,nonlinear-M2,FULL(1.0x)_vs_HALF(0.5x),Recall difference,0.1979,0.0938,0.3125,96 nonlinear-M2 cases
+P4-M2D2B_v2,nonlinear-M2,FULL(1.0x)_vs_HALF(0.5x),Pairwise separation difference,10.156,8.336,12.146,mm
+P4-M2D1,overall,HIGH_vs_MID,Identification accuracy,0.1198,0.0807,0.1563,384 cases (24 scenes)

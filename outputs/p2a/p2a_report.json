@@ -1,0 +1,24 @@
+{
+  "mujoco_version": "3.17.0",
+  "modes": [
+    "independent",
+    "rigid",
+    "elastic"
+  ],
+  "passive_gaps": {
+    "independent": 0.0,
+    "rigid": 0.0,
+    "elastic": 0.0
+  },
+  "B_excess_displacement_m": {
+    "independent": 1.9984014443252818e-15,
+    "rigid": 0.19682820174320548,
+    "elastic": 0.1266492252064888
+  },
+  "B_final_positions_m": {
+    "independent": 1.5000000000000007,
+    "rigid": 1.6968282017432041,
+    "elastic": 1.6266492252064875
+  },
+  "note": "Physical three-mechanism smoke test. Not a learned model result."
+}

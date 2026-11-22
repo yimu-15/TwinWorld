@@ -1,0 +1,9 @@
+{
+  "protocol": "P4-G2B retrospective selection inversion audit",
+  "smoke": true,
+  "n_rows_checked": 16,
+  "checkpoints": "NOT_CHECKED_SMOKE",
+  "no_fits": true,
+  "no_simulations": true,
+  "E4_accessed": false
+}

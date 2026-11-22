@@ -1,0 +1,19 @@
+{
+  "protocol": "P4-G2C out-of-cohort interface smoke; NOT a scientific result",
+  "smoke": true,
+  "n_base_scenes": 1,
+  "n_test_cases": 1,
+  "source_sha256": {
+    "P98": "699ea08f85e0b5db4da69106f9124bdcecedb5f2969fb3ca10d672dd24ba3d96",
+    "P99": "1345b3d7c43f487d68ed164176376884bf89e619d492e3558c0f8a5f80335ab0",
+    "P102": "9e48a6b0e644543154ce021a2633d78d3f471fb8b8d96da2f7b6b7d645214267",
+    "R99": "a9d4656a56db560de9261c9667918a1b326c87b98ebc51979fca35e86df58e26",
+    "R101": "37fd6989f2a7f0bba506bc0ad0c4d2b542c9495c9d9fc61284927c1dce178bca",
+    "R102": "b8085e577bbf4a11a3044440ab0370154a7d60e989d3a605d78e11d58a9aad55",
+    "M102": "f5110ebf6ab7ee831c31226c5b0ae3a2136b07af8822e16d5e2519d35929777e",
+    "SELF": "70185b44150fcfe87c3fcb73e50c88df35856cd4c541c01a9009683165af271f"
+  },
+  "E4_accessed": false,
+  "new_classification_outcomes": 0,
+  "full_matched5_budget_used": false
+}

@@ -1,0 +1,20 @@
+{
+  "protocol": "P3-A6N oracle force exposure audit",
+  "smoke": false,
+  "n_scenes": 48,
+  "n_records": 288,
+  "force_comparison": "same physical r and vr",
+  "counterfactual": "same-parameter Elastic rollout",
+  "uses_oracle_parameters": "PRIVATE AUDIT ONLY",
+  "E4_accessed": false,
+  "threshold_tuned": false,
+  "model_refitted": false,
+  "limitations": [
+    "Retrospective oracle diagnosis",
+    "Does not establish global identifiability",
+    "Force observations unavailable online",
+    "Same development scenes as P3-A6K",
+    "No new independent validation",
+    "No adaptive action choice tested"
+  ]
+}

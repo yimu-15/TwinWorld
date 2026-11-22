@@ -1,0 +1,103 @@
+{
+  "study": "P3-A6B observation-compatible sets",
+  "status": "Exploratory targeted candidate-set audit",
+  "n_scenes_per_band": 2,
+  "candidate_gap_grid_m": [
+    0.015,
+    0.042499999999999996,
+    0.06999999999999999,
+    0.09749999999999999,
+    0.12499999999999999,
+    0.15249999999999997,
+    0.18
+  ],
+  "stiffness_bounds": [
+    2.0,
+    100.0
+  ],
+  "damping_bounds": [
+    0.0,
+    10.0
+  ],
+  "frozen_cutoff_m": 0.008379201124321119,
+  "calibration_source": "D:\\OnShouldersGiants\\TwinWorld_P0\\experiments\\p2d1\\results\\p3a4c\\p3a4c_prospective_report.json",
+  "summary": {
+    "original": {
+      "independent": {
+        "episodes": 2,
+        "any_candidate_retained": 2,
+        "multiple_candidates_retained": 2,
+        "median_retained_count": 7.0,
+        "has_oracle_equivalent_candidate": 2,
+        "median_best_profile_RMS_mm": 5.689427400676525
+      },
+      "deadzone": {
+        "episodes": 2,
+        "any_candidate_retained": 2,
+        "multiple_candidates_retained": 2,
+        "median_retained_count": 3.5,
+        "has_oracle_equivalent_candidate": 0,
+        "median_best_profile_RMS_mm": 5.700953944355177,
+        "true_gap_nearest_grid_retained": 2,
+        "truth_exactly_inactive_early": 0
+      }
+    },
+    "high_in_range": {
+      "independent": {
+        "episodes": 2,
+        "any_candidate_retained": 2,
+        "multiple_candidates_retained": 2,
+        "median_retained_count": 7.0,
+        "has_oracle_equivalent_candidate": 2,
+        "median_best_profile_RMS_mm": 5.689427400676525
+      },
+      "deadzone": {
+        "episodes": 2,
+        "any_candidate_retained": 2,
+        "multiple_candidates_retained": 2,
+        "median_retained_count": 7.0,
+        "has_oracle_equivalent_candidate": 2,
+        "median_best_profile_RMS_mm": 5.58767797566243,
+        "true_gap_nearest_grid_retained": 2,
+        "truth_exactly_inactive_early": 0
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "episodes": 2,
+        "any_candidate_retained": 2,
+        "multiple_candidates_retained": 2,
+        "median_retained_count": 7.0,
+        "has_oracle_equivalent_candidate": 2,
+        "median_best_profile_RMS_mm": 5.689427400676525
+      },
+      "deadzone": {
+        "episodes": 2,
+        "any_candidate_retained": 2,
+        "multiple_candidates_retained": 2,
+        "median_retained_count": 7.0,
+        "has_oracle_equivalent_candidate": 2,
+        "median_best_profile_RMS_mm": 5.742936327215737,
+        "true_gap_nearest_grid_retained": 2,
+        "truth_exactly_inactive_early": 0
+      }
+    }
+  },
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "35_p3a5b_preaction_model_disagreement.py": "bba26bda7732e01cefcac059df62103e82a94de127205f787a017528f4579cfe",
+    "39_p3a6a_exact_identifiability.py": "18bc45528bfaa8ad7d5ffd00be1a3ddad7273a1becf1a558f5d0ef2fe915440e"
+  },
+  "limitations": [
+    "Existing scenes already examined in earlier audits.",
+    "Only Independent and Deadzone are fitted.",
+    "Candidate sets use discrete gap grids.",
+    "Stiffness is constrained strictly above zero.",
+    "The RMS cutoff is known-only calibrated.",
+    "There is no formal parameter coverage guarantee.",
+    "Oracle envelopes and true gaps are evaluation-only.",
+    "No E3 action is selected by this script.",
+    "No E4 observations enter fitting."
+  ]
+}

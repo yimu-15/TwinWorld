@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "table_id": "Table 4",
+  "title": "Classical mechanism-identification baselines (#106)",
+  "source_csv": "table4_classical_baselines.csv",
+  "source_csv_sha256": "3bc9a3609701b71ba6d8ae87570f394845a032622a554ae61059c637b5ae2a55",
+  "headers": [
+    "Method",
+    "Correct_Total",
+    "Accuracy",
+    "Paired_Difference",
+    "Effect",
+    "CI95_low",
+    "CI95_high",
+    "Evaluation_Unit"
+  ],
+  "value_policy": "Verbatim display strings from CSV (no numeric edits, precision normalization, or label correction).",
+  "rows": [
+    {
+      "csv_row_index": 1,
+      "Method": "EQERR_SG",
+      "Correct_Total": "313/384",
+      "Accuracy": "0.8151",
+      "Paired_Difference": "EQERR_minus_SLSQP=-15/384",
+      "Effect": "-0.0391",
+      "CI95_low": "-0.0704",
+      "CI95_high": "-0.0052",
+      "Evaluation_Unit": "384 cases / 24 scene clusters"
+    },
+    {
+      "csv_row_index": 2,
+      "Method": "TRF_OUT",
+      "Correct_Total": "328/384",
+      "Accuracy": "0.8542",
+      "Paired_Difference": "TRF_minus_SLSQP=0/384",
+      "Effect": "0.0000",
+      "CI95_low": "0.0000",
+      "CI95_high": "0.0000",
+      "Evaluation_Unit": "384 cases / 24 scene clusters"
+    },
+    {
+      "csv_row_index": 3,
+      "Method": "SLSQP_MATCHED5_REFERENCE",
+      "Correct_Total": "328/384",
+      "Accuracy": "0.8542",
+      "Paired_Difference": "reference",
+      "Effect": "",
+      "CI95_low": "",
+      "CI95_high": " ",
+      "Evaluation_Unit": "384 cases / 24 scene clusters"
+    }
+  ]
+}

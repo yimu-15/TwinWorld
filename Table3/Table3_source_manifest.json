@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-11-20",
+  "table_id": "Table 3",
+  "title": "Intervention amplitude and mechanism discrimination",
+  "authoritative_table_snapshot": {
+    "file_name": "Table3_data.json",
+    "source_csv_name": "table3_amplitude.csv",
+    "source_csv_sha256": "630dcf154230fedec38f1039154f4cd223dd845df2517df62538fe084469d3af",
+    "data_rows": 3
+  },
+  "audit_approach": "Field-level paths cross-checked against accessible original report JSONs, subject to display rounding; no source files modified or experimental results regenerated.",
+  "source_documents": [
+    {
+      "id": "p4m2d2b_v2_fresh_report(1).json",
+      "file_name": "p4m2d2b_v2_fresh_report(1).json",
+      "type": "formal_report",
+      "purpose": "Experiment #90 v2 HALF vs FULL recall and physical separation with CI",
+      "available_in_this_session": true,
+      "sha256": "86b3ae545a78b2853a63266536037636edf2762f89eecbcfdc25e12cce72b0c0",
+      "original_project_path_reported": "results/p4m2d2b/p4m2d2b_v2_fresh_report.json"
+    },
+    {
+      "id": "p4m2d1_fresh_report(1).json",
+      "file_name": "p4m2d1_fresh_report(1).json",
+      "type": "formal_report",
+      "purpose": "Experiment #88 MID / HIGH_ONLY / MID_PLUS_HIGH combinations; contrast and CI",
+      "available_in_this_session": true,
+      "sha256": "cdb0ac7dd258b9a4ed18e2a7b793428d983a4218d944d0eef7fd66f36a56ca71",
+      "original_project_path_reported": "results/p4m2d1/p4m2d1_fresh_report.json"
+    },
+    {
+      "id": "90_p4m2d2b_amplitude_dose_response_v2(1).py",
+      "file_name": "90_p4m2d2b_amplitude_dose_response_v2(1).py",
+      "type": "source_code",
+      "purpose": "Executable source for #90 v2",
+      "available_in_this_session": true,
+      "sha256": "4bd165bbc5c9522cfb94f61ff71682b34f1e76c1ace6da0d3f55f49c6ec8b622"
+    },
+    {
+      "id": "88_p4m2d1_fresh_action_prior_interaction(2).py",
+      "file_name": "88_p4m2d1_fresh_action_prior_interaction(2).py",
+      "type": "source_code",
+      "purpose": "Executable source for #88",
+      "available_in_this_session": true,
+      "sha256": "27f80208f99f4367fa735756f316bc5f7e47b32e9bbefd16e8768f51a19a13ad"
+    }
+  ],
+  "row_provenance": [
+    {
+      "table_row_index": 1,
+      "experiment": "#90 / P4-M2D2B v2",
+      "source_id": "p4m2d2b_v2_fresh_report(1).json",
+      "source_paths": [
+        "/predeclared_effects/PRIMARY_WOO_nonlinear_M2_recall_full_minus_half",
+        "/bootstrap/95CI/PRIMARY_WOO_nonlinear_M2_recall_full_minus_half"
+      ],
+      "verification": "matched_report_with_table_rounding",
+      "notes": "Paired 24 scene-cluster bootstrap; nonlinear-M2 subset n=96."
+    },
+    {
+      "table_row_index": 2,
+      "experiment": "#90 / P4-M2D2B v2",
+      "source_id": "p4m2d2b_v2_fresh_report(1).json",
+      "source_paths": [
+        "/predeclared_effects/SECONDARY_WOO_nonlinear_M2_pairwise_sep_full_minus_half_mm",
+        "/bootstrap/95CI/SECONDARY_WOO_nonlinear_M2_pairwise_sep_full_minus_half_mm"
+      ],
+      "verification": "matched_report_with_table_rounding",
+      "notes": "Paired 24 scene-cluster bootstrap; nonlinear-M2 subset n=96."
+    },
+    {
+      "table_row_index": 3,
+      "experiment": "#88 / P4-M2D1",
+      "source_id": "p4m2d1_fresh_report(1).json",
+      "source_paths": [
+        "/metrics/MID/OOO",
+        "/metrics/MID_PLUS_HIGH/OOO",
+        "/comparisons/SECONDARY_OOO_high_minus_mid_overall",
+        "/bootstrap/paired_95CI/SECONDARY_OOO_high_minus_mid_overall"
+      ],
+      "verification": "numeric_values_match_but_contrast_label_conflicts",
+      "notes": "Source MID_PLUS_HIGH (323/384) minus MID (277/384) = 46/384 = 0.11979; HIGH_ONLY (320/384) minus MID (277/384) = 43/384. CSV states HIGH_vs_MID; correction is needed in manuscript, but original CSV is preserved here."
+    }
+  ],
+  "scientific_boundaries": [
+    "#90 WOO nonlinear-M2 subset n=96 (24 clusters); #88 OOO overall n=384 (24 clusters): do not pool.",
+    "Recall gain (fraction/pp) and pairwise separation (mm) are distinct endpoints.",
+    "Table 3 third row label HIGH_vs_MID conflicts with the numeric contrast: effect +0.1197916667 and CI correspond to MID_PLUS_HIGH minus MID. Preserve displayed table data; correct label in the authoritative table before submission.",
+    "No continuous dose-response surface follows from only HALF/FULL and MID/MID_PLUS_HIGH contrasts."
+  ],
+  "issues_requiring_author_attention": [
+    {
+      "severity": "must_fix_before_submission",
+      "row_index": 3,
+      "field": "Amplitude_Contrast",
+      "table_value": "HIGH_vs_MID",
+      "source_contrast": "MID_PLUS_HIGH minus MID",
+      "action": "Update authoritative table label only after confirming with authors; DO NOT reinterpret or alter the existing effect/CI."
+    }
+  ]
+}

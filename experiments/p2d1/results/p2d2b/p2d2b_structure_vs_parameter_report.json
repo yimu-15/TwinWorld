@@ -1,0 +1,390 @@
+{
+  "protocol": "P2-D2B independent development: structure vs parameter shift",
+  "development_only": true,
+  "simulator": "MuJoCo via P2-D1B unmodified simulator functions",
+  "seeds": {
+    "train": 42001,
+    "cal": 42002,
+    "id_dev": 42003,
+    "mass_shift_dev": 42004,
+    "sensor": 42005
+  },
+  "scene_counts": {
+    "train": 60,
+    "cal": 30,
+    "id_dev": 36,
+    "mass_shift_dev": 36
+  },
+  "sample_counts": {
+    "train": 180,
+    "cal": 90,
+    "id_dev": 180,
+    "mass_shift_dev": 108
+  },
+  "mechanisms": [
+    "independent",
+    "rigid",
+    "elastic",
+    "deadzone",
+    "nonlinear"
+  ],
+  "known": [
+    "independent",
+    "rigid",
+    "elastic"
+  ],
+  "unseen_structure": [
+    "deadzone",
+    "nonlinear"
+  ],
+  "actions": [
+    "pulse"
+  ],
+  "public_observation": "noisy passive and active x/y positions at 50Hz",
+  "noise_std_m": 0.005,
+  "mass_ranges_kg": {
+    "known_id": [
+      0.8,
+      1.6
+    ],
+    "mass_shift": [
+      1.7,
+      2.3
+    ]
+  },
+  "passive_max_gap_m": {
+    "train": 0.0,
+    "cal": 0.0,
+    "id_dev": 0.0,
+    "mass_shift_dev": 0.0
+  },
+  "notes": [
+    "Scores and thresholds use known train/cal only; id-dev and mass-shift-dev are analysis sets.",
+    "No previously analyzed P2-C0 test samples are loaded.",
+    "Structural unknowns are deadzone/nonlinear; they share parameter sampling ranges with ID.",
+    "Shifted known environments alter masses, not mechanism structure; sample sizes are scene groups.",
+    "Model selection or protocol changes after seeing these dev results require a new held-out confirmatory set.",
+    "Known mechanisms and unknown physical mechanisms can be observationally indistinguishable under this probe.",
+    "This is rejection baseline evaluation, not structural theory revision or RGB visual reasoning."
+  ],
+  "results": {
+    "A_only": {
+      "known_id_accuracy": 0.7777777777777778,
+      "mass_shift_known_accuracy": 0.7129629629629629,
+      "methods": {
+        "max_softmax_novelty": {
+          "calibration_threshold_known_95th_percentile": 0.5068944493716309,
+          "id_known_rejection": {
+            "rejection_rate": 0.018518518518518517,
+            "rejected": 2,
+            "n": 108,
+            "wilson_95_ci": [
+              0.005093117606642765,
+              0.06502032855292575
+            ]
+          },
+          "mass_shift_known_rejection": {
+            "rejection_rate": 0.018518518518518517,
+            "rejected": 2,
+            "n": 108,
+            "wilson_95_ci": [
+              0.005093117606642765,
+              0.06502032855292575
+            ]
+          },
+          "unknown_structural_rejection": {
+            "rejection_rate": 0.013888888888888888,
+            "rejected": 1,
+            "n": 72,
+            "wilson_95_ci": [
+              0.002455888640432169,
+              0.07456780284286987
+            ]
+          },
+          "unknown_deadzone_rejection": {
+            "rejection_rate": 0.0,
+            "rejected": 0,
+            "n": 36,
+            "wilson_95_ci": [
+              0.0,
+              0.09642183044857636
+            ]
+          },
+          "unknown_nonlinear_rejection": {
+            "rejection_rate": 0.027777777777777776,
+            "rejected": 1,
+            "n": 36,
+            "wilson_95_ci": [
+              0.004920280295569679,
+              0.141700337350308
+            ]
+          },
+          "unknown_vs_id_known_AUROC": 0.5457818930041153,
+          "unknown_vs_mass_shift_known_AUROC": 0.6748971193415638
+        },
+        "knn_feature_distance": {
+          "calibration_threshold_known_95th_percentile": 6.21687130851707,
+          "id_known_rejection": {
+            "rejection_rate": 0.05555555555555555,
+            "rejected": 6,
+            "n": 108,
+            "wilson_95_ci": [
+              0.02570737919718203,
+              0.11593580187318892
+            ]
+          },
+          "mass_shift_known_rejection": {
+            "rejection_rate": 0.2222222222222222,
+            "rejected": 24,
+            "n": 108,
+            "wilson_95_ci": [
+              0.15412441082279266,
+              0.3094025773461891
+            ]
+          },
+          "unknown_structural_rejection": {
+            "rejection_rate": 0.041666666666666664,
+            "rejected": 3,
+            "n": 72,
+            "wilson_95_ci": [
+              0.014270548772590097,
+              0.11549464605452325
+            ]
+          },
+          "unknown_deadzone_rejection": {
+            "rejection_rate": 0.08333333333333333,
+            "rejected": 3,
+            "n": 36,
+            "wilson_95_ci": [
+              0.028748089271291785,
+              0.2182701027691885
+            ]
+          },
+          "unknown_nonlinear_rejection": {
+            "rejection_rate": 0.0,
+            "rejected": 0,
+            "n": 36,
+            "wilson_95_ci": [
+              0.0,
+              0.09642183044857636
+            ]
+          },
+          "unknown_vs_id_known_AUROC": 0.4953703703703703,
+          "unknown_vs_mass_shift_known_AUROC": 0.3559670781893004
+        }
+      }
+    },
+    "B_only": {
+      "known_id_accuracy": 1.0,
+      "mass_shift_known_accuracy": 0.9907407407407407,
+      "methods": {
+        "max_softmax_novelty": {
+          "calibration_threshold_known_95th_percentile": 0.0032836787848222184,
+          "id_known_rejection": {
+            "rejection_rate": 0.1574074074074074,
+            "rejected": 17,
+            "n": 108,
+            "wilson_95_ci": [
+              0.10066119273812739,
+              0.23768875933695016
+            ]
+          },
+          "mass_shift_known_rejection": {
+            "rejection_rate": 0.48148148148148145,
+            "rejected": 52,
+            "n": 108,
+            "wilson_95_ci": [
+              0.3895121132367203,
+              0.5747230193078783
+            ]
+          },
+          "unknown_structural_rejection": {
+            "rejection_rate": 0.4861111111111111,
+            "rejected": 35,
+            "n": 72,
+            "wilson_95_ci": [
+              0.3743248074300839,
+              0.5993044408980104
+            ]
+          },
+          "unknown_deadzone_rejection": {
+            "rejection_rate": 0.9166666666666666,
+            "rejected": 33,
+            "n": 36,
+            "wilson_95_ci": [
+              0.7817298972308114,
+              0.9712519107287082
+            ]
+          },
+          "unknown_nonlinear_rejection": {
+            "rejection_rate": 0.05555555555555555,
+            "rejected": 2,
+            "n": 36,
+            "wilson_95_ci": [
+              0.015369663767066846,
+              0.18144974107611211
+            ]
+          },
+          "unknown_vs_id_known_AUROC": 0.61059670781893,
+          "unknown_vs_mass_shift_known_AUROC": 0.4708076131687242
+        },
+        "knn_feature_distance": {
+          "calibration_threshold_known_95th_percentile": 3.032623909659825,
+          "id_known_rejection": {
+            "rejection_rate": 0.1111111111111111,
+            "rejected": 12,
+            "n": 108,
+            "wilson_95_ci": [
+              0.0647120300165129,
+              0.18422575342006164
+            ]
+          },
+          "mass_shift_known_rejection": {
+            "rejection_rate": 0.16666666666666666,
+            "rejected": 18,
+            "n": 108,
+            "wilson_95_ci": [
+              0.10810385411647241,
+              0.24812853168630575
+            ]
+          },
+          "unknown_structural_rejection": {
+            "rejection_rate": 0.4166666666666667,
+            "rejected": 30,
+            "n": 72,
+            "wilson_95_ci": [
+              0.3098503822249644,
+              0.5319251077436017
+            ]
+          },
+          "unknown_deadzone_rejection": {
+            "rejection_rate": 0.7222222222222222,
+            "rejected": 26,
+            "n": 36,
+            "wilson_95_ci": [
+              0.5600719978365485,
+              0.841518299741862
+            ]
+          },
+          "unknown_nonlinear_rejection": {
+            "rejection_rate": 0.1111111111111111,
+            "rejected": 4,
+            "n": 36,
+            "wilson_95_ci": [
+              0.04406568908741833,
+              0.25315129015036325
+            ]
+          },
+          "unknown_vs_id_known_AUROC": 0.7649176954732511,
+          "unknown_vs_mass_shift_known_AUROC": 0.6608796296296297
+        }
+      }
+    },
+    "A_plus_B": {
+      "known_id_accuracy": 1.0,
+      "mass_shift_known_accuracy": 0.9814814814814815,
+      "methods": {
+        "max_softmax_novelty": {
+          "calibration_threshold_known_95th_percentile": 0.005885986254785863,
+          "id_known_rejection": {
+            "rejection_rate": 0.1111111111111111,
+            "rejected": 12,
+            "n": 108,
+            "wilson_95_ci": [
+              0.0647120300165129,
+              0.18422575342006164
+            ]
+          },
+          "mass_shift_known_rejection": {
+            "rejection_rate": 0.3055555555555556,
+            "rejected": 33,
+            "n": 108,
+            "wilson_95_ci": [
+              0.22660104620023352,
+              0.3978678455180537
+            ]
+          },
+          "unknown_structural_rejection": {
+            "rejection_rate": 0.4444444444444444,
+            "rejected": 32,
+            "n": 72,
+            "wilson_95_ci": [
+              0.33538885104705246,
+              0.5591281422653249
+            ]
+          },
+          "unknown_deadzone_rejection": {
+            "rejection_rate": 0.8611111111111112,
+            "rejected": 31,
+            "n": 36,
+            "wilson_95_ci": [
+              0.713401487196068,
+              0.939182746368849
+            ]
+          },
+          "unknown_nonlinear_rejection": {
+            "rejection_rate": 0.027777777777777776,
+            "rejected": 1,
+            "n": 36,
+            "wilson_95_ci": [
+              0.004920280295569679,
+              0.141700337350308
+            ]
+          },
+          "unknown_vs_id_known_AUROC": 0.6495627572016461,
+          "unknown_vs_mass_shift_known_AUROC": 0.5699588477366255
+        },
+        "knn_feature_distance": {
+          "calibration_threshold_known_95th_percentile": 7.309940955538756,
+          "id_known_rejection": {
+            "rejection_rate": 0.09259259259259259,
+            "rejected": 10,
+            "n": 108,
+            "wilson_95_ci": [
+              0.051072779285118,
+              0.16210013669605533
+            ]
+          },
+          "mass_shift_known_rejection": {
+            "rejection_rate": 0.2222222222222222,
+            "rejected": 24,
+            "n": 108,
+            "wilson_95_ci": [
+              0.15412441082279266,
+              0.3094025773461891
+            ]
+          },
+          "unknown_structural_rejection": {
+            "rejection_rate": 0.2361111111111111,
+            "rejected": 17,
+            "n": 72,
+            "wilson_95_ci": [
+              0.15296584625945536,
+              0.34598987197433717
+            ]
+          },
+          "unknown_deadzone_rejection": {
+            "rejection_rate": 0.3611111111111111,
+            "rejected": 13,
+            "n": 36,
+            "wilson_95_ci": [
+              0.2247538679218132,
+              0.5242521960916802
+            ]
+          },
+          "unknown_nonlinear_rejection": {
+            "rejection_rate": 0.1111111111111111,
+            "rejected": 4,
+            "n": 36,
+            "wilson_95_ci": [
+              0.04406568908741833,
+              0.25315129015036325
+            ]
+          },
+          "unknown_vs_id_known_AUROC": 0.6683384773662551,
+          "unknown_vs_mass_shift_known_AUROC": 0.5221193415637859
+        }
+      }
+    }
+  }
+}

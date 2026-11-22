@@ -1,0 +1,12 @@
+figure,export_dir,source_experiments,evidence_class,primary_source_files,denominator,missing_or_notes
+F1,F1_trajectories/,P0(01-03) P1(05-09) P2(10-19),raw,data/*.npz outputs/p1b/p1b_audit_only.npz outputs/p2a outputs/p2b outputs/p2d0 results/p2d1a results/p2d1b,N/A (raw arrays),"world identity via private_labels; column semantics in meta.json"
+F2,F2_method_architecture/,N/A (documentation),documentation,scripts/twincore.py docs/PROTOCOL_V1.md experiment scripts 15-110,N/A,no adaptive algorithm claimed
+F3,F3_passive_active/,03 06 07 08 09 10 11 12 13 14,formal/audit/dev/smoke,outputs/p0_baselines.json outputs/p1b/p1c/p1c2/p1c3/p2a/p2b/p2c0/p2c1/p2d0,P0 val50/test100 pairs; P2-C0 test90 eps,CI only where bootstrap/Wilson reported
+F4,F4_physical_prior/,79 86,formal,results/p4m2b2b/p4m2b2b_fresh_report.json results/p4m2c2e/p4m2c2e_fresh_report.json,79: n_pairs432/n_clusters72; 86: 384/24,individual-scene correct rows not in report (aggregated winner counts)
+F5,F5_amplitude/,88 90,formal,results/p4m2d1/p4m2d1_fresh_report.json results/p4m2d2b/p4m2d2b_v2_fresh_report.json,384 (96 nonlinear-M2),NA
+F6,F6_classical_baselines/,106 110,formal,results/p4b2b/p4b2b_fresh_report.json results/p4b3c/p4b3c_fresh_report.json,384/24 scenes,per-case decisions in checkpoints (not extracted)
+S1,S1_fit_vs_selection/,102,audit,results/p4g2b/p4g2b_closure_report.json,384,retrospective post-hoc
+S2,S2_open_world/,47 48 50,formal,results/p3a6h results/p3a6i results/p3a6k,36 or 48/mechanism,NA
+S3,S3_solver_audit/,91 92 93,diagnostic/formal/audit,results/p4s1a results/p4s1b results/p4s1c,384/24,NA
+S4,S4_adaptive_action/,71,formal,results/p3a8c2b/p3a8c2b_fresh_report.json,eligible425/418 per band,no paired CI in report (correct/work_J only)
+S5,S5_prior_mismatch/,80 81,dev/audit,results/p4m2c0 results/p4m2c1,432 rows,NA

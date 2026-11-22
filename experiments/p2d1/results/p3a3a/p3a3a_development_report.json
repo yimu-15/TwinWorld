@@ -1,0 +1,686 @@
+{
+  "protocol": "P3-A3A under-excited E1/E2; E3 model refit",
+  "development_only": true,
+  "seed": 20261122,
+  "calibration_known_only": true,
+  "counts": {
+    "calibration": 12,
+    "development": 18,
+    "mass_shift": 18
+  },
+  "E1_E2": [
+    "pulse_0p25",
+    "pulse_0p50"
+  ],
+  "E3_arms": [
+    "pulse_1p5",
+    "pulse_2p25",
+    "sweep_2p25"
+  ],
+  "E4_holdout": [
+    "pulse_2p75",
+    "oscillation_2p25"
+  ],
+  "in_library_new": {
+    "deadzone": "deadzone",
+    "nonlinear": "cubic"
+  },
+  "out_of_library_truth_PRIVATE": "saturating",
+  "thresholds": {
+    "early": {
+      "margin": 31.24728171942948,
+      "known_fit_rms_m": 0.008346672412756625
+    },
+    "pulse_1p5": {
+      "margin": 60.250319352019005,
+      "known_fit_rms_m": 0.008916080528703964
+    },
+    "pulse_2p25": {
+      "margin": 87.27568921600103,
+      "known_fit_rms_m": 0.008301207110869221
+    },
+    "sweep_2p25": {
+      "margin": 36.501890441432664,
+      "known_fit_rms_m": 0.00882815164702166
+    }
+  },
+  "development": {
+    "early": {
+      "decisions": {
+        "keep": 79,
+        "inconclusive": 4,
+        "edit": 25
+      },
+      "known_false_edit": {
+        "mean": 0.1111111111111111,
+        "ci95": [
+          0.037037037037037035,
+          0.1851851851851852
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "known_inconclusive": {
+        "mean": 0.05555555555555555,
+        "ci95": [
+          0.0,
+          0.1111111111111111
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "in_library_correct_edit": {
+        "mean": 0.2222222222222222,
+        "ci95": [
+          0.1111111111111111,
+          0.3333333333333333
+        ],
+        "n_scenes": 18,
+        "n_episodes": 36
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.1388888888888889,
+        "ci95": [
+          0.05555555555555555,
+          0.25
+        ],
+        "n_scenes": 18,
+        "n_episodes": 36
+      },
+      "out_of_library_forced_edit": {
+        "mean": 0.3333333333333333,
+        "ci95": [
+          0.1111111111111111,
+          0.5555555555555556
+        ],
+        "n_scenes": 18,
+        "n_episodes": 18
+      },
+      "out_of_library_inconclusive": {
+        "mean": 0.05555555555555555,
+        "ci95": [
+          0.0,
+          0.16666666666666666
+        ],
+        "n_scenes": 18,
+        "n_episodes": 18
+      },
+      "E3_mean_abs_work_J": 0.0,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 77.9936793604443,
+        "oscillation_2p25": 6.980804540781072
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 9.099090533902734,
+          "oscillation_2p25": 5.44940963102883
+        },
+        "rigid": {
+          "pulse_2p75": 21.313741901795122,
+          "oscillation_2p25": 8.160317178799044
+        },
+        "elastic": {
+          "pulse_2p75": 40.778726245704576,
+          "oscillation_2p25": 7.806005095679795
+        },
+        "deadzone": {
+          "pulse_2p75": 110.64798651248489,
+          "oscillation_2p25": 6.441021615010659
+        },
+        "nonlinear": {
+          "pulse_2p75": 96.71147298722212,
+          "oscillation_2p25": 6.743472723154076
+        },
+        "saturating": {
+          "pulse_2p75": 189.41105798155638,
+          "oscillation_2p25": 7.284601001014034
+        }
+      }
+    },
+    "pulse_1p5": {
+      "decisions": {
+        "keep": 55,
+        "edit": 36,
+        "inconclusive": 17
+      },
+      "known_false_edit": {
+        "mean": 0.09259259259259259,
+        "ci95": [
+          0.037037037037037035,
+          0.16666666666666666
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "known_inconclusive": {
+        "mean": 0.037037037037037035,
+        "ci95": [
+          0.0,
+          0.1111111111111111
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "in_library_correct_edit": {
+        "mean": 0.7777777777777778,
+        "ci95": [
+          0.6666666666666666,
+          0.8888888888888888
+        ],
+        "n_scenes": 18,
+        "n_episodes": 36
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.08333333333333333,
+        "ci95": [
+          0.0,
+          0.16666666666666666
+        ],
+        "n_scenes": 18,
+        "n_episodes": 36
+      },
+      "out_of_library_forced_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 18,
+        "n_episodes": 18
+      },
+      "out_of_library_inconclusive": {
+        "mean": 0.8333333333333334,
+        "ci95": [
+          0.6111111111111112,
+          1.0
+        ],
+        "n_scenes": 18,
+        "n_episodes": 18
+      },
+      "E3_mean_abs_work_J": 0.9314499091024918,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 23.860719015993666,
+        "oscillation_2p25": 7.963009597821376
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 6.170821636428058,
+          "oscillation_2p25": 5.394475726742948
+        },
+        "rigid": {
+          "pulse_2p75": 10.249615449843006,
+          "oscillation_2p25": 6.908099931213205
+        },
+        "elastic": {
+          "pulse_2p75": 9.842359664283714,
+          "oscillation_2p25": 6.726979357991102
+        },
+        "deadzone": {
+          "pulse_2p75": 9.591636399877633,
+          "oscillation_2p25": 5.63386217287509
+        },
+        "nonlinear": {
+          "pulse_2p75": 28.193118788354866,
+          "oscillation_2p25": 6.617346505518921
+        },
+        "saturating": {
+          "pulse_2p75": 79.11676215717472,
+          "oscillation_2p25": 16.49729389258699
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -26.57537764370517,
+        "ci95": [
+          -31.00406660848477,
+          -22.38871222356078
+        ],
+        "n_scenes": 18,
+        "n_episodes": 108
+      }
+    },
+    "pulse_2p25": {
+      "decisions": {
+        "keep": 49,
+        "inconclusive": 22,
+        "edit": 37
+      },
+      "known_false_edit": {
+        "mean": 0.07407407407407407,
+        "ci95": [
+          0.018518518518518517,
+          0.14814814814814814
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "known_inconclusive": {
+        "mean": 0.09259259259259259,
+        "ci95": [
+          0.018518518518518517,
+          0.18518518518518517
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "in_library_correct_edit": {
+        "mean": 0.8611111111111112,
+        "ci95": [
+          0.75,
+          0.9444444444444444
+        ],
+        "n_scenes": 18,
+        "n_episodes": 36
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.05555555555555555,
+        "ci95": [
+          0.0,
+          0.1388888888888889
+        ],
+        "n_scenes": 18,
+        "n_episodes": 36
+      },
+      "out_of_library_forced_edit": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 18,
+        "n_episodes": 18
+      },
+      "out_of_library_inconclusive": {
+        "mean": 0.9444444444444444,
+        "ci95": [
+          0.8333333333333334,
+          1.0
+        ],
+        "n_scenes": 18,
+        "n_episodes": 18
+      },
+      "E3_mean_abs_work_J": 1.890546304752228,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 11.730944195243604,
+        "oscillation_2p25": 9.230322361787339
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 5.843202751664067,
+          "oscillation_2p25": 5.3716956157214
+        },
+        "rigid": {
+          "pulse_2p75": 8.055300816273274,
+          "oscillation_2p25": 6.661086319216236
+        },
+        "elastic": {
+          "pulse_2p75": 8.307767492121487,
+          "oscillation_2p25": 6.687131351494829
+        },
+        "deadzone": {
+          "pulse_2p75": 7.551043710956261,
+          "oscillation_2p25": 5.640935974696081
+        },
+        "nonlinear": {
+          "pulse_2p75": 11.227014549363913,
+          "oscillation_2p25": 6.589137516512212
+        },
+        "saturating": {
+          "pulse_2p75": 29.40133585108262,
+          "oscillation_2p25": 24.431947393083274
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -32.00660867209722,
+        "ci95": [
+          -36.06060852094793,
+          -28.046163930438176
+        ],
+        "n_scenes": 18,
+        "n_episodes": 108
+      }
+    },
+    "sweep_2p25": {
+      "decisions": {
+        "keep": 70,
+        "edit": 35,
+        "inconclusive": 3
+      },
+      "known_false_edit": {
+        "mean": 0.07407407407407407,
+        "ci95": [
+          0.018518518518518517,
+          0.14814814814814814
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "known_inconclusive": {
+        "mean": 0.05555555555555555,
+        "ci95": [
+          0.0,
+          0.14814814814814814
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "in_library_correct_edit": {
+        "mean": 0.5,
+        "ci95": [
+          0.3888888888888889,
+          0.6111111111111112
+        ],
+        "n_scenes": 18,
+        "n_episodes": 36
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.2777777777777778,
+        "ci95": [
+          0.1388888888888889,
+          0.4166666666666667
+        ],
+        "n_scenes": 18,
+        "n_episodes": 36
+      },
+      "out_of_library_forced_edit": {
+        "mean": 0.16666666666666666,
+        "ci95": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 18,
+        "n_episodes": 18
+      },
+      "out_of_library_inconclusive": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 18,
+        "n_episodes": 18
+      },
+      "E3_mean_abs_work_J": 1.1021989283435165,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 52.04332591452689,
+        "oscillation_2p25": 6.66805494605301
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 6.996652532412583,
+          "oscillation_2p25": 5.447482001888622
+        },
+        "rigid": {
+          "pulse_2p75": 8.287532841313622,
+          "oscillation_2p25": 6.674186432771812
+        },
+        "elastic": {
+          "pulse_2p75": 16.969940077120736,
+          "oscillation_2p25": 7.240429713171586
+        },
+        "deadzone": {
+          "pulse_2p75": 42.14872473715024,
+          "oscillation_2p25": 6.2114672875524555
+        },
+        "nonlinear": {
+          "pulse_2p75": 79.25909044862088,
+          "oscillation_2p25": 6.65776397848151
+        },
+        "saturating": {
+          "pulse_2p75": 158.5980148505433,
+          "oscillation_2p25": 7.777000262452063
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -13.131551520322741,
+        "ci95": [
+          -17.20445646071356,
+          -9.301157283091554
+        ],
+        "n_scenes": 18,
+        "n_episodes": 108
+      }
+    }
+  },
+  "mass_shift": {
+    "early": {
+      "decisions": {
+        "keep": 50,
+        "inconclusive": 2,
+        "edit": 2
+      },
+      "known_false_edit": {
+        "mean": 0.037037037037037035,
+        "ci95": [
+          0.0,
+          0.09259259259259259
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "known_inconclusive": {
+        "mean": 0.037037037037037035,
+        "ci95": [
+          0.0,
+          0.09259259259259259
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_of_library_forced_edit": null,
+      "out_of_library_inconclusive": null,
+      "E3_mean_abs_work_J": 0.0,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 21.18051414332433,
+        "oscillation_2p25": 6.2590808911444045
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 6.876123105720098,
+          "oscillation_2p25": 5.654672859983923
+        },
+        "rigid": {
+          "pulse_2p75": 13.949681628659517,
+          "oscillation_2p25": 6.8404636322590635
+        },
+        "elastic": {
+          "pulse_2p75": 42.71573769559336,
+          "oscillation_2p25": 6.28210618119023
+        }
+      }
+    },
+    "pulse_1p5": {
+      "decisions": {
+        "keep": 52,
+        "inconclusive": 1,
+        "edit": 1
+      },
+      "known_false_edit": {
+        "mean": 0.018518518518518517,
+        "ci95": [
+          0.0,
+          0.05555555555555555
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "known_inconclusive": {
+        "mean": 0.018518518518518517,
+        "ci95": [
+          0.0,
+          0.05555555555555555
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_of_library_forced_edit": null,
+      "out_of_library_inconclusive": null,
+      "E3_mean_abs_work_J": 1.4044404174119958,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 6.733466118321774,
+        "oscillation_2p25": 6.030652187972535
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 5.413496240207707,
+          "oscillation_2p25": 5.614201951989925
+        },
+        "rigid": {
+          "pulse_2p75": 6.719694740243278,
+          "oscillation_2p25": 6.291967878870002
+        },
+        "elastic": {
+          "pulse_2p75": 8.067207374514336,
+          "oscillation_2p25": 6.1857867330576815
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -7.337738364087212,
+        "ci95": [
+          -14.628257647060025,
+          -2.273413965638756
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      }
+    },
+    "pulse_2p25": {
+      "decisions": {
+        "keep": 51,
+        "inconclusive": 2,
+        "edit": 1
+      },
+      "known_false_edit": {
+        "mean": 0.018518518518518517,
+        "ci95": [
+          0.0,
+          0.05555555555555555
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "known_inconclusive": {
+        "mean": 0.037037037037037035,
+        "ci95": [
+          0.0,
+          0.09259259259259259
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_of_library_forced_edit": null,
+      "out_of_library_inconclusive": null,
+      "E3_mean_abs_work_J": 2.8556768948937554,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 6.58118957811065,
+        "oscillation_2p25": 5.950320391871365
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 5.45641013761421,
+          "oscillation_2p25": 5.62763831314811
+        },
+        "rigid": {
+          "pulse_2p75": 6.719694740243278,
+          "oscillation_2p25": 6.291967878870002
+        },
+        "elastic": {
+          "pulse_2p75": 7.567463856474458,
+          "oscillation_2p25": 5.9313549835959885
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -7.454042532243359,
+        "ci95": [
+          -14.489740949386839,
+          -2.3187931241951114
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      }
+    },
+    "sweep_2p25": {
+      "decisions": {
+        "keep": 48,
+        "inconclusive": 3,
+        "edit": 3
+      },
+      "known_false_edit": {
+        "mean": 0.05555555555555555,
+        "ci95": [
+          0.0,
+          0.1111111111111111
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "known_inconclusive": {
+        "mean": 0.05555555555555555,
+        "ci95": [
+          0.0,
+          0.1111111111111111
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_of_library_forced_edit": null,
+      "out_of_library_inconclusive": null,
+      "E3_mean_abs_work_J": 1.6871816990634965,
+      "E4_mean_rms_mm": {
+        "pulse_2p75": 9.996604356986913,
+        "oscillation_2p25": 6.139845141427018
+      },
+      "E4_by_truth_mm": {
+        "independent": {
+          "pulse_2p75": 6.767338555760916,
+          "oscillation_2p25": 5.700034684158221
+        },
+        "rigid": {
+          "pulse_2p75": 8.234254435202654,
+          "oscillation_2p25": 6.466153403468713
+        },
+        "elastic": {
+          "pulse_2p75": 14.988220079997165,
+          "oscillation_2p25": 6.253347336654125
+        }
+      },
+      "E4_paired_minus_early_mm": {
+        "mean": -5.6515727680274015,
+        "ci95": [
+          -12.72295478571312,
+          -0.5626479491267343
+        ],
+        "n_scenes": 18,
+        "n_episodes": 54
+      }
+    }
+  },
+  "physics": {
+    "max_passive_gap_m": 0.0,
+    "max_A_mode_gap_m_by_action": {
+      "e1": 0.002559158720702115,
+      "e2": 0.005135120425709433,
+      "oscillation_2p25": 0.007514791707177809,
+      "pulse_1p5": 0.015438457131101535,
+      "pulse_2p25": 0.024300623078246764,
+      "pulse_2p75": 0.031337103079120854,
+      "sweep_2p25": 0.015016601799959561
+    }
+  },
+  "limitations": [
+    "Saturating force is held out from the permitted model library.",
+    "E3 is fixed per arm; this is NOT adaptive action selection.",
+    "Weak E1/E2 was chosen after earlier development audits.",
+    "BIC uses correlated trajectory samples and is a heuristic.",
+    "E4 B predictions condition on observed E4 A.",
+    "Development only, not a final independent test.",
+    "Inconclusive is based on fitting residual and may fail on unseen laws."
+  ]
+}

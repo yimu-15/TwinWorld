@@ -1,0 +1,219 @@
+{
+  "protocol": "P3-A6H five-library six-truth audit",
+  "calibration_seed": 20261221,
+  "evaluation_seed": 20261222,
+  "n_calibration_scenes": 24,
+  "n_evaluation_scenes": 36,
+  "calibrated_cutoff_m": 0.01545081033388138,
+  "quantile": 0.95,
+  "calibrated_on": [
+    "independent",
+    "rigid",
+    "elastic",
+    "deadzone",
+    "nonlinear"
+  ],
+  "unknown_law": "saturating",
+  "candidate_laws": [
+    "independent",
+    "rigid",
+    "elastic",
+    "deadzone",
+    "cubic"
+  ],
+  "summary": {
+    "original": {
+      "independent": {
+        "n": 36,
+        "minimum_RMS_median_mm": 5.3541849435807585,
+        "outcomes": {
+          "wrong_law": 14,
+          "correct": 22
+        },
+        "decisions": {
+          "cubic": 6,
+          "deadzone": 3,
+          "elastic": 5,
+          "independent": 22
+        },
+        "all_optimizers_success": 36
+      },
+      "rigid": {
+        "n": 36,
+        "minimum_RMS_median_mm": 6.984160850765608,
+        "outcomes": {
+          "correct": 35,
+          "wrong_law": 1
+        },
+        "decisions": {
+          "rigid": 35,
+          "cubic": 1
+        },
+        "all_optimizers_success": 36
+      },
+      "elastic": {
+        "n": 36,
+        "minimum_RMS_median_mm": 6.175932830995936,
+        "outcomes": {
+          "correct": 18,
+          "wrong_law": 15,
+          "represented_false_reject": 3
+        },
+        "decisions": {
+          "elastic": 18,
+          "deadzone": 11,
+          "cubic": 4,
+          "unresolved": 3
+        },
+        "all_optimizers_success": 36
+      },
+      "deadzone": {
+        "n": 36,
+        "minimum_RMS_median_mm": 7.543133114691132,
+        "outcomes": {
+          "represented_false_reject": 1,
+          "correct": 34,
+          "wrong_law": 1
+        },
+        "decisions": {
+          "unresolved": 1,
+          "deadzone": 34,
+          "elastic": 1
+        },
+        "all_optimizers_success": 36
+      },
+      "nonlinear": {
+        "n": 36,
+        "minimum_RMS_median_mm": 10.29559617113586,
+        "outcomes": {
+          "wrong_law": 5,
+          "correct": 26,
+          "represented_false_reject": 5
+        },
+        "decisions": {
+          "deadzone": 5,
+          "cubic": 26,
+          "unresolved": 5
+        },
+        "all_optimizers_success": 36
+      },
+      "saturating": {
+        "n": 36,
+        "minimum_RMS_median_mm": 49.38936309760588,
+        "outcomes": {
+          "correct_reject": 36
+        },
+        "decisions": {
+          "unresolved": 36
+        },
+        "all_optimizers_success": 36
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "n": 36,
+        "minimum_RMS_median_mm": 5.3541849435807585,
+        "outcomes": {
+          "wrong_law": 14,
+          "correct": 22
+        },
+        "decisions": {
+          "cubic": 6,
+          "deadzone": 3,
+          "elastic": 5,
+          "independent": 22
+        },
+        "all_optimizers_success": 36
+      },
+      "rigid": {
+        "n": 36,
+        "minimum_RMS_median_mm": 6.984160850765608,
+        "outcomes": {
+          "correct": 35,
+          "wrong_law": 1
+        },
+        "decisions": {
+          "rigid": 35,
+          "cubic": 1
+        },
+        "all_optimizers_success": 36
+      },
+      "elastic": {
+        "n": 36,
+        "minimum_RMS_median_mm": 6.175932830995936,
+        "outcomes": {
+          "correct": 18,
+          "wrong_law": 15,
+          "represented_false_reject": 3
+        },
+        "decisions": {
+          "elastic": 18,
+          "deadzone": 11,
+          "cubic": 4,
+          "unresolved": 3
+        },
+        "all_optimizers_success": 36
+      },
+      "deadzone": {
+        "n": 36,
+        "minimum_RMS_median_mm": 8.008922248025632,
+        "outcomes": {
+          "wrong_law": 4,
+          "correct": 30,
+          "represented_false_reject": 2
+        },
+        "decisions": {
+          "cubic": 4,
+          "deadzone": 30,
+          "unresolved": 2
+        },
+        "all_optimizers_success": 36
+      },
+      "nonlinear": {
+        "n": 36,
+        "minimum_RMS_median_mm": 10.29559617113586,
+        "outcomes": {
+          "wrong_law": 5,
+          "correct": 26,
+          "represented_false_reject": 5
+        },
+        "decisions": {
+          "deadzone": 5,
+          "cubic": 26,
+          "unresolved": 5
+        },
+        "all_optimizers_success": 36
+      },
+      "saturating": {
+        "n": 36,
+        "minimum_RMS_median_mm": 49.38936309760588,
+        "outcomes": {
+          "correct_reject": 36
+        },
+        "decisions": {
+          "unresolved": 36
+        },
+        "all_optimizers_success": 36
+      }
+    }
+  },
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "27_p3a3b_evidence_vs_structure.py": "75296d8c807ba591347bedd77b57e9a129b8ff025b07768d99b90e6da52699a9"
+  },
+  "limitations": [
+    "Synthetic MuJoCo environments only.",
+    "Five modeled laws, one held-out law.",
+    "Weak and Strong are fixed experiments.",
+    "No adaptive action selection.",
+    "Strong data selects the final law but does not refit it.",
+    "The minimum among five heldout residuals is selection-optimistic.",
+    "Calibration uses the same selection rule on separate scenes.",
+    "Calibration Q95 does not guarantee uniform per-mode coverage.",
+    "B prediction is conditional on observed A.",
+    "Two gap bands share base scenes.",
+    "No E4 information is accessed.",
+    "No test threshold is optimized."
+  ]
+}

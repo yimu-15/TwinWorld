@@ -1,0 +1,753 @@
+{
+  "protocol": "P4-M2B2A matched-domain ablation",
+  "smoke": true,
+  "n_scenes": 1,
+  "scene_seed": 20390317,
+  "noise_seed": 2029131701,
+  "domains": [
+    "wide",
+    "outer_box",
+    "shared_mass"
+  ],
+  "solver": "SLSQP",
+  "maxiter_per_start": 150,
+  "starts_per_fit": 2,
+  "band_blind_gap_range": [
+    0.015,
+    0.18
+  ],
+  "summary": {
+    "original": {
+      "independent": {
+        "wide": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 4.998727131866912,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 4.953147435316698,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 5.002035830658944,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        },
+        "outer_box": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 86.42547226816227,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 27.6591023636842,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 124.2854772823527,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        },
+        "shared_mass": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 86.42547226816227,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 27.6591023636842,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 124.2854772823527,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        }
+      },
+      "rigid": {
+        "wide": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 16.690673248518372,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 17.5120236771259,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 16.66758085767863,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        },
+        "outer_box": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 61.99780244243496,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 76.4923289093256,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 54.13131431508777,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        },
+        "shared_mass": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 61.997802442434875,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 76.4923289093256,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 54.13131431508782,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        }
+      },
+      "elastic": {
+        "wide": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 8.240941748667025,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 8.43050786747495,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 6.665128353543723,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 0
+        },
+        "outer_box": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 8.240904612095076,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 8.79363881626846,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 6.45769442413121,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 0
+        },
+        "shared_mass": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 8.240904612095076,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 8.793656300206734,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 6.45769335323799,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 0
+        }
+      },
+      "deadzone": {
+        "wide": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 9.985296617768727,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 4.710476921257372,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 14.516879173799174,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        },
+        "outer_box": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 13.574802384167759,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 4.710485623612695,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 14.30451133123646,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        },
+        "shared_mass": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 13.574802615415157,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 4.709279141798047,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 14.304511331235934,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        }
+      },
+      "nonlinear": {
+        "wide": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 11.351062959057263,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 12.21266354887456,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 6.974251827388591,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        },
+        "outer_box": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 11.375008166689794,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 12.326940842992402,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 6.974242859322723,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        },
+        "shared_mass": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 11.607932208363183,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 12.326941447502067,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 6.974242859322723,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        }
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "wide": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 4.994654727211467,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 5.009681201521822,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 4.99438803882203,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        },
+        "outer_box": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 86.44872645843941,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 26.751471961218044,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 124.79182129420556,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        },
+        "shared_mass": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 86.44872645843941,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 26.751471961218044,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 124.79182129420556,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        }
+      },
+      "rigid": {
+        "wide": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 13.539843520400652,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 14.39176651093495,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 13.434513862295512,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        },
+        "outer_box": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 58.76247098568913,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 72.3762047016607,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 50.957693570336666,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        },
+        "shared_mass": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 58.76247098568909,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 72.3762047016607,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 50.957693570336666,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": null
+        }
+      },
+      "elastic": {
+        "wide": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 4.147368496050743,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 4.084386688717669,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 4.147546290395073,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 0
+        },
+        "outer_box": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 4.147373005087699,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 4.4907065219523945,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 6.37266305508161,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        },
+        "shared_mass": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 4.147373005087699,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 4.490691657176206,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 6.372664127892286,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        }
+      },
+      "deadzone": {
+        "wide": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 16.35663586094152,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 6.097052105705966,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 7.971487182866169,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        },
+        "outer_box": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 32.495491593450545,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 6.157947948602495,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 64.91132326489388,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        },
+        "shared_mass": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 32.495491593450545,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 6.157947190011775,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 64.91132326489388,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        }
+      },
+      "nonlinear": {
+        "wide": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 6.965647044247043,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 7.501549799420093,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 4.620176517766849,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        },
+        "outer_box": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 6.9656415456417315,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 7.644615354648537,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 4.620008625379086,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        },
+        "shared_mass": {
+          "candidates": {
+            "elastic": {
+              "n_valid": 1,
+              "median_mm": 7.080974705710433,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "deadzone": {
+              "n_valid": 1,
+              "median_mm": 7.64464800856645,
+              "failures": 0,
+              "nonconverged": 0
+            },
+            "cubic": {
+              "n_valid": 1,
+              "median_mm": 4.62000850640611,
+              "failures": 0,
+              "nonconverged": 0
+            }
+          },
+          "correct_winner_count": 1
+        }
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_threshold_tuning": false,
+  "independent_evaluation": false,
+  "source_sha256": {
+    "74_p4m2a_generator_inference_fidelity.py": "0bce3db21b7622ac2451fa0cb3f2fbaac177790461339b9b3ad1d70ab7bc801b",
+    "75_p4m2b0_physical_domain_fit_pilot.py": "f9ef52a5e5ac48c724e23c6dc84a54c76f589ba10cb8587560f51278c045b164",
+    "77_p4m2b2a_matched_domain_fit.py": "641be70d416fa8a6b27464446aef564304a339e488835a4fdf208cc6a0478d83"
+  },
+  "limitations": [
+    "Same previously examined development scenes",
+    "Finite local optimization",
+    "Success status is not a global certificate",
+    "Only Mid validation RMS",
+    "No calibrated candidate sets",
+    "No unknown mechanism evaluation",
+    "No mistaken-prior stress test",
+    "No independent generalization claim"
+  ]
+}

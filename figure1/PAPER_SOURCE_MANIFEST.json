@@ -1,0 +1,42 @@
+{
+  "audit_scope": "Read-only audit of TwinWorld_P0 experiments 1-110. No source/results/logs modified.",
+  "generated_at": "2026-11-16",
+  "project_root": "D:\\OnShouldersGiants\\TwinWorld_P0",
+  "source_hash_review": {
+    "status": "PARTIAL",
+    "note": "Only some P4 experiments carry source_manifest.json with full SHA256. P0/P1/P2/P3 experiments generally lack per-experiment source SHA manifests; top-level source_hashes.txt covers only 2 scripts. SHA256 of all 110 scripts was NOT independently recomputed in this audit (read-only, no modification).",
+    "top_level_source_hashes_txt": {
+      "path": "D:\\OnShouldersGiants\\TwinWorld_P0\\experiments\\p2d1\\source_hashes.txt",
+      "entries": [
+        {"algorithm": "SHA256", "hash": "05BC8C31F3D2811DC8D42A582FA8B90058475E51A638CC84EFC5A88EADD9C487", "path": "scripts\\10_p2a_three_mechanisms.py"},
+        {"algorithm": "SHA256", "hash": "C8237896434DAFC6D1AEE5081BB87BDBCCE43E0FD59092E1BCA327F9DEFBE5A6", "path": "scripts\\14_p2d0_probe_catalog.py"}
+      ]
+    }
+  },
+  "source_manifest_files_present": [
+    "experiments\\p2d1\\results\\p4b3c\\p4b3c_source_manifest.json",
+    "experiments\\p2d1\\results\\p4b2b\\p4b2b_source_manifest.json",
+    "experiments\\p2d1\\results\\p4g2c\\p4g2c_source_manifest.json",
+    "experiments\\p2d1\\results\\p4g2b\\p4g2b_source_manifest.json",
+    "experiments\\p2d1\\results\\p4g2a\\p4g2a_source_manifest.json",
+    "experiments\\p2d1\\results\\p4g1b\\p4g1b_source_manifest.json",
+    "experiments\\p2d1\\results\\p4b1b_v2\\p4b1b_v2_source_manifest.json",
+    "experiments\\p2d1\\results\\p4b1b\\p4b1b_source_manifest.json",
+    "experiments\\p2d1\\results\\p4s1b\\p4s1b_source_manifest.json"
+  ],
+  "report_embedded_source_sha256": {
+    "note": "P4 report JSONs (e.g. p4b3c, p4g2c, p4g1b) embed 'source_sha256' maps keyed by predecessor experiment codes (P98, P99, P103, R98, S98, SELF, etc.). These were reviewed but not independently recomputed.",
+    "example_p4b3c_SELF": "7867f1c50abd6e1fd86947f90c3428ede5357df2d7ce623eedcae19be090f20e"
+  },
+  "key_source_files": [
+    {"id": "twincore", "path": "scripts\\twincore.py", "role": "P0 CPU-only spring-damper coupled/independent simulator (RK1 Euler; NOT the RK4 used in P3/P4)."},
+    {"id": "generation_config", "path": "data\\generation_config.json", "role": "P0 dataset split/time-step/pulse config."},
+    {"id": "protocol_v1", "path": "docs\\PROTOCOL_V1.md", "role": "Frozen research protocol: promotion gates P0-P4, controls, primary metrics."}
+  ],
+  "critical_note": "P3/P4 experiments use their own embedded MuJoCo/RK4 physics generators with candidate laws (elastic/deadzone/cubic) and domains (wide/outer_box), NOT the P0 twincore.py. The later 'RK4' generator is a single implementation; its IDEAL and SHIFTED arms are two hypotheses of ONE engine, not two independent simulators.",
+  "reproducibility_flags": [
+    {"flag": "SHA_NOT_FULLY_RECOMPUTED", "detail": "This audit did not recompute SHA256 for all 110 scripts; treat per-file hash verification as a pre-submission TODO."},
+    {"flag": "PRIVATE_AUDIT_NOT_FULLY_PARSED", "detail": "Many *_audit_PRIVATE.json / *_PRIVATE.csv are present but were summarized at high level; per-row private counters were not exhaustively re-derived."},
+    {"flag": "E4_SEALED", "detail": "E4 was not accessed anywhere; no E4 final test executed (per constraints)."}
+  ]
+}

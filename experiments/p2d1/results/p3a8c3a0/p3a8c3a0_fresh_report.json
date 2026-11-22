@@ -1,0 +1,398 @@
+{
+  "protocol": "P3-A8C3A-0 action-ranking validity",
+  "smoke": false,
+  "source": "D:\\OnShouldersGiants\\TwinWorld_P0\\experiments\\p2d1\\results\\p3a8c2b\\p3a8c2b_fresh_audit_PRIVATE.json",
+  "prediction_methods": [
+    "old",
+    "affine"
+  ],
+  "preference_definition": "Truth-preservation, then set size; false singleton avoidance",
+  "results": {
+    "original": {
+      "known": {
+        "old": {
+          "metrics": {
+            "n": 354,
+            "comparable": 60,
+            "preference_coverage": 0.1694915254237288,
+            "concordance": 0.5333333333333333,
+            "spearman_rho": 0.06328727553177266,
+            "high_preferred": 20,
+            "reverse_preferred": 40,
+            "selected_high": 163,
+            "selected_reverse": 191,
+            "mean_selected_cost_J": 5.845509418650883,
+            "mean_fixed_high_cost_J": 6.300116702612504,
+            "mean_fixed_reverse_cost_J": 5.466676852359403
+          },
+          "bootstrap": {
+            "cluster_unit": "base_scene_id",
+            "n_clusters": 72,
+            "repetitions": 2000,
+            "concordance_95CI": [
+              0.41379310344827586,
+              0.6585625324338349
+            ],
+            "spearman_95CI": [
+              -0.18976545272012454,
+              0.31258169872394187
+            ],
+            "valid_concordance_draws": 2000,
+            "valid_spearman_draws": 2000
+          },
+          "margin_quartiles": [
+            {
+              "quartile": 1,
+              "n": 15,
+              "min_abs_margin": 0.00041407049127159534,
+              "max_abs_margin": 0.11014753680790546,
+              "concordance": 0.4666666666666667
+            },
+            {
+              "quartile": 2,
+              "n": 15,
+              "min_abs_margin": 0.11213418738573955,
+              "max_abs_margin": 0.47200824863121893,
+              "concordance": 0.6
+            },
+            {
+              "quartile": 3,
+              "n": 15,
+              "min_abs_margin": 0.5087264363671236,
+              "max_abs_margin": 2.694250336101533,
+              "concordance": 0.4666666666666667
+            },
+            {
+              "quartile": 4,
+              "n": 15,
+              "min_abs_margin": 2.6994975784224824,
+              "max_abs_margin": 23.33296377344753,
+              "concordance": 0.6
+            }
+          ]
+        },
+        "affine": {
+          "metrics": {
+            "n": 354,
+            "comparable": 60,
+            "preference_coverage": 0.1694915254237288,
+            "concordance": 0.5166666666666667,
+            "spearman_rho": 0.08574405072046618,
+            "high_preferred": 20,
+            "reverse_preferred": 40,
+            "selected_high": 181,
+            "selected_reverse": 173,
+            "mean_selected_cost_J": 5.900317832502567,
+            "mean_fixed_high_cost_J": 6.300116702612504,
+            "mean_fixed_reverse_cost_J": 5.466676852359403
+          },
+          "bootstrap": {
+            "cluster_unit": "base_scene_id",
+            "n_clusters": 72,
+            "repetitions": 2000,
+            "concordance_95CI": [
+              0.40297989220563846,
+              0.6346153846153846
+            ],
+            "spearman_95CI": [
+              -0.16433802810196613,
+              0.3308373120111198
+            ],
+            "valid_concordance_draws": 2000,
+            "valid_spearman_draws": 2000
+          },
+          "margin_quartiles": [
+            {
+              "quartile": 1,
+              "n": 15,
+              "min_abs_margin": 0.00040332188004743585,
+              "max_abs_margin": 0.01963529560619337,
+              "concordance": 0.4666666666666667
+            },
+            {
+              "quartile": 2,
+              "n": 15,
+              "min_abs_margin": 0.01998353844012879,
+              "max_abs_margin": 0.07416054311668141,
+              "concordance": 0.3333333333333333
+            },
+            {
+              "quartile": 3,
+              "n": 15,
+              "min_abs_margin": 0.07542567656208687,
+              "max_abs_margin": 0.12214293565554435,
+              "concordance": 0.5333333333333333
+            },
+            {
+              "quartile": 4,
+              "n": 15,
+              "min_abs_margin": 0.13115809136413903,
+              "max_abs_margin": 0.653937355579636,
+              "concordance": 0.7333333333333333
+            }
+          ]
+        }
+      },
+      "unknown": {
+        "old": {
+          "metrics": {
+            "n": 71,
+            "comparable": 1,
+            "preference_coverage": 0.014084507042253521,
+            "concordance": 0.0,
+            "spearman_rho": null,
+            "high_preferred": 0,
+            "reverse_preferred": 1,
+            "selected_high": 38,
+            "selected_reverse": 33,
+            "mean_selected_cost_J": 4.189282201904523,
+            "mean_fixed_high_cost_J": 4.4481062113681356,
+            "mean_fixed_reverse_cost_J": 3.8896049783758126
+          },
+          "bootstrap": {
+            "cluster_unit": "base_scene_id",
+            "n_clusters": 71,
+            "repetitions": 2000,
+            "concordance_95CI": [
+              0.0,
+              0.0
+            ],
+            "spearman_95CI": null,
+            "valid_concordance_draws": 1241,
+            "valid_spearman_draws": 0
+          },
+          "margin_quartiles": []
+        },
+        "affine": {
+          "metrics": {
+            "n": 71,
+            "comparable": 1,
+            "preference_coverage": 0.014084507042253521,
+            "concordance": 1.0,
+            "spearman_rho": null,
+            "high_preferred": 0,
+            "reverse_preferred": 1,
+            "selected_high": 26,
+            "selected_reverse": 45,
+            "mean_selected_cost_J": 4.084995311150525,
+            "mean_fixed_high_cost_J": 4.4481062113681356,
+            "mean_fixed_reverse_cost_J": 3.8896049783758126
+          },
+          "bootstrap": {
+            "cluster_unit": "base_scene_id",
+            "n_clusters": 71,
+            "repetitions": 2000,
+            "concordance_95CI": [
+              1.0,
+              1.0
+            ],
+            "spearman_95CI": null,
+            "valid_concordance_draws": 1282,
+            "valid_spearman_draws": 0
+          },
+          "margin_quartiles": []
+        }
+      }
+    },
+    "above_original_range": {
+      "known": {
+        "old": {
+          "metrics": {
+            "n": 354,
+            "comparable": 39,
+            "preference_coverage": 0.11016949152542373,
+            "concordance": 0.48717948717948717,
+            "spearman_rho": 0.004832929711058025,
+            "high_preferred": 13,
+            "reverse_preferred": 26,
+            "selected_high": 193,
+            "selected_reverse": 161,
+            "mean_selected_cost_J": 5.817082803363513,
+            "mean_fixed_high_cost_J": 6.202605856493739,
+            "mean_fixed_reverse_cost_J": 5.371577427876308
+          },
+          "bootstrap": {
+            "cluster_unit": "base_scene_id",
+            "n_clusters": 72,
+            "repetitions": 2000,
+            "concordance_95CI": [
+              0.34146341463414637,
+              0.6470985691573925
+            ],
+            "spearman_95CI": [
+              -0.28019337248355336,
+              0.2888931997268653
+            ],
+            "valid_concordance_draws": 2000,
+            "valid_spearman_draws": 2000
+          },
+          "margin_quartiles": [
+            {
+              "quartile": 1,
+              "n": 10,
+              "min_abs_margin": 0.0021862049260276406,
+              "max_abs_margin": 0.17682811004833976,
+              "concordance": 0.5
+            },
+            {
+              "quartile": 2,
+              "n": 10,
+              "min_abs_margin": 0.19682325830761638,
+              "max_abs_margin": 0.681238134187701,
+              "concordance": 0.4
+            },
+            {
+              "quartile": 3,
+              "n": 10,
+              "min_abs_margin": 0.7187861860671716,
+              "max_abs_margin": 2.2551596654485344,
+              "concordance": 0.5
+            },
+            {
+              "quartile": 4,
+              "n": 9,
+              "min_abs_margin": 3.101880577414396,
+              "max_abs_margin": 13.605857480863822,
+              "concordance": 0.5555555555555556
+            }
+          ]
+        },
+        "affine": {
+          "metrics": {
+            "n": 354,
+            "comparable": 39,
+            "preference_coverage": 0.11016949152542373,
+            "concordance": 0.5897435897435898,
+            "spearman_rho": 0.10632445364327656,
+            "high_preferred": 13,
+            "reverse_preferred": 26,
+            "selected_high": 193,
+            "selected_reverse": 161,
+            "mean_selected_cost_J": 5.842850967178585,
+            "mean_fixed_high_cost_J": 6.202605856493739,
+            "mean_fixed_reverse_cost_J": 5.371577427876308
+          },
+          "bootstrap": {
+            "cluster_unit": "base_scene_id",
+            "n_clusters": 72,
+            "repetitions": 2000,
+            "concordance_95CI": [
+              0.454491341991342,
+              0.7333823529411762
+            ],
+            "spearman_95CI": [
+              -0.20518005211800083,
+              0.404980172997076
+            ],
+            "valid_concordance_draws": 2000,
+            "valid_spearman_draws": 2000
+          },
+          "margin_quartiles": [
+            {
+              "quartile": 1,
+              "n": 10,
+              "min_abs_margin": 0.00024220498759849884,
+              "max_abs_margin": 0.017956888691226247,
+              "concordance": 0.6
+            },
+            {
+              "quartile": 2,
+              "n": 10,
+              "min_abs_margin": 0.019920194411715553,
+              "max_abs_margin": 0.07495931449294613,
+              "concordance": 0.4
+            },
+            {
+              "quartile": 3,
+              "n": 10,
+              "min_abs_margin": 0.08168907266388326,
+              "max_abs_margin": 0.15056380738873631,
+              "concordance": 0.7
+            },
+            {
+              "quartile": 4,
+              "n": 9,
+              "min_abs_margin": 0.19402056060869222,
+              "max_abs_margin": 0.37074067279956324,
+              "concordance": 0.6666666666666666
+            }
+          ]
+        }
+      },
+      "unknown": {
+        "old": {
+          "metrics": {
+            "n": 64,
+            "comparable": 1,
+            "preference_coverage": 0.015625,
+            "concordance": 0.0,
+            "spearman_rho": null,
+            "high_preferred": 1,
+            "reverse_preferred": 0,
+            "selected_high": 34,
+            "selected_reverse": 30,
+            "mean_selected_cost_J": 4.223073923222726,
+            "mean_fixed_high_cost_J": 4.472458112032099,
+            "mean_fixed_reverse_cost_J": 3.91525703950409
+          },
+          "bootstrap": {
+            "cluster_unit": "base_scene_id",
+            "n_clusters": 64,
+            "repetitions": 2000,
+            "concordance_95CI": [
+              0.0,
+              0.0
+            ],
+            "spearman_95CI": null,
+            "valid_concordance_draws": 1307,
+            "valid_spearman_draws": 0
+          },
+          "margin_quartiles": []
+        },
+        "affine": {
+          "metrics": {
+            "n": 64,
+            "comparable": 1,
+            "preference_coverage": 0.015625,
+            "concordance": 0.0,
+            "spearman_rho": null,
+            "high_preferred": 1,
+            "reverse_preferred": 0,
+            "selected_high": 19,
+            "selected_reverse": 45,
+            "mean_selected_cost_J": 4.087211745057065,
+            "mean_fixed_high_cost_J": 4.472458112032099,
+            "mean_fixed_reverse_cost_J": 3.91525703950409
+          },
+          "bootstrap": {
+            "cluster_unit": "base_scene_id",
+            "n_clusters": 64,
+            "repetitions": 2000,
+            "concordance_95CI": [
+              0.0,
+              0.0
+            ],
+            "spearman_95CI": null,
+            "valid_concordance_draws": 1269,
+            "valid_spearman_draws": 0
+          },
+          "margin_quartiles": []
+        }
+      }
+    }
+  },
+  "new_simulations": 0,
+  "new_model_fits": 0,
+  "historical_thresholds_changed": false,
+  "E4_accessed": false,
+  "limitations": [
+    "Retrospective diagnostic",
+    "Preferences use private truth",
+    "Preference is not a complete utility",
+    "No independent confirmation",
+    "No online policy modification",
+    "Shared scenes across mechanisms",
+    "Cost excluded from preference",
+    "No guarantee of decision calibration"
+  ]
+}

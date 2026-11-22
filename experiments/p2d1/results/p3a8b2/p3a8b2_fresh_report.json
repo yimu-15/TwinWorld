@@ -1,0 +1,282 @@
+{
+  "protocol": "P3-A8B2 forecast-to-decision transfer",
+  "smoke": false,
+  "n_base_scenes": 36,
+  "test_seed": 20271222,
+  "noise_seed": 2027122201,
+  "calibration_reused_from": "P3-A8B0 formal report",
+  "same_model_fits": true,
+  "same_candidate_thresholds": true,
+  "same_disagreement_score": true,
+  "online_A_predictor": "Five historical actions; affine gain-response",
+  "summary": {
+    "original": {
+      "policies": {
+        "mid_only": {
+          "known_correct_singleton": 30,
+          "known_wrong_singleton": 1,
+          "known_contains_true": 159,
+          "unknown_empty": 6,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "None": 216
+          },
+          "cost_J": 753.9303591263366,
+          "saving_vs_always_high": 0.42960676957442745
+        },
+        "always_reverse": {
+          "known_correct_singleton": 32,
+          "known_wrong_singleton": 1,
+          "known_contains_true": 157,
+          "unknown_empty": 6,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "reverse": 216
+          },
+          "cost_J": 901.3805267685868,
+          "saving_vs_always_high": 0.3180519337329358
+        },
+        "always_high": {
+          "known_correct_singleton": 85,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 157,
+          "unknown_empty": 35,
+          "unknown_false_singleton": 1,
+          "actions": {
+            "high": 216
+          },
+          "cost_J": 1321.7729785534557,
+          "saving_vs_always_high": 0.0
+        },
+        "random_action": {
+          "known_correct_singleton": 58,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 157,
+          "unknown_empty": 22,
+          "unknown_false_singleton": 1,
+          "actions": {
+            "reverse": 90,
+            "high": 107,
+            "None": 19
+          },
+          "cost_J": 1092.9275697048636,
+          "saving_vs_always_high": 0.17313518475694656
+        },
+        "old_planner": {
+          "known_correct_singleton": 79,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 157,
+          "unknown_empty": 28,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "high": 175,
+            "reverse": 22,
+            "None": 19
+          },
+          "cost_J": 1238.5596211633347,
+          "saving_vs_always_high": 0.06295586211876525
+        },
+        "affine_planner": {
+          "known_correct_singleton": 85,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 157,
+          "unknown_empty": 30,
+          "unknown_false_singleton": 1,
+          "actions": {
+            "reverse": 9,
+            "high": 188,
+            "None": 19
+          },
+          "cost_J": 1263.0834966504497,
+          "saving_vs_always_high": 0.044402089356703006
+        },
+        "affine_cost_planner": {
+          "known_correct_singleton": 81,
+          "known_wrong_singleton": 1,
+          "known_contains_true": 157,
+          "unknown_empty": 20,
+          "unknown_false_singleton": 1,
+          "actions": {
+            "reverse": 53,
+            "high": 144,
+            "None": 19
+          },
+          "cost_J": 1190.72753311178,
+          "saving_vs_always_high": 0.0991436862214352
+        }
+      },
+      "eligible_action_cases": 197,
+      "old_affine_action_changes": 23,
+      "actual_A_ranking_agreement_PRIVATE": {
+        "old": {
+          "match_count": 172,
+          "n": 197
+        },
+        "affine": {
+          "match_count": 193,
+          "n": 197
+        }
+      },
+      "A_forecast_diagnostic_PRIVATE": {
+        "reverse": {
+          "n": 197,
+          "median_mm": 7.030383391366788,
+          "p90_mm": 14.352581734028133
+        },
+        "high": {
+          "n": 197,
+          "median_mm": 5.8561768336766145,
+          "p90_mm": 11.250589183424722
+        }
+      }
+    },
+    "above_original_range": {
+      "policies": {
+        "mid_only": {
+          "known_correct_singleton": 33,
+          "known_wrong_singleton": 5,
+          "known_contains_true": 169,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 3,
+          "actions": {
+            "None": 216
+          },
+          "cost_J": 739.2526536790953,
+          "saving_vs_always_high": 0.43252257628950097
+        },
+        "always_reverse": {
+          "known_correct_singleton": 37,
+          "known_wrong_singleton": 7,
+          "known_contains_true": 165,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 5,
+          "actions": {
+            "reverse": 216
+          },
+          "cost_J": 883.7776970371739,
+          "saving_vs_always_high": 0.3215798575067928
+        },
+        "always_high": {
+          "known_correct_singleton": 87,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 163,
+          "unknown_empty": 36,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "high": 216
+          },
+          "cost_J": 1302.6996719013584,
+          "saving_vs_always_high": 0.0
+        },
+        "random_action": {
+          "known_correct_singleton": 65,
+          "known_wrong_singleton": 4,
+          "known_contains_true": 163,
+          "unknown_empty": 20,
+          "unknown_false_singleton": 2,
+          "actions": {
+            "reverse": 100,
+            "high": 111,
+            "None": 5
+          },
+          "cost_J": 1094.8548761287507,
+          "saving_vs_always_high": 0.15954928081715672
+        },
+        "old_planner": {
+          "known_correct_singleton": 81,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 161,
+          "unknown_empty": 31,
+          "unknown_false_singleton": 1,
+          "actions": {
+            "high": 183,
+            "reverse": 28,
+            "None": 5
+          },
+          "cost_J": 1243.4263170573158,
+          "saving_vs_always_high": 0.045500398996439484
+        },
+        "affine_planner": {
+          "known_correct_singleton": 87,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 163,
+          "unknown_empty": 31,
+          "unknown_false_singleton": 0,
+          "actions": {
+            "high": 203,
+            "reverse": 8,
+            "None": 5
+          },
+          "cost_J": 1279.56667039865,
+          "saving_vs_always_high": 0.017757739563213762
+        },
+        "affine_cost_planner": {
+          "known_correct_singleton": 87,
+          "known_wrong_singleton": 0,
+          "known_contains_true": 164,
+          "unknown_empty": 20,
+          "unknown_false_singleton": 2,
+          "actions": {
+            "high": 155,
+            "reverse": 56,
+            "None": 5
+          },
+          "cost_J": 1196.564615270973,
+          "saving_vs_always_high": 0.08147315833393566
+        }
+      },
+      "eligible_action_cases": 211,
+      "old_affine_action_changes": 32,
+      "actual_A_ranking_agreement_PRIVATE": {
+        "old": {
+          "match_count": 179,
+          "n": 211
+        },
+        "affine": {
+          "match_count": 203,
+          "n": 211
+        }
+      },
+      "A_forecast_diagnostic_PRIVATE": {
+        "reverse": {
+          "n": 211,
+          "median_mm": 7.480799444260309,
+          "p90_mm": 15.961146873751403
+        },
+        "high": {
+          "n": 211,
+          "median_mm": 5.38527799727039,
+          "p90_mm": 11.173352074334833
+        }
+      }
+    }
+  },
+  "online_uses_future_A": false,
+  "online_uses_future_B": false,
+  "online_uses_truth": false,
+  "actual_A_ranking_is_private": true,
+  "E4_accessed": false,
+  "test_tuning": false,
+  "limitations": [
+    "One fixed pulse action family",
+    "Only Reverse and High choices",
+    "Five historical probes already paid",
+    "Future A prediction is approximate",
+    "B initial state uses Weak probe",
+    "Point estimates for structural laws",
+    "No parametric uncertainty propagation",
+    "Actual-A score ranking is not a structural identification oracle",
+    "Counterfactual actions simulated",
+    "Only selected actions charged",
+    "Mechanical work is a proxy",
+    "One held-out Saturating family",
+    "Gap bands share base physics",
+    "MuJoCo positions only; no RGB",
+    "No real-robot validation"
+  ],
+  "source_sha256": {
+    "60_p3a7e1_action_family_pilot.py": "8d06decb3779cf4b8c22cf5e87a23ae4cd739a4161e6ab7f8eb1fb57461e8c14",
+    "64_p3a8b0_preaction_disagreement_pilot.py": "2a3c7ba0e1f18c605a38b746960b9705fc2a7acd1c8f73506787ea20675b1e1d",
+    "65_p3a8b1_observable_A_response_audit.py": "c882fe225e14d6705503993d62ab1851826a79c5e4e1a57392fda826b72b9698"
+  }
+}

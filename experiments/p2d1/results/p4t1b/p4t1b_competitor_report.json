@@ -1,0 +1,233 @@
+{
+  "protocol": "P4-T1B: immutable P88/P90 competitor and scale-sensitive margin audit",
+  "smoke": false,
+  "n_p88": 384,
+  "n_p90_nonlinear_m2": 96,
+  "full_immutable_decisions_checked": {
+    "cells": 9216,
+    "available": 9211,
+    "unavailable": 5
+  },
+  "source_sha256": {
+    "R94": "cfea81f1da0b07e87968b5a1fe2851cadf18d59f5f629966b54e93552d122643",
+    "A94": "9f98a875f6b31561fb45e40caa4ae213527c53f46fb18114d3827dcfb321e538",
+    "R88": "cdb0ac7dd258b9a4ed18e2a7b793428d983a4218d944d0eef7fd66f36a56ca71",
+    "A88": "3340fdf95f66c0a8f651831e527fa313e22ea1a6d6910c0d6e74fd3264bb95f4",
+    "R89": "c7b5217cdd4b6d6db3b75f812308391c93c249b3f7eb1801f002483bf3277f71",
+    "R90": "86b3ae545a78b2853a63266536037636edf2762f89eecbcfdc25e12cce72b0c0",
+    "A90": "9e23958d1d9315379b963e5ac246af1f0f3c772057ee140b7e391836911a3048",
+    "R93": "360a7eed52278309abcf206845089e156ec8d921e3fb4f22dba1708cd529aeba"
+  },
+  "self_sha256": "c1d676c52711114da27b4051ef509b8baa8fc5be8597802331a89befb01251f0",
+  "E4_accessed": false,
+  "new_fits": 0,
+  "new_simulations": 0,
+  "new_actions": 0,
+  "threshold_tuning": false,
+  "truth_used_for_fit_or_selection": false,
+  "different_cohorts_not_pooled": true,
+  "posthoc_exploratory_not_predeclared": true,
+  "limitations": [
+    "Truth-conditioned margins are retrospective diagnostics, not operational agent scores",
+    "Mean-margins and correctness are distinct statistics; neither implies the other's sign",
+    "Relative margin is scale-free only for a common multiplicative scaling of all candidate losses",
+    "The Full and Half trajectories need not be related by simple physical scaling",
+    "A positive relative-margin shift is not a proof of action information gain or structural identifiability",
+    "No noise covariance / Bayesian error probability is estimated",
+    "P88/P90 independent scenes are separate cohorts and cannot be pooled for causal inference",
+    "No optimizer-independent or hardware generalization claim"
+  ],
+  "P88": {
+    "n": 384,
+    "binary_interaction_sum": 32,
+    "binary_interaction_pp": 8.333333333333334,
+    "J_mm2": {
+      "n": 384,
+      "mean": -48.48952195247898,
+      "median": 0.0,
+      "positive": 161,
+      "negative": 166,
+      "near_zero": 57
+    },
+    "J_scene_cluster_mean_CI95_exploratory": [
+      -103.07718085678492,
+      2.0912012103531112
+    ],
+    "by_mode_PRIVATE": {
+      "elastic": {
+        "n": 96,
+        "binary_interaction_sum": -3,
+        "J_mm2": {
+          "n": 96,
+          "mean": 16.64192591086265,
+          "median": 8.130661494298863e-05,
+          "positive": 61,
+          "negative": 35,
+          "near_zero": 0
+        },
+        "OOO_mid_correct": 19,
+        "WOO_mid_correct": 45,
+        "OOO_joint_correct": 41,
+        "WOO_joint_correct": 64,
+        "correctness_patterns_OM_WM_OJ_WJ": {
+          "0000": 16,
+          "0001": 7,
+          "0010": 1,
+          "0011": 25,
+          "0100": 7,
+          "0101": 17,
+          "0111": 4,
+          "1000": 2,
+          "1100": 6,
+          "1111": 11
+        }
+      },
+      "deadzone": {
+        "n": 144,
+        "binary_interaction_sum": 1,
+        "J_mm2": {
+          "n": 144,
+          "mean": 284.7462300179848,
+          "median": 42.54410325773985,
+          "positive": 90,
+          "negative": 14,
+          "near_zero": 40
+        },
+        "OOO_mid_correct": 140,
+        "WOO_mid_correct": 139,
+        "OOO_joint_correct": 139,
+        "WOO_joint_correct": 139,
+        "correctness_patterns_OM_WM_OJ_WJ": {
+          "0000": 2,
+          "0011": 2,
+          "1011": 1,
+          "1100": 3,
+          "1111": 136
+        }
+      },
+      "nonlinear": {
+        "n": 144,
+        "binary_interaction_sum": 34,
+        "J_mm2": {
+          "n": 144,
+          "mean": -425.1462391651705,
+          "median": -334.37476050151423,
+          "positive": 10,
+          "negative": 117,
+          "near_zero": 17
+        },
+        "OOO_mid_correct": 118,
+        "WOO_mid_correct": 76,
+        "OOO_joint_correct": 143,
+        "WOO_joint_correct": 135,
+        "correctness_patterns_OM_WM_OJ_WJ": {
+          "0000": 1,
+          "0011": 24,
+          "0111": 1,
+          "1010": 5,
+          "1011": 38,
+          "1110": 3,
+          "1111": 72
+        }
+      }
+    },
+    "pattern_bit_order": "OOO-MID,WOO-MID,OOO-MID_PLUS_HIGH,WOO-MID_PLUS_HIGH",
+    "only_elastic_candidate_differs_between_OOO_and_WOO": true
+  },
+  "P90_nonlinear_M2": {
+    "n": 96,
+    "half_correct": 68,
+    "full_correct": 87,
+    "paired_status": {
+      "both_correct": 59,
+      "corrected_by_full": 28,
+      "harmed_by_full": 9,
+      "both_wrong": 0
+    },
+    "delta_gamma_mm2": {
+      "n": 96,
+      "mean": 379.4008507025824,
+      "median": 185.9648477670113,
+      "positive": 79,
+      "negative": 17,
+      "near_zero": 0
+    },
+    "delta_relative_margin": {
+      "n": 96,
+      "mean": 0.305039639625911,
+      "median": 0.33189966367136076,
+      "positive": 79,
+      "negative": 17,
+      "near_zero": 0
+    },
+    "delta_relative_margin_mean_scene_cluster_CI95_exploratory": [
+      0.22296139172319177,
+      0.3825181906896229
+    ],
+    "delta_best_wrong_model_loss_mm2": {
+      "n": 96,
+      "mean": 386.0026014639622,
+      "median": 189.07132657812417,
+      "positive": 80,
+      "negative": 16,
+      "near_zero": 0
+    },
+    "delta_true_model_loss_mm2": {
+      "n": 96,
+      "mean": 6.601750761379891,
+      "median": 3.7530031597566307,
+      "positive": 57,
+      "negative": 39,
+      "near_zero": 0
+    },
+    "best_wrong_rival_switches_PRIVATE": {
+      "deadzone->elastic": 18,
+      "elastic->elastic": 78
+    },
+    "by_axis_PRIVATE": {
+      "alpha_high": {
+        "n": 48,
+        "half_correct": 22,
+        "full_correct": 39,
+        "delta_gamma_mm2": {
+          "n": 48,
+          "mean": 70.91838112827179,
+          "median": 50.31408583579801,
+          "positive": 32,
+          "negative": 16,
+          "near_zero": 0
+        },
+        "delta_relative_margin": {
+          "n": 48,
+          "mean": 0.2584526363483421,
+          "median": 0.3576964425193895,
+          "positive": 31,
+          "negative": 17,
+          "near_zero": 0
+        }
+      },
+      "gamma_high": {
+        "n": 48,
+        "half_correct": 46,
+        "full_correct": 48,
+        "delta_gamma_mm2": {
+          "n": 48,
+          "mean": 687.883320276893,
+          "median": 717.1185718901388,
+          "positive": 47,
+          "negative": 1,
+          "near_zero": 0
+        },
+        "delta_relative_margin": {
+          "n": 48,
+          "mean": 0.35162664290347995,
+          "median": 0.2971980258938528,
+          "positive": 48,
+          "negative": 0,
+          "near_zero": 0
+        }
+      }
+    },
+    "relative_margin_definition": "(L_best_wrong - L_truth)/(L_best_wrong + L_truth), dimensionless; scale-invariant only under common loss multiplier"
+  }
+}

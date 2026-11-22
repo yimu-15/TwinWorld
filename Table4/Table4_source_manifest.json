@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "generated_on": "2026-11-20",
+  "table_id": "Table 4",
+  "title": "Classical mechanism-identification baselines (#106)",
+  "authoritative_table_snapshot": {
+    "file_name": "Table4_data.json",
+    "source_csv_name": "table4_classical_baselines.csv",
+    "source_csv_sha256": "3bc9a3609701b71ba6d8ae87570f394845a032622a554ae61059c637b5ae2a55",
+    "data_rows": 3
+  },
+  "audit_approach": "Field-level paths cross-checked against accessible original report JSONs, subject to display rounding; no source files modified or experimental results regenerated.",
+  "source_documents": [
+    {
+      "id": "p4b2b_fresh_report(1).json",
+      "file_name": "p4b2b_fresh_report(1).json",
+      "type": "formal_report",
+      "purpose": "#106 fresh per-method performance, paired effects and compute cost",
+      "available_in_this_session": true,
+      "sha256": "75323e551e247225cd3dcd11ec5abc8ed80070302c2531e7879e1e46084aa523",
+      "original_project_path_reported": "results/p4b2b/p4b2b_fresh_report.json"
+    },
+    {
+      "id": "p4b2b_384case_results.csv",
+      "file_name": "p4b2b_384case_results.csv",
+      "type": "case_level",
+      "purpose": "#106 384-case correctness and cluster identifiers",
+      "available_in_this_session": true,
+      "sha256": "7931ccb7c54efe4df7464267ed02276c2a0612d239119dfbe3f158687e686118"
+    },
+    {
+      "id": "106_p4b2b_fresh_classical_identification_comparison(2).py",
+      "file_name": "106_p4b2b_fresh_classical_identification_comparison(2).py",
+      "type": "source_code",
+      "purpose": "Executable source for #106",
+      "available_in_this_session": true,
+      "sha256": "4c11b297370fc05e70d470ee98b1b66b315940444fc5e3bca69ef0438b149e72"
+    }
+  ],
+  "row_provenance": [
+    {
+      "table_row_index": 1,
+      "experiment": "#106 / P4-B2B",
+      "source_id": "p4b2b_fresh_report(1).json",
+      "source_paths": [
+        "/classification/EQERR_SG/WOO/MID_PLUS_FULL",
+        "/primary_and_secondary/PRIMARY_EQERR_MINUS_SLSQP_WOO_FULL"
+      ],
+      "verification": "matched_report_rounded"
+    },
+    {
+      "table_row_index": 2,
+      "experiment": "#106 / P4-B2B",
+      "source_id": "p4b2b_fresh_report(1).json",
+      "source_paths": [
+        "/classification/TRF_OUT/WOO/MID_PLUS_FULL",
+        "/primary_and_secondary/SECONDARY_TRF_MINUS_SLSQP_WOO_FULL"
+      ],
+      "verification": "matched_report_rounded"
+    },
+    {
+      "table_row_index": 3,
+      "experiment": "#106 / P4-B2B",
+      "source_id": "p4b2b_fresh_report(1).json",
+      "source_paths": [
+        "/classification/SLSQP_MATCHED5_REFERENCE/WOO/MID_PLUS_FULL"
+      ],
+      "verification": "matched_reference_no_pair_effect"
+    }
+  ],
+  "scientific_boundaries": [
+    "EQERR grid/regression evaluations, TRF residual calls, and SLSQP objective calls are not equivalent compute units.",
+    "Accuracy is correct mechanism selection rather than optimizer convergence.",
+    "24 independent base-scene clusters, 384 decisions per condition, 2000 paired bootstrap resamples."
+  ],
+  "issues_requiring_author_attention": []
+}

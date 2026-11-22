@@ -1,0 +1,190 @@
+{
+  "protocol": "P4-M2C2C solver-corrected decision-risk audit",
+  "smoke": false,
+  "development_only": true,
+  "n_rows": 432,
+  "n_target_repairs": 21,
+  "summary": {
+    "all_432": {
+      "n": 432,
+      "repaired_cases": 21,
+      "wide_correct_before": 268,
+      "wide_correct_after": 269,
+      "outer_correct": 333,
+      "rescue_before": 83,
+      "rescue_after": 82,
+      "harm_before": 18,
+      "harm_after": 18,
+      "delta_outer_minus_wide_before": 0.15046296296296297,
+      "delta_outer_minus_wide_after": 0.14814814814814814,
+      "auroc_conflict_to_harm_before": 0.6329844337090714,
+      "auroc_conflict_to_harm_after": 0.6299651100375738,
+      "cluster_bootstrap": {
+        "cluster_unit": "scene_id",
+        "n_clusters": 12,
+        "n_bootstrap": 2000,
+        "wide_accuracy_change_95CI": [
+          0.0,
+          0.006944444444444444
+        ]
+      }
+    },
+    "mismatch_360": {
+      "n": 360,
+      "repaired_cases": 10,
+      "wide_correct_before": 225,
+      "wide_correct_after": 226,
+      "outer_correct": 291,
+      "rescue_before": 80,
+      "rescue_after": 79,
+      "harm_before": 14,
+      "harm_after": 14,
+      "delta_outer_minus_wide_before": 0.18333333333333332,
+      "delta_outer_minus_wide_after": 0.18055555555555555,
+      "auroc_conflict_to_harm_before": 0.7074731626754748,
+      "auroc_conflict_to_harm_after": 0.7056151940545005,
+      "cluster_bootstrap": {
+        "cluster_unit": "scene_id",
+        "n_clusters": 12,
+        "n_bootstrap": 2000,
+        "wide_accuracy_change_95CI": [
+          0.0,
+          0.008333333333333333
+        ]
+      }
+    },
+    "matched_72": {
+      "n": 72,
+      "repaired_cases": 11,
+      "wide_correct_before": 43,
+      "wide_correct_after": 43,
+      "outer_correct": 42,
+      "rescue_before": 3,
+      "rescue_after": 3,
+      "harm_before": 4,
+      "harm_after": 4,
+      "delta_outer_minus_wide_before": -0.013888888888888888,
+      "delta_outer_minus_wide_after": -0.013888888888888888,
+      "auroc_conflict_to_harm_before": 0.4485294117647059,
+      "auroc_conflict_to_harm_after": 0.4338235294117647
+    },
+    "repaired_21": {
+      "n": 21,
+      "repaired_cases": 21,
+      "wide_correct_before": 16,
+      "wide_correct_after": 17,
+      "outer_correct": 20,
+      "rescue_before": 5,
+      "rescue_after": 4,
+      "harm_before": 1,
+      "harm_after": 1,
+      "delta_outer_minus_wide_before": 0.19047619047619047,
+      "delta_outer_minus_wide_after": 0.14285714285714285,
+      "auroc_conflict_to_harm_before": 0.5,
+      "auroc_conflict_to_harm_after": 0.1
+    },
+    "by_band": {
+      "original": {
+        "n": 216,
+        "repaired_cases": 6,
+        "wide_correct_before": 136,
+        "wide_correct_after": 136,
+        "outer_correct": 160,
+        "rescue_before": 37,
+        "rescue_after": 37,
+        "harm_before": 13,
+        "harm_after": 13,
+        "delta_outer_minus_wide_before": 0.1111111111111111,
+        "delta_outer_minus_wide_after": 0.1111111111111111,
+        "auroc_conflict_to_harm_before": 0.6040166729821902,
+        "auroc_conflict_to_harm_after": 0.6026904130352406
+      },
+      "above_original_range": {
+        "n": 216,
+        "repaired_cases": 15,
+        "wide_correct_before": 132,
+        "wide_correct_after": 133,
+        "outer_correct": 173,
+        "rescue_before": 46,
+        "rescue_after": 45,
+        "harm_before": 5,
+        "harm_after": 5,
+        "delta_outer_minus_wide_before": 0.18981481481481483,
+        "delta_outer_minus_wide_after": 0.18518518518518517,
+        "auroc_conflict_to_harm_before": 0.7014218009478673,
+        "auroc_conflict_to_harm_after": 0.7014218009478673
+      }
+    },
+    "by_mode": {
+      "elastic": {
+        "n": 96,
+        "repaired_cases": 0,
+        "wide_correct_before": 9,
+        "wide_correct_after": 9,
+        "outer_correct": 16,
+        "rescue_before": 14,
+        "rescue_after": 14,
+        "harm_before": 7,
+        "harm_after": 7,
+        "delta_outer_minus_wide_before": 0.07291666666666667,
+        "delta_outer_minus_wide_after": 0.07291666666666667,
+        "auroc_conflict_to_harm_before": 0.4967897271268058,
+        "auroc_conflict_to_harm_after": 0.4967897271268058
+      },
+      "deadzone": {
+        "n": 168,
+        "repaired_cases": 20,
+        "wide_correct_before": 142,
+        "wide_correct_after": 143,
+        "outer_correct": 159,
+        "rescue_before": 25,
+        "rescue_after": 24,
+        "harm_before": 8,
+        "harm_after": 8,
+        "delta_outer_minus_wide_before": 0.10119047619047619,
+        "delta_outer_minus_wide_after": 0.09523809523809523,
+        "auroc_conflict_to_harm_before": 0.80078125,
+        "auroc_conflict_to_harm_after": 0.7984375
+      },
+      "nonlinear": {
+        "n": 168,
+        "repaired_cases": 1,
+        "wide_correct_before": 117,
+        "wide_correct_after": 117,
+        "outer_correct": 158,
+        "rescue_before": 44,
+        "rescue_after": 44,
+        "harm_before": 3,
+        "harm_after": 3,
+        "delta_outer_minus_wide_before": 0.24404761904761904,
+        "delta_outer_minus_wide_after": 0.24404761904761904,
+        "auroc_conflict_to_harm_before": 0.3838383838383838,
+        "auroc_conflict_to_harm_after": 0.3838383838383838
+      }
+    }
+  },
+  "E4_accessed": false,
+  "new_fits": 0,
+  "mid_validation_used_only_for_posthoc_scoring": true,
+  "source_sha256": {
+    "c0_report": "ee4347a89a728c5e453e6ca5907aad1e968250ae474cff85ab4a4af41fe646f8",
+    "c0_audit": "536b6136fc094c602baabf370a43d424856beb1b4e9add6223cda2fd9e604501",
+    "c1_report": "7a57f8a5cf463d88031fb6690da9a00ac4ddf650d402d3dac54a83e09760ddcc",
+    "c1_audit": "8ee5efede98163ae2fd67e473a8437fae9cb178fa72e713c6e46b3d884238369",
+    "b_report": "b0529b04b63acac3de8d12751fb9ae2a77ba73c6ad957abaa8627b42736f34f6",
+    "b_audit": "321de414e0d4252e4cc2cfb7451cf4f7c2f8abc523f6540ebfa575cfba0c3e11"
+  },
+  "code_sha256": "ae5fa3838cc1d06e68dd62fc8759c047fabe04b91146f0255816f2a2e9ee7903",
+  "limitations": [
+    "Retrospectively selected 21 violations",
+    "Not a deployable decision policy",
+    "Wide corrections reuse Outer solutions",
+    "Not a matched-compute Wide baseline",
+    "Only 12 correlated development scenes",
+    "Mid replayed for prediction only",
+    "No independent confirmation",
+    "No global optimality certificate",
+    "Harm AUROC is descriptive",
+    "No classification threshold calibrated"
+  ]
+}

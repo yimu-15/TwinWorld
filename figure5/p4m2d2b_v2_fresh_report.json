@@ -1,0 +1,311 @@
+{
+  "protocol": "P4-M2D2B v2 frozen-model amplitude dose response; abstention-aware",
+  "revision": "v2_unavailable_candidates",
+  "smoke": false,
+  "scene_seed": 20291117,
+  "fit_noise_seed": 2029111701,
+  "action_noise_seed": 2029111702,
+  "n_base_scenes": 24,
+  "n_cases": 384,
+  "action_amplitudes": {
+    "half": 0.5,
+    "full": 1.0
+  },
+  "same_waveform": true,
+  "paired_noise": true,
+  "new_action_observations": true,
+  "source_provenance": {
+    "80_p4m2c0_prior_mismatch_stress.py": "08fae73537796474fbc182258d726092b0f9e9a7ccbe6db6f7ce5510b48eed03",
+    "88_p4m2d1_fresh_action_prior_interaction.py": "27f80208f99f4367fa735756f316bc5f7e47b32e9bbefd16e8768f51a19a13ad",
+    "p4m2d1_fresh_report.json": "cdb0ac7dd258b9a4ed18e2a7b793428d983a4218d944d0eef7fd66f36a56ca71",
+    "p4m2d2a_fresh_report.json": "c7b5217cdd4b6d6db3b75f812308391c93c249b3f7eb1801f002483bf3277f71",
+    "90_p4m2d2b_amplitude_dose_response_v2.py": "4bd165bbc5c9522cfb94f61ff71682b34f1e76c1ace6da0d3f55f49c6ec8b622"
+  },
+  "scene_independence": {
+    "n_fingerprints": 48,
+    "vs_p88_exact_overlap": 0,
+    "fingerprints": [
+      "87ef2eebf000601dd048b1dce5f1dcf86916de7a3d3e442b1f4c859fce2d3ee5",
+      "ff01d86dc6a96ba3a30f6ed37c9a40b3e4703eadb303df322e326540cf017030",
+      "9fa61bc13d772d434738f9b602b73a5a3ff333b14bbd8ec9542fc67f50eb2f86",
+      "4937d4e3722fa09a833aefa447066686911e9a84fdba85ef63226096503e4524",
+      "e94d21c5c8a8a51faedada28c56a56790cfb4c97c95dc893f2f150349265fd56",
+      "f6e88ac4adcbe763f53dd2379044452718426f513eb1889be458c64fb847008e",
+      "f814a65e156b2437e71fc89b462cf33ff0f8d958bcc8893a30b03071f4b60404",
+      "d95373e575dfa21d9327f62c6017bd0e07f63f00ff7d27a0a21587ff76371964",
+      "cafff3adfaa8f6dd1cff8459e69df85cf94853bec1448cea29efd07cf4ab2a40",
+      "c74b2e63402b5ce7b496c47824c7eb1c0344fc89210a16ec6f94f4c4448be4db",
+      "de37a5f400a8a1568d16ab175dcbbad799c615ca44184cabde82f6b761532b5c",
+      "b3ccce688c332c5ee36ebcc42a1e19b499533efe974a4718a08eb8b3ab5da39d",
+      "3e6560b542d958b0aeead2752d4040de5d4c255cefac351ab9eca94d9f66125e",
+      "c997d6db2e677dcad930a27415bda38b52683de3ee893e136463f85bf280d09a",
+      "61424b64053f6e4a143e15fa55de733cd05cc3f34101e8dd95471b0fe0a3530b",
+      "7d1e5dc42a40e861c734a50fe70b6b384049829c6e2b0744d130345b8fbf58e0",
+      "06b673457140e1c06480cef3d6fd0e3fd22e576649151cbee69d6e2f48ac133b",
+      "23fa719ceecfe8abfec9cc46e5257303671f87091dc567818776ce061d697d86",
+      "11a6a57342d8199c526f870671e9b27cbca961ef3e0e3a9295c0c6b7ba7ab864",
+      "4d258bfaaa335d27e11af38a25c7b42c0ad0dcccb019fb742028f8899b434371",
+      "d143b8f3488ffecdd8505f7e11e0e447b4588debad1c0df989bc25a94cb6da59",
+      "fef747ba78ae7f62f85b681524c16c62c7387fddadbf3672b0d7f9037b50fd3b",
+      "45bfad53dff3816afc22b1c86453a061d93f0cc0f51f1cc5fff8caaab144c1ec",
+      "490751d6bb432ff2716fc6a89994a9b109b83bde070f891a02e6fbd9f1171b60",
+      "7a919d78499e839fb07a52afeaf106440e778ad0ae45286d36319295c3c697ac",
+      "98c34a0d1064498ea6f70c9fe39744695b90b241cc48cb6ecf94dfc36f9eef4f",
+      "39b39b26502668785d7cb6afa126f3116a3a0c472aec4db12ba8c513c9a8a62b",
+      "e5f851eb31f3dc93ab9636bfefacab27968c7d9e3acf2437e6f3ff2d2a2cfa3e",
+      "cdbaf298c5210218c83843bc1e86bc93825bdde991a28ba7ce4705ff62d02e12",
+      "a5f18e9ebd4a6d6475151e8d698b1de037a225de94335f3dc9580b3f28d2032d",
+      "85421d016779d9337238180cdd4c663c87113c86e35de3754135c5aec4a022a1",
+      "f94a7c64ff0658bba37d7c731843e935e0896970c8a270b38ee3643797217060",
+      "5576b32df80090a0c6accc70ba2a1793f733f1637ea62c1f29082762277cf8ec",
+      "2b35ffc4daf714b9a7a0bbdb581571cd78ce144bcad26f80a7aaaefe00058d1d",
+      "82b763091f4fbca1477a7f7da52f0a97b54b4fa0ea25f2f6e0afbd0996599be2",
+      "d4be40bbaa0d695dc01838330fa6c7beb7437f306747fe9225738e93779c5e81",
+      "7ffb774569d7b465a84891114df7949052d0cde4d2ee7bca4a38d7d2271326c1",
+      "8720ce771e3dac66510fe36db27cedcd628bd5de784a6c64ad1dd7207b0fab9b",
+      "6aa22a73dec7a0e0a87a84157685417edd331c51076cd0d240ebc68e303ea2fe",
+      "8ce59de220ba6c5513037e3dc57fa6a19b375d5864eb09153b187cdbfbb20306",
+      "292539c1c0752d381c314c08c594812b5e30c4faf61de7956a81fb18c344d203",
+      "9c1f9ea66bd46233baa45a9e507c508d812887c31eec98859569fc3df8655580",
+      "c07320d87669afbffa24879b95df9112f9bf29a1c746e0cb8aab4d3af237be9c",
+      "d7fdc8b0312ad21e57a30afaed52c1c72ce6af90d9fd5a3523a86a6461503e55",
+      "cacb60a3754790d8a8482b8a2d367fcbea3c34720f742cad2e3030999b55ff6a",
+      "24804499aced813378972489dedd3beb6c218b13abf152df450b4882df58b8ba",
+      "4dbf847f80592b2626ed29b4e7362ce4c2c5cfb657cd8681c8c1d3561a82bb29",
+      "cbefc26e7e1109f2aff6c1c783e60fcca31c03e96ec51e88a5fc7bb9ec7db05c"
+    ]
+  },
+  "predeclared_effects": {
+    "PRIMARY_WOO_nonlinear_M2_recall_full_minus_half": 0.19791666666666663,
+    "SECONDARY_WOO_nonlinear_M2_pairwise_sep_full_minus_half_mm": 10.15608562546522,
+    "SECONDARY_WOO_nonlinear_M2_score_gap_full_minus_half_mm": 6.0885487446063955,
+    "SECONDARY_WOO_accuracy_full_minus_half": 0.12239583333333337,
+    "DIAGNOSTIC_WOO_elastic_M2_recall_full_minus_half": 0.14583333333333337,
+    "DIAGNOSTIC_OOO_accuracy_full_minus_half": 0.08333333333333326
+  },
+  "diagnostic_pair_counts": {
+    "n_nonlinear_m2": 96,
+    "n_elastic_m2": 48,
+    "n_separation_pairs": 96,
+    "n_score_gap_pairs": 96
+  },
+  "bootstrap": {
+    "cluster_unit": "base_scene_id",
+    "n_clusters": 24,
+    "seed": 2029111703,
+    "n_resamples": 2000,
+    "95CI": {
+      "PRIMARY_WOO_nonlinear_M2_recall_full_minus_half": [
+        0.09375,
+        0.3125
+      ],
+      "SECONDARY_WOO_nonlinear_M2_pairwise_sep_full_minus_half_mm": [
+        8.336092608671201,
+        12.145504707688495
+      ],
+      "SECONDARY_WOO_nonlinear_M2_score_gap_full_minus_half_mm": [
+        4.108421469297044,
+        9.061775621804035
+      ],
+      "SECONDARY_WOO_accuracy_full_minus_half": [
+        0.06243489583333334,
+        0.1875
+      ],
+      "DIAGNOSTIC_WOO_elastic_M2_recall_full_minus_half": [
+        -0.0625,
+        0.35416666666666663
+      ],
+      "DIAGNOSTIC_OOO_accuracy_full_minus_half": [
+        0.04166666666666663,
+        0.125
+      ]
+    },
+    "valid_resamples": {
+      "PRIMARY_WOO_nonlinear_M2_recall_full_minus_half": 2000,
+      "SECONDARY_WOO_nonlinear_M2_pairwise_sep_full_minus_half_mm": 2000,
+      "SECONDARY_WOO_nonlinear_M2_score_gap_full_minus_half_mm": 2000,
+      "SECONDARY_WOO_accuracy_full_minus_half": 2000,
+      "DIAGNOSTIC_WOO_elastic_M2_recall_full_minus_half": 2000,
+      "DIAGNOSTIC_OOO_accuracy_full_minus_half": 2000
+    }
+  },
+  "configuration_coverage": {
+    "WWW": {
+      "MID": {
+        "available": 383,
+        "total": 384,
+        "coverage": 0.9973958333333334,
+        "correct": 230,
+        "accuracy_all": 0.5989583333333334,
+        "accuracy_available": 0.6005221932114883
+      },
+      "HALF_ONLY": {
+        "available": 383,
+        "total": 384,
+        "coverage": 0.9973958333333334,
+        "correct": 256,
+        "accuracy_all": 0.6666666666666666,
+        "accuracy_available": 0.6684073107049608
+      },
+      "FULL_ONLY": {
+        "available": 383,
+        "total": 384,
+        "coverage": 0.9973958333333334,
+        "correct": 299,
+        "accuracy_all": 0.7786458333333334,
+        "accuracy_available": 0.7806788511749347
+      },
+      "MID_PLUS_HALF": {
+        "available": 383,
+        "total": 384,
+        "coverage": 0.9973958333333334,
+        "correct": 262,
+        "accuracy_all": 0.6822916666666666,
+        "accuracy_available": 0.6840731070496083
+      },
+      "MID_PLUS_FULL": {
+        "available": 383,
+        "total": 384,
+        "coverage": 0.9973958333333334,
+        "correct": 308,
+        "accuracy_all": 0.8020833333333334,
+        "accuracy_available": 0.804177545691906
+      }
+    },
+    "OOO": {
+      "MID": {
+        "available": 384,
+        "total": 384,
+        "coverage": 1.0,
+        "correct": 285,
+        "accuracy_all": 0.7421875,
+        "accuracy_available": 0.7421875
+      },
+      "HALF_ONLY": {
+        "available": 384,
+        "total": 384,
+        "coverage": 1.0,
+        "correct": 291,
+        "accuracy_all": 0.7578125,
+        "accuracy_available": 0.7578125
+      },
+      "FULL_ONLY": {
+        "available": 384,
+        "total": 384,
+        "coverage": 1.0,
+        "correct": 335,
+        "accuracy_all": 0.8723958333333334,
+        "accuracy_available": 0.8723958333333334
+      },
+      "MID_PLUS_HALF": {
+        "available": 384,
+        "total": 384,
+        "coverage": 1.0,
+        "correct": 302,
+        "accuracy_all": 0.7864583333333334,
+        "accuracy_available": 0.7864583333333334
+      },
+      "MID_PLUS_FULL": {
+        "available": 384,
+        "total": 384,
+        "coverage": 1.0,
+        "correct": 334,
+        "accuracy_all": 0.8697916666666666,
+        "accuracy_available": 0.8697916666666666
+      }
+    },
+    "WOO": {
+      "MID": {
+        "available": 384,
+        "total": 384,
+        "coverage": 1.0,
+        "correct": 275,
+        "accuracy_all": 0.7161458333333334,
+        "accuracy_available": 0.7161458333333334
+      },
+      "HALF_ONLY": {
+        "available": 384,
+        "total": 384,
+        "coverage": 1.0,
+        "correct": 295,
+        "accuracy_all": 0.7682291666666666,
+        "accuracy_available": 0.7682291666666666
+      },
+      "FULL_ONLY": {
+        "available": 384,
+        "total": 384,
+        "coverage": 1.0,
+        "correct": 341,
+        "accuracy_all": 0.8880208333333334,
+        "accuracy_available": 0.8880208333333334
+      },
+      "MID_PLUS_HALF": {
+        "available": 384,
+        "total": 384,
+        "coverage": 1.0,
+        "correct": 304,
+        "accuracy_all": 0.7916666666666666,
+        "accuracy_available": 0.7916666666666666
+      },
+      "MID_PLUS_FULL": {
+        "available": 384,
+        "total": 384,
+        "coverage": 1.0,
+        "correct": 351,
+        "accuracy_all": 0.9140625,
+        "accuracy_available": 0.9140625
+      }
+    }
+  },
+  "primary_coverage": {
+    "available": 96,
+    "total": 96,
+    "coverage": 1.0
+  },
+  "primary_interpretable_under_v2_gate": true,
+  "v2_interpretability_gate": 0.9,
+  "unavailable_is_abstention": true,
+  "rows_with_failed_candidates": 1,
+  "fit_failures_PRIVATE": [
+    {
+      "scene_id": 4,
+      "band": "original",
+      "mode_PRIVATE": "nonlinear",
+      "axis_PRIVATE": "matched",
+      "level_PRIVATE": "M0",
+      "failed_candidates": [
+        {
+          "domain": "wide",
+          "law": "deadzone",
+          "reasons": [
+            "not_converged"
+          ],
+          "nfev": 2428
+        }
+      ]
+    }
+  ],
+  "fit_failure_reasons": {
+    "wide/deadzone/not_converged": 1
+  },
+  "nested_solver_violations": {
+    "deadzone": 36
+  },
+  "both_converged_nested_solver_violations": {
+    "deadzone": 36
+  },
+  "E4_accessed": false,
+  "action_used_for_fit": false,
+  "threshold_tuning": false,
+  "limitations": [
+    "Same simulator family, new scenes only",
+    "Half/full differ in actuation amplitude",
+    "Unavailable fits abstain; counted incorrect in all-case accuracy",
+    "Coverage threshold added for v2 reporting after first failed run; not original preregistration",
+    "Median separation/score gaps computed on available paired candidates only",
+    "Candidate separation is not accuracy or proof of structural identifiability",
+    "Finite-start SLSQP remains uncorrected",
+    "Truth used only for offline diagnostics",
+    "No E4"
+  ]
+}

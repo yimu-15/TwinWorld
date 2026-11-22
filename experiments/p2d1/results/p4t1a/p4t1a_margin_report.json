@@ -1,0 +1,162 @@
+{
+  "protocol": "P4-T1A read-only theory/empirical margin-consistency audit",
+  "smoke": false,
+  "cohorts_kept_separate": true,
+  "n_cases_P88": 384,
+  "n_cases_P90": 384,
+  "input_sha256": {
+    "R88": "cdb0ac7dd258b9a4ed18e2a7b793428d983a4218d944d0eef7fd66f36a56ca71",
+    "A88": "3340fdf95f66c0a8f651831e527fa313e22ea1a6d6910c0d6e74fd3264bb95f4",
+    "R89": "c7b5217cdd4b6d6db3b75f812308391c93c249b3f7eb1801f002483bf3277f71",
+    "R90": "86b3ae545a78b2853a63266536037636edf2762f89eecbcfdc25e12cce72b0c0",
+    "A90": "9e23958d1d9315379b963e5ac246af1f0f3c772057ee140b7e391836911a3048",
+    "R93": "360a7eed52278309abcf206845089e156ec8d921e3fb4f22dba1708cd529aeba"
+  },
+  "metric_definitions": {
+    "loss_mm2": "(observed candidate prediction RMS in mm)^2; joint loss averages MID and held-out squared RMS",
+    "gamma_mm2": "min_{j!=truth}(L_j-L_truth); offline truth labels only for auditing",
+    "J_mm2": "[gamma(WOO,joint)-gamma(OOO,joint)]-[gamma(WOO,MID)-gamma(OOO,MID)]",
+    "P90_delta_gamma_mm2": "gamma(WOO,MID_PLUS_FULL)-gamma(WOO,MID_PLUS_HALF)",
+    "dose_normalized_separation_mm": "Elastic-vs-Cubic FULL separation / 2 - HALF separation; descriptive only",
+    "abstention": "No margin when a required candidate fit is unavailable; never drop case from classification denominator"
+  },
+  "E4_accessed": false,
+  "new_fits": 0,
+  "new_simulations": 0,
+  "threshold_tuning": false,
+  "truth_used_for_model_choice": false,
+  "limitations": [
+    "P88 and P90 are separate cohorts; no pooled causal estimate",
+    "True-law margins are offline explanatory metrics, unavailable to an actual agent",
+    "Positive gamma is only a deterministic score comparison, not a calibrated error probability",
+    "Squared-error margin differs from the earlier RMS Elastic-Cubic score gap",
+    "Gaussian risk formula is not validated without independent noise/covariance information",
+    "Increasing action amplitude changes signal scale and may change dynamics; no isolated information-theoretic gain is proven",
+    "Any inferential summaries here are post-hoc descriptive; the registered P88/P90 contrasts retain priority",
+    "No structural identifiability guarantee and no real-world transfer claim"
+  ],
+  "P88": {
+    "n": 384,
+    "n_J_complete": 384,
+    "registered_binary_interaction": 0.08333333333333333,
+    "exploratory_J_mm2": {
+      "n": 384,
+      "mean": -48.48952195247898,
+      "median": 0.0,
+      "positive": 161,
+      "negative": 166,
+      "zero": 57
+    },
+    "exploratory_J_scene_cluster_mean_CI95": [
+      -101.20547306011635,
+      1.8601041221659396
+    ],
+    "J_by_mode_PRIVATE": {
+      "elastic": {
+        "n": 96,
+        "mean": 16.64192591086265,
+        "median": 8.130661494298863e-05,
+        "positive": 61,
+        "negative": 35,
+        "zero": 0
+      },
+      "deadzone": {
+        "n": 144,
+        "mean": 284.7462300179848,
+        "median": 42.54410325773985,
+        "positive": 90,
+        "negative": 14,
+        "zero": 40
+      },
+      "nonlinear": {
+        "n": 144,
+        "mean": -425.1462391651705,
+        "median": -334.37476050151423,
+        "positive": 10,
+        "negative": 117,
+        "zero": 17
+      }
+    }
+  },
+  "P90_nonlinear_M2": {
+    "n": 96,
+    "registered_recall_full_minus_half": 0.19791666666666666,
+    "paired_counts_PRIVATE": {
+      "both_correct": 59,
+      "corrected_by_full": 28,
+      "harmed_by_full": 9,
+      "both_wrong": 0
+    },
+    "exploratory_delta_gamma_full_minus_half_mm2": {
+      "n": 96,
+      "mean": 379.4008507025824,
+      "median": 185.9648477670113,
+      "positive": 79,
+      "negative": 17,
+      "zero": 0
+    },
+    "exploratory_delta_gamma_mean_scene_cluster_CI95": [
+      294.2599693031543,
+      456.92530558341355
+    ],
+    "gamma_change_by_status_PRIVATE": {
+      "corrected_by_full": {
+        "n": 28,
+        "delta_gamma": {
+          "n": 28,
+          "mean": 207.95815932821523,
+          "median": 122.08299455503968,
+          "positive": 28,
+          "negative": 0,
+          "zero": 0
+        }
+      },
+      "harmed_by_full": {
+        "n": 9,
+        "delta_gamma": {
+          "n": 9,
+          "mean": -112.13554640848837,
+          "median": -123.65109238029152,
+          "positive": 0,
+          "negative": 9,
+          "zero": 0
+        }
+      },
+      "unchanged_correct": {
+        "n": 59,
+        "delta_gamma": {
+          "n": 59,
+          "mean": 535.7436122700725,
+          "median": 474.1206206877514,
+          "positive": 51,
+          "negative": 8,
+          "zero": 0
+        }
+      },
+      "unchanged_wrong": {
+        "n": 0,
+        "delta_gamma": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "positive": null,
+          "negative": null,
+          "zero": null
+        }
+      }
+    },
+    "exploratory_dose_normalized_separation_mm": {
+      "n": 96,
+      "mean": -0.6446243605560464,
+      "median": -0.8554797430299779,
+      "positive": 37,
+      "negative": 59,
+      "zero": 0
+    }
+  },
+  "audit_rows": {
+    "P88": 384,
+    "P90": 384,
+    "all_cells_checked": 9216
+  }
+}

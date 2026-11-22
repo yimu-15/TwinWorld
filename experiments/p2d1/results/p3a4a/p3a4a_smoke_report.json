@@ -1,0 +1,1169 @@
+{
+  "protocol": "P3-A4A stop-or-strong E3 versus fixed and early-only baselines",
+  "development_only": true,
+  "seed": 20261126,
+  "scene_counts": {
+    "calibration": 2,
+    "development": 2,
+    "mass_shift": 2
+  },
+  "stopping_rule": {
+    "allowed_kinds": [
+      "independent",
+      "rigid"
+    ],
+    "BIC_margin_max": -10.0,
+    "known_RMS_max": "known-only early calibration q95"
+  },
+  "calibration_known_only": {
+    "early": {
+      "margin": 11.974526595867815,
+      "known_fit_rms_m": 0.007226986972470498
+    },
+    "pulse_1p5": {
+      "margin": 2.0,
+      "known_fit_rms_m": 0.00671723378893498
+    },
+    "pulse_2p25": {
+      "margin": 23.68563257575009,
+      "known_fit_rms_m": 0.008661132950712224
+    },
+    "sweep_2p25": {
+      "margin": 20.85251284008627,
+      "known_fit_rms_m": 0.00801870135576652
+    }
+  },
+  "development": {
+    "early_gate": {
+      "actions": {
+        "none": 12
+      },
+      "decisions": {
+        "keep": 10,
+        "edit": 2
+      },
+      "mean_E3_work_J": 0.0,
+      "mean_E3_impulse_Ns": 0.0,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 65.09508728764499,
+        "oscillation_2p25": 6.697052241843374
+      },
+      "E4_accepted_risk_mm": 35.896069764744176,
+      "known_refit_risk_on_same_accepted_mm": 12.876252349856907,
+      "E4_rejected_fallback_RMS_mm": null,
+      "coverage": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 12
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 0.8333333333333333,
+        "ci95_scene": [
+          0.6666666666666666,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": {
+        "mean": 0.25,
+        "ci95_scene": [
+          0.0,
+          0.5
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.25,
+        "ci95_scene": [
+          0.0,
+          0.5
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "out_library_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_forced_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_wrong_keep": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      }
+    },
+    "always_weak": {
+      "actions": {
+        "pulse_1p5": 12
+      },
+      "decisions": {
+        "keep": 6,
+        "edit": 4,
+        "inconclusive": 2
+      },
+      "mean_E3_work_J": 1.0804215141557991,
+      "mean_E3_impulse_Ns": 1.6873985345280673,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 19.990428434656312,
+        "oscillation_2p25": 7.555800151430374
+      },
+      "E4_accepted_risk_mm": 8.017066434398213,
+      "known_refit_risk_on_same_accepted_mm": 10.985730562516533,
+      "E4_rejected_fallback_RMS_mm": 42.553353586268976,
+      "coverage": {
+        "mean": 0.8333333333333334,
+        "ci95_scene": [
+          0.8333333333333334,
+          0.8333333333333334
+        ],
+        "n_scenes": 2,
+        "n_episodes": 12
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "out_library_inconclusive": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_forced_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_wrong_keep": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      }
+    },
+    "always_strong": {
+      "actions": {
+        "pulse_2p25": 12
+      },
+      "decisions": {
+        "keep": 6,
+        "edit": 4,
+        "inconclusive": 2
+      },
+      "mean_E3_work_J": 2.1260157254974987,
+      "mean_E3_impulse_Ns": 2.502581843950059,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 9.908922773224855,
+        "oscillation_2p25": 8.39292207829071
+      },
+      "E4_accepted_risk_mm": 6.515334653597579,
+      "known_refit_risk_on_same_accepted_mm": 10.985730562516533,
+      "E4_rejected_fallback_RMS_mm": 22.32886128655879,
+      "coverage": {
+        "mean": 0.8333333333333334,
+        "ci95_scene": [
+          0.8333333333333334,
+          0.8333333333333334
+        ],
+        "n_scenes": 2,
+        "n_episodes": 12
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "out_library_inconclusive": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_forced_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_wrong_keep": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      }
+    },
+    "stop_or_strong": {
+      "actions": {
+        "none": 3,
+        "pulse_2p25": 9
+      },
+      "decisions": {
+        "keep": 6,
+        "edit": 4,
+        "inconclusive": 2
+      },
+      "mean_E3_work_J": 1.7878084182516323,
+      "mean_E3_impulse_Ns": 2.0485553433264383,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 9.908922773224855,
+        "oscillation_2p25": 8.39292207829071
+      },
+      "E4_accepted_risk_mm": 6.515334653597579,
+      "known_refit_risk_on_same_accepted_mm": 10.985730562516533,
+      "E4_rejected_fallback_RMS_mm": 22.32886128655879,
+      "coverage": {
+        "mean": 0.8333333333333334,
+        "ci95_scene": [
+          0.8333333333333334,
+          0.8333333333333334
+        ],
+        "n_scenes": 2,
+        "n_episodes": 12
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "out_library_inconclusive": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_forced_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_wrong_keep": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      }
+    },
+    "known_refit_strong": {
+      "actions": {
+        "pulse_2p25": 12
+      },
+      "decisions": {
+        "keep": 12
+      },
+      "mean_E3_work_J": 2.1260157254974987,
+      "mean_E3_impulse_Ns": 2.502581843950059,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 13.86791023426112,
+        "oscillation_2p25": 11.8845944654527
+      },
+      "E4_accepted_risk_mm": 12.876252349856907,
+      "known_refit_risk_on_same_accepted_mm": 12.876252349856907,
+      "E4_rejected_fallback_RMS_mm": null,
+      "coverage": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 12
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "out_library_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_forced_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_wrong_keep": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      }
+    },
+    "unrestricted_strong": {
+      "actions": {
+        "pulse_2p25": 12
+      },
+      "decisions": {
+        "keep": 7,
+        "edit": 5
+      },
+      "mean_E3_work_J": 2.1260157254974987,
+      "mean_E3_impulse_Ns": 2.502581843950059,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 9.987587379626097,
+        "oscillation_2p25": 8.305203048646547
+      },
+      "E4_accepted_risk_mm": 9.146395214136321,
+      "known_refit_risk_on_same_accepted_mm": 12.876252349856907,
+      "E4_rejected_fallback_RMS_mm": null,
+      "coverage": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 12
+      },
+      "known_false_edit": {
+        "mean": 0.16666666666666666,
+        "ci95_scene": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 0.8333333333333333,
+        "ci95_scene": [
+          0.6666666666666666,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "in_library_wrong_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 4
+      },
+      "out_library_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_forced_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      },
+      "out_library_wrong_keep": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 2
+      }
+    },
+    "paired_comparisons": {
+      "all": {
+        "stop_minus_always_strong_E4_mm": {
+          "mean": 0.0,
+          "ci95_scene": [
+            0.0,
+            0.0
+          ],
+          "n_scenes": 2,
+          "n_episodes": 12
+        },
+        "stop_minus_always_strong_E3_work_J": {
+          "mean": -0.33820730724586673,
+          "ci95_scene": [
+            -0.5165722182135618,
+            -0.15984239627817162
+          ],
+          "n_scenes": 2,
+          "n_episodes": 12
+        }
+      },
+      "known": {
+        "stop_minus_always_strong_E4_mm": {
+          "mean": 0.0,
+          "ci95_scene": [
+            0.0,
+            0.0
+          ],
+          "n_scenes": 2,
+          "n_episodes": 6
+        },
+        "stop_minus_always_strong_E3_work_J": {
+          "mean": -0.6764146144917335,
+          "ci95_scene": [
+            -1.0331444364271236,
+            -0.31968479255634324
+          ],
+          "n_scenes": 2,
+          "n_episodes": 6
+        }
+      },
+      "in_library": {
+        "stop_minus_always_strong_E4_mm": {
+          "mean": 0.0,
+          "ci95_scene": [
+            0.0,
+            0.0
+          ],
+          "n_scenes": 2,
+          "n_episodes": 4
+        },
+        "stop_minus_always_strong_E3_work_J": {
+          "mean": 0.0,
+          "ci95_scene": [
+            0.0,
+            0.0
+          ],
+          "n_scenes": 2,
+          "n_episodes": 4
+        }
+      },
+      "out_library": {
+        "stop_minus_always_strong_E4_mm": {
+          "mean": 0.0,
+          "ci95_scene": [
+            0.0,
+            0.0
+          ],
+          "n_scenes": 2,
+          "n_episodes": 2
+        },
+        "stop_minus_always_strong_E3_work_J": {
+          "mean": 0.0,
+          "ci95_scene": [
+            0.0,
+            0.0
+          ],
+          "n_scenes": 2,
+          "n_episodes": 2
+        }
+      }
+    },
+    "stopping_audit_PRIVATE": {
+      "stopped_total": 3,
+      "stopped_by_true_mechanism": {
+        "independent": 2,
+        "rigid": 1
+      },
+      "stopped_wrong_known_kind": 0,
+      "stopped_in_library": 0,
+      "stopped_out_library": 0
+    }
+  },
+  "mass_shift": {
+    "early_gate": {
+      "actions": {
+        "none": 6
+      },
+      "decisions": {
+        "keep": 4,
+        "edit": 1,
+        "inconclusive": 1
+      },
+      "mean_E3_work_J": 0.0,
+      "mean_E3_impulse_Ns": 0.0,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 19.715989559231083,
+        "oscillation_2p25": 6.4181630298784285
+      },
+      "E4_accepted_risk_mm": 14.058307352668518,
+      "known_refit_risk_on_same_accepted_mm": 6.845355424880834,
+      "E4_rejected_fallback_RMS_mm": 8.110921003985945,
+      "coverage": {
+        "mean": 0.8333333333333333,
+        "ci95_scene": [
+          0.6666666666666666,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_false_edit": {
+        "mean": 0.16666666666666666,
+        "ci95_scene": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.16666666666666666,
+        "ci95_scene": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 0.6666666666666666,
+        "ci95_scene": [
+          0.3333333333333333,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_library_inconclusive": null,
+      "out_library_forced_edit": null,
+      "out_library_wrong_keep": null
+    },
+    "always_weak": {
+      "actions": {
+        "pulse_1p5": 6
+      },
+      "decisions": {
+        "keep": 5,
+        "inconclusive": 1
+      },
+      "mean_E3_work_J": 1.5526011940438689,
+      "mean_E3_impulse_Ns": 2.5988286674445003,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 7.582601855766264,
+        "oscillation_2p25": 6.570859177184802
+      },
+      "E4_accepted_risk_mm": 6.869892418973452,
+      "known_refit_risk_on_same_accepted_mm": 6.845355424880834,
+      "E4_rejected_fallback_RMS_mm": 8.110921003985945,
+      "coverage": {
+        "mean": 0.8333333333333333,
+        "ci95_scene": [
+          0.6666666666666666,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.16666666666666666,
+        "ci95_scene": [
+          0.0,
+          0.3333333333333333
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_library_inconclusive": null,
+      "out_library_forced_edit": null,
+      "out_library_wrong_keep": null
+    },
+    "always_strong": {
+      "actions": {
+        "pulse_2p25": 6
+      },
+      "decisions": {
+        "keep": 6
+      },
+      "mean_E3_work_J": 3.127861949833735,
+      "mean_E3_impulse_Ns": 3.8980221311576053,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 7.717723328070429,
+        "oscillation_2p25": 6.394842714726279
+      },
+      "E4_accepted_risk_mm": 7.056283021398353,
+      "known_refit_risk_on_same_accepted_mm": 7.056283021398353,
+      "E4_rejected_fallback_RMS_mm": null,
+      "coverage": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 0.8333333333333333,
+        "ci95_scene": [
+          0.6666666666666666,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_library_inconclusive": null,
+      "out_library_forced_edit": null,
+      "out_library_wrong_keep": null
+    },
+    "stop_or_strong": {
+      "actions": {
+        "pulse_2p25": 5,
+        "none": 1
+      },
+      "decisions": {
+        "keep": 6
+      },
+      "mean_E3_work_J": 2.532826415083387,
+      "mean_E3_impulse_Ns": 3.1004492512459443,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 7.717723328070429,
+        "oscillation_2p25": 6.394842714726279
+      },
+      "E4_accepted_risk_mm": 7.056283021398353,
+      "known_refit_risk_on_same_accepted_mm": 7.056283021398353,
+      "E4_rejected_fallback_RMS_mm": null,
+      "coverage": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 0.8333333333333333,
+        "ci95_scene": [
+          0.6666666666666666,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_library_inconclusive": null,
+      "out_library_forced_edit": null,
+      "out_library_wrong_keep": null
+    },
+    "known_refit_strong": {
+      "actions": {
+        "pulse_2p25": 6
+      },
+      "decisions": {
+        "keep": 6
+      },
+      "mean_E3_work_J": 3.127861949833735,
+      "mean_E3_impulse_Ns": 3.8980221311576053,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 7.717723328070429,
+        "oscillation_2p25": 6.394842714726279
+      },
+      "E4_accepted_risk_mm": 7.056283021398353,
+      "known_refit_risk_on_same_accepted_mm": 7.056283021398353,
+      "E4_rejected_fallback_RMS_mm": null,
+      "coverage": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 0.8333333333333333,
+        "ci95_scene": [
+          0.6666666666666666,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_library_inconclusive": null,
+      "out_library_forced_edit": null,
+      "out_library_wrong_keep": null
+    },
+    "unrestricted_strong": {
+      "actions": {
+        "pulse_2p25": 6
+      },
+      "decisions": {
+        "keep": 6
+      },
+      "mean_E3_work_J": 3.127861949833735,
+      "mean_E3_impulse_Ns": 3.8980221311576053,
+      "E4_mean_RMS_mm": {
+        "pulse_2p75": 7.717723328070429,
+        "oscillation_2p25": 6.394842714726279
+      },
+      "E4_accepted_risk_mm": 7.056283021398353,
+      "known_refit_risk_on_same_accepted_mm": 7.056283021398353,
+      "E4_rejected_fallback_RMS_mm": null,
+      "coverage": {
+        "mean": 1.0,
+        "ci95_scene": [
+          1.0,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_inconclusive": {
+        "mean": 0.0,
+        "ci95_scene": [
+          0.0,
+          0.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "known_kind_correct": {
+        "mean": 0.8333333333333333,
+        "ci95_scene": [
+          0.6666666666666666,
+          1.0
+        ],
+        "n_scenes": 2,
+        "n_episodes": 6
+      },
+      "in_library_correct_edit": null,
+      "in_library_wrong_edit": null,
+      "out_library_inconclusive": null,
+      "out_library_forced_edit": null,
+      "out_library_wrong_keep": null
+    },
+    "paired_comparisons": {
+      "all": {
+        "stop_minus_always_strong_E4_mm": {
+          "mean": 0.0,
+          "ci95_scene": [
+            0.0,
+            0.0
+          ],
+          "n_scenes": 2,
+          "n_episodes": 6
+        },
+        "stop_minus_always_strong_E3_work_J": {
+          "mean": -0.5950355347503488,
+          "ci95_scene": [
+            -1.1900710695006975,
+            0.0
+          ],
+          "n_scenes": 2,
+          "n_episodes": 6
+        }
+      },
+      "known": {
+        "stop_minus_always_strong_E4_mm": {
+          "mean": 0.0,
+          "ci95_scene": [
+            0.0,
+            0.0
+          ],
+          "n_scenes": 2,
+          "n_episodes": 6
+        },
+        "stop_minus_always_strong_E3_work_J": {
+          "mean": -0.5950355347503488,
+          "ci95_scene": [
+            -1.1900710695006975,
+            0.0
+          ],
+          "n_scenes": 2,
+          "n_episodes": 6
+        }
+      },
+      "in_library": {
+        "stop_minus_always_strong_E4_mm": null,
+        "stop_minus_always_strong_E3_work_J": null
+      },
+      "out_library": {
+        "stop_minus_always_strong_E4_mm": null,
+        "stop_minus_always_strong_E3_work_J": null
+      }
+    },
+    "stopping_audit_PRIVATE": {
+      "stopped_total": 1,
+      "stopped_by_true_mechanism": {
+        "rigid": 1
+      },
+      "stopped_wrong_known_kind": 0,
+      "stopped_in_library": 0,
+      "stopped_out_library": 0
+    }
+  },
+  "cross_mode_physics_audit": {
+    "weak_initial": {
+      "cross_mode_passive_gap_m": 0.0,
+      "cross_mode_A_gap_m": 0.0014850251402068887
+    },
+    "strong_E3": {
+      "cross_mode_passive_gap_m": 0.0,
+      "cross_mode_A_gap_m": 0.014091788283345785
+    }
+  },
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "26_p3a3a_weak_evidence_stress.py": "9cbbdddb1401de241141c9870afcb29983aa7356350f3a921460f4857bb6cca6",
+    "27_p3a3b_evidence_vs_structure.py": "75296d8c807ba591347bedd77b57e9a129b8ff025b07768d99b90e6da52699a9"
+  },
+  "limitations": [
+    "The stopping rule is exploratory and handcrafted.",
+    "The BIC cutoff was informed by previous development.",
+    "Only stop versus strong-pulse is adaptive.",
+    "All counterfactual E3 trajectories are generated offline.",
+    "The policy never observes unchosen E3 trajectories.",
+    "Saturating is excluded from the candidate library.",
+    "Inconclusive is abstention, not a successful forecast.",
+    "Fallback E4 RMS is only a diagnostic.",
+    "B predictions condition on observed future A.",
+    "No RGB visual perception is evaluated.",
+    "This is not a final confirmatory test."
+  ]
+}

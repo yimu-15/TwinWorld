@@ -1,0 +1,13 @@
+band,strategy,correct,work_j,note,source_report
+original,mid_only,54,1481.32,cheapest but lowest correct,71_p3a8c2b_report.json
+original,fixed_high,161,2573.25,NA,71_p3a8c2b_report.json
+original,fixed_reverse,180,2238.56,strongest fixed action,71_p3a8c2b_report.json
+original,fixed_biphasic,110,1751.35,NA,71_p3a8c2b_report.json
+original,old_disagreement,171,2393.94,NA,71_p3a8c2b_report.json
+original,affine_disagreement,174,2405.94,adaptive NOT better than fixed_reverse,71_p3a8c2b_report.json
+above_original_range,mid_only,81,1451.16,NA,71_p3a8c2b_report.json
+above_original_range,fixed_high,192,2524.40,NA,71_p3a8c2b_report.json
+above_original_range,fixed_reverse,201,2194.56,strongest fixed action,71_p3a8c2b_report.json
+above_original_range,fixed_biphasic,151,1720.43,NA,71_p3a8c2b_report.json
+above_original_range,old_disagreement,196,2371.97,NA,71_p3a8c2b_report.json
+above_original_range,affine_disagreement,198,2372.39,adaptive NOT better than fixed_reverse,71_p3a8c2b_report.json

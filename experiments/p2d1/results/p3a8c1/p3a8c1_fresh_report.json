@@ -1,0 +1,369 @@
+{
+  "protocol": "P3-A8C1 matched-command temporal action feasibility",
+  "smoke": false,
+  "n_cal": 79,
+  "n_test": 36,
+  "cal_seed": 20280115,
+  "test_seed": 20280116,
+  "alpha_mid": 0.05,
+  "alpha_action": 0.025,
+  "command_budgets": {
+    "high": {
+      "command_L1": 550.0,
+      "command_peak": 2.75,
+      "command_sha256": "979040dfc54b7d4348b56afa5c3e2dd02ff1f0ceb3f97ef871e63b72011ac726"
+    },
+    "reverse_high": {
+      "command_L1": 550.0,
+      "command_peak": 2.75,
+      "command_sha256": "0840ea13fea6db7adb75d078c57184d5520f819a470f4852c5f8dbbdac1efcb0"
+    },
+    "biphasic_high": {
+      "command_L1": 550.0,
+      "command_peak": 2.75,
+      "command_sha256": "7301787280460df6b41e428b3f54891d518a8554800c984e42d1be2063366a3e"
+    },
+    "shifted_high": {
+      "command_L1": 550.0,
+      "command_peak": 2.75,
+      "command_sha256": "e5dd26e6e57c8890bf8155bb465d3b9b1aef8bc3e2efdf31660d1e4252d59590"
+    }
+  },
+  "thresholds_m": {
+    "original": {
+      "mid": {
+        "independent": 0.00684059860971894,
+        "rigid": 0.01033713468284086,
+        "elastic": 0.014670149554807974,
+        "deadzone": 0.010736488362941003,
+        "cubic": 0.012634352295908861
+      },
+      "high": {
+        "independent": 0.00838009101380386,
+        "rigid": 0.011693919261901959,
+        "elastic": 0.020862970960582303,
+        "deadzone": 0.015177945836704601,
+        "cubic": 0.022571561257808084
+      },
+      "reverse_high": {
+        "independent": 0.008166461565321317,
+        "rigid": 0.010482190559548722,
+        "elastic": 0.017279114301380852,
+        "deadzone": 0.01803667008119305,
+        "cubic": 0.01970848636417352
+      },
+      "biphasic_high": {
+        "independent": 0.008660985809313557,
+        "rigid": 0.012566492544646889,
+        "elastic": 0.01404708640930527,
+        "deadzone": 0.014077044968022366,
+        "cubic": 0.01723685273288045
+      },
+      "shifted_high": {
+        "independent": 0.008915524399688658,
+        "rigid": 0.012622227448702089,
+        "elastic": 0.015470818379076202,
+        "deadzone": 0.01033291176487166,
+        "cubic": 0.014882833409416409
+      }
+    },
+    "above_original_range": {
+      "mid": {
+        "independent": 0.007315769718984597,
+        "rigid": 0.010578709598729075,
+        "elastic": 0.01361094415268256,
+        "deadzone": 0.009134721907048554,
+        "cubic": 0.01416383441315866
+      },
+      "high": {
+        "independent": 0.00744511263533791,
+        "rigid": 0.012732481248448837,
+        "elastic": 0.01858438001931734,
+        "deadzone": 0.01417810195739032,
+        "cubic": 0.020608318826575572
+      },
+      "reverse_high": {
+        "independent": 0.008107648503921237,
+        "rigid": 0.011869822599410567,
+        "elastic": 0.016556858003171627,
+        "deadzone": 0.014567678510776977,
+        "cubic": 0.015853207110167942
+      },
+      "biphasic_high": {
+        "independent": 0.008143714199995737,
+        "rigid": 0.012378972810518325,
+        "elastic": 0.013378492222130507,
+        "deadzone": 0.010177161306588342,
+        "cubic": 0.017321564777869013
+      },
+      "shifted_high": {
+        "independent": 0.007575193120021674,
+        "rigid": 0.010118761064762427,
+        "elastic": 0.01593764354922229,
+        "deadzone": 0.008017061672528612,
+        "cubic": 0.014262430196312688
+      }
+    }
+  },
+  "summary": {
+    "original": {
+      "mid_only": {
+        "known_correct_singleton": 22,
+        "known_wrong_singleton": 1,
+        "known_contains_true": 164,
+        "known_ambiguous": 148,
+        "unknown_empty": 1,
+        "unknown_false_singleton": 0,
+        "total_cost_J": 724.0636389493951,
+        "actions_executed": 0,
+        "outcomes": {
+          "ambiguous_contains_true": 142,
+          "unknown_ambiguous": 35,
+          "correct_singleton": 22,
+          "ambiguous_excludes_true": 6,
+          "known_empty": 9,
+          "wrong_singleton": 1,
+          "unknown_empty": 1
+        },
+        "cost_delta_vs_high_J": -514.4330288834095
+      },
+      "high": {
+        "known_correct_singleton": 71,
+        "known_wrong_singleton": 2,
+        "known_contains_true": 162,
+        "known_ambiguous": 96,
+        "unknown_empty": 34,
+        "unknown_false_singleton": 1,
+        "total_cost_J": 1238.4966678328046,
+        "actions_executed": 206,
+        "outcomes": {
+          "ambiguous_contains_true": 91,
+          "correct_singleton": 71,
+          "unknown_empty": 34,
+          "ambiguous_excludes_true": 5,
+          "known_empty": 11,
+          "wrong_singleton": 2,
+          "unknown_ambiguous": 1,
+          "unknown_false_singleton": 1
+        },
+        "cost_delta_vs_high_J": 0.0,
+        "known_action_only_correct": 0,
+        "known_high_only_correct": 0,
+        "unknown_action_only_empty": 0,
+        "unknown_high_only_empty": 0
+      },
+      "reverse_high": {
+        "known_correct_singleton": 76,
+        "known_wrong_singleton": 2,
+        "known_contains_true": 161,
+        "known_ambiguous": 90,
+        "unknown_empty": 35,
+        "unknown_false_singleton": 1,
+        "total_cost_J": 1087.8739547878056,
+        "actions_executed": 206,
+        "outcomes": {
+          "ambiguous_contains_true": 85,
+          "correct_singleton": 76,
+          "unknown_empty": 35,
+          "ambiguous_excludes_true": 5,
+          "known_empty": 12,
+          "wrong_singleton": 2,
+          "unknown_false_singleton": 1
+        },
+        "cost_delta_vs_high_J": -150.62271304499905,
+        "known_action_only_correct": 11,
+        "known_high_only_correct": 6,
+        "unknown_action_only_empty": 1,
+        "unknown_high_only_empty": 0
+      },
+      "biphasic_high": {
+        "known_correct_singleton": 57,
+        "known_wrong_singleton": 3,
+        "known_contains_true": 162,
+        "known_ambiguous": 110,
+        "unknown_empty": 36,
+        "unknown_false_singleton": 0,
+        "total_cost_J": 846.3138756902337,
+        "actions_executed": 206,
+        "outcomes": {
+          "ambiguous_contains_true": 105,
+          "correct_singleton": 57,
+          "unknown_empty": 36,
+          "ambiguous_excludes_true": 5,
+          "known_empty": 10,
+          "wrong_singleton": 3
+        },
+        "cost_delta_vs_high_J": -392.182792142571,
+        "known_action_only_correct": 6,
+        "known_high_only_correct": 20,
+        "unknown_action_only_empty": 2,
+        "unknown_high_only_empty": 0
+      },
+      "shifted_high": {
+        "known_correct_singleton": 43,
+        "known_wrong_singleton": 1,
+        "known_contains_true": 161,
+        "known_ambiguous": 123,
+        "unknown_empty": 5,
+        "unknown_false_singleton": 0,
+        "total_cost_J": 1135.3184884531695,
+        "actions_executed": 206,
+        "outcomes": {
+          "ambiguous_contains_true": 118,
+          "correct_singleton": 43,
+          "unknown_ambiguous": 31,
+          "unknown_empty": 5,
+          "ambiguous_excludes_true": 5,
+          "known_empty": 13,
+          "wrong_singleton": 1
+        },
+        "cost_delta_vs_high_J": -103.17817937963514,
+        "known_action_only_correct": 8,
+        "known_high_only_correct": 36,
+        "unknown_action_only_empty": 0,
+        "unknown_high_only_empty": 29
+      }
+    },
+    "above_original_range": {
+      "mid_only": {
+        "known_correct_singleton": 34,
+        "known_wrong_singleton": 3,
+        "known_contains_true": 169,
+        "known_ambiguous": 139,
+        "unknown_empty": 0,
+        "unknown_false_singleton": 0,
+        "total_cost_J": 707.302863634761,
+        "actions_executed": 0,
+        "outcomes": {
+          "ambiguous_contains_true": 135,
+          "correct_singleton": 34,
+          "unknown_ambiguous": 36,
+          "wrong_singleton": 3,
+          "ambiguous_excludes_true": 4,
+          "known_empty": 4
+        },
+        "cost_delta_vs_high_J": -528.2744864404456
+      },
+      "high": {
+        "known_correct_singleton": 87,
+        "known_wrong_singleton": 2,
+        "known_contains_true": 165,
+        "known_ambiguous": 81,
+        "unknown_empty": 35,
+        "unknown_false_singleton": 1,
+        "total_cost_J": 1235.5773500752066,
+        "actions_executed": 212,
+        "outcomes": {
+          "ambiguous_contains_true": 78,
+          "correct_singleton": 87,
+          "unknown_empty": 35,
+          "known_empty": 10,
+          "ambiguous_excludes_true": 3,
+          "wrong_singleton": 2,
+          "unknown_false_singleton": 1
+        },
+        "cost_delta_vs_high_J": 0.0,
+        "known_action_only_correct": 0,
+        "known_high_only_correct": 0,
+        "unknown_action_only_empty": 0,
+        "unknown_high_only_empty": 0
+      },
+      "reverse_high": {
+        "known_correct_singleton": 97,
+        "known_wrong_singleton": 0,
+        "known_contains_true": 161,
+        "known_ambiguous": 69,
+        "unknown_empty": 36,
+        "unknown_false_singleton": 0,
+        "total_cost_J": 1080.7327286613506,
+        "actions_executed": 212,
+        "outcomes": {
+          "ambiguous_contains_true": 64,
+          "correct_singleton": 97,
+          "unknown_empty": 36,
+          "known_empty": 14,
+          "ambiguous_excludes_true": 5
+        },
+        "cost_delta_vs_high_J": -154.84462141385598,
+        "known_action_only_correct": 15,
+        "known_high_only_correct": 5,
+        "unknown_action_only_empty": 1,
+        "unknown_high_only_empty": 0
+      },
+      "biphasic_high": {
+        "known_correct_singleton": 54,
+        "known_wrong_singleton": 4,
+        "known_contains_true": 167,
+        "known_ambiguous": 116,
+        "unknown_empty": 36,
+        "unknown_false_singleton": 0,
+        "total_cost_J": 835.70412136208,
+        "actions_executed": 212,
+        "outcomes": {
+          "ambiguous_contains_true": 113,
+          "correct_singleton": 54,
+          "unknown_empty": 36,
+          "wrong_singleton": 4,
+          "known_empty": 6,
+          "ambiguous_excludes_true": 3
+        },
+        "cost_delta_vs_high_J": -399.87322871312665,
+        "known_action_only_correct": 2,
+        "known_high_only_correct": 35,
+        "unknown_action_only_empty": 1,
+        "unknown_high_only_empty": 0
+      },
+      "shifted_high": {
+        "known_correct_singleton": 45,
+        "known_wrong_singleton": 4,
+        "known_contains_true": 164,
+        "known_ambiguous": 121,
+        "unknown_empty": 4,
+        "unknown_false_singleton": 3,
+        "total_cost_J": 1124.6227745447716,
+        "actions_executed": 212,
+        "outcomes": {
+          "ambiguous_contains_true": 119,
+          "correct_singleton": 45,
+          "unknown_ambiguous": 29,
+          "wrong_singleton": 4,
+          "known_empty": 10,
+          "unknown_empty": 4,
+          "ambiguous_excludes_true": 2,
+          "unknown_false_singleton": 3
+        },
+        "cost_delta_vs_high_J": -110.95457553043502,
+        "known_action_only_correct": 3,
+        "known_high_only_correct": 45,
+        "unknown_action_only_empty": 0,
+        "unknown_high_only_empty": 31
+      }
+    }
+  },
+  "selection_policy_learned": false,
+  "actions_predeclared": true,
+  "online_uses_truth": false,
+  "test_threshold_tuning": false,
+  "E4_accessed": false,
+  "limitations": [
+    "Fixed predefined action family",
+    "Only command L1 and peak are matched",
+    "Mechanical work is not matched",
+    "Circular phase shift may wrap waveform",
+    "Actuator clipping is not independently audited",
+    "No learned or adaptive action policy",
+    "Four challenge arms share scenes",
+    "Per-arm coverage is not joint coverage",
+    "Calibrated guarantees need exchangeability",
+    "No validity claim for smoke thresholds",
+    "Only one held-out unknown mechanism",
+    "Gap bands share base scenes",
+    "Conditional B prediction uses observed A",
+    "No pre-action forecasting for new shapes",
+    "MuJoCo only, no RGB or E4"
+  ],
+  "source_sha256": {
+    "60_p3a7e1_action_family_pilot.py": "8d06decb3779cf4b8c22cf5e87a23ae4cd739a4161e6ab7f8eb1fb57461e8c14",
+    "68_p3a8c1_temporal_action_feasibility.py": "11d79d16b141ca65a94742b0377ab4cee7e9d5b9904105dbc8350988b3246a66"
+  }
+}

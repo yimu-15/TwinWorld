@@ -1,0 +1,84 @@
+{
+  "protocol": "P3-A0 A-conditioned known-law refit and held-out excitation",
+  "development_only": true,
+  "simulator": "MuJoCo simulator from 16_p2d1b_probe_diversity.py",
+  "scene_groups": {
+    "cal_known": 2,
+    "dev_all": 2,
+    "mass_shift_known": 2
+  },
+  "seed": 20261117,
+  "noise_std_m": 0.005,
+  "identification_pulse": 1.0,
+  "confirmation_pulse": 2.0,
+  "candidate_laws": [
+    "independent",
+    "rigid",
+    "elastic"
+  ],
+  "model_selection": "identification-only BIC, elastic alpha=k/mB beta=c/mB",
+  "score": "confirmed_selected_rms_m",
+  "known_only_calibration_q95_threshold_m": 0.019862957833178926,
+  "rates": {
+    "id_known_false_rejection": {
+      "rate": 0.0,
+      "scene_bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "scenes": 2,
+      "episodes": 6
+    },
+    "mass_shift_known_false_rejection": {
+      "rate": 0.0,
+      "scene_bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "scenes": 2,
+      "episodes": 6
+    },
+    "structure_unknown_rejection": {
+      "rate": 1.0,
+      "scene_bootstrap_95_ci": [
+        1.0,
+        1.0
+      ],
+      "scenes": 2,
+      "episodes": 4
+    }
+  },
+  "unknown_breakdown": {
+    "deadzone": {
+      "rate": 1.0,
+      "scene_bootstrap_95_ci": [
+        1.0,
+        1.0
+      ],
+      "scenes": 2,
+      "episodes": 2
+    },
+    "nonlinear": {
+      "rate": 1.0,
+      "scene_bootstrap_95_ci": [
+        1.0,
+        1.0
+      ],
+      "scenes": 2,
+      "episodes": 2
+    }
+  },
+  "known_model_selection_counts_on_dev": {
+    "elastic": 8,
+    "rigid": 2
+  },
+  "note": [
+    "No RGB input, no causal concept edit, no active action-selection policy.",
+    "No test-set tuning: all new scenes are exploratory development scenes.",
+    "A-conditioned continuous B dynamics is an approximation to the discrete MuJoCo simulator.",
+    "Sensor-noise assumptions, controller differences, and model approximation may produce false rejections.",
+    "A-only leakage must be independently measured.",
+    "The optimistic min-known confirmation residual is logged for audit, NOT used to select models.",
+    "Exact mass and k/c cannot be separated from alpha/beta using conditional B dynamics alone."
+  ]
+}

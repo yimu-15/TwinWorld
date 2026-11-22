@@ -1,0 +1,48 @@
+{
+  "protocol": "P4-T1A read-only theory/empirical margin-consistency audit",
+  "smoke": true,
+  "cohorts_kept_separate": true,
+  "n_cases_P88": 16,
+  "n_cases_P90": 16,
+  "input_sha256": {
+    "R88": "cdb0ac7dd258b9a4ed18e2a7b793428d983a4218d944d0eef7fd66f36a56ca71",
+    "A88": "3340fdf95f66c0a8f651831e527fa313e22ea1a6d6910c0d6e74fd3264bb95f4",
+    "R89": "c7b5217cdd4b6d6db3b75f812308391c93c249b3f7eb1801f002483bf3277f71",
+    "R90": "86b3ae545a78b2853a63266536037636edf2762f89eecbcfdc25e12cce72b0c0",
+    "A90": "9e23958d1d9315379b963e5ac246af1f0f3c772057ee140b7e391836911a3048",
+    "R93": "360a7eed52278309abcf206845089e156ec8d921e3fb4f22dba1708cd529aeba"
+  },
+  "metric_definitions": {
+    "loss_mm2": "(observed candidate prediction RMS in mm)^2; joint loss averages MID and held-out squared RMS",
+    "gamma_mm2": "min_{j!=truth}(L_j-L_truth); offline truth labels only for auditing",
+    "J_mm2": "[gamma(WOO,joint)-gamma(OOO,joint)]-[gamma(WOO,MID)-gamma(OOO,MID)]",
+    "P90_delta_gamma_mm2": "gamma(WOO,MID_PLUS_FULL)-gamma(WOO,MID_PLUS_HALF)",
+    "dose_normalized_separation_mm": "Elastic-vs-Cubic FULL separation / 2 - HALF separation; descriptive only",
+    "abstention": "No margin when a required candidate fit is unavailable; never drop case from classification denominator"
+  },
+  "E4_accessed": false,
+  "new_fits": 0,
+  "new_simulations": 0,
+  "threshold_tuning": false,
+  "truth_used_for_model_choice": false,
+  "limitations": [
+    "P88 and P90 are separate cohorts; no pooled causal estimate",
+    "True-law margins are offline explanatory metrics, unavailable to an actual agent",
+    "Positive gamma is only a deterministic score comparison, not a calibrated error probability",
+    "Squared-error margin differs from the earlier RMS Elastic-Cubic score gap",
+    "Gaussian risk formula is not validated without independent noise/covariance information",
+    "Increasing action amplitude changes signal scale and may change dynamics; no isolated information-theoretic gain is proven",
+    "Any inferential summaries here are post-hoc descriptive; the registered P88/P90 contrasts retain priority",
+    "No structural identifiability guarantee and no real-world transfer claim"
+  ],
+  "smoke_checks": {
+    "p88_row_count": 16,
+    "p90_row_count": 16,
+    "description": "Parity and input checks only; no effect estimation"
+  },
+  "audit_rows": {
+    "P88": 16,
+    "P90": 16,
+    "all_cells_checked": 384
+  }
+}

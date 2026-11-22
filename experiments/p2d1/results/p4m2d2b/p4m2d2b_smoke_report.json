@@ -1,0 +1,55 @@
+{
+  "protocol": "P4-M2D2B frozen-model amplitude dose response",
+  "smoke": true,
+  "scene_seed": 20391117,
+  "fit_noise_seed": 2029211701,
+  "action_noise_seed": 2029111702,
+  "n_base_scenes": 1,
+  "n_cases": 16,
+  "action_amplitudes": {
+    "half": 0.5,
+    "full": 1.0
+  },
+  "same_waveform": true,
+  "paired_noise": true,
+  "new_action_observations": true,
+  "source_provenance": {
+    "80_p4m2c0_prior_mismatch_stress.py": "08fae73537796474fbc182258d726092b0f9e9a7ccbe6db6f7ce5510b48eed03",
+    "88_p4m2d1_fresh_action_prior_interaction.py": "27f80208f99f4367fa735756f316bc5f7e47b32e9bbefd16e8768f51a19a13ad",
+    "p4m2d1_fresh_report.json": "cdb0ac7dd258b9a4ed18e2a7b793428d983a4218d944d0eef7fd66f36a56ca71",
+    "p4m2d2a_fresh_report.json": "c7b5217cdd4b6d6db3b75f812308391c93c249b3f7eb1801f002483bf3277f71",
+    "90_p4m2d2b_amplitude_dose_response.py": "e95486f8bd43bc64156ab8fb2ec78dd7cd7d82f8c2e75872331aa8e3ecaef4ac"
+  },
+  "scene_independence": {
+    "n_fingerprints": 2,
+    "vs_p88_exact_overlap": 0,
+    "fingerprints": [
+      "c32825f0999127f827981758e82e75680fba357ec39a0c7ace5c8c31b2740486",
+      "dc76969bb6b1e2a7fe5fa914ad105212281fb216aef4cd32f4cf3e66bea9c70e"
+    ]
+  },
+  "predeclared_effects": {
+    "PRIMARY_WOO_nonlinear_M2_recall_full_minus_half": 0.5,
+    "SECONDARY_WOO_nonlinear_M2_pairwise_sep_full_minus_half_mm": 11.55146793817759,
+    "SECONDARY_WOO_nonlinear_M2_score_gap_full_minus_half_mm": 6.684395345611016,
+    "SECONDARY_WOO_accuracy_full_minus_half": -0.125,
+    "DIAGNOSTIC_WOO_elastic_M2_recall_full_minus_half": -1.0,
+    "DIAGNOSTIC_OOO_accuracy_full_minus_half": -0.125
+  },
+  "bootstrap": null,
+  "nested_solver_violations": {
+    "deadzone": 1
+  },
+  "E4_accessed": false,
+  "action_used_for_fit": false,
+  "threshold_tuning": false,
+  "limitations": [
+    "Same simulator family, new scenes only",
+    "Half/full differ in actuation amplitude",
+    "Candidate separation is not accuracy",
+    "No structural identifiability proof",
+    "Finite-start SLSQP remains uncorrected",
+    "Truth used only for offline diagnostics",
+    "No E4"
+  ]
+}

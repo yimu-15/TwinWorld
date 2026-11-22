@@ -1,0 +1,461 @@
+{
+  "protocol": "P3-A2B E1/E2-only evidence vs nonprivileged E3 action selection",
+  "development_only": true,
+  "seed": 20261121,
+  "scene_counts": {
+    "calibration": 2,
+    "development": 2,
+    "mass_shift": 2
+  },
+  "policy": "Strong E3 iff known_BIC - edit_BIC exceeds known-only calibration q95; otherwise Weak E3.",
+  "calibration_known_only": {
+    "bic_margin_cutoff": 26.63833634651883,
+    "E3_thresholds": {
+      "weak_pulse_1p5": {
+        "known_q95_m": 0.010785199902904715,
+        "edit_q95_m": 0.01365855026741972,
+        "gain_positive_q95_m": 0.0008350774020480121
+      },
+      "strong_pulse_2p25": {
+        "known_q95_m": 0.01404294275910822,
+        "edit_q95_m": 0.019627648371682075,
+        "gain_positive_q95_m": 0.0010861902631108106
+      }
+    }
+  },
+  "early_BIC_unknown_AUROC_vs_ID_known": 1.0,
+  "early_BIC_unknown_AUROC_vs_mass_shift_known": 1.0,
+  "development": {
+    "early_only": {
+      "actions": {
+        "none": 10
+      },
+      "decisions": {
+        "keep": 5,
+        "edit": 5
+      },
+      "mean_E3_work_proxy_J": 0.0,
+      "mean_E3_impulse_Ns": 0.0,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 8.16733793252901,
+        "e4_sweep_2p25": 5.5624285894935
+      },
+      "known_false_edit": {
+        "mean": 0.16666666666666666,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.3333333333333333
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "unknown_correct_edit": {
+        "mean": 1.0,
+        "scene_bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      },
+      "unknown_wrong_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      }
+    },
+    "fixed_weak": {
+      "actions": {
+        "weak_pulse_1p5": 10
+      },
+      "decisions": {
+        "keep": 7,
+        "edit": 3
+      },
+      "mean_E3_work_proxy_J": 0.9043916997678405,
+      "mean_E3_impulse_Ns": 1.7085295015312378,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 10.326167871589686,
+        "e4_sweep_2p25": 6.4376684361098055
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "unknown_correct_edit": {
+        "mean": 0.75,
+        "scene_bootstrap_95_ci": [
+          0.5,
+          1.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      },
+      "unknown_wrong_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      }
+    },
+    "fixed_strong": {
+      "actions": {
+        "strong_pulse_2p25": 10
+      },
+      "decisions": {
+        "keep": 6,
+        "edit": 4
+      },
+      "mean_E3_work_proxy_J": 1.918231321642132,
+      "mean_E3_impulse_Ns": 2.5999413271978433,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 7.7028652839854495,
+        "e4_sweep_2p25": 5.87858071717734
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "unknown_correct_edit": {
+        "mean": 1.0,
+        "scene_bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      },
+      "unknown_wrong_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      }
+    },
+    "random50": {
+      "actions": {
+        "weak_pulse_1p5": 5,
+        "strong_pulse_2p25": 5
+      },
+      "decisions": {
+        "keep": 6,
+        "edit": 4
+      },
+      "mean_E3_work_proxy_J": 1.500312547356788,
+      "mean_E3_impulse_Ns": 2.219495446944425,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 7.7028652839854495,
+        "e4_sweep_2p25": 5.87858071717734
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "unknown_correct_edit": {
+        "mean": 1.0,
+        "scene_bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      },
+      "unknown_wrong_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      }
+    },
+    "bic_adaptive": {
+      "actions": {
+        "weak_pulse_1p5": 5,
+        "strong_pulse_2p25": 5
+      },
+      "decisions": {
+        "keep": 6,
+        "edit": 4
+      },
+      "mean_E3_work_proxy_J": 1.522845340694523,
+      "mean_E3_impulse_Ns": 2.221762695980904,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 7.7028652839854495,
+        "e4_sweep_2p25": 5.87858071717734
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "unknown_correct_edit": {
+        "mean": 1.0,
+        "scene_bootstrap_95_ci": [
+          1.0,
+          1.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      },
+      "unknown_wrong_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 4
+      },
+      "paired_E4_mean_delta_mm_vs_early_only": {
+        "mean": -0.07416026042986021,
+        "scene_bootstrap_95_ci": [
+          -0.14832052085972042,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 10
+      },
+      "paired_E4_mean_delta_mm_vs_fixed_weak": {
+        "mean": -1.5911951532683515,
+        "scene_bootstrap_95_ci": [
+          -3.182390306536703,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 10
+      },
+      "paired_E4_mean_delta_mm_vs_fixed_strong": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 10
+      },
+      "paired_E4_mean_delta_mm_vs_random50": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 10
+      }
+    }
+  },
+  "mass_shift": {
+    "early_only": {
+      "actions": {
+        "none": 6
+      },
+      "decisions": {
+        "keep": 6
+      },
+      "mean_E3_work_proxy_J": 0.0,
+      "mean_E3_impulse_Ns": 0.0,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 7.149294379172139,
+        "e4_sweep_2p25": 6.1664753461813
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "unknown_correct_edit": null,
+      "unknown_wrong_edit": null
+    },
+    "fixed_weak": {
+      "actions": {
+        "weak_pulse_1p5": 6
+      },
+      "decisions": {
+        "keep": 6
+      },
+      "mean_E3_work_proxy_J": 1.1966109037629857,
+      "mean_E3_impulse_Ns": 2.335123378689488,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 7.149294379172139,
+        "e4_sweep_2p25": 6.1664753461813
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "unknown_correct_edit": null,
+      "unknown_wrong_edit": null
+    },
+    "fixed_strong": {
+      "actions": {
+        "strong_pulse_2p25": 6
+      },
+      "decisions": {
+        "keep": 6
+      },
+      "mean_E3_work_proxy_J": 2.4853028202694096,
+      "mean_E3_impulse_Ns": 3.5025482477247114,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 7.149294379172139,
+        "e4_sweep_2p25": 6.1664753461813
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "unknown_correct_edit": null,
+      "unknown_wrong_edit": null
+    },
+    "random50": {
+      "actions": {
+        "strong_pulse_2p25": 5,
+        "weak_pulse_1p5": 1
+      },
+      "decisions": {
+        "keep": 6
+      },
+      "mean_E3_work_proxy_J": 2.218199913980621,
+      "mean_E3_impulse_Ns": 3.25475119924814,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 7.149294379172139,
+        "e4_sweep_2p25": 6.1664753461813
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "unknown_correct_edit": null,
+      "unknown_wrong_edit": null
+    },
+    "bic_adaptive": {
+      "actions": {
+        "weak_pulse_1p5": 6
+      },
+      "decisions": {
+        "keep": 6
+      },
+      "mean_E3_work_proxy_J": 1.1966109037629857,
+      "mean_E3_impulse_Ns": 2.335123378689488,
+      "E4_mean_rms_mm_by_probe": {
+        "e4_pulse_2p75": 7.149294379172139,
+        "e4_sweep_2p25": 6.1664753461813
+      },
+      "known_false_edit": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "unknown_correct_edit": null,
+      "unknown_wrong_edit": null,
+      "paired_E4_mean_delta_mm_vs_early_only": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "paired_E4_mean_delta_mm_vs_fixed_weak": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "paired_E4_mean_delta_mm_vs_fixed_strong": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      },
+      "paired_E4_mean_delta_mm_vs_random50": {
+        "mean": 0.0,
+        "scene_bootstrap_95_ci": [
+          0.0,
+          0.0
+        ],
+        "scenes": 2,
+        "episodes": 6
+      }
+    }
+  },
+  "physics": {
+    "max_passive_gap_m": 0.0,
+    "max_A_mode_gap_m": 0.008486795909196626
+  },
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700",
+    "24_p3a2a_gate_and_excitation.py": "20433fc4bc954edf2bd1272ef65dc0ea9fa2db007397a6b7598a0ec20e11405d"
+  },
+  "notes": [
+    "The action chooser does not access true mechanisms or future observations.",
+    "Alternative E3 outcomes are generated offline only for paired evaluation.",
+    "Early-only is a no-E3 baseline.",
+    "Random50 is not necessarily work-budget matched.",
+    "BIC is a heuristic with temporally correlated residuals.",
+    "E4 B predictions are conditioned on observed E4 A trajectories.",
+    "Candidate structural edits are manually specified and include the tested unknown mechanisms.",
+    "This is a development experiment, not a final confirmatory test."
+  ]
+}

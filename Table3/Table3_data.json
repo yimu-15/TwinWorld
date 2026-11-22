@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "table_id": "Table 3",
+  "title": "Intervention amplitude and mechanism discrimination",
+  "source_csv": "table3_amplitude.csv",
+  "source_csv_sha256": "630dcf154230fedec38f1039154f4cd223dd845df2517df62538fe084469d3af",
+  "headers": [
+    "Experiment",
+    "Mechanism",
+    "Amplitude_Contrast",
+    "Primary_Metric",
+    "Effect",
+    "CI95_low",
+    "CI95_high",
+    "Sample_Unit"
+  ],
+  "value_policy": "Verbatim display strings from CSV (no numeric edits, precision normalization, or label correction).",
+  "rows": [
+    {
+      "csv_row_index": 1,
+      "Experiment": "P4-M2D2B_v2",
+      "Mechanism": "nonlinear-M2",
+      "Amplitude_Contrast": "FULL(1.0x)_vs_HALF(0.5x)",
+      "Primary_Metric": "Recall difference",
+      "Effect": "0.1979",
+      "CI95_low": "0.0938",
+      "CI95_high": "0.3125",
+      "Sample_Unit": "96 nonlinear-M2 cases"
+    },
+    {
+      "csv_row_index": 2,
+      "Experiment": "P4-M2D2B_v2",
+      "Mechanism": "nonlinear-M2",
+      "Amplitude_Contrast": "FULL(1.0x)_vs_HALF(0.5x)",
+      "Primary_Metric": "Pairwise separation difference",
+      "Effect": "10.156",
+      "CI95_low": "8.336",
+      "CI95_high": "12.146",
+      "Sample_Unit": "mm"
+    },
+    {
+      "csv_row_index": 3,
+      "Experiment": "P4-M2D1",
+      "Mechanism": "overall",
+      "Amplitude_Contrast": "HIGH_vs_MID",
+      "Primary_Metric": "Identification accuracy",
+      "Effect": "0.1198",
+      "CI95_low": "0.0807",
+      "CI95_high": "0.1563",
+      "Sample_Unit": "384 cases (24 scenes)"
+    }
+  ]
+}

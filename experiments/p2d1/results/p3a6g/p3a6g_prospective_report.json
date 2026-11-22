@@ -1,0 +1,223 @@
+{
+  "protocol": "P3-A6G fresh structural validation",
+  "scene_seed": 20261213,
+  "noise_seed": 2026121301,
+  "smoke_excluded_from_full": true,
+  "base_scene_ids": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "prediction": "B conditional on observed A",
+  "E4_accessed": false,
+  "thresholds_tuned": false,
+  "new_action_policy": false,
+  "source_sha256": {
+    "16_p2d1b_probe_diversity.py": "3ed4529e6f3672a086693becb555b9f52d04d0e70cfb4bf4ae8c5f6ac8066079",
+    "22_p3a1b_structural_revision.py": "57acab3a356324233838852da4f183aad6ee9747ef59d1b5edfafdbba467f700"
+  },
+  "summary": {
+    "original": {
+      "independent": {
+        "n": 36,
+        "early_to_strong_mm": 26.7593,
+        "weak_to_strong_mm": 5.605,
+        "null_to_strong_mm": 5.3064,
+        "early_to_weak_mm": 12.5062,
+        "strong_to_weak_mm": 5.4804,
+        "strong_test_margin": {
+          "min_mm": -5.58219190417406,
+          "median_mm": -0.04685502769911963,
+          "max_mm": 1.6999332618299472,
+          "positive_count": 10,
+          "over_1mm_count": 1
+        },
+        "weak_test_margin": {
+          "min_mm": -0.4584392527943572,
+          "median_mm": 0.005649919660372527,
+          "max_mm": 0.6907972756544749,
+          "positive_count": 20,
+          "over_1mm_count": 0
+        },
+        "weak_improves_strong_count": 31,
+        "strong_improves_weak_count": 33,
+        "converged_both": 36,
+        "weak_near_zero_coupling_count": 32
+      },
+      "deadzone": {
+        "n": 36,
+        "early_to_strong_mm": 32.6473,
+        "weak_to_strong_mm": 6.8608,
+        "null_to_strong_mm": 172.2604,
+        "early_to_weak_mm": 16.2183,
+        "strong_to_weak_mm": 6.2462,
+        "strong_test_margin": {
+          "min_mm": 90.1384131160991,
+          "median_mm": 164.45610300614464,
+          "max_mm": 273.3409739894864,
+          "positive_count": 36,
+          "over_1mm_count": 36
+        },
+        "weak_test_margin": {
+          "min_mm": 45.77829482477608,
+          "median_mm": 92.54335944275545,
+          "max_mm": 174.55368462227,
+          "positive_count": 36,
+          "over_1mm_count": 36
+        },
+        "weak_improves_strong_count": 35,
+        "strong_improves_weak_count": 33,
+        "converged_both": 36
+      }
+    },
+    "high_in_range": {
+      "independent": {
+        "n": 36,
+        "early_to_strong_mm": 26.7593,
+        "weak_to_strong_mm": 5.605,
+        "null_to_strong_mm": 5.3064,
+        "early_to_weak_mm": 12.5062,
+        "strong_to_weak_mm": 5.4804,
+        "strong_test_margin": {
+          "min_mm": -5.58219190417406,
+          "median_mm": -0.04685502769911963,
+          "max_mm": 1.6999332618299472,
+          "positive_count": 10,
+          "over_1mm_count": 1
+        },
+        "weak_test_margin": {
+          "min_mm": -0.4584392527943572,
+          "median_mm": 0.005649919660372527,
+          "max_mm": 0.6907972756544749,
+          "positive_count": 20,
+          "over_1mm_count": 0
+        },
+        "weak_improves_strong_count": 31,
+        "strong_improves_weak_count": 33,
+        "converged_both": 36,
+        "weak_near_zero_coupling_count": 32
+      },
+      "deadzone": {
+        "n": 36,
+        "early_to_strong_mm": 67.5696,
+        "weak_to_strong_mm": 6.5162,
+        "null_to_strong_mm": 148.0369,
+        "early_to_weak_mm": 40.235,
+        "strong_to_weak_mm": 6.1666,
+        "strong_test_margin": {
+          "min_mm": 77.74045074458965,
+          "median_mm": 141.8634709624423,
+          "max_mm": 217.9666443953521,
+          "positive_count": 36,
+          "over_1mm_count": 36
+        },
+        "weak_test_margin": {
+          "min_mm": 37.332905217273414,
+          "median_mm": 72.7576946918141,
+          "max_mm": 122.41085073984416,
+          "positive_count": 36,
+          "over_1mm_count": 36
+        },
+        "weak_improves_strong_count": 36,
+        "strong_improves_weak_count": 36,
+        "converged_both": 36
+      }
+    },
+    "above_original_range": {
+      "independent": {
+        "n": 36,
+        "early_to_strong_mm": 26.7593,
+        "weak_to_strong_mm": 5.605,
+        "null_to_strong_mm": 5.3064,
+        "early_to_weak_mm": 12.5062,
+        "strong_to_weak_mm": 5.4804,
+        "strong_test_margin": {
+          "min_mm": -5.58219190417406,
+          "median_mm": -0.04685502769911963,
+          "max_mm": 1.6999332618299472,
+          "positive_count": 10,
+          "over_1mm_count": 1
+        },
+        "weak_test_margin": {
+          "min_mm": -0.4584392527943572,
+          "median_mm": 0.005649919660372527,
+          "max_mm": 0.6907972756544749,
+          "positive_count": 20,
+          "over_1mm_count": 0
+        },
+        "weak_improves_strong_count": 31,
+        "strong_improves_weak_count": 33,
+        "converged_both": 36,
+        "weak_near_zero_coupling_count": 32
+      },
+      "deadzone": {
+        "n": 36,
+        "early_to_strong_mm": 91.7892,
+        "weak_to_strong_mm": 10.2,
+        "null_to_strong_mm": 123.5282,
+        "early_to_weak_mm": 43.549,
+        "strong_to_weak_mm": 6.6516,
+        "strong_test_margin": {
+          "min_mm": 53.68498940044535,
+          "median_mm": 116.69950762792145,
+          "max_mm": 172.1110325180142,
+          "positive_count": 36,
+          "over_1mm_count": 36
+        },
+        "weak_test_margin": {
+          "min_mm": 18.691769927510578,
+          "median_mm": 52.01767582448984,
+          "max_mm": 85.05447148819766,
+          "positive_count": 36,
+          "over_1mm_count": 36
+        },
+        "weak_improves_strong_count": 34,
+        "strong_improves_weak_count": 34,
+        "converged_both": 36
+      }
+    }
+  },
+  "limitations": [
+    "New seed but same simulation generator",
+    "Only Independent and Deadzone evaluated",
+    "Strong is heldout from Weak-based fitting",
+    "Reverse Weak test is heldout from Strong fitting",
+    "Both A trajectories are observed at test time",
+    "No online action-selection policy",
+    "No E4 results are used",
+    "Prediction margins are descriptive, not calibrated"
+  ]
+}

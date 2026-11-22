@@ -1,0 +1,212 @@
+{
+  "protocol": "P3-A8C2B bidirectional selection",
+  "smoke": true,
+  "n_test_scenes": 2,
+  "test_seed": 20380521,
+  "noise_seed": 2028152101,
+  "threshold_source": "P3-A8C1B formal",
+  "alpha_mid": 0.05,
+  "alpha_high": 0.025,
+  "alpha_reverse_high": 0.025,
+  "selection_score": "25th-percentile pairwise normalized prediction RMS, same as P3-A8B0",
+  "summary": {
+    "original": {
+      "policies": {
+        "mid_only": {
+          "correct": 1,
+          "wrong": 0,
+          "contains_true": 10,
+          "unknown_empty": 0,
+          "unknown_false_singleton": 0,
+          "work_J": 44.59682551919158,
+          "actions": {
+            "None": 12
+          }
+        },
+        "fixed_high": {
+          "correct": 6,
+          "wrong": 0,
+          "contains_true": 10,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "work_J": 77.5874822701784,
+          "actions": {
+            "high": 12
+          }
+        },
+        "fixed_reverse": {
+          "correct": 5,
+          "wrong": 0,
+          "contains_true": 9,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "work_J": 65.86997155626128,
+          "actions": {
+            "reverse_high": 12
+          }
+        },
+        "fixed_biphasic": {
+          "correct": 4,
+          "wrong": 0,
+          "contains_true": 10,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "work_J": 52.580201281846364,
+          "actions": {
+            "biphasic_high": 12
+          }
+        },
+        "old_disagreement": {
+          "correct": 6,
+          "wrong": 0,
+          "contains_true": 10,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "work_J": 72.31299567987652,
+          "actions": {
+            "high": 8,
+            "reverse_high": 4
+          }
+        },
+        "affine_disagreement": {
+          "correct": 5,
+          "wrong": 0,
+          "contains_true": 9,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "work_J": 71.64917325924749,
+          "actions": {
+            "high": 6,
+            "reverse_high": 6
+          }
+        }
+      },
+      "eligible": 12,
+      "old_affine_action_changes": 6,
+      "A_forecast_PRIVATE": {
+        "high": {
+          "n": 12,
+          "median_mm": 4.648765291446763,
+          "p90_mm": 7.759955329529715
+        },
+        "reverse_high": {
+          "n": 12,
+          "median_mm": 7.148821896595365,
+          "p90_mm": 12.750075572132372
+        }
+      }
+    },
+    "above_original_range": {
+      "policies": {
+        "mid_only": {
+          "correct": 1,
+          "wrong": 0,
+          "contains_true": 10,
+          "unknown_empty": 0,
+          "unknown_false_singleton": 0,
+          "work_J": 44.26383378802862,
+          "actions": {
+            "None": 12
+          }
+        },
+        "fixed_high": {
+          "correct": 6,
+          "wrong": 0,
+          "contains_true": 10,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "work_J": 77.15661680176719,
+          "actions": {
+            "high": 12
+          }
+        },
+        "fixed_reverse": {
+          "correct": 5,
+          "wrong": 0,
+          "contains_true": 9,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "work_J": 65.47542621460641,
+          "actions": {
+            "reverse_high": 12
+          }
+        },
+        "fixed_biphasic": {
+          "correct": 4,
+          "wrong": 0,
+          "contains_true": 10,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "work_J": 52.300338356529224,
+          "actions": {
+            "biphasic_high": 12
+          }
+        },
+        "old_disagreement": {
+          "correct": 5,
+          "wrong": 0,
+          "contains_true": 9,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "work_J": 68.43651940200729,
+          "actions": {
+            "high": 3,
+            "reverse_high": 9
+          }
+        },
+        "affine_disagreement": {
+          "correct": 5,
+          "wrong": 0,
+          "contains_true": 9,
+          "unknown_empty": 2,
+          "unknown_false_singleton": 0,
+          "work_J": 72.19073462566755,
+          "actions": {
+            "high": 7,
+            "reverse_high": 5
+          }
+        }
+      },
+      "eligible": 12,
+      "old_affine_action_changes": 6,
+      "A_forecast_PRIVATE": {
+        "high": {
+          "n": 12,
+          "median_mm": 4.268576290741503,
+          "p90_mm": 8.646312357080715
+        },
+        "reverse_high": {
+          "n": 12,
+          "median_mm": 7.767155286865689,
+          "p90_mm": 16.281021932680854
+        }
+      }
+    }
+  },
+  "online_uses_future_A": false,
+  "online_uses_future_B": false,
+  "online_uses_truth": false,
+  "E4_accessed": false,
+  "test_tuning": false,
+  "limitations": [
+    "Only two selectable actions",
+    "Biphasic included as fixed reference only",
+    "Affine negative extrapolation remains noisy",
+    "Point-estimate candidate models",
+    "No calibrated planner uncertainty",
+    "No wrong-singleton probability guarantee",
+    "One held-out unknown mechanism",
+    "Offline counterfactual execution",
+    "Selected actions alone charged",
+    "Mechanical work is a proxy",
+    "Gap bands share base scenes",
+    "Synthetic MuJoCo positions only",
+    "No real hardware or RGB"
+  ],
+  "source_sha256": {
+    "64_p3a8b0_preaction_disagreement_pilot.py": "2a3c7ba0e1f18c605a38b746960b9705fc2a7acd1c8f73506787ea20675b1e1d",
+    "65_p3a8b1_observable_A_response_audit.py": "c882fe225e14d6705503993d62ab1851826a79c5e4e1a57392fda826b72b9698",
+    "68_p3a8c1_temporal_action_feasibility.py": "11d79d16b141ca65a94742b0377ab4cee7e9d5b9904105dbc8350988b3246a66",
+    "71_p3a8c2b_bidirectional_action_selection.py": "e88aa8a4979eef2a873ae17775008ba13d911dad44d52361720b7453653fec7a"
+  }
+}

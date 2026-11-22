@@ -1,0 +1,120 @@
+{
+  "protocol": "P2-D1A physical mechanism smoke",
+  "mujoco_version": "3.17.0",
+  "modes": [
+    "independent",
+    "rigid",
+    "elastic",
+    "deadzone",
+    "nonlinear"
+  ],
+  "actions": [
+    "steady",
+    "pulse",
+    "reversal"
+  ],
+  "parameters": {
+    "k": 8.0,
+    "damping": 1.5,
+    "deadzone_m": 0.05,
+    "cubic_k": 400.0
+  },
+  "actions_summary": {
+    "steady": {
+      "passive_max_gap_m": 0.0,
+      "min_pairwise_B_rms_m": 0.0014366043963093135,
+      "pairwise_B_rms_m": {
+        "independent_vs_rigid": 0.08930321544955078,
+        "independent_vs_elastic": 0.049811087585545165,
+        "independent_vs_deadzone": 0.02021688511015821,
+        "independent_vs_nonlinear": 0.05120448363241509,
+        "rigid_vs_elastic": 0.04094095819976751,
+        "rigid_vs_deadzone": 0.07164242277055416,
+        "rigid_vs_nonlinear": 0.03976230293208221,
+        "elastic_vs_deadzone": 0.03103401131183579,
+        "elastic_vs_nonlinear": 0.0014366043963093135,
+        "deadzone_vs_nonlinear": 0.03233949368280389
+      },
+      "command_budget": 0.40000000000000324,
+      "actuator_impulse_Ns": {
+        "independent": 0.40079404028036,
+        "rigid": 0.8016050024746916,
+        "elastic": 0.768883403415041,
+        "deadzone": 0.7012257748805603,
+        "nonlinear": 0.7889096524525989
+      },
+      "absolute_actuator_work_J": {
+        "independent": 0.14027528358131403,
+        "rigid": 0.2805680489151325,
+        "elastic": 0.290727305352389,
+        "deadzone": 0.2780744152182325,
+        "nonlinear": 0.2997997832492413
+      },
+      "force_balance_error_max": 0.0
+    },
+    "pulse": {
+      "passive_max_gap_m": 0.0,
+      "min_pairwise_B_rms_m": 0.009202283543945275,
+      "pairwise_B_rms_m": {
+        "independent_vs_rigid": 0.16677678410095736,
+        "independent_vs_elastic": 0.10520363424310529,
+        "independent_vs_deadzone": 0.06822291199332424,
+        "independent_vs_nonlinear": 0.11432931400757226,
+        "rigid_vs_elastic": 0.0685335284301845,
+        "rigid_vs_deadzone": 0.10599765470267923,
+        "rigid_vs_nonlinear": 0.06184430189537788,
+        "elastic_vs_deadzone": 0.03886209586173362,
+        "elastic_vs_nonlinear": 0.009202283543945275,
+        "deadzone_vs_nonlinear": 0.047538772027809935
+      },
+      "command_budget": 0.4000000000000003,
+      "actuator_impulse_Ns": {
+        "independent": 0.43715192641176676,
+        "rigid": 0.939893862741329,
+        "elastic": 0.9744801926471484,
+        "deadzone": 0.9319420030442297,
+        "nonlinear": 1.0122919250282398
+      },
+      "absolute_actuator_work_J": {
+        "independent": 0.1603665478111859,
+        "rigid": 0.35857824089998724,
+        "elastic": 0.4382086021736791,
+        "deadzone": 0.43131046817034907,
+        "nonlinear": 0.45871671966564
+      },
+      "force_balance_error_max": 0.0
+    },
+    "reversal": {
+      "passive_max_gap_m": 0.0,
+      "min_pairwise_B_rms_m": 0.0004436460230649086,
+      "pairwise_B_rms_m": {
+        "independent_vs_rigid": 0.04266571810528836,
+        "independent_vs_elastic": 0.0373977294098105,
+        "independent_vs_deadzone": 0.0007708475158431468,
+        "independent_vs_nonlinear": 0.037838609298102,
+        "rigid_vs_elastic": 0.018711619206089346,
+        "rigid_vs_deadzone": 0.04205921203043658,
+        "rigid_vs_nonlinear": 0.018705712338188858,
+        "elastic_vs_deadzone": 0.036644599062556266,
+        "elastic_vs_nonlinear": 0.0004436460230649086,
+        "deadzone_vs_nonlinear": 0.0370854522457321
+      },
+      "command_budget": 0.39999999999999847,
+      "actuator_impulse_Ns": {
+        "independent": 0.4259938996553822,
+        "rigid": 0.8923970063184536,
+        "elastic": 0.4452161642730615,
+        "deadzone": 0.41941601613756396,
+        "nonlinear": 0.44619283077207833
+      },
+      "absolute_actuator_work_J": {
+        "independent": 0.10491240471426588,
+        "rigid": 0.21577819646485277,
+        "elastic": 0.10467355982342409,
+        "deadzone": 0.1037748747574625,
+        "nonlinear": 0.1046411476800423
+      },
+      "force_balance_error_max": 0.0
+    }
+  }
+}

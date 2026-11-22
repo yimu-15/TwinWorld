@@ -1,0 +1,182 @@
+{
+  "protocol": "P3-A8C3A-0 action-ranking validity",
+  "smoke": true,
+  "source": "D:\\OnShouldersGiants\\TwinWorld_P0\\experiments\\p2d1\\results\\p3a8c2b\\p3a8c2b_fresh_audit_PRIVATE.json",
+  "prediction_methods": [
+    "old",
+    "affine"
+  ],
+  "preference_definition": "Truth-preservation, then set size; false singleton avoidance",
+  "results": {
+    "original": {
+      "known": {
+        "old": {
+          "metrics": {
+            "n": 20,
+            "comparable": 5,
+            "preference_coverage": 0.25,
+            "concordance": 0.6,
+            "spearman_rho": 0.28867513459481287,
+            "high_preferred": 2,
+            "reverse_preferred": 3,
+            "selected_high": 10,
+            "selected_reverse": 10,
+            "mean_selected_cost_J": 6.233307100195465,
+            "mean_fixed_high_cost_J": 6.754588191248969,
+            "mean_fixed_reverse_cost_J": 5.731573087704925
+          },
+          "bootstrap": null,
+          "margin_quartiles": []
+        },
+        "affine": {
+          "metrics": {
+            "n": 20,
+            "comparable": 5,
+            "preference_coverage": 0.25,
+            "concordance": 0.6,
+            "spearman_rho": 0.8660254037844386,
+            "high_preferred": 2,
+            "reverse_preferred": 3,
+            "selected_high": 10,
+            "selected_reverse": 10,
+            "mean_selected_cost_J": 6.242331122052663,
+            "mean_fixed_high_cost_J": 6.754588191248969,
+            "mean_fixed_reverse_cost_J": 5.731573087704925
+          },
+          "bootstrap": null,
+          "margin_quartiles": []
+        }
+      },
+      "unknown": {
+        "old": {
+          "metrics": {
+            "n": 4,
+            "comparable": 0,
+            "preference_coverage": 0.0,
+            "concordance": null,
+            "spearman_rho": null,
+            "high_preferred": 0,
+            "reverse_preferred": 0,
+            "selected_high": 3,
+            "selected_reverse": 1,
+            "mean_selected_cost_J": 4.39288568853627,
+            "mean_fixed_high_cost_J": 4.630407865366796,
+            "mean_fixed_reverse_cost_J": 3.9789833776912245
+          },
+          "bootstrap": null,
+          "margin_quartiles": []
+        },
+        "affine": {
+          "metrics": {
+            "n": 4,
+            "comparable": 0,
+            "preference_coverage": 0.0,
+            "concordance": null,
+            "spearman_rho": null,
+            "high_preferred": 0,
+            "reverse_preferred": 0,
+            "selected_high": 1,
+            "selected_reverse": 3,
+            "mean_selected_cost_J": 4.235348123685274,
+            "mean_fixed_high_cost_J": 4.630407865366796,
+            "mean_fixed_reverse_cost_J": 3.9789833776912245
+          },
+          "bootstrap": null,
+          "margin_quartiles": []
+        }
+      }
+    },
+    "above_original_range": {
+      "known": {
+        "old": {
+          "metrics": {
+            "n": 20,
+            "comparable": 2,
+            "preference_coverage": 0.1,
+            "concordance": 0.5,
+            "spearman_rho": null,
+            "high_preferred": 1,
+            "reverse_preferred": 1,
+            "selected_high": 11,
+            "selected_reverse": 9,
+            "mean_selected_cost_J": 6.068929627971789,
+            "mean_fixed_high_cost_J": 6.641177611570579,
+            "mean_fixed_reverse_cost_J": 5.629149895122749
+          },
+          "bootstrap": null,
+          "margin_quartiles": []
+        },
+        "affine": {
+          "metrics": {
+            "n": 20,
+            "comparable": 2,
+            "preference_coverage": 0.1,
+            "concordance": 0.5,
+            "spearman_rho": null,
+            "high_preferred": 1,
+            "reverse_preferred": 1,
+            "selected_high": 11,
+            "selected_reverse": 9,
+            "mean_selected_cost_J": 6.287031960549635,
+            "mean_fixed_high_cost_J": 6.641177611570579,
+            "mean_fixed_reverse_cost_J": 5.629149895122749
+          },
+          "bootstrap": null,
+          "margin_quartiles": []
+        }
+      },
+      "unknown": {
+        "old": {
+          "metrics": {
+            "n": 4,
+            "comparable": 0,
+            "preference_coverage": 0.0,
+            "concordance": null,
+            "spearman_rho": null,
+            "high_preferred": 0,
+            "reverse_preferred": 0,
+            "selected_high": 2,
+            "selected_reverse": 2,
+            "mean_selected_cost_J": 4.284877370836544,
+            "mean_fixed_high_cost_J": 4.630407865366796,
+            "mean_fixed_reverse_cost_J": 3.9789833776912245
+          },
+          "bootstrap": null,
+          "margin_quartiles": []
+        },
+        "affine": {
+          "metrics": {
+            "n": 4,
+            "comparable": 0,
+            "preference_coverage": 0.0,
+            "concordance": null,
+            "spearman_rho": null,
+            "high_preferred": 0,
+            "reverse_preferred": 0,
+            "selected_high": 0,
+            "selected_reverse": 4,
+            "mean_selected_cost_J": 3.9789833776912245,
+            "mean_fixed_high_cost_J": 4.630407865366796,
+            "mean_fixed_reverse_cost_J": 3.9789833776912245
+          },
+          "bootstrap": null,
+          "margin_quartiles": []
+        }
+      }
+    }
+  },
+  "new_simulations": 0,
+  "new_model_fits": 0,
+  "historical_thresholds_changed": false,
+  "E4_accessed": false,
+  "limitations": [
+    "Retrospective diagnostic",
+    "Preferences use private truth",
+    "Preference is not a complete utility",
+    "No independent confirmation",
+    "No online policy modification",
+    "Shared scenes across mechanisms",
+    "Cost excluded from preference",
+    "No guarantee of decision calibration"
+  ]
+}

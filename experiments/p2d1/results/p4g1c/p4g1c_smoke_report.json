@@ -1,0 +1,20 @@
+{
+  "protocol": "P4-G1C read-only smoke, no inferential claims",
+  "n_rows_rechecked": 16,
+  "source_files_checked": {
+    "SELF": "99_p4g1b_independent_generator_identification.py",
+    "P16": "16_p2d1b_probe_diversity.py",
+    "P22": "22_p3a1b_structural_revision.py",
+    "P77": "77_p4m2b2a_matched_domain_fit.py",
+    "P92": "92_p4s1b_full_solver_budget_audit.py",
+    "P97": "97_p4b1b_fresh_classical_baseline_confirmation_v2.py",
+    "P98": "98_p4g1a_independent_physics_generator_feasibility.py",
+    "R97": "p4b1b_v2_fresh_report.json",
+    "R98": "p4g1a_feasibility_report.json",
+    "R98_SMOKE": "p4g1a_smoke_report.json"
+  },
+  "n_available_decisions_rechecked": 1344,
+  "E4_accessed": false,
+  "new_fits": 0,
+  "new_simulations": 0
+}

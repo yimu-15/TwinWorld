@@ -1,0 +1,985 @@
+{
+  "protocol": "P4-B1A training-only classical model selection baseline pilot",
+  "smoke": true,
+  "n_cases": 16,
+  "n_scenes": 1,
+  "n_training_scalar_residuals": 408,
+  "training_actions": [
+    "e1",
+    "e2",
+    "weak",
+    "strong"
+  ],
+  "candidate_parameters": {
+    "elastic": 2,
+    "deadzone": 3,
+    "cubic": 3
+  },
+  "fit_arms": {
+    "FROZEN": "original two start fits; abstentions preserved",
+    "MATCHED5": "best converged among original2 and fixed extra3 starts"
+  },
+  "score_definitions": {
+    "TRAIN_PEM": "training normalized MSE (already the original optimizer objective)",
+    "KNOWN_SIGMA_AIC": "n * normalized_MSE + 2*k",
+    "KNOWN_SIGMA_BIC": "n * normalized_MSE + ln(n)*k",
+    "PROFILE_SIGMA_AIC": "n * ln(normalized_MSE) + 2*k",
+    "PROFILE_SIGMA_BIC": "n * ln(normalized_MSE) + ln(n)*k"
+  },
+  "metrics": {
+    "FROZEN": {
+      "WWW": {
+        "TRAIN_PEM": {
+          "correct": 10,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.625,
+          "accuracy_available": 0.625,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 3,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 11,
+            "elastic": 1,
+            "cubic": 4
+          }
+        },
+        "KNOWN_SIGMA_AIC": {
+          "correct": 10,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.625,
+          "accuracy_available": 0.625,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 3,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 11,
+            "elastic": 1,
+            "cubic": 4
+          }
+        },
+        "KNOWN_SIGMA_BIC": {
+          "correct": 11,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.6875,
+          "accuracy_available": 0.6875,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 3,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 11,
+            "elastic": 2,
+            "cubic": 3
+          }
+        },
+        "PROFILE_SIGMA_AIC": {
+          "correct": 10,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.625,
+          "accuracy_available": 0.625,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 3,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 11,
+            "elastic": 1,
+            "cubic": 4
+          }
+        },
+        "PROFILE_SIGMA_BIC": {
+          "correct": 11,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.6875,
+          "accuracy_available": 0.6875,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 3,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 11,
+            "elastic": 2,
+            "cubic": 3
+          }
+        }
+      },
+      "OOO": {
+        "TRAIN_PEM": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 5,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 7,
+            "elastic": 1
+          }
+        },
+        "KNOWN_SIGMA_AIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 5,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 7,
+            "elastic": 1
+          }
+        },
+        "KNOWN_SIGMA_BIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 5,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 7,
+            "elastic": 1
+          }
+        },
+        "PROFILE_SIGMA_AIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 5,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 7,
+            "elastic": 1
+          }
+        },
+        "PROFILE_SIGMA_BIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 5,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 7,
+            "elastic": 1
+          }
+        }
+      },
+      "WOO": {
+        "TRAIN_PEM": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 4,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 5,
+            "elastic": 3
+          }
+        },
+        "KNOWN_SIGMA_AIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 4,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 5,
+            "elastic": 3
+          }
+        },
+        "KNOWN_SIGMA_BIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 4,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 5,
+            "elastic": 3
+          }
+        },
+        "PROFILE_SIGMA_AIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 4,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 5,
+            "elastic": 3
+          }
+        },
+        "PROFILE_SIGMA_BIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 4,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 5,
+            "elastic": 3
+          }
+        }
+      }
+    },
+    "MATCHED5": {
+      "WWW": {
+        "TRAIN_PEM": {
+          "correct": 10,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.625,
+          "accuracy_available": 0.625,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 3,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 11,
+            "elastic": 1,
+            "cubic": 4
+          }
+        },
+        "KNOWN_SIGMA_AIC": {
+          "correct": 10,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.625,
+          "accuracy_available": 0.625,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 3,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 11,
+            "elastic": 1,
+            "cubic": 4
+          }
+        },
+        "KNOWN_SIGMA_BIC": {
+          "correct": 11,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.6875,
+          "accuracy_available": 0.6875,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 3,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 11,
+            "elastic": 2,
+            "cubic": 3
+          }
+        },
+        "PROFILE_SIGMA_AIC": {
+          "correct": 10,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.625,
+          "accuracy_available": 0.625,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 3,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 11,
+            "elastic": 1,
+            "cubic": 4
+          }
+        },
+        "PROFILE_SIGMA_BIC": {
+          "correct": 11,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.6875,
+          "accuracy_available": 0.6875,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 3,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 11,
+            "elastic": 2,
+            "cubic": 3
+          }
+        }
+      },
+      "OOO": {
+        "TRAIN_PEM": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 5,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 7,
+            "elastic": 1
+          }
+        },
+        "KNOWN_SIGMA_AIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 5,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 7,
+            "elastic": 1
+          }
+        },
+        "KNOWN_SIGMA_BIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 5,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 7,
+            "elastic": 1
+          }
+        },
+        "PROFILE_SIGMA_AIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 5,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 7,
+            "elastic": 1
+          }
+        },
+        "PROFILE_SIGMA_BIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 1,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 5,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 7,
+            "elastic": 1
+          }
+        }
+      },
+      "WOO": {
+        "TRAIN_PEM": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 4,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 5,
+            "elastic": 3
+          }
+        },
+        "KNOWN_SIGMA_AIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 4,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 5,
+            "elastic": 3
+          }
+        },
+        "KNOWN_SIGMA_BIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 4,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 5,
+            "elastic": 3
+          }
+        },
+        "PROFILE_SIGMA_AIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 4,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 5,
+            "elastic": 3
+          }
+        },
+        "PROFILE_SIGMA_BIC": {
+          "correct": 12,
+          "available": 16,
+          "total": 16,
+          "coverage": 1.0,
+          "accuracy_all": 0.75,
+          "accuracy_available": 0.75,
+          "by_mode_PRIVATE": {
+            "elastic": {
+              "n": 4,
+              "correct": 2,
+              "available": 4
+            },
+            "deadzone": {
+              "n": 6,
+              "correct": 6,
+              "available": 6
+            },
+            "nonlinear": {
+              "n": 6,
+              "correct": 4,
+              "available": 6
+            }
+          },
+          "winner_counts_including_abstain": {
+            "deadzone": 8,
+            "cubic": 5,
+            "elastic": 3
+          }
+        }
+      }
+    }
+  },
+  "bootstrap_exploratory": null,
+  "original_mid_reference": null,
+  "historical_sensitivity_reference": {
+    "P90_Nonlinear_M2_recall_full_minus_half": 0.19791666666666663,
+    "P95_posthoc_relative_margin_mean": 0.305039639625911
+  },
+  "source_sha256": {
+    "R90": "86b3ae545a78b2853a63266536037636edf2762f89eecbcfdc25e12cce72b0c0",
+    "A90": "9e23958d1d9315379b963e5ac246af1f0f3c772057ee140b7e391836911a3048",
+    "R92": "97e35e06c09072939cb2e601ebcf64c16acaa91edd5cb0ebba749908f60490d1",
+    "A92": "d7133f594df1639f4a239642f9c171d8e414a9c724f59122c1e5b185a7c613f7",
+    "R93": "360a7eed52278309abcf206845089e156ec8d921e3fb4f22dba1708cd529aeba",
+    "R95": "76ba265dcc1ff7652c3b51a6d1962b9f490093bf0189add43f72375e350a77ce",
+    "A95": "85de825618fdae3ed2211108f46b7b2dbba0b59935f1a0adde3150766d0f111c",
+    "S90": "4bd165bbc5c9522cfb94f61ff71682b34f1e76c1ace6da0d3f55f49c6ec8b622",
+    "S92": "a8d45bd03e2b2f66aff030f443bbcd518536c97cfb202b2b3f4e0857063b76c2",
+    "S95": "c1d676c52711114da27b4051ef509b8baa8fc5be8597802331a89befb01251f0"
+  },
+  "E4_accessed": false,
+  "new_fits": 0,
+  "new_simulations": 0,
+  "new_actions": 0,
+  "truth_used_for_fit_or_selection": false,
+  "heldout_mid_half_full_used_for_selection": false,
+  "model_selection_threshold_tuning": false,
+  "cohort_previously_examined": true,
+  "limitations": [
+    "Post-hoc P90 cohort, baseline feasibility only; requires pre-frozen fresh-scene B1B confirmation",
+    "Training-only AIC/BIC uses four training actions; MID validation-based selector sees extra observations",
+    "AIC/BIC are Gaussian pseudo-information criteria unless temporal covariance and likelihood validated",
+    "Known-sigma scoring assumes residual variance 0.005^2 and independence; effective residual variance may differ",
+    "Profile-variance AIC/BIC uses a free Gaussian residual scale; imperfect under correlated time samples",
+    "k=2 or 3 counts nominal candidate parameters only; active-boundary effective degrees of freedom unaccounted",
+    "AIC/BIC are scoring rules applied to existing PEM fits; not separate optimizers or new physics models",
+    "Equal start counts are not equal function evaluation counts",
+    "Truth labels enter only after each model choice, to evaluate accuracy and confusion",
+    "No structural identifiability proof, no hardware transfer claim, no E4"
+  ]
+}

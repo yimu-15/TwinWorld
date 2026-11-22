@@ -1,0 +1,16 @@
+{
+  "protocol": "P4-M2C2C replay smoke",
+  "smoke": true,
+  "mid_evaluations": 1,
+  "full_risk_comparison_performed": false,
+  "source_sha256": {
+    "c0_report": "ee4347a89a728c5e453e6ca5907aad1e968250ae474cff85ab4a4af41fe646f8",
+    "c0_audit": "536b6136fc094c602baabf370a43d424856beb1b4e9add6223cda2fd9e604501",
+    "c1_report": "7a57f8a5cf463d88031fb6690da9a00ac4ddf650d402d3dac54a83e09760ddcc",
+    "c1_audit": "8ee5efede98163ae2fd67e473a8437fae9cb178fa72e713c6e46b3d884238369",
+    "b_report": "b0529b04b63acac3de8d12751fb9ae2a77ba73c6ad957abaa8627b42736f34f6",
+    "b_audit": "321de414e0d4252e4cc2cfb7451cf4f7c2f8abc523f6540ebfa575cfba0c3e11"
+  },
+  "E4_accessed": false,
+  "new_fits": 0
+}

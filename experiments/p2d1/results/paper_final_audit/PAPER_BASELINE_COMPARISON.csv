@@ -1,0 +1,21 @@
+baseline_id,method_family,comparison_dimension,config,method_a,method_b,a_correct,b_correct,n,net,effect_pp,ci95_low,ci95_high,significant,fair_note,source_report
+BL-01,supervised_diag,observation_modality,P2-C0,passive_only,A_only,0.3333,0.4556,90,NA,NA,NA,NA,NA,"A_only barely above chance",outputs/p2c0/p2c0_baselines.json
+BL-02,supervised_diag,observation_modality,P2-C0,A_only,B_only,0.4556,0.8778,90,NA,NA,0.8222,0.9333,yes,"B_only best modality",outputs/p2c0/p2c0_baselines.json
+BL-03,supervised_diag,observation_modality,P2-C0,B_only,A_plus_B,0.8778,0.8556,90,NA,NA,0.8000,0.9111,no,"A+B no better than B",outputs/p2c0/p2c0_baselines.json
+BL-04,classical_selection,selector,WOO MATCHED5,PROFILE_SIGMA_BIC,TRAIN_PEM,331,331,384,0,0.0,-1.042,1.042,no,"train AIC/BIC ~ PEM; pilot(P96)",results/p4b1a/p4b1a_pilot_report.json
+BL-05,classical_selection,selector,WOO MATCHED5,BIC,TRAIN_PEM,349,344,384,5,0.0130,-0.0026,0.0313,no,"fresh confirmation (97v2)",results/p4b1b_v2/p4b1b_v2_fresh_report.json
+BL-06,classical_identification,solver,WOO FULL,EQERR_SG,SLSQP_MATCHED5,313,328,384,-15,-0.0391,-0.0704,-0.0052,yes,"EQERR significantly worse",results/p4b2b/p4b2b_fresh_report.json
+BL-07,classical_identification,solver,WOO FULL,TRF_OUT,SLSQP_MATCHED5,328,328,384,0,0.0,0.0,0.0,no,"TRF==SLSQP decisions",results/p4b2b/p4b2b_fresh_report.json
+BL-08,equal_budget,optimizer,cap200 WOO FULL,TRF_CAP,SLSQP_CAP,321,324,384,-3,-0.0078,-0.0260,0.0104,no,"TRF~SLSQP at cap200",results/p4b3c/p4b3c_fresh_report.json
+BL-09,equal_budget,optimizer,cap100 WOO FULL,TRF_CAP,SLSQP_CAP,320,338,384,-18,-0.0469,-0.0703,-0.0208,yes,"SLSQP better at cap100",results/p4b3c/p4b3c_fresh_report.json
+BL-10,equal_budget,budget,WOO FULL SLSQP,cap200,cap100,324,338,384,-14,-0.0365,-0.0547,-0.0208,yes,"SLSQP cap100 unexpectedly higher",results/p4b3c/p4b3c_fresh_report.json
+BL-11,dose,action_dose,TRF cap100,FULL,HALF,320,282,384,38,0.0990,0.0521,0.1484,yes,"FULL>HALF",results/p4b3c/p4b3c_fresh_report.json
+BL-12,dose,action_dose,SLSQP cap200,FULL,HALF,324,274,384,50,0.1302,0.0833,0.1797,yes,"FULL>HALF",results/p4b3c/p4b3c_fresh_report.json
+BL-13,domain,physical_domain,P4-M2B2B,OUTER_BOX,WIDE,NA,NA,72,NA,0.0833,0.0509,0.1157,yes,"outer>wide (0.6736 vs 0.5903)",results/p4m2b2b/p4m2b2b_fresh_report.json
+BL-14,domain,physical_domain,P4-M2C2E,OOO,WWW,NA,NA,384,NA,0.1797,0.1276,0.2318,yes,"OOO>WWW fresh",results/p4m2c2e/p4m2c2e_fresh_report.json
+BL-15,action,action_selection,P3-A8C2B original,affine_disagreement,fixed_reverse,174,180,425,-6,-0.0141,NA,NA,no,"adaptive NOT better than fixed_reverse (no CI in report)",results/p3a8c2b/p3a8c2b_fresh_report.json
+BL-16,action,action_direction,P3-A8C1B,reverse_high,high,170,160,432,10,NA,-2.0,22.0,no,"reverse_high replicates but CI includes 0",results/p3a8c1b/p3a8c1b_fresh_report.json
+BL-17,amplitude,amplitude_dose,P4-M2D2B v2,FULL(1.0x),HALF(0.5x),NA,NA,96,NA,0.1979,0.0938,0.3125,yes,"recall full-half (nonlinear-M2)",results/p4m2d2b/p4m2d2b_v2_fresh_report.json
+BL-18,action_prior,interaction,P4-M2D1,HIGH,MID,NA,NA,384,NA,0.1198,0.0807,0.1563,yes,"HIGH>MID overall",results/p4m2d1/p4m2d1_fresh_report.json
+BL-19,frozen_vs_refit,source_transfer,P4-G2C,PAIRED_IDEAL_FIXED,SHIFTED_REFIT,347,327,384,20,0.0521,0.0130,0.0885,yes,"privileged same-scene IDEAL source",results/p4g2c/p4g2c_fresh_report.json
+BL-20,generator_transfer,dose_effect,P4-G1B,SHIFTED FULL,SHIFTED HALF,NA,NA,96,NA,0.0521,-0.0521,0.1563,no,"SHIFTED dose effect not established",results/p4g1b/p4g1b_fresh_report.json

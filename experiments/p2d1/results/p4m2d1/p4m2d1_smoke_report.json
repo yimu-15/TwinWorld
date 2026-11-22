@@ -1,0 +1,227 @@
+{
+  "protocol": "P4-M2D1 independent-seed action/prior interaction replication",
+  "smoke": true,
+  "same_simulator_family": true,
+  "n_base_scenes": 1,
+  "n_cases": 16,
+  "scene_seed": 20391017,
+  "train_noise_seed": 2029101701,
+  "high_noise_seed": 2029101702,
+  "scenario": "M0 + fixed M2 per applicable axis; 2 bands",
+  "predeclared_primary": "PRIMARY_action_prior_interaction_overall",
+  "methods": [
+    "MID",
+    "HIGH_ONLY",
+    "MID_PLUS_HIGH"
+  ],
+  "configs": [
+    "WWW",
+    "OOO",
+    "WOO"
+  ],
+  "metrics": {
+    "MID": {
+      "WWW": {
+        "correct": 6,
+        "n": 16,
+        "coverage": 1.0,
+        "accuracy": 0.375,
+        "macro": 0.3333333333333333,
+        "by_mode": {
+          "elastic": 0.0,
+          "deadzone": 1.0,
+          "nonlinear": 0.0
+        }
+      },
+      "OOO": {
+        "correct": 10,
+        "n": 16,
+        "coverage": 1.0,
+        "accuracy": 0.625,
+        "macro": 0.5555555555555555,
+        "by_mode": {
+          "elastic": 0.0,
+          "deadzone": 1.0,
+          "nonlinear": 0.6666666666666666
+        }
+      },
+      "WOO": {
+        "correct": 7,
+        "n": 16,
+        "coverage": 1.0,
+        "accuracy": 0.4375,
+        "macro": 0.4166666666666667,
+        "by_mode": {
+          "elastic": 0.25,
+          "deadzone": 1.0,
+          "nonlinear": 0.0
+        }
+      }
+    },
+    "HIGH_ONLY": {
+      "WWW": {
+        "correct": 14,
+        "n": 16,
+        "coverage": 1.0,
+        "accuracy": 0.875,
+        "macro": 0.8333333333333334,
+        "by_mode": {
+          "elastic": 0.5,
+          "deadzone": 1.0,
+          "nonlinear": 1.0
+        }
+      },
+      "OOO": {
+        "correct": 14,
+        "n": 16,
+        "coverage": 1.0,
+        "accuracy": 0.875,
+        "macro": 0.8333333333333334,
+        "by_mode": {
+          "elastic": 0.5,
+          "deadzone": 1.0,
+          "nonlinear": 1.0
+        }
+      },
+      "WOO": {
+        "correct": 14,
+        "n": 16,
+        "coverage": 1.0,
+        "accuracy": 0.875,
+        "macro": 0.8333333333333334,
+        "by_mode": {
+          "elastic": 0.5,
+          "deadzone": 1.0,
+          "nonlinear": 1.0
+        }
+      }
+    },
+    "MID_PLUS_HIGH": {
+      "WWW": {
+        "correct": 14,
+        "n": 16,
+        "coverage": 1.0,
+        "accuracy": 0.875,
+        "macro": 0.8333333333333334,
+        "by_mode": {
+          "elastic": 0.5,
+          "deadzone": 1.0,
+          "nonlinear": 1.0
+        }
+      },
+      "OOO": {
+        "correct": 14,
+        "n": 16,
+        "coverage": 1.0,
+        "accuracy": 0.875,
+        "macro": 0.8333333333333334,
+        "by_mode": {
+          "elastic": 0.5,
+          "deadzone": 1.0,
+          "nonlinear": 1.0
+        }
+      },
+      "WOO": {
+        "correct": 14,
+        "n": 16,
+        "coverage": 1.0,
+        "accuracy": 0.875,
+        "macro": 0.8333333333333334,
+        "by_mode": {
+          "elastic": 0.5,
+          "deadzone": 1.0,
+          "nonlinear": 1.0
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "PRIMARY_action_prior_interaction_overall": 0.1875,
+    "SECONDARY_WOO_minus_OOO_high_overall": 0.0,
+    "SECONDARY_WOO_minus_OOO_high_macro": 0.0,
+    "SECONDARY_OOO_high_minus_mid_overall": 0.25,
+    "DIAGNOSTIC_WOO_high_minus_OOO_high_elastic_M2": 0.0,
+    "DIAGNOSTIC_OOO_high_minus_WOO_high_nonlinear_M2": 0.0,
+    "DIAGNOSTIC_OOO_high_only_minus_mid_plus_high": 0.0
+  },
+  "bootstrap": null,
+  "nested_solver_violations": {
+    "deadzone": 1
+  },
+  "minimum_coverage": 1.0,
+  "scene_independence": {
+    "n_fingerprints": 2,
+    "exact_overlap": 0,
+    "new_scene_fingerprints": [
+      "b7592694f51d7a364e60b89175bb3e59816bc5e935eaaae74ee1c635dccd4d50",
+      "ec0dc8c4bac2546cb696b3f0564ba212b4e22d7906b7c695286b37b84b5b521b"
+    ],
+    "historical_audit": {
+      "new_scene_fingerprints": [
+        "b7592694f51d7a364e60b89175bb3e59816bc5e935eaaae74ee1c635dccd4d50",
+        "ec0dc8c4bac2546cb696b3f0564ba212b4e22d7906b7c695286b37b84b5b521b"
+      ],
+      "new_fingerprint_count": 2,
+      "historical_checks": [
+        {
+          "label": "P3-A8C2B",
+          "seed": 20280521,
+          "n_base_scenes": 72,
+          "n_band_fingerprints": 144,
+          "overlap": 0
+        },
+        {
+          "label": "P4-M1A-development",
+          "seed": 20290111,
+          "n_base_scenes": 24,
+          "n_band_fingerprints": 48,
+          "overlap": 0
+        },
+        {
+          "label": "P4-M1A-evaluation",
+          "seed": 20290112,
+          "n_base_scenes": 72,
+          "n_band_fingerprints": 144,
+          "overlap": 0
+        },
+        {
+          "label": "P4-M1B0",
+          "seed": 20290201,
+          "n_base_scenes": 8,
+          "n_band_fingerprints": 16,
+          "overlap": 0
+        },
+        {
+          "label": "P4-M2A-M2B-development",
+          "seed": 20290317,
+          "n_base_scenes": 12,
+          "n_band_fingerprints": 24,
+          "overlap": 0
+        }
+      ],
+      "historical_unique_fingerprints": 376,
+      "exact_overlap_count": 0
+    }
+  },
+  "E4_accessed": false,
+  "thresholds_tuned": false,
+  "truth_used_for_fitting": false,
+  "high_used_for_fitting": false,
+  "source_sha256": {
+    "80_p4m2c0_prior_mismatch_stress.py": "08fae73537796474fbc182258d726092b0f9e9a7ccbe6db6f7ce5510b48eed03",
+    "86_p4m2c2e_fresh_scene_factorial.py": "4b66be439bcd680c4f23ef8557af9985fdbf7b63631ddb65b5af3a705d4e2567",
+    "87_p4m2d0_action_discrimination.py": "18bed0c0f71ff733efcead0784b9af2b1f9f1cffc9e2ec16112040e034174d9d",
+    "p4m2c0_dev_report.json": "ee4347a89a728c5e453e6ca5907aad1e968250ae474cff85ab4a4af41fe646f8",
+    "p4m2c2e_fresh_report.json": "ae77d6c05d89694711c89552e07df04d87fce7dc34d23ff7fd0d9a5030ec32f1",
+    "p4m2d0_fresh_action_report.json": "a4833d5504dc128a99f670719b2a4b7521f522c8f643abd224df7e3d807286d6",
+    "88_p4m2d1_fresh_action_prior_interaction.py": "27f80208f99f4367fa735756f316bc5f7e47b32e9bbefd16e8768f51a19a13ad"
+  },
+  "limitations": [
+    "Same MuJoCo generator, new scene seed only",
+    "P87 finding selected HIGH/WOO; this replication was motivated by it",
+    "Only 24 independent base scene clusters",
+    "More observation information for MID_PLUS_HIGH than MID",
+    "Original finite-start SLSQP remains uncorrected",
+    "No global optimality or real-hardware generalization certificate"
+  ]
+}

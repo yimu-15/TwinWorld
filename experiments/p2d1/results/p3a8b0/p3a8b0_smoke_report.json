@@ -1,0 +1,329 @@
+{
+  "protocol": "P3-A8B0 non-oracle pre-action model disagreement pilot",
+  "smoke": true,
+  "n_cal_scenes": 4,
+  "n_test_scenes": 2,
+  "calibration_seed": 20371001,
+  "test_seed": 20371002,
+  "planning_actions": [
+    "reverse",
+    "high"
+  ],
+  "planning_uses_future_observed_A": false,
+  "planning_uses_future_observed_B": false,
+  "planning_uses_true_physics": false,
+  "planner_A_model": "Ideal command integration initialized from previous Weak A observation",
+  "planner_score": "25th percentile pairwise sigma-normalized prediction RMS",
+  "cost_normalization": "Absolute commanded acceleration budget",
+  "calibration_alpha": {
+    "mid": 0.05,
+    "reverse": 0.025,
+    "high": 0.025
+  },
+  "cutoffs_m": {
+    "original": {
+      "mid": {
+        "independent": 0.005860951637994044,
+        "rigid": 0.008340668048402385,
+        "elastic": 0.007348510069596183,
+        "deadzone": 0.00737508503384939,
+        "cubic": 0.011015086284241875
+      },
+      "reverse": {
+        "independent": 0.0052165070285140865,
+        "rigid": 0.013733541342955754,
+        "elastic": 0.008158124443451114,
+        "deadzone": 0.008289961992997343,
+        "cubic": 0.011812914528498985
+      },
+      "high": {
+        "independent": 0.006364740774349976,
+        "rigid": 0.01176782818687075,
+        "elastic": 0.00666741709644498,
+        "deadzone": 0.009911793264624262,
+        "cubic": 0.0111818726393079
+      }
+    },
+    "above_original_range": {
+      "mid": {
+        "independent": 0.007934502682441802,
+        "rigid": 0.011713767922872402,
+        "elastic": 0.01205473217790553,
+        "deadzone": 0.0067945728602367625,
+        "cubic": 0.007970661078759583
+      },
+      "reverse": {
+        "independent": 0.005605042388129726,
+        "rigid": 0.012121909124936494,
+        "elastic": 0.01862351359244143,
+        "deadzone": 0.010294457728415942,
+        "cubic": 0.008156915749730985
+      },
+      "high": {
+        "independent": 0.005254412737171748,
+        "rigid": 0.01025208249337433,
+        "elastic": 0.009180460684564807,
+        "deadzone": 0.008139977708915794,
+        "cubic": 0.017166138667811106
+      }
+    }
+  },
+  "summary": {
+    "original": {
+      "policies": {
+        "mid_only": {
+          "known_correct_unique": 3,
+          "known_wrong_unique": 1,
+          "known_contains_true": 7,
+          "unknown_false_singleton": 0,
+          "unknown_empty": 1,
+          "actions": {
+            "None": 12
+          },
+          "outcomes": {
+            "ambiguous_contains_true": 4,
+            "correct_singleton": 3,
+            "known_empty": 1,
+            "unknown_empty": 1,
+            "ambiguous_excludes_true": 1,
+            "wrong_singleton": 1,
+            "unknown_ambiguous": 1
+          },
+          "cost_J": 46.23687405935349,
+          "saving_vs_always_high": 0.41985525509283667
+        },
+        "always_reverse": {
+          "known_correct_unique": 3,
+          "known_wrong_unique": 1,
+          "known_contains_true": 5,
+          "unknown_false_singleton": 0,
+          "unknown_empty": 1,
+          "actions": {
+            "reverse": 12
+          },
+          "outcomes": {
+            "ambiguous_excludes_true": 2,
+            "correct_singleton": 3,
+            "wrong_singleton": 1,
+            "known_empty": 2,
+            "unknown_empty": 1,
+            "ambiguous_contains_true": 2,
+            "unknown_ambiguous": 1
+          },
+          "cost_J": 53.24711700297956,
+          "saving_vs_always_high": 0.3318961166993868
+        },
+        "always_high": {
+          "known_correct_unique": 2,
+          "known_wrong_unique": 0,
+          "known_contains_true": 3,
+          "unknown_false_singleton": 0,
+          "unknown_empty": 2,
+          "actions": {
+            "high": 12
+          },
+          "outcomes": {
+            "ambiguous_excludes_true": 3,
+            "correct_singleton": 2,
+            "known_empty": 4,
+            "unknown_empty": 2,
+            "ambiguous_contains_true": 1
+          },
+          "cost_J": 79.69885871628892,
+          "saving_vs_always_high": 0.0
+        },
+        "predicted_disagreement": {
+          "known_correct_unique": 2,
+          "known_wrong_unique": 0,
+          "known_contains_true": 3,
+          "unknown_false_singleton": 0,
+          "unknown_empty": 1,
+          "actions": {
+            "high": 9,
+            "None": 2,
+            "reverse": 1
+          },
+          "outcomes": {
+            "ambiguous_excludes_true": 3,
+            "correct_singleton": 2,
+            "known_empty": 4,
+            "unknown_empty": 1,
+            "ambiguous_contains_true": 1,
+            "unknown_ambiguous": 1
+          },
+          "cost_J": 73.22197602352406,
+          "saving_vs_always_high": 0.08126694405777117
+        },
+        "cost_normalized_disagreement": {
+          "known_correct_unique": 3,
+          "known_wrong_unique": 0,
+          "known_contains_true": 4,
+          "unknown_false_singleton": 0,
+          "unknown_empty": 1,
+          "actions": {
+            "high": 5,
+            "reverse": 5,
+            "None": 2
+          },
+          "outcomes": {
+            "ambiguous_excludes_true": 3,
+            "correct_singleton": 3,
+            "known_empty": 3,
+            "unknown_empty": 1,
+            "ambiguous_contains_true": 1,
+            "unknown_ambiguous": 1
+          },
+          "cost_J": 62.75685042701155,
+          "saving_vs_always_high": 0.2125752935758759
+        }
+      },
+      "A_proxy_diagnostic_PRIVATE": {
+        "reverse": {
+          "n": 10,
+          "median_mm": 48.96040330312766,
+          "p90_mm": 118.29448926360975
+        },
+        "high": {
+          "n": 10,
+          "median_mm": 45.71267928552001,
+          "p90_mm": 131.2317807018776
+        }
+      }
+    },
+    "above_original_range": {
+      "policies": {
+        "mid_only": {
+          "known_correct_unique": 1,
+          "known_wrong_unique": 1,
+          "known_contains_true": 6,
+          "unknown_false_singleton": 1,
+          "unknown_empty": 0,
+          "actions": {
+            "None": 12
+          },
+          "outcomes": {
+            "ambiguous_contains_true": 5,
+            "known_empty": 3,
+            "wrong_singleton": 1,
+            "unknown_false_singleton": 1,
+            "correct_singleton": 1,
+            "unknown_ambiguous": 1
+          },
+          "cost_J": 45.40324205702289,
+          "saving_vs_always_high": 0.4235679225050818
+        },
+        "always_reverse": {
+          "known_correct_unique": 2,
+          "known_wrong_unique": 1,
+          "known_contains_true": 4,
+          "unknown_false_singleton": 1,
+          "unknown_empty": 0,
+          "actions": {
+            "reverse": 12
+          },
+          "outcomes": {
+            "ambiguous_excludes_true": 1,
+            "known_empty": 4,
+            "correct_singleton": 2,
+            "wrong_singleton": 1,
+            "unknown_false_singleton": 1,
+            "ambiguous_contains_true": 2,
+            "unknown_ambiguous": 1
+          },
+          "cost_J": 52.31296754050455,
+          "saving_vs_always_high": 0.3358431866732089
+        },
+        "always_high": {
+          "known_correct_unique": 2,
+          "known_wrong_unique": 0,
+          "known_contains_true": 4,
+          "unknown_false_singleton": 0,
+          "unknown_empty": 2,
+          "actions": {
+            "high": 12
+          },
+          "outcomes": {
+            "ambiguous_excludes_true": 2,
+            "known_empty": 4,
+            "ambiguous_contains_true": 2,
+            "correct_singleton": 2,
+            "unknown_empty": 2
+          },
+          "cost_J": 78.7659879275597,
+          "saving_vs_always_high": 0.0
+        },
+        "predicted_disagreement": {
+          "known_correct_unique": 2,
+          "known_wrong_unique": 0,
+          "known_contains_true": 4,
+          "unknown_false_singleton": 0,
+          "unknown_empty": 2,
+          "actions": {
+            "high": 9,
+            "None": 3
+          },
+          "outcomes": {
+            "ambiguous_excludes_true": 2,
+            "known_empty": 4,
+            "ambiguous_contains_true": 2,
+            "correct_singleton": 2,
+            "unknown_empty": 2
+          },
+          "cost_J": 68.27721415376105,
+          "saving_vs_always_high": 0.13316374300345316
+        },
+        "cost_normalized_disagreement": {
+          "known_correct_unique": 2,
+          "known_wrong_unique": 0,
+          "known_contains_true": 4,
+          "unknown_false_singleton": 0,
+          "unknown_empty": 1,
+          "actions": {
+            "high": 8,
+            "None": 3,
+            "reverse": 1
+          },
+          "outcomes": {
+            "ambiguous_excludes_true": 2,
+            "known_empty": 4,
+            "ambiguous_contains_true": 2,
+            "correct_singleton": 2,
+            "unknown_empty": 1,
+            "unknown_ambiguous": 1
+          },
+          "cost_J": 66.77299642728713,
+          "saving_vs_always_high": 0.15226104332370483
+        }
+      },
+      "A_proxy_diagnostic_PRIVATE": {
+        "reverse": {
+          "n": 9,
+          "median_mm": 97.33416035347133,
+          "p90_mm": 146.30594208278663
+        },
+        "high": {
+          "n": 9,
+          "median_mm": 99.54249193579493,
+          "p90_mm": 150.07349031849418
+        }
+      }
+    }
+  },
+  "E4_accessed": false,
+  "test_tuning": false,
+  "limitations": [
+    "Planning uses approximate future A",
+    "Only point estimates for model parameters",
+    "No calibrated confidence for planning score",
+    "No true-actuator dynamic identification",
+    "Candidate pool can exclude true law",
+    "Planned costs use nominal command budget",
+    "Reported actual costs are offline proxies",
+    "Both counterfactual actions simulated",
+    "One unknown Saturating mechanism",
+    "Gap bands share base scene physics",
+    "Synthetic MuJoCo and numeric positions only",
+    "No RGB or real robot validation",
+    "Smoke thresholds are not inferential"
+  ]
+}
